@@ -15,6 +15,7 @@ npm run test:project-assessment
 npm run research:validate
 npm run research:test:public
 npm run build
+npm run check:onboarding-links
 ```
 
 The public research runner currently discovers 269 tests: 264 pass and five source-dependent tests are explicitly skipped because their original archives are withheld. The full `research:test` command is for a separately licensed local research environment; missing-source failures are not permission to restore excluded archives.

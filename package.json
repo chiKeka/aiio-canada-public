@@ -116,7 +116,9 @@
     "test:project-assessment-browser": "node scripts/project-assessment-browser-check.mjs",
     "test:digest-browser": "node scripts/digest-workflow-test.mjs",
     "public:check": "python3 scripts/public_snapshot.py check",
-    "research:test:public": "PYTHONPATH=research/src python3 scripts/public_snapshot_tests.py"
+    "research:test:public": "PYTHONPATH=research/src python3 scripts/public_snapshot_tests.py",
+    "check:onboarding-links": "node scripts/check-onboarding-links.mjs",
+    "test:onboarding-links": "node --test tests/check-onboarding-links.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

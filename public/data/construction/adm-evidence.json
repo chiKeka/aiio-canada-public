@@ -1,0 +1,593 @@
+{
+  "version": 1,
+  "inventoryAsOf": "2026-08-31",
+  "scope": "Developer exactly equals Alberta Infrastructure; legal ownership and current package phase are unverified.",
+  "infrastructureCount": 245,
+  "missingScheduleCount": 184,
+  "exposure": [
+    {
+      "project_id": "ABMP_10797",
+      "name": "Alberta Surgical Initiative (02 - Calgary)",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2024",
+      "end_year": "2029",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11374",
+      "name": "Alberta Surgical Initiative (06 - Royal Alexandra Hospital)",
+      "municipality": "Edmonton",
+      "stage": "Proposed",
+      "start_year": "2027",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11500",
+      "name": "Alberta Surgical Initiative (07 - Sturgeon Community Hospital)",
+      "municipality": "St. Albert",
+      "stage": "Proposed",
+      "start_year": "2027",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11380",
+      "name": "Alberta Surgical Initiative (13 - Ponoka Hospital and Care Centre)",
+      "municipality": "Ponoka",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11381",
+      "name": "Alberta Surgical Initiative (14 - Fort Saskatchewan)",
+      "municipality": "Fort Saskatchewan",
+      "stage": "Proposed",
+      "start_year": "2026",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11382",
+      "name": "Alberta Surgical Initiative (15 - Alberta Children's Hospital)",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11383",
+      "name": "Alberta Surgical Initiative (16 - Grey Nuns Hospital)",
+      "municipality": "Edmonton",
+      "stage": "Proposed",
+      "start_year": "2026",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10801",
+      "name": "Calgary Complex Needs Residential Facility",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_4363",
+      "name": "Calgary Radiopharmaceutical Centre",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_2050",
+      "name": "Foothills Medical Centre Power Plant Upgrade Cogeneration Initiative",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2021",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_4364",
+      "name": "La Crete Maternity and Community Health Centre",
+      "municipality": "Mackenzie County",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11507",
+      "name": "Medical Device Reprocessing (MDR) Upgrades Program - Phase 1 (4 - Northern Lights)",
+      "municipality": "Wood Buffalo",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10951",
+      "name": "Medical Device Reprocessing (MDR) Upgrades Program - Phase 1 (5 - Westlock)",
+      "municipality": "Westlock",
+      "stage": "Proposed",
+      "start_year": "2026",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10952",
+      "name": "Medical Device Reprocessing (MDR) Upgrades Program - Phase 1 (6 - Sturgeon)",
+      "municipality": "St. Albert",
+      "stage": "Proposed",
+      "start_year": "2027",
+      "end_year": "2030",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11366",
+      "name": "Medical Device Reprocessing (MDR) Upgrades Program - Phase 2 (1 - Misericordia Community Hospital)",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2029",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11367",
+      "name": "Medical Device Reprocessing (MDR) Upgrades Program - Phase 2 (2 - Grey Nuns Community Hospital)",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11362",
+      "name": "National Association of Pharmacy Regulatory Authorities Capital Program (Medicine Hat)",
+      "municipality": "Medicine Hat",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11567",
+      "name": "Northern Alberta Youth Recovery Centre (NAYRC) - Edmonton EYOC",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10957",
+      "name": "Recovery Communities (10 - Grande Prairie)",
+      "municipality": "Grande Prairie",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2028",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11513",
+      "name": "Recovery Communities (12 - Edmonton Young Offender Centre)",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11876",
+      "name": "Red Deer Regional Hospital - Ambulatory Building",
+      "municipality": "Red Deer",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2029",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_4050",
+      "name": "Red Deer Regional Hospital Centre Redevelopment",
+      "municipality": "Red Deer",
+      "stage": "Under Construction",
+      "start_year": "2024",
+      "end_year": "2031",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10535",
+      "name": "University of Alberta Hospital Brain Centre - Neurosciences Intensive Care Unit (NSICU)",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2024",
+      "end_year": "2029",
+      "asset_class": "health_facilities",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11464",
+      "name": "Barrhead Composite High School Modernization",
+      "municipality": "Barrhead",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2028",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11429",
+      "name": "Breton School K-12 Modernization",
+      "municipality": "Breton",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11456",
+      "name": "Delton K-6 Replacement School",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2028",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11459",
+      "name": "Ecole Heritage K-12 Modernization",
+      "municipality": "Falher",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10941",
+      "name": "Holy Family K-12 Replacement School (Waskatenau)",
+      "municipality": "Waskatenau",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11431",
+      "name": "Holy Trinity Academy (formerly St. Francis Xavier K-9 Replacement School)",
+      "municipality": "Medicine Hat",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11458",
+      "name": "New 7-12 Catholic and Public High School in West Edmonton",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2029",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10937",
+      "name": "New 7-12 School in Glenridding Heights (Edmonton)",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11346",
+      "name": "New High School in West Calgary",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2028",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11249",
+      "name": "New K-5 School in Blackfalds",
+      "municipality": "Blackfalds",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11345",
+      "name": "New K-8 School in Bayview (SW Airdrie)",
+      "municipality": "Airdrie",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2028",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11248",
+      "name": "New K-8 School in Windsong (SW Airdrie)",
+      "municipality": "Airdrie",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11252",
+      "name": "New K-9 Catholic School in Chestermere",
+      "municipality": "Chestermere",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10932",
+      "name": "New K-9 Nolan Hill (Calgary)",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11251",
+      "name": "New Rangeview High School",
+      "municipality": "Calgary",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10930",
+      "name": "New Secondary (7-12) School in Airdrie",
+      "municipality": "Airdrie",
+      "stage": "Under Construction",
+      "start_year": "2026",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11432",
+      "name": "Solution for Nanton School",
+      "municipality": "Nanton",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11253",
+      "name": "Solution for Rundle Heights K-9 School",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10933",
+      "name": "Solution for \ufffdcole Michaelle Jean & Gabrielle Roy",
+      "municipality": "Edmonton",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2028",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10940",
+      "name": "Spruce Grove Composite High School Replacement",
+      "municipality": "Spruce Grove",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2028",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11056",
+      "name": "St. Kateri Elementary School (West Lethbridge)",
+      "municipality": "Lethbridge",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_4503",
+      "name": "St. Martin de Porres High School Addition",
+      "municipality": "Airdrie",
+      "stage": "Under Construction",
+      "start_year": "2024",
+      "end_year": "2028",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11410",
+      "name": "Vera M. Welsh School Replacement",
+      "municipality": "Lac la Biche County",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11343",
+      "name": "Wainwright K-6 Elementary Replacement",
+      "municipality": "Wainwright",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_10942",
+      "name": "\ufffdcole Good Shepherd K-9 Replacement",
+      "municipality": "Okotoks",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    },
+    {
+      "project_id": "ABMP_11256",
+      "name": "\ufffdcole Mallaig K-12 Replacement School",
+      "municipality": "St. Paul County No. 19",
+      "stage": "Under Construction",
+      "start_year": "2025",
+      "end_year": "2027",
+      "asset_class": "schools_and_postsecondary",
+      "developer": "Alberta Infrastructure",
+      "as_of_date": "2026-08-31"
+    }
+  ],
+  "power": [
+    {
+      "name": "Greenlight Electricity Centre",
+      "region": "Sturgeon County",
+      "cost": 4600000000.0,
+      "mw": 932.0,
+      "end": 2030,
+      "stage": "Proposed",
+      "source": "https://greenlightelectricitycentre.ca/"
+    },
+    {
+      "name": "Teton Digital Black Bear Power Project",
+      "region": "Swan Hills",
+      "cost": 1300000000.0,
+      "mw": 466.0,
+      "end": 2028,
+      "stage": "Proposed",
+      "source": "https://www.tetondigital.io/black-bear"
+    },
+    {
+      "name": "Teton Digital Northern Forge Power Project",
+      "region": "Greenview No. 16",
+      "cost": 500000000.0,
+      "mw": 200.0,
+      "end": 2028,
+      "stage": "Proposed",
+      "source": "https://www.tetondigital.io/northern-forge"
+    }
+  ],
+  "powerContext": {
+    "source": "https://www.aeso.ca/grid/connecting-to-the-grid/large-load-projects/",
+    "verifiedOn": "2026-09-06",
+    "phase1AllocatedMW": 1200,
+    "contracts": [
+      {
+        "name": "GLDC Load",
+        "mw": 970
+      },
+      {
+        "name": "Keephills Data Centre Phase I",
+        "mw": 230
+      }
+    ],
+    "interpretation": "Executed load contracts proceed through connection studies. Phase 2A uses a BYOG process. No delay to a public facility is inferred."
+  }
+}

@@ -1,0 +1,2960 @@
+{
+  "schemaVersion": "1.0",
+  "pilotId": "AB_CAL3_WINDSONG_2026_2027",
+  "evidenceCutoff": "2026-10-03",
+  "publicationStatus": "scenario_demonstration_not_release_promoted",
+  "sha256": {
+    "data/pilots/alberta-cal3-windsong-v0.1.json": "59740c9c78513c25d92e15fa8aba1628b18ff6713bc8f30736562c335a798bd2",
+    "lib/alberta-pilot.ts": "a5792f822cb710918f48bcd74041c3425c5fb245653484c66e60ef4b0bbc5b41",
+    "lib/pilot-stress.ts": "62efc83b69e256be5e1f9b2e8bcf7e4d283581e667a0ec5ccb62db5d1e39db56",
+    "lib/construction-model.ts": "86b36337e5c869b09e5c507eeca4ba7dc2b2a5cce082818a17d0871aa9027406",
+    "scripts/alberta-pilot.mjs": "a58bc1247433de106840f095703ec2f8821f35d3a00874484b23468c5ab0d7e5"
+  },
+  "sourceHashes": {
+    "CAL3_OPERATOR_DESIGN": "bad5564fe998036c64877d68fbf44f6299ff666ecf0e94287e85fd32e853e2fc",
+    "CAL3_OPERATOR_TENANT": "4ad4b9af34e445467d03d271b4857dbf3ebcd9726fad59d99c0af5462b47d0e9",
+    "CAL3_AUC_APPLICATION": "5507698d2f30d049f8aeef381c2ecf59f81c7b26196a1fc131960bc20cbbdd2b",
+    "WINDSONG_OWNER_AWARD": "5fdde7173188466ddb00c989d5241d1b647f2310f17fe7dac688ca70105c9252",
+    "WINDSONG_CONTRACTOR_CLOSE": "a05deb4962f8246e9c17f70e30ebef6490b58389de315f73419386768dc45d50",
+    "WINDSONG_OWNER_STATUS": "a81b5829d70668e3bee9ecff13de50b1ce4c1826dc504a2e61a4ed0ea2b3915f",
+    "ALBERTA_REGISTER_RELEASE": "46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "CAL3_MUNICIPAL_CONDITIONS": "ae7965236a50083e05e13cb5b1ba029a0d231514588f0245093d55b33343f4d7",
+    "WINDSONG_PROJECT_ESTIMATE": "d2e748df8c53196f2481ba239443f43672bc8974d2b35988b77b7dcc3677da85",
+    "WINDSONG_OWNER_DBFM": "39eea9dd536b5387db377f8c5181c6a574dfb061b7e58550512afddb5947e1f3",
+    "WINDSONG_BUNDLE_PAYMENT_TIMING": "7ed81834122165679645cd57cc02cf254198013cfdd23ca6e05da66ffa1ea4ea",
+    "CALGARY_ELECTRICAL_CONTEXT": "1a7ffc77949dbb472c573863a5567566a1063b95b0bf6ebe4524baee8fd93bca"
+  },
+  "input": {
+    "packages": [
+      {
+        "id": "windsong-electrical-assumed",
+        "region": "Rocky View–Airdrie",
+        "trade": "Electrical",
+        "kind": "background",
+        "hours": 100,
+        "releaseMonth": 0,
+        "plannedFinishMonth": 20,
+        "predecessors": []
+      },
+      {
+        "id": "other-private-electrical-assumed",
+        "region": "Rocky View–Airdrie",
+        "trade": "Electrical",
+        "kind": "background",
+        "hours": 50,
+        "releaseMonth": 0,
+        "plannedFinishMonth": 20,
+        "predecessors": []
+      },
+      {
+        "id": "cal3-phase1-electrical-assumed",
+        "region": "Rocky View–Airdrie",
+        "trade": "Electrical",
+        "kind": "dc",
+        "hours": 100,
+        "releaseMonth": 0,
+        "plannedFinishMonth": 8,
+        "predecessors": []
+      }
+    ],
+    "schedule": {
+      "startMonth": 0,
+      "endMonth": 36,
+      "capacity": {
+        "Rocky View–Airdrie:Electrical": 10
+      },
+      "policy": "pro-rata",
+      "annualEscalation": 0
+    },
+    "protectedPackageId": "windsong-electrical-assumed",
+    "protectedFinishMonth": 20,
+    "resourceKey": "Rocky View–Airdrie:Electrical",
+    "capacityCandidates": [
+      null,
+      0,
+      5,
+      7.5,
+      10,
+      12.5,
+      15,
+      20,
+      25,
+      30
+    ],
+    "dcReleaseOffsetsMonths": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      21
+    ],
+    "privateBackgroundPackageIds": [
+      "other-private-electrical-assumed"
+    ],
+    "privateBackgroundMultipliers": [
+      0.5,
+      1,
+      1.5
+    ],
+    "mobilityCapacityHours": [
+      0,
+      2,
+      5
+    ],
+    "policies": [
+      "pro-rata",
+      "protect-background",
+      "prefer-dc"
+    ],
+    "hoursBasis": {
+      "unit": "normalized-paid-hours",
+      "paidHoursPerUnit": null,
+      "assumption": "Scenario only: school 100, other-private 50 and CAL-3 electrical 100 normalized paid-work units. No measured hours or workforce conversion. Shared Rocky View–Airdrie electrical catchment and Jan2026 releases assumed; school package finish Sep2027 is a planning interpretation of fall2027 opening, not a contractual milestone. CAL-3 package finish Sep2026 is assumed, not an observed package date. No uncommitted school cost or site overhead supplied: dollar impacts remain null."
+    }
+  },
+  "caseCount": 1620,
+  "casesSha256": "ea02012a4253e2b4e09ac1bbf7b5c558d1d381123b0ce82c66ccc2435691ea20",
+  "thresholds": [
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 2,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 2,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 2,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 5,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 5,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 0.5,
+      "mobilityHours": 5,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 2,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 2,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 2,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 5,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 5,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 5,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 25,
+          "minimumTestedAdditionalCapacityHours": 15,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 25,
+          "minimumTestedAdditionalCapacityHours": 15,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 2,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 2,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 2,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 7.5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 5,
+      "policy": "pro-rata",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 5,
+      "policy": "protect-background",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    },
+    {
+      "privateMultiplier": 1.5,
+      "mobilityHours": 5,
+      "policy": "prefer-dc",
+      "capacityByAIShift": [
+        {
+          "dcReleaseOffsetMonths": 0,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 3,
+          "minimumTestedCapacityHours": 10,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 6,
+          "minimumTestedCapacityHours": 12.5,
+          "minimumTestedAdditionalCapacityHours": 2.5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 9,
+          "minimumTestedCapacityHours": 15,
+          "minimumTestedAdditionalCapacityHours": 5,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 12,
+          "minimumTestedCapacityHours": 20,
+          "minimumTestedAdditionalCapacityHours": 10,
+          "status": "target-met-in-grid"
+        },
+        {
+          "dcReleaseOffsetMonths": 21,
+          "minimumTestedCapacityHours": 5,
+          "minimumTestedAdditionalCapacityHours": 0,
+          "status": "target-met-in-grid"
+        }
+      ],
+      "aiShiftByCapacity": [
+        {
+          "capacityHours": 0,
+          "minimumTestedAIShiftMonths": null
+        },
+        {
+          "capacityHours": 5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 7.5,
+          "minimumTestedAIShiftMonths": 21
+        },
+        {
+          "capacityHours": 10,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 12.5,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 15,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 20,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 25,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": 30,
+          "minimumTestedAIShiftMonths": 0
+        },
+        {
+          "capacityHours": null,
+          "minimumTestedAIShiftMonths": null
+        }
+      ]
+    }
+  ],
+  "illustrativeCases": [
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 0,
+      "totalCapacityHours": 0,
+      "additionalCapacityHours": -10,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": null,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": false,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 150,
+      "withDCTailHours": 250
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 5,
+      "totalCapacityHours": 5,
+      "additionalCapacityHours": -5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 30,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": false,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 69.99999999999997
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 7.5,
+      "totalCapacityHours": 7.5,
+      "additionalCapacityHours": -2.5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 34,
+      "baselineTargetMet": true,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": 14,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 10,
+      "totalCapacityHours": 10,
+      "additionalCapacityHours": 0,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 25,
+      "baselineTargetMet": true,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": 5,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 12.5,
+      "totalCapacityHours": 12.5,
+      "additionalCapacityHours": 2.5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 15,
+      "totalCapacityHours": 15,
+      "additionalCapacityHours": 5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 20,
+      "totalCapacityHours": 20,
+      "additionalCapacityHours": 10,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 25,
+      "totalCapacityHours": 25,
+      "additionalCapacityHours": 15,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": 30,
+      "totalCapacityHours": 30,
+      "additionalCapacityHours": 20,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "pro-rata",
+      "capacityHours": null,
+      "totalCapacityHours": null,
+      "additionalCapacityHours": null,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": null,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": null,
+      "protectedTargetMet": null,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 150,
+      "withDCTailHours": 250
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 0,
+      "totalCapacityHours": 0,
+      "additionalCapacityHours": -10,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": null,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": false,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 150,
+      "withDCTailHours": 250
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 5,
+      "totalCapacityHours": 5,
+      "additionalCapacityHours": -5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 30,
+      "withDCCompletionMonth": 30,
+      "baselineTargetMet": false,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 70
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 7.5,
+      "totalCapacityHours": 7.5,
+      "additionalCapacityHours": -2.5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 10,
+      "totalCapacityHours": 10,
+      "additionalCapacityHours": 0,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 12.5,
+      "totalCapacityHours": 12.5,
+      "additionalCapacityHours": 2.5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 15,
+      "totalCapacityHours": 15,
+      "additionalCapacityHours": 5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 20,
+      "totalCapacityHours": 20,
+      "additionalCapacityHours": 10,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 25,
+      "totalCapacityHours": 25,
+      "additionalCapacityHours": 15,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": 30,
+      "totalCapacityHours": 30,
+      "additionalCapacityHours": 20,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "protect-background",
+      "capacityHours": null,
+      "totalCapacityHours": null,
+      "additionalCapacityHours": null,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": null,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": null,
+      "protectedTargetMet": null,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 150,
+      "withDCTailHours": 250
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 0,
+      "totalCapacityHours": 0,
+      "additionalCapacityHours": -10,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": null,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": false,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 150,
+      "withDCTailHours": 250
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 5,
+      "totalCapacityHours": 5,
+      "additionalCapacityHours": -5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 30,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": false,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 70.00000000000006
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 7.5,
+      "totalCapacityHours": 7.5,
+      "additionalCapacityHours": -2.5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 34,
+      "baselineTargetMet": true,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": 14,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 10,
+      "totalCapacityHours": 10,
+      "additionalCapacityHours": 0,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 25,
+      "baselineTargetMet": true,
+      "protectedTargetMet": false,
+      "incrementalDelayMonths": 5,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 12.5,
+      "totalCapacityHours": 12.5,
+      "additionalCapacityHours": 2.5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 15,
+      "totalCapacityHours": 15,
+      "additionalCapacityHours": 5,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 20,
+      "totalCapacityHours": 20,
+      "additionalCapacityHours": 10,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 25,
+      "totalCapacityHours": 25,
+      "additionalCapacityHours": 15,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": 30,
+      "totalCapacityHours": 30,
+      "additionalCapacityHours": 20,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": 20,
+      "withDCCompletionMonth": 20,
+      "baselineTargetMet": true,
+      "protectedTargetMet": true,
+      "incrementalDelayMonths": 0,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 0,
+      "withDCTailHours": 0
+    },
+    {
+      "privateMultiplier": 1,
+      "mobilityHours": 0,
+      "policy": "prefer-dc",
+      "capacityHours": null,
+      "totalCapacityHours": null,
+      "additionalCapacityHours": null,
+      "dcReleaseOffsetMonths": 0,
+      "baselineCompletionMonth": null,
+      "withDCCompletionMonth": null,
+      "baselineTargetMet": null,
+      "protectedTargetMet": null,
+      "incrementalDelayMonths": null,
+      "incrementalEscalationCAD": null,
+      "incrementalSiteOverheadCAD": null,
+      "baselineTailHours": 150,
+      "withDCTailHours": 250
+    }
+  ],
+  "qualification": "Uncalibrated normalized paid-hour scenario thresholds on the tested discrete grid, not measured contractor shortages, continuous optima, causal estimates or probabilities. Mobility adds assumed supply; private background modifies only identified private packages. Capacity totals replace the swept resource trajectory. Other resources retain their input capacity. Unknown capacity remains unknown.",
+  "monetaryImpact": null,
+  "costBoundary": "No measured paid hours, capacity, AI phase budget, enabling asset costs, payer commitments or uncommitted public package costs. No dollar impact or causal estimate is authorized."
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "as_of_date": "2026-07-24",
+    "canonical_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810028901",
+    "domain": "construction_cost",
+    "evidence_status": "observed",
+    "geography": "Canada; selected census metropolitan areas",
+    "publisher": "Statistics Canada",
+    "source_id": "STATCAN_BCPI_18100289",
+    "status": "active",
+    "title": "Building construction price indexes, by type of building and division"
+  },
+  {
+    "as_of_date": "2026-01-09",
+    "canonical_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410041701",
+    "domain": "labour",
+    "evidence_status": "observed",
+    "geography": "Canada; provinces and territories",
+    "publisher": "Statistics Canada",
+    "source_id": "STATCAN_WAGES_14100417",
+    "status": "active",
+    "title": "Employee wages by occupation, annual"
+  },
+  {
+    "as_of_date": "2026-01-09",
+    "canonical_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410041601",
+    "domain": "labour",
+    "evidence_status": "observed",
+    "geography": "Canada; provinces and territories",
+    "publisher": "Statistics Canada",
+    "source_id": "STATCAN_LFS_OCCUPATION_14100416",
+    "status": "active",
+    "title": "Labour force characteristics by occupation, annual"
+  },
+  {
+    "as_of_date": "2022-11-30",
+    "canonical_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810044901",
+    "domain": "labour",
+    "evidence_status": "observed",
+    "geography": "Canada; provinces and territories",
+    "publisher": "Statistics Canada",
+    "source_id": "STATCAN_CENSUS_OCCUPATION_98100449",
+    "status": "active",
+    "title": "Occupation unit group by labour force status, highest level of education, age and gender"
+  },
+  {
+    "as_of_date": "2026-06-16",
+    "canonical_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044401",
+    "domain": "labour",
+    "evidence_status": "observed",
+    "geography": "Canada; provinces and territories",
+    "publisher": "Statistics Canada",
+    "source_id": "STATCAN_JVWS_14100444",
+    "status": "active",
+    "title": "Job vacancies and average offered hourly wage by occupation (unit group), quarterly, unadjusted for seasonality"
+  },
+  {
+    "as_of_date": "2025-11-06",
+    "canonical_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3610043801",
+    "domain": "materials_and_industry",
+    "evidence_status": "observed",
+    "geography": "Canada; provinces and territories",
+    "publisher": "Statistics Canada",
+    "source_id": "STATCAN_SUPPLY_USE_36100438",
+    "status": "active",
+    "title": "Supply and use tables, summary level, provincial and territorial"
+  },
+  {
+    "as_of_date": "2026-08-31",
+    "canonical_url": "https://www.majorprojects.alberta.ca/",
+    "domain": "ai_capex_and_public_projects",
+    "evidence_status": "observed",
+    "geography": "Alberta",
+    "publisher": "Government of Alberta",
+    "source_id": "ALBERTA_MAJOR_PROJECTS",
+    "status": "candidate",
+    "title": "Alberta Major Projects inventory"
+  },
+  {
+    "as_of_date": "2026-08-31",
+    "canonical_url": "https://majorprojects.alberta.ca/methodology",
+    "domain": "ai_capex_and_public_projects",
+    "evidence_status": "observed",
+    "geography": "Alberta",
+    "publisher": "Government of Alberta",
+    "source_id": "ALBERTA_MAJOR_PROJECTS_METHOD",
+    "status": "active",
+    "title": "Alberta Major Projects methodology"
+  },
+  {
+    "as_of_date": "2026-08-31",
+    "canonical_url": "https://www.aeso.ca/grid/connecting-to-the-grid/large-load-projects/",
+    "domain": "power",
+    "evidence_status": "observed",
+    "geography": "Alberta interconnected electric system",
+    "publisher": "Alberta Electric System Operator",
+    "source_id": "AESO_LARGE_LOAD_PROJECTS",
+    "status": "candidate",
+    "title": "Large Load Projects"
+  },
+  {
+    "as_of_date": "2026-08-25",
+    "canonical_url": "https://aesoengage.aeso.ca/2026-long-term-outlook-plan",
+    "domain": "power",
+    "evidence_status": "observed",
+    "geography": "Alberta interconnected electric system",
+    "publisher": "Alberta Electric System Operator",
+    "source_id": "AESO_LTO_2026_INPUTS",
+    "status": "candidate",
+    "title": "2026 Long-Term Outlook input, assumptions and scenarios"
+  },
+  {
+    "as_of_date": "2026-04-16",
+    "canonical_url": "https://tradesecrets.alberta.ca/regulation-resources/data/",
+    "domain": "labour",
+    "evidence_status": "observed",
+    "geography": "Alberta",
+    "publisher": "Government of Alberta",
+    "source_id": "ALBERTA_AIT_DATA",
+    "status": "active",
+    "title": "Apprenticeship and Industry Training data and research library"
+  }
+]

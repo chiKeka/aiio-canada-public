@@ -1,0 +1,78 @@
+{
+  "acceptance_criteria": {
+    "independent_review_required": true,
+    "interval_calibration_minimum_prior_oos_quarters": 8,
+    "maximum_empirical_interval_coverage": 1.0,
+    "maximum_mean_interval_width_pp": 8.0,
+    "maximum_primary_mae_pp": 2.0,
+    "maximum_subgroup_mae_ratio_to_baseline": 1.1,
+    "minimum_empirical_interval_coverage": 0.8,
+    "minimum_independently_linked_events": 10,
+    "minimum_mae_improvement_fraction": 0.05,
+    "minimum_test_quarters": 8,
+    "nominal_interval_coverage": 0.9,
+    "point_in_time_vintages_required": true,
+    "status": "provisional_research_thresholds_not_authorization"
+  },
+  "contract_id": "AIIO_ALBERTA_QUARTERLY_PLANNING_BENCHMARK_0_1",
+  "design": {
+    "augmented": "same baseline plus log1p(reconstructed proxy CAD / 1e9)",
+    "baseline": "ridge AR with intercept and lagged BCPI YoY",
+    "feature_scaling": "training-only mean and population standard deviation; intercept unpenalized",
+    "first_test_quarter": "2024-Q2",
+    "fold_unit": "all markets and assets in a target quarter stay together",
+    "information_lag_quarters": 2,
+    "information_set": "training outcomes end at target minus information lag; all predictors use their target minus information lag",
+    "last_test_quarter": "2026-Q1",
+    "minimum_training_quarters": 20,
+    "primary_proxy_case": "central",
+    "ridge_penalty": 1.0,
+    "sensitivity_information_lags": [
+      2,
+      3,
+      4
+    ],
+    "sensitivity_proxy_cases": [
+      "low",
+      "central",
+      "high"
+    ],
+    "vintage_boundary": "latest-vintage retrospective pseudo-out-of-sample; publication-time vintages unavailable; not a real-time forecast test"
+  },
+  "input_manifest": {
+    "data/model-runs/ai_attribution_empirical_covariate_panel_v0.1.json": "sha256:66e141922ae503b4fc85c7f5c7200b075beb13c424bafb2a562ad7c743b2f68c",
+    "data/model-runs/ai_construction_proxy_alberta_v0.1.json": "sha256:63053c4316fb2d634020588602fd8f6fdf9ad8f6f4c2fa0b389fcee292fb5fb6",
+    "data/processed/ai_attribution_empirical_covariate_panel_v0.1.csv": "sha256:399d320e4be4057eee482ac0e3d7838dc17f1e19efde258c5345c4ad3d788620"
+  },
+  "publication_boundary": {
+    "automatic_promotion_allowed": false,
+    "causal_attribution_allowed": false,
+    "monthly_project_cost_translation_allowed": false,
+    "schedule_delay_prediction_allowed": false,
+    "validated_proxy_estimate_allowed": false
+  },
+  "scope": {
+    "assets": [
+      "government_and_civic_facilities",
+      "health_facilities",
+      "schools_and_postsecondary"
+    ],
+    "frequency": "quarterly",
+    "geographies": [
+      "CMA_825",
+      "CMA_835"
+    ],
+    "horizon_quarters": 1,
+    "outcome": "market_price_yoy_percent",
+    "price_basis": "dimensionless change in the source BCPI index; no CAD translation",
+    "unit": "BCPI year-over-year percentage points"
+  },
+  "status": "frozen_exploratory_protocol_pending_independent_review",
+  "unassessed_requirements": [
+    "point-in-time data availability",
+    "independent event linkage and permit/project overlap",
+    "predictive interval coverage",
+    "leave-one-project/source-out sensitivity",
+    "independent planning review"
+  ]
+}

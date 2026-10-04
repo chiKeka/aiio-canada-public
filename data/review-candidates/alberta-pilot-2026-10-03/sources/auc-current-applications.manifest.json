@@ -1,0 +1,11 @@
+{
+  "source_url": "https://www.auc.ab.ca/regulatory_documents/current-applications/",
+  "effective_url": "https://www.auc.ab.ca/regulatory_documents/current-applications/",
+  "retrieved_at": "2026-10-03T21:30:16.275586+00:00",
+  "content_hash": "sha256:358609ef9946386790cce007fe4864e4f0fc7b210c7fa83c4460c4d85e75a4d1",
+  "byte_length": 214289,
+  "content_type": "text/html",
+  "result": "success",
+  "local_raw_file": "auc-current-applications.raw",
+  "redistribution": "receipt_only_pending_review"
+}

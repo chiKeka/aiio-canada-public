@@ -1,0 +1,10 @@
+{
+  "source_id": "public-followup-subcontractors",
+  "requested_url": "https://open.alberta.ca/dataset/0523e484-16d3-403d-9db2-c2092fb536dc/resource/da729c0c-636d-479d-9ed0-7a5d0dbe71da/download/infra-agreement-dbfm-six-new-schools-2025-schedule-17.pdf",
+  "retrieved_at": "2026-10-03T23:00:00.813033+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "result": "error",
+  "error_type": "TimeoutError",
+  "http_status": null
+}

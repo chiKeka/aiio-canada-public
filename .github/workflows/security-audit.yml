@@ -1,0 +1,54 @@
+name: Public repository security audit
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '30 15 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out full history
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Scan current tree and Git history for secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Verify vendored security patches and installed consumers
+        run: npm run test:dependency-security
+
+      - name: Audit all dependencies including development tooling
+        run: npm audit
+
+      - name: Audit production dependencies
+        run: npm audit --omit=dev
+
+      - name: Reject machine-specific paths
+        run: |
+          MAC_USER_PATH='/''Users/'
+          RUNNER_PATH='/home/''runner/work/'
+          if git grep -n -e "$MAC_USER_PATH" -e "$RUNNER_PATH" -- ':!package-lock.json'; then
+            echo 'Machine-specific paths must not be committed.' >&2
+            exit 1
+          fi

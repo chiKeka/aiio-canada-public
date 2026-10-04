@@ -1,0 +1,38 @@
+{
+  "code_commit": "cc27d80541adcc57bcf0b5243722ea5c4448ab6d",
+  "configuration_hash": "sha256:6ba68631a81605eed6f81587736d9c1598da0101723ef388da7a9d22801a5865",
+  "created_at": "2026-08-31T19:15:00Z",
+  "dirty_worktree": false,
+  "engine_version": "AIIO_GRAPH_ENGINE_0.2.0",
+  "input_manifest_hash": "sha256:0eea597e571102982f92528d49a87d853a853018f80160c41932d32dbd71e10c",
+  "inputs": {
+    "alberta_ai_projects": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "bcpi_alberta": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1",
+    "digest_items": "sha256:dff0059ac3fd878b9b2d31ba2e2c0223efbc81c9b2c532657f784296c39b6835",
+    "graph": "sha256:4ae7347787f0fa53e670f8f03b80c1f7c93f03bc8d75a6b99168e3a3763e1a22",
+    "labour_availability_alberta": "sha256:9454b563aafd4f2919fb996ba84950c55e4e635f1b67ef8b1bcf80f741ac5c24",
+    "model_run": "sha256:d8f421a41b7c76453b56a26581ede066ff40dbad4c1c21e238eabd28c027c8c9",
+    "power_definition": "sha256:71990595c2ce91009dbebdc42939b57c58efbe6ca170e54665d3112713f9f9f9",
+    "power_run": "sha256:17aedd0b731cf27238b299dbf103e1547f898196860f2c4ad3e90624cf470c12",
+    "scenario": "sha256:12dcc5146212bc9b812f21bc81fa12313226b4fad665c8435be886a6baf15ca0",
+    "source_registry": "sha256:e972791b68896a0ecfd2983214c4df1a8387407215e9852f80d4077c36c29899"
+  },
+  "model_version": "AIIO_AB_GRAPH_0_2",
+  "outputs": {
+    "alberta_ai_projects.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "baseline.json": "sha256:78086410ca0bc5259c585d8e147494bb7f495e1a98ae0d97ebafc4430748d907",
+    "bcpi_alberta.csv": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1",
+    "digest.json": "sha256:5a25a81b49b65443f1d3e7be45195e690cf47faabadb699d299e3ca1c3d8f69e",
+    "labour_availability_alberta.csv": "sha256:9454b563aafd4f2919fb996ba84950c55e4e635f1b67ef8b1bcf80f741ac5c24",
+    "power_overlay.json": "sha256:5f1a10ebcd409b3378fb232a8333db278e9c8743f5b74b30b99cad8efec2b6a9",
+    "scenario.json": "sha256:fcb81fd9149300e6c9a75539f554823870954153d1d21d240b6468d44e02f59f",
+    "sources.json": "sha256:954266d34c086a6927871fff967e8ff20d2febf8e9634dcaae2e73454cc5f310"
+  },
+  "parameter_set_id": "AB_50B_PARAMETERS_0_2",
+  "power_overlay_version": "AB_AI_POWER_OVERLAY_2027_2036",
+  "publication_note": "Uncalibrated research prototype. Observations, inferences and scenarios remain explicitly separated; diagnostic scores are not findings or forecasts.",
+  "release_id": "AIIO_RELEASE_0_3_0_DEV",
+  "schema_version": "1.0.0",
+  "status": "research-prototype",
+  "version": "0.3.0-dev"
+}

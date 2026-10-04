@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_CANADABUYS_CONTRACT_HISTORY_FY2026_2027_cff65f47b71b7c5e",
+  "source_id": "CANADABUYS_CONTRACT_HISTORY_FY2026_2027",
+  "retrieved_at": "2026-10-03T23:44:53+00:00",
+  "effective_url": "https://canadabuys.canada.ca/opendata/pub/2026-2027-contractHistory-contratsOctroyes.csv",
+  "content_hash": "sha256:cff65f47b71b7c5e4ccbd7b96b0a1de9f15ab71d63ba0150fb18fe6a264eba27",
+  "content_type": "application/octet-stream",
+  "byte_length": 5739528,
+  "archive_path": "data/raw/canadabuys_contract_history_fy2026_2027/2026-10-03_cff65f47b71b.csv",
+  "result": "success"
+}

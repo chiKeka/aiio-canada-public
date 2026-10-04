@@ -1,0 +1,430 @@
+{
+  "source_commit": "86358dfefe9df22e6619cb62e13c7ba81337034f",
+  "snapshot_status": "review_only_not_published",
+  "git_history_included": false,
+  "remote_configured": false,
+  "counts": {
+    "original_bytes": 1035,
+    "new_snapshot_support": 9,
+    "public_derivative": 31
+  },
+  "excluded_original_files": 33,
+  "numeric_leaf_changes_in_modified_original_json": [],
+  "excluded": [
+    {
+      "path": ".gitleaksignore",
+      "original_sha256": "643955815e0172fa8a23498318797937755caecfe37ef7f4e2520e28db3de64b",
+      "reason": "Replaced by unbound workflow template or new snapshot-specific scanner configuration"
+    },
+    {
+      "path": ".openai/hosting.json",
+      "original_sha256": "cc7249f1cff09a86f279c71739a73cc74e4475b33f8cc22deff33c9a87c31085",
+      "reason": "Private hosting project binding; public export has no deployment destination"
+    },
+    {
+      "path": "data/raw/aeso_large_load_projects/2026-09-14_61d2eda646ac.html",
+      "original_sha256": "61d2eda646ac8551505b78ac1c8981cff48f16d52bc278dddc6057b24afa7809",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/aeso_large_load_projects/2026-08-31_43d55ccde558.html",
+      "original_sha256": "43d55ccde5588a8c3754861a37fbd4274e605035a0dba32f72ad97cd98e86a56",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/aeso_large_load_projects/2026-09-21_acb1127441bb.html",
+      "original_sha256": "acb1127441bbd4bd90f39970043809e705931e312a3fe3223ae0c1e86f6d0502",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/toronto_cleared_building_permits/2026-09-03_7dc1fcb1ac91.json",
+      "original_sha256": "7dc1fcb1ac91325a5813b5435bb8565fc50f27a3ff8d3aac951fd7ab7699b732",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/toronto_cleared_building_permits/2026-09-02_78961dadb98b.json",
+      "original_sha256": "78961dadb98bc87e1831b27f8799f01b5ba01cfd04c6eefd1d6b1213ce0275f3",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/toronto_cleared_building_permits/2026-09-02_7fe36fa06931.json",
+      "original_sha256": "7fe36fa06931a7d4ff374d76b9058a9d46055b041497897fa0b0a02edcfe5f16",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/vancouver_issued_building_permits/2026-09-02_e59dfebb0e70.json",
+      "original_sha256": "e59dfebb0e70968785eb49c72cafce6dc9ad31ca9bae37617b0dbf5d8e69db15",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/vancouver_issued_building_permits/2026-09-03_7a9fd95f05b2.json",
+      "original_sha256": "7a9fd95f05b2f757b139d60b1d7eb81cac25ca420c9059e2028f92a1973a7a5b",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/hydro_quebec_data_centre_rate_2026/2026-09-01_2f5beed48b1b.html",
+      "original_sha256": "2f5beed48b1be4ad62e20729c6f4ef36eada08e28a4903ad9595e3cd64e7a921",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/oago_selected_infrastructure_projects_2024/2026-09-01_88cdf8a0966d.pdf",
+      "original_sha256": "88cdf8a0966dff31f5c186ec786a0d276088b8b78243d8bf1fb6aba01d42aa1d",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/bc_hydro_irp_2025_summary/2026-09-01_48943e3c8681.html",
+      "original_sha256": "48943e3c868100ee8da1676f94a20400f8070ee7302a9b5945e0908d3a8073ab",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/aeso_interim_large_load_2025_06/2026-08-31_86ea3ce051e0.html",
+      "original_sha256": "86ea3ce051e0faf81d5356c141b4a45b27c2b43ef85520cfe1eb871bc55a9009",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/ieso_apo_2026_data_tables/2026-09-01_987448021f1d.xlsx",
+      "original_sha256": "987448021f1db08bf7c815f453fa9f73057a2507f25992e110aca0abc3666526",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/aeso_data_centre_update_2025_09/2026-08-31_d997820b3ed2.pdf",
+      "original_sha256": "d997820b3ed234324f1f7bbca5b8b75fdc1bf5f64859816f4dc6cc084b229428",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/montreal_construction_permits/2026-09-02_4c3aa7b9b259.json",
+      "original_sha256": "4c3aa7b9b259553db843cd24355e93d21a9899ec29dac543369e48a2e30dabae",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/montreal_construction_permits/2026-09-02_32537a69318f.json",
+      "original_sha256": "32537a69318f52e199a7173dd0e120a4d807072a897ee7acf3ef3e5b7c79d5e1",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/montreal_construction_permits/2026-09-03_1b94b0fb1045.json",
+      "original_sha256": "1b94b0fb10454b4eedbaa4d671a1ac097b4b1ab8b0463d0a692dd88a8b853aab",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": "data/raw/ieso_apo_2026_demand_module/2026-09-01_dce737fb9061.pdf",
+      "original_sha256": "dce737fb9061fafed2c0d2371681f2de0860c8511aec47cb95e19196e912f597",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/quebec_supply_plan_progress_2025/2026-09-01_88d382a1b9f8.pdf",
+      "original_sha256": "88d382a1b9f8cca86d7cebacdac3ee3bc13077f3c34f631d11ddbc7758a2f7f1",
+      "reason": "Complete source redistribution not cleared"
+    },
+    {
+      "path": "data/raw/bc_major_projects_inventory/2026-09-01_8ff579493b29.geojson",
+      "original_sha256": "8ff579493b29400183e5664a3fad55e8eb40792549f2722efdf91d7b05fb4f5e",
+      "reason": "Public-source privacy minimization; processed research derivative retained"
+    },
+    {
+      "path": ".github/workflows/weekly-evidence-refresh.yml",
+      "original_sha256": "35d8b56ab7a7dd1f6e3339dd5c96b19295505506858e060aa5bd3d0f72c4d149",
+      "reason": "Replaced by unbound workflow template or new snapshot-specific scanner configuration"
+    },
+    {
+      "path": ".github/workflows/production-monitor.yml",
+      "original_sha256": "83b67ea5b393f94bccb8716756d67293e3c6b8c2796c7dca1a9c40209c1f9434",
+      "reason": "Replaced by unbound workflow template or new snapshot-specific scanner configuration"
+    },
+    {
+      "path": "docs/release/alberta-overview-production-deployment.md",
+      "original_sha256": "996c2d34871419ffa87fb5ae26fdebb8fb1804f08f7d1c528d6364d1b4168d66",
+      "reason": "Obsolete private deployment session detail; generic deployment contract retained"
+    },
+    {
+      "path": "docs/release/enterprise-ui-deployment-files.json",
+      "original_sha256": "a5ae318f1290c705416a1c191054dbdba0a7bf06ff1576ad8eccb43eb50ed9f7",
+      "reason": "Obsolete private deployment upload inventory"
+    },
+    {
+      "path": "docs/release/public-review-production-deployment.md",
+      "original_sha256": "e656bbd8636fa4fb25ba743d96f1ae9ebf22144413da3ff4d948f7c3607387f0",
+      "reason": "Obsolete private deployment session detail; generic deployment contract retained"
+    },
+    {
+      "path": "docs/release/alberta-overview-deployment-files.json",
+      "original_sha256": "5fc3d3a3eced04e264550e9d97362956dc2e0d82b9ed0726a653ee1a6d9d5141",
+      "reason": "Obsolete private deployment upload inventory"
+    },
+    {
+      "path": "docs/release/executive-workflow-production-deployment.md",
+      "original_sha256": "0c33884e652e09a10f6e096e256113c7dc87333ca1232259066eca5fc9c40c58",
+      "reason": "Obsolete private deployment session detail; generic deployment contract retained"
+    },
+    {
+      "path": "docs/release/enterprise-ui-production-deployment.md",
+      "original_sha256": "dd43c6924433e737e648d4542e31199694a9b33aaa23ba02af02da89fae55ac9",
+      "reason": "Obsolete private deployment session detail; generic deployment contract retained"
+    },
+    {
+      "path": "docs/release/public-review-deployment-files.json",
+      "original_sha256": "4f6a0eaedbbd694e01f18c62d849d518fcd1a6049c492867ab07837bda2627bf",
+      "reason": "Obsolete private deployment upload inventory"
+    },
+    {
+      "path": "research/historical-analog/statcan-2007-q2.html",
+      "original_sha256": "a1722ed32f06d24f4941b1bbe8dd10d0f8b01458e4d6124926bc159f0579f32c",
+      "reason": "Complete historical web-page archive omitted; original factual derivative and citations retained"
+    },
+    {
+      "path": "research/historical-analog/edmonton-2008-table.html",
+      "original_sha256": "2e3ac2403a1da510665de362db584a2306c0f8314d1cf6e84377284f6b3fad9a",
+      "reason": "Complete historical web-page archive omitted; original factual derivative and citations retained"
+    }
+  ],
+  "derivatives": [
+    {
+      "path": "README.md",
+      "bytes": 5552,
+      "sha256": "92ee20bc54f26ba37a16e848c27cec8e269e3acec563a9d56a280301084ca2b5",
+      "status": "public_derivative",
+      "original_sha256": "91f78bffd752b1a0b7cd7767c461b117938ba50eb491b6d372ce49949e122f2a",
+      "transformation": "Generalize personal research locators/private repository identity"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1998,
+      "sha256": "e2ab5c190ef6d95037f74a9affa4a7171d40fc5e9e585792363707124c4e3e39",
+      "status": "public_derivative",
+      "original_sha256": "05af3b58b69d5534a7b929a1e35f0f22622f7b8d8cf5fdf7693e2e10b141da73",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "package.json",
+      "bytes": 16758,
+      "sha256": "376e28485a356905187cfc3ef11ff5ef2444f24ace3d9f5cbdc818e54e2ba544",
+      "status": "public_derivative",
+      "original_sha256": "a20ec3b78efa6df59ba299d6a55862144fe0cbf99bfba174099f441b30553fc6",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 1882,
+      "sha256": "f07a1bee48369032fe0dd62c28f938b88d62c88b2b631882d96d7792287a85b8",
+      "status": "public_derivative",
+      "original_sha256": "7183c338ee9f0f2820097551f9690f9f5ea3e3ce86da86ffd89430c1b9df12a6",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/research-charter.md",
+      "bytes": 4270,
+      "sha256": "f45a567a841495c63c8905a2e84b0883efaecfd1311b7f1745db9a29ddbc4c00",
+      "status": "public_derivative",
+      "original_sha256": "abf14c98ac944cc5567c51e4ea643cea72da655865d6450168c2dde43c07c0b3",
+      "transformation": "Generalize personal research locators/private repository identity"
+    },
+    {
+      "path": "data/model-runs/provincial_power_planning_contract_v0.1.json",
+      "bytes": 31819,
+      "sha256": "2e026719e2658952dfa784fa83845b427aae4b5a32167d1399ffc3be1142a377",
+      "status": "public_derivative",
+      "original_sha256": "137ac23f574ec9d9d3b1661c1ca99087487704edc2dc58ebbff61bae08c26cc3",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "data/model-runs/alberta_reference_cost_review_package_v0.1.json",
+      "bytes": 9402,
+      "sha256": "24df8d2263f0c6875a981eeed1dda2bf5576b0870531a2e88cf11572e25b5935",
+      "status": "public_derivative",
+      "original_sha256": "7b25aa5ce1be78811316c3370507f8f64539892edb5a0d76fce6754d344b2212",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "data/model-runs/canada_cross_domain_coverage_v0.1.json",
+      "bytes": 18369,
+      "sha256": "160127ce6a0d65e10a52e898eca9aa8c1e335f7668c66bf6e98ddeb48504872f",
+      "status": "public_derivative",
+      "original_sha256": "fea5c9e6322739a79ead4a00f0ff8a01f7ad069ccb08ee9970d6d34abf8d2b51",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "data/model-runs/pspe_method_lineage_v0.1.json",
+      "bytes": 8085,
+      "sha256": "3886477578e59a29b1188374f4457cddc9637f8e01d08ecada78c8c59e340440",
+      "status": "public_derivative",
+      "original_sha256": "504cf2997a3cce457a345e2ab84fe93eb7002ec6ae054ce8119afb68df61d218",
+      "transformation": "Generalize personal research locators/private repository identity"
+    },
+    {
+      "path": "data/model/pspe_method_lineage_contract_v0.1.json",
+      "bytes": 4697,
+      "sha256": "7cebbc18da6a755d4489958d091dd84d21fb47327a83f9f1c3192033a76ff0a0",
+      "status": "public_derivative",
+      "original_sha256": "9a13967af03a4c8a208b13431abd0f7da9cabadfe1f005a8de25e18f3270e5d0",
+      "transformation": "Generalize personal research locators/private repository identity"
+    },
+    {
+      "path": ".github/workflows/quality.yml",
+      "bytes": 4484,
+      "sha256": "3e3272d96e10788860b2693258ddffb081519f8c7979e9e325bbe881dfb14390",
+      "status": "public_derivative",
+      "original_sha256": "0314d559295b98ff83bb6b433e0749ca1891d68d9bc7adbca8ca865622562142",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "public/data/research-surface.json",
+      "bytes": 15379,
+      "sha256": "bc677e1df7adeec2a179ac79dd04b60d5eabc1f421ae8280a2ad9a4fc7d7359e",
+      "status": "public_derivative",
+      "original_sha256": "42dc5e7d220cb1a8165038006e1096ed703b7a9ea47efe554453a938e5333e79",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/research/dependency-audit-2026-10-03.md",
+      "bytes": 12879,
+      "sha256": "e2ef0dd2b0e593c057af3ebeb684956265d7463c6e4abdd7d181e5b63bf21eb4",
+      "status": "public_derivative",
+      "original_sha256": "d879665b274341f494ad54c818947782454b2a7edfd420c66bb06138903f82ba",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/methodology/pspe-source-lineage.md",
+      "bytes": 1700,
+      "sha256": "3ebaa843241eb5178549794882090302364cfd39694dac8628b19eb7dfdccacc",
+      "status": "public_derivative",
+      "original_sha256": "7586258d2c85dfd09654571d478868b95c0151b1633cc0b218db22bf26426ade",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/methodology/pspe-integration-audit.md",
+      "bytes": 4859,
+      "sha256": "6a6a32647d53982ccc7745eead29b067823410cf9cb94d59c25e2740b78cca03",
+      "status": "public_derivative",
+      "original_sha256": "8d44d2546e10f2dd35d41f5f42ff03d38bdf440d6c72dd88ddb9b1127c8ca422",
+      "transformation": "Generalize personal research locators/private repository identity"
+    },
+    {
+      "path": "docs/release/alberta-refresh-github-activation.md",
+      "bytes": 1111,
+      "sha256": "4b07a2903754b9780a8793dc5c25bdc3ab7a3d16f429cac93af07709fd129de4",
+      "status": "public_derivative",
+      "original_sha256": "ca1a65055ec56a5ca42de4f56cfd4b8936cda2fb4c72bf71315881e39360d029",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/release/evidence-refresh-recovery-2026-10-03.md",
+      "bytes": 3151,
+      "sha256": "071efffb1c830a1c46356f2465290c5964f5231d5812c1d6bc55adc96a67e07a",
+      "status": "public_derivative",
+      "original_sha256": "e93a7874b22b35836de168034762588a0223bfad301ebfd6232acb2d8cc51769",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/release/vercel-deployment.md",
+      "bytes": 2619,
+      "sha256": "edfb707f4a57c95d4d1a75c185456292302f667e871e5fa021d2bb8ad3d4a9bd",
+      "status": "public_derivative",
+      "original_sha256": "2100d719ab41cf51e9ce87e883e98beafd99cba9dddd36247a822933d1b5e58c",
+      "transformation": "Generalize personal research locators/private repository identity"
+    },
+    {
+      "path": "docs/operations/weekly-digest-runbook.md",
+      "bytes": 6030,
+      "sha256": "12a4e911e496cbcd3ff9f0e00ae20cda08fb10cb4b29859c5dd4d1ec6686327a",
+      "status": "public_derivative",
+      "original_sha256": "2867e6b6597aa9172fddffea0b044f8dde39a2eeb630c33e0ef51b625327f5ee",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/governance/ai-assistance-log.md",
+      "bytes": 917,
+      "sha256": "a92ae3ce36440237f3e5faa6b7c3acb77a3c06f70472d36ca7a031be60369dfb",
+      "status": "public_derivative",
+      "original_sha256": "fbba220e5ec8bfd00e048b1bcb27ed7b7a107355af6ea4620877cd417e3bb06b",
+      "transformation": "Retain AI disclosure without personal academic/private execution history"
+    },
+    {
+      "path": "docs/governance/dissertation-alignment.md",
+      "bytes": 832,
+      "sha256": "3eb71b00bbf8696812f6cb314f1bb2c8e361e228b6caa006bf1487f87046ac5d",
+      "status": "public_derivative",
+      "original_sha256": "96f42b54932506ba20cb8a23894b89390ed3413abc24eccd880fd11497390a79",
+      "transformation": "Replace personal dissertation/supervisor planning with public research-integrity controls"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-provincial-power-planning-intake-gate.md",
+      "bytes": 2969,
+      "sha256": "15eb659134080b232db970d418c6c4cd5702d7aae74cb308581b3a4d8b1e57ef",
+      "status": "public_derivative",
+      "original_sha256": "5970d4db0595d703cb4d051a42a47ede5e88fac3b57b358e4a292b59b51700cb",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-provincial-public-project-intake-gate.md",
+      "bytes": 4023,
+      "sha256": "5630395bc1868a0577afe3517c6ea9504ac97b595f55c2cde9c4a80be062a7de",
+      "status": "public_derivative",
+      "original_sha256": "3c348f44a412058e2213a6e99a5509bf57645f974a904de88325144d8e9f0c6f",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-treatment-source-feasibility-review-execution.md",
+      "bytes": 806,
+      "sha256": "0cdecfaad7b645ccbb50e714ca173645b14804166c99a64ced2758755fb34eea",
+      "status": "public_derivative",
+      "original_sha256": "3220e8ac0c95a0f7d0999bfd63b07e3a600832c42b06bfede7de26f2c0e63e83",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-panel-preflight-review-execution.md",
+      "bytes": 908,
+      "sha256": "dd87834b66448d129614b1cf16052983a69b7af354c7996bbb97fc02da0ab1d1",
+      "status": "public_derivative",
+      "original_sha256": "15f8b0fb885aa1484d784a99f5ee01cf78c6dad79cdce4b45008857adb57233e",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-grok-calibration-gate-attempt.md",
+      "bytes": 930,
+      "sha256": "827c01e0bfd04c326db057d9a6a300a1574ede1be50931fe2c3050ae48072e30",
+      "status": "public_derivative",
+      "original_sha256": "f38ff9a13d8f5c7916fcbf56199b4bc5aa9fbe0452ce532de82837645a83f1fb",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-reference-cost-review-execution.md",
+      "bytes": 1114,
+      "sha256": "9743efbbd7e48fd6f0b398102575f94fca5119768d64a2c8f41123af81ef4dd5",
+      "status": "public_derivative",
+      "original_sha256": "0223c842c56f894069c67d0fc1fa22ed840ce86e11451232054724c7127a8317",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-reference-cost-review-prompt.md",
+      "bytes": 3694,
+      "sha256": "8d19cc8124989d3ee74a42bff10de34901f721c3b5a55a5ade46afe6ca18d31a",
+      "status": "public_derivative",
+      "original_sha256": "01a8a5829eaa5086e0b5bc115047343319a3180578d86b69133fac9a445e3ca4",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-grok-digest-workbook-gate.md",
+      "bytes": 337,
+      "sha256": "fdb7d46b70894525140dd79be74f2141ad10e8fbf768f11d479dfb763173a73e",
+      "status": "public_derivative",
+      "original_sha256": "fc6c493e3e22e7727b53ed285b94ca13c538aece099759b075cae6c08282281c",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "docs/reviews/2026-09-01-province-linked-bcpi-review-execution.md",
+      "bytes": 1212,
+      "sha256": "776fb2744c33627218e7d6fbf58740c1d9031b2a73c053a6a23d3eaa971126a4",
+      "status": "public_derivative",
+      "original_sha256": "d0fe3b6c7edd5e7315c0b796e8c0cfff5943fb79f3c5e0b38b2525936c5dc238",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    },
+    {
+      "path": "research/tests/test_model_review.py",
+      "bytes": 5810,
+      "sha256": "15b7f64c5c2aec3ca963af1fa4ec86bd96dbcc0fce5309d69764c22c6bbcd4f1",
+      "status": "public_derivative",
+      "original_sha256": "d479e86e0f10854cd7bebef1a38c7d910243e1b8b7a63a4b07639eee78cc1e43",
+      "transformation": "Public snapshot documentation/provenance or explicit acquisition/workflow boundary"
+    }
+  ]
+}

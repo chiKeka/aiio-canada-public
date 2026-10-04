@@ -1,0 +1,148 @@
+name: AIIO quality gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aiio-quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint application
+        run: npm run lint
+
+      - name: Test project cashflow and shared inputs
+        run: |
+          npm run test:planning
+          npm run test:delivery
+
+      - name: Test construction refresh and briefing
+        run: |
+          npm run construction:publish
+          npm run test:construction
+          npm run test:project-assessment
+          npm run test:pilot-stress
+          npm run test:dependency-security
+          npm run test:evidence-health
+          npm run test:construction-refresh
+          npm run test:briefing
+
+      - name: Validate evidence registry
+        run: npm run research:validate
+
+      - name: Rebuild current evidence digest
+        run: npm run digest:build
+
+      - name: Verify digest artifacts are deterministic
+        run: git diff --exit-code -- data/digests
+
+      - name: Rebuild PSPE method-lineage report
+        run: npm run pspe:lineage
+
+      - name: Verify PSPE method lineage is deterministic
+        run: git diff --exit-code -- data/model-runs/pspe_method_lineage_v0.1.json
+
+      - name: Rebuild Canada cross-domain coverage
+        run: npm run canada:coverage
+
+      - name: Verify Canada coverage is deterministic
+        run: git diff --exit-code -- data/model-runs/canada_cross_domain_coverage_v0.1.json
+
+      - name: Rebuild research-surface provenance manifest
+        run: npm run research-surface:build
+
+      - name: Verify research-surface manifest is deterministic
+        run: git diff --exit-code -- public/data/research-surface.json
+
+      - name: Test graph, scenarios, schemas, and release controls
+        run: npm run research:test:public
+
+      - name: Verify frozen planning validation packet
+        run: PYTHONPATH=research/src python3 research/scripts/freeze_planning_validation.py --check
+
+      - name: Build native Next.js deployment
+        run: npm run build
+
+      - name: Build Sites-compatible deployment
+        run: npm run build:sites
+
+      - name: Install portable Chromium
+        run: npx playwright-core install --with-deps chromium
+
+      - name: Start production application for browser verification
+        run: |
+          npm start -- --hostname 127.0.0.1 --port 3002 > /tmp/aiio-next.log 2>&1 &
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3002/api/availability >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/aiio-next.log
+          exit 1
+
+      - name: Audit public routes for blocking accessibility defects
+        env:
+          AIIO_BASE_URL: http://127.0.0.1:3002
+        run: npm run test:a11y
+
+      - name: Verify executive briefing and snapshot workflow
+        env:
+          AIIO_BASE_URL: http://127.0.0.1:3002
+        run: npm run test:executive
+
+      - name: Verify construction overview and revision failure recovery
+        env:
+          AIIO_BASE_URL: http://127.0.0.1:3002
+        run: npm run test:construction-browser
+
+      - name: Verify Alberta pilot controls, exports and accessibility
+        env:
+          AIIO_BASE_URL: http://127.0.0.1:3002
+        run: npm run test:alberta-pilot-browser
+
+      - name: Verify project assessment edits, exports and accessibility
+        env:
+          AIIO_BASE_URL: http://127.0.0.1:3002
+        run: npm run test:project-assessment-browser
+
+      - name: Verify reviewed evidence digest and frozen release boundaries
+        env:
+          AIIO_BASE_URL: http://127.0.0.1:3002
+        run: npm run test:digest-browser
+
+      - name: Upload browser diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: construction-browser-diagnostics
+          path: |
+            /tmp/aiio-next.log
+            /tmp/alberta-overview-*.png
+            /tmp/alberta-pilot-*.png
+            /tmp/project-assessment-*.png
+            /tmp/reviewed-digest-*.png
+          if-no-files-found: ignore

@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_BCPI_18100289_d0d11fda82bf37c3",
+  "source_id": "STATCAN_BCPI_18100289",
+  "retrieved_at": "2026-10-03T23:47:29+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/18100289-eng.zip",
+  "content_hash": "sha256:d0d11fda82bf37c3720d159c1d441bc1f15abd73ba9b7d9e750f4b1929b26612",
+  "content_type": "application/zip",
+  "byte_length": 3808739,
+  "archive_path": "data/raw/statcan_bcpi_18100289/2026-10-03_d0d11fda82bf.zip",
+  "result": "success"
+}

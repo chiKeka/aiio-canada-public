@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_QUEBEC_SUPPLY_PLAN_PROGRESS_2025_88d382a1b9f8cca8",
+  "source_id": "QUEBEC_SUPPLY_PLAN_PROGRESS_2025",
+  "retrieved_at": "2026-09-01T02:38:10+00:00",
+  "effective_url": "https://www.regie-energie.qc.ca/storage/app/media/Suivis/Suivi%20D-2023-109/etat-davancement-2025.pdf",
+  "content_hash": "sha256:88d382a1b9f8cca86d7cebacdac3ee3bc13077f3c34f631d11ddbc7758a2f7f1",
+  "content_type": "application/pdf",
+  "byte_length": 1108282,
+  "archive_path": "data/raw/quebec_supply_plan_progress_2025/2026-09-01_88d382a1b9f8.pdf",
+  "result": "success"
+}

@@ -1,0 +1,196 @@
+{
+  "contract_sha256": "sha256:7cebbc18da6a755d4489958d091dd84d21fb47327a83f9f1c3192033a76ff0a0",
+  "lineage_status": "adaptation_from_available_method_notes",
+  "mapping_count": 5,
+  "mappings": [
+    {
+      "adaptation_status": "independent_implementation",
+      "aiio_contract": "data/model/alberta_graph_v0.2.json",
+      "aiio_implementation": "research/src/aiio/graph.py",
+      "artifacts": [
+        {
+          "path": "research/src/aiio/graph.py",
+          "sha256": "sha256:3d1dd5fd9a3de7c5a3f3b0dae4e23ecc3685d5ef894ef14c74555b505ed07d10"
+        },
+        {
+          "path": "data/model/alberta_graph_v0.2.json",
+          "sha256": "sha256:4ae7347787f0fa53e670f8f03b80c1f7c93f03bc8d75a6b99168e3a3763e1a22"
+        },
+        {
+          "path": "research/tests/test_graph.py",
+          "sha256": "sha256:6ffd204626360e13c00671da05280b616dc73be5b1474cafeec33edeca5965ab"
+        }
+      ],
+      "mapping_id": "PSPE_MAP_TYPED_DIRECTED_GRAPH",
+      "source_concept": "Layer 1 typed weighted directed graph",
+      "validation_tests": [
+        "research/tests/test_graph.py"
+      ]
+    },
+    {
+      "adaptation_status": "independent_implementation",
+      "aiio_contract": "data/model/alberta_graph_v0.2.json",
+      "aiio_implementation": "research/src/aiio/graph.py",
+      "artifacts": [
+        {
+          "path": "research/src/aiio/graph.py",
+          "sha256": "sha256:3d1dd5fd9a3de7c5a3f3b0dae4e23ecc3685d5ef894ef14c74555b505ed07d10"
+        },
+        {
+          "path": "data/model/alberta_graph_v0.2.json",
+          "sha256": "sha256:4ae7347787f0fa53e670f8f03b80c1f7c93f03bc8d75a6b99168e3a3763e1a22"
+        },
+        {
+          "path": "research/tests/test_graph.py",
+          "sha256": "sha256:6ffd204626360e13c00671da05280b616dc73be5b1474cafeec33edeca5965ab"
+        }
+      ],
+      "mapping_id": "PSPE_MAP_DAMPED_PROPAGATION",
+      "source_concept": "Layer 2 impact propagation with damping or absorption",
+      "validation_tests": [
+        "research/tests/test_graph.py"
+      ]
+    },
+    {
+      "adaptation_status": "bounded_discrete_time_subset",
+      "aiio_contract": "data/scenarios/alberta_50b_counterfactual_v0.2.json",
+      "aiio_implementation": "research/src/aiio/graph.py",
+      "artifacts": [
+        {
+          "path": "research/src/aiio/graph.py",
+          "sha256": "sha256:3d1dd5fd9a3de7c5a3f3b0dae4e23ecc3685d5ef894ef14c74555b505ed07d10"
+        },
+        {
+          "path": "data/scenarios/alberta_50b_counterfactual_v0.2.json",
+          "sha256": "sha256:12dcc5146212bc9b812f21bc81fa12313226b4fad665c8435be886a6baf15ca0"
+        },
+        {
+          "path": "research/tests/test_graph.py",
+          "sha256": "sha256:6ffd204626360e13c00671da05280b616dc73be5b1474cafeec33edeca5965ab"
+        }
+      ],
+      "mapping_id": "PSPE_MAP_TEMPORAL_PATHS",
+      "source_concept": "Temporal stocks, flows and propagation over time",
+      "validation_tests": [
+        "research/tests/test_graph.py"
+      ]
+    },
+    {
+      "adaptation_status": "scenario_sensitivity_adaptation",
+      "aiio_contract": "data/model/alberta_50b_scenario_suite_contract_v0.1.json",
+      "aiio_implementation": "research/src/aiio/scenario_suite.py",
+      "artifacts": [
+        {
+          "path": "research/src/aiio/scenario_suite.py",
+          "sha256": "sha256:8f2659b04ced3ae48f7da46b38e070f58281a90a7820c24418d009a225ce216c"
+        },
+        {
+          "path": "data/model/alberta_50b_scenario_suite_contract_v0.1.json",
+          "sha256": "sha256:d8774e658ce2b2a2a95cfda47290ff0c19bc88ae30dd56b7cb1076b575176388"
+        },
+        {
+          "path": "research/tests/test_scenario_suite.py",
+          "sha256": "sha256:e51cd668502abcbd63d0d361f9bb80736062a121521cfe878a38bb03beb57695"
+        }
+      ],
+      "mapping_id": "PSPE_MAP_S3_STRESS_TEST",
+      "source_concept": "S3 interpretation through scoping, scaffolding and sensing",
+      "validation_tests": [
+        "research/tests/test_scenario_suite.py"
+      ]
+    },
+    {
+      "adaptation_status": "independent_fail_closed_implementation",
+      "aiio_contract": "data/model-runs/alberta_bcpi_reference_baseline_v0.1.json",
+      "aiio_implementation": "research/src/aiio/calibration.py",
+      "artifacts": [
+        {
+          "path": "research/src/aiio/calibration.py",
+          "sha256": "sha256:e1f727c620c556ae40150824cab11afae49cd26cafe5e568d5438265185c413d"
+        },
+        {
+          "path": "data/model-runs/alberta_bcpi_reference_baseline_v0.1.json",
+          "sha256": "sha256:9909c2d10a6c67f9699d98cd16dead6e619635b3a16b535c389ae9efa518bd40"
+        },
+        {
+          "path": "research/tests/test_calibration.py",
+          "sha256": "sha256:4a692c14a2c17e7abb2ffaac883714ee07ef06fd2ab1dcebac24e87b5fa9af64"
+        },
+        {
+          "path": "research/tests/test_calibration_artifact.py",
+          "sha256": "sha256:6d9763e886b80e9c64ab560ea1f404e0ef85f9269bcab128eadaf8e5063310c2"
+        }
+      ],
+      "mapping_id": "PSPE_MAP_REFERENCE_CLASS",
+      "source_concept": "Layer 5 reference-class calibration",
+      "validation_tests": [
+        "research/tests/test_calibration.py",
+        "research/tests/test_calibration_artifact.py"
+      ]
+    }
+  ],
+  "model_id": "AIIO_PSPE_METHOD_LINEAGE_0_1",
+  "non_claims": [
+    "AIIO does not claim to reproduce or fork unavailable PSPE source code.",
+    "AIIO does not use conserved-mass origin ranking or centrality as a causal estimator.",
+    "AIIO does not claim the curriculum's Bayesian, ODE, curvature or probability layers are implemented.",
+    "AIIO graph scores remain dimensionless and are not project cost, schedule delay, probability or observed effect."
+  ],
+  "publication_boundary": {
+    "graph_score_monetization_authorized": false,
+    "implemented_layer_claim_limited_to_mappings": true,
+    "methodological_inheritance_claim_authorized": true,
+    "source_code_reproduction_claim_authorized": false,
+    "unimplemented_pspe_layers_claimed": false
+  },
+  "schema_version": "1.0.0",
+  "source_material_receipt": {
+    "byte_size": 29482,
+    "distribution_status": "local_only_not_redistributed",
+    "local_locator": "withheld-source/PSPE_Math_Curriculum.md",
+    "sha256": "sha256:f997ebaaab70d14c74f9595b82b804a3f647084db10f34c91d8e60cd944d57e4",
+    "title": "PSPE Math Curriculum \u2014 From High-School Maths to Building the Engine"
+  },
+  "source_repository_availability": {
+    "commit": "3e63c7aaca03ec96d148f77e55aea40f2b64e40d",
+    "commit_date": "2026-05-26T22:56:22-06:00",
+    "interpretation": "Hash receipts document the historical methodological source. The upstream implementation was unavailable for code-level comparison. Source materials are not bundled; no code equivalence or redistribution permission is claimed.",
+    "local_locator": "withheld-source/method-notes",
+    "method_artifacts": [
+      {
+        "byte_size": 3489,
+        "path": "README.md",
+        "sha256": "sha256:91c6d87aa9d08b2c46dc0786dc9b3c411a71e09ab1f5d724c4ca3bc0910fce0e"
+      },
+      {
+        "byte_size": 29482,
+        "path": "CURRICULUM.md",
+        "sha256": "sha256:f997ebaaab70d14c74f9595b82b804a3f647084db10f34c91d8e60cd944d57e4"
+      },
+      {
+        "byte_size": 12071,
+        "path": "notebooks/00_foundations.ipynb",
+        "sha256": "sha256:0ce3c96615162c8e3ccd3158d4137198a8d45b90bae249f03d42ff9dbe961d3e"
+      },
+      {
+        "byte_size": 532,
+        "path": "concepts/01-what-is-a-matrix.md",
+        "sha256": "sha256:87fa880dbcc27532c2ec8e3a130939b8f09df8658a836959b25f91a64a08d37c"
+      },
+      {
+        "byte_size": 793,
+        "path": "concepts/02-eigenvector-centrality.md",
+        "sha256": "sha256:bec601a8e16d4458e107a358223227f0632c0f77874d9d21b3be221dbef5df84"
+      }
+    ],
+    "repository_type": "git_backed_pspe_mathematics_learning_repository",
+    "searched_engine_filenames": [
+      "graph_schema.py",
+      "propagation.py",
+      "s3_metrics.py",
+      "sd_bridge.py"
+    ],
+    "status": "method_repository_located_engine_source_not_located",
+    "worktree_status_at_receipt": "clean"
+  }
+}

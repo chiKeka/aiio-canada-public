@@ -1,0 +1,34 @@
+{
+  "automatic_model_change": false,
+  "digest_id": "AIIO_DIGEST_2026_10_03",
+  "edition_date": "2026-10-03",
+  "editorial_approval": {
+    "candidate_items_sha256": "sha256:81b920237efd75a0fc1d6bf843e3627b5944d69227d20bb8d0689dbd0e156d74",
+    "independent_model_review_waived": false,
+    "receipt_sha256": "sha256:410894a42f0f9e16ff44a7013104eea114eecf9f1093acba2d7c0051d5327ab9",
+    "reviewed_at": "2026-10-04T01:38:13.271582+00:00",
+    "reviewer": "Codex internal editorial",
+    "reviewer_role": "internal_editorial",
+    "scope": "evidence_digest_only"
+  },
+  "item_count": 1,
+  "item_ids": [
+    "MUNICIPAL_DATA_CENTRE_PERMIT_REFRESH_2026_10_03"
+  ],
+  "items_sha256": "sha256:f9b4c0817792bad0e6da2c212ad901a0ed941c4ecd12064c7d91d569bb504bc4",
+  "markdown_sha256": "sha256:fe483fb4a5f592e114447481d699435896dca66879f6d8b78f2bdadb6a0f161b",
+  "publication_boundary": {
+    "baseline_changed": false,
+    "model_parameters_changed": false,
+    "release_required_for_promotion": true
+  },
+  "schema_version": "1.0.0",
+  "source_ids": [
+    "EDMONTON_GENERAL_BUILDING_PERMITS",
+    "MONTREAL_CONSTRUCTION_PERMITS",
+    "TORONTO_CLEARED_BUILDING_PERMITS",
+    "VANCOUVER_ISSUED_BUILDING_PERMITS"
+  ],
+  "source_registry_sha256": "sha256:4bea23fa75e7311e5a2b59f2c1b81432c3902f2e0cd72d55759c98ad6f03edcf",
+  "status": "approved"
+}

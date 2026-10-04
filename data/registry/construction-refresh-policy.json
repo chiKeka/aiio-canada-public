@@ -1,0 +1,13 @@
+{
+  "version": "construction-refresh-1",
+  "scheduler": "Existing weekly evidence refresh",
+  "sources": [
+    {"id":"ALBERTA_MAJOR_PROJECTS","label":"Alberta project inventory & capital overlap","publicationCadence":"Continuous inventory / monthly update feed","checkEveryDays":7,"mode":"structured_feed"},
+    {"id":"STATCAN_JVWS_14100444","label":"Trade vacancies","publicationCadence":"Quarterly","checkEveryDays":7,"mode":"structured_feed"},
+    {"id":"STATCAN_BCPI_18100289","label":"Construction component prices","publicationCadence":"Quarterly","checkEveryDays":7,"mode":"structured_feed"},
+    {"id":"STATCAN_CENSUS_OCCUPATION_98100449","label":"Census workforce stock","publicationCadence":"Five-year census cycle","checkEveryDays":365,"mode":"review_required"},
+    {"id":"BUILDFORCE","label":"Construction recruitment outlook","publicationCadence":"Annual outlook / revisions","checkEveryDays":30,"mode":"review_required"},
+    {"id":"AB_Q1","label":"Alberta capital plan","publicationCadence":"Budget and fiscal updates","checkEveryDays":30,"mode":"review_required"},
+    {"id":"SOURCEBLUE","label":"Equipment procurement ranges","publicationCadence":"Quarterly","checkEveryDays":30,"mode":"review_required"}
+  ]
+}

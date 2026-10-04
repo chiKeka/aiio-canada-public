@@ -1,0 +1,12 @@
+{
+  "source_id": "FOLLOWUP_AUC_RECENT_UPDATES",
+  "source_url": "https://www.auc.ab.ca/regulatory_documents/recent-updates/",
+  "effective_url": "https://www.auc.ab.ca/regulatory_documents/recent-updates/",
+  "retrieved_at": "2026-10-03T22:59:57.504149+00:00",
+  "content_hash": "sha256:9f1e9ecbac1546827ae4189eae26136b107a4ed3b0941f5abd1a6b9a39fd6682",
+  "byte_length": 226075,
+  "content_type": "text/html",
+  "result": "success",
+  "local_raw_file": "followup-auc-recent-updates.raw",
+  "redistribution": "receipt_only_pending_review"
+}

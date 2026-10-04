@@ -1,0 +1,10 @@
+{
+  "source_id": "public-followup-vfm-index",
+  "requested_url": "https://open.alberta.ca/publications/value-for-money-assessment-and-project-report-public-private-partnership-bundle-of-six-schools",
+  "retrieved_at": "2026-10-03T23:00:30.876452+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "result": "error",
+  "error_type": "TimeoutError",
+  "http_status": null
+}

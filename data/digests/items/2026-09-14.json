@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.1.0",
+  "digest_id": "AIIO_DIGEST_2026_09_14",
+  "edition_date": "2026-09-14",
+  "status": "review",
+  "review_scope": "Partial source review. Statistics Canada BCPI and vacancy table pages timed out; Ontario catalogue retrieval failed; BC catalogue returned no usable dataset content. Alberta inventory, Quebec dashboard and CanadaBuys landing pages were inspected but no record-level revisions were verified. No independent review ran.",
+  "items": [
+    {
+      "item_id": "AESO_EXPLANATORY_LINK_2026_09_14",
+      "headline": "AESO adds an explanatory link; contracted load figures remain unchanged",
+      "sources": [{"source_id": "AESO_LARGE_LOAD_PROJECTS", "source_url": "https://www.aeso.ca/grid/connecting-to-the-grid/large-load-projects/"}],
+      "geography_ids": ["PR_48"],
+      "evidence_status": "observed",
+      "observed_change": "Compared with the archived August 31 page, the September 14 retrieval adds a quick link titled AESO's Role in Data Centre Projects. The page continues to report 1,200 MW allocated, comprising GLDC Load at 970 MW and Keephills Data Centre Phase I at 230 MW. This is a page-content change, not new capacity or realized expenditure. The linked document has not been reviewed.",
+      "model_implication": "Review the explanatory document before considering a documentation update. Retain existing power quantities and acquisition gaps. Executed load contracts do not establish realized construction spending, labour hours, new transmission requirements or public-project delay.",
+      "model_action": "review_candidate",
+      "automatic_model_change": false,
+      "retrieval_evidence": {
+        "current_path": "data/raw/aeso_large_load_projects/2026-09-14_61d2eda646ac.html",
+        "current_sha256": "sha256:61d2eda646ac8551505b78ac1c8981cff48f16d52bc278dddc6057b24afa7809",
+        "previous_path": "data/raw/aeso_large_load_projects/2026-08-31_43d55ccde558.html",
+        "locator": "Quick links and Phase 1: Large Load Integration"
+      }
+    }
+  ]
+}

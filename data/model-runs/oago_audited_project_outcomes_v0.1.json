@@ -1,0 +1,310 @@
+{
+  "cases": [
+    {
+      "actual_completion_precision": "day",
+      "actual_start_date": "2020-12",
+      "actual_substantial_completion_date": "2022-02-23",
+      "approved_change_history_complete": false,
+      "asset_class": "long_term_care_home",
+      "authorizing_field_status": {
+        "complete_approved_change_history": false,
+        "complete_baseline_and_actual_schedule_dates": false,
+        "consistent_asset_reference_class": false,
+        "independent_estimate_with_price_basis": false,
+        "stable_publisher_project_id": false
+      },
+      "baseline_completion_precision": "month",
+      "baseline_cost_approval_date": "2020-10",
+      "baseline_cost_cad": 179600000.0,
+      "baseline_cost_scope_id": "total_project_cost_including_parking_and_ancillary",
+      "baseline_price_basis_date": null,
+      "baseline_start_date": null,
+      "baseline_substantial_completion_date": "2021-12",
+      "cost_component_count": 10,
+      "cost_component_scope_id": "construction_manager_payment_including_parking",
+      "cost_component_total_cad": 198500000.0,
+      "cost_components": [
+        {
+          "graph_channel": "general_construction",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Construction",
+          "source_evidence_status": "observed",
+          "value_cad": 39200000.0
+        },
+        {
+          "graph_channel": "mechanical_and_electrical",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Mechanical and electrical",
+          "source_evidence_status": "observed",
+          "value_cad": 37700000.0
+        },
+        {
+          "graph_channel": "construction_materials",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Construction materials",
+          "source_evidence_status": "observed",
+          "value_cad": 34900000.0
+        },
+        {
+          "graph_channel": "civil_and_structural",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Parking garage",
+          "source_evidence_status": "observed",
+          "value_cad": 31400000.0
+        },
+        {
+          "graph_channel": "site_and_temporary_works",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Other costs",
+          "source_evidence_status": "observed",
+          "value_cad": 16100000.0
+        },
+        {
+          "graph_channel": "project_labour_and_management",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Project staff",
+          "source_evidence_status": "observed",
+          "value_cad": 12300000.0
+        },
+        {
+          "graph_channel": "professional_and_contractor_services",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Services and fee on cost of work",
+          "source_evidence_status": "observed",
+          "value_cad": 10800000.0
+        },
+        {
+          "graph_channel": "design_services",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Design",
+          "source_evidence_status": "observed",
+          "value_cad": 9100000.0
+        },
+        {
+          "graph_channel": "change_and_claims",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Change directives",
+          "source_evidence_status": "observed",
+          "value_cad": 3600000.0
+        },
+        {
+          "graph_channel": "equipment_and_fitout",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Furniture, fixtures, equipment",
+          "source_evidence_status": "observed",
+          "value_cad": 3400000.0
+        }
+      ],
+      "cost_outcome_panel_authorized": false,
+      "cost_variance_cad": 49400000.0,
+      "cost_variance_percent": 27.505567928730514,
+      "delivery_model": "modified_construction_management_at_risk",
+      "final_completion_date": "2023-08",
+      "geography_id": "PR_35",
+      "known_change_count": 1,
+      "latest_or_final_cost_as_of_date": "2023-08",
+      "latest_or_final_cost_cad": 229000000.0,
+      "latest_or_final_cost_status": "completed_total_project_cost",
+      "municipality": "Ajax",
+      "outcome_case_id": "ON_OAGO_LAKERIDGE_GARDENS_LTC_2024",
+      "project_name": "Lakeridge Gardens Long-Term Care Home",
+      "project_reference_id": "ON_LAKERIDGE_GARDENS_LTC",
+      "project_reference_id_status": "aiio_generated_named_project_reference_not_publisher_identifier",
+      "province": "Ontario",
+      "quality_flags": [
+        "price_basis_date_missing",
+        "approved_change_history_incomplete",
+        "generated_project_reference_id",
+        "mixed_schedule_date_precision",
+        "single_named_reference_case_not_panel"
+      ],
+      "reference_case_publication_authorized": false,
+      "schedule_delay_days": null,
+      "schedule_outcome_panel_authorized": false,
+      "source_id": "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024",
+      "source_locators": {
+        "baseline_cost": "Appendix 4, report page 74 (PDF page 77), October 2020 Stage 2 approval",
+        "latest_or_final_cost": "Section 4.3, report page 35 (PDF page 38); completion timing cross-checked to Appendix 4"
+      },
+      "source_reported_cost_variance_percent": 27.0,
+      "source_reported_schedule_delay": "one month later than the 14-month target"
+    },
+    {
+      "actual_completion_precision": "day",
+      "actual_start_date": "2018-02",
+      "actual_substantial_completion_date": "2021-09-09",
+      "approved_change_history_complete": false,
+      "asset_class": "road_and_highway",
+      "authorizing_field_status": {
+        "complete_approved_change_history": false,
+        "complete_baseline_and_actual_schedule_dates": false,
+        "consistent_asset_reference_class": false,
+        "independent_estimate_with_price_basis": false,
+        "stable_publisher_project_id": false
+      },
+      "baseline_completion_precision": "day",
+      "baseline_cost_approval_date": "2017-03",
+      "baseline_cost_cad": 660000000.0,
+      "baseline_cost_scope_id": "audit_report_project_cost_comparator",
+      "baseline_price_basis_date": null,
+      "baseline_start_date": null,
+      "baseline_substantial_completion_date": "2020-09-30",
+      "cost_component_count": 11,
+      "cost_component_scope_id": "audit_report_estimated_total_project_cost",
+      "cost_component_total_cad": 757800000.0,
+      "cost_components": [
+        {
+          "graph_channel": "civil_and_structural",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Bridges and structure",
+          "source_evidence_status": "observed",
+          "value_cad": 86500000.0
+        },
+        {
+          "graph_channel": "road_electrical_and_accessories",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Road accessories",
+          "source_evidence_status": "observed",
+          "value_cad": 61800000.0
+        },
+        {
+          "graph_channel": "civil_and_underground",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Road subsurface",
+          "source_evidence_status": "observed",
+          "value_cad": 45000000.0
+        },
+        {
+          "graph_channel": "general_construction",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Other construction costs",
+          "source_evidence_status": "observed",
+          "value_cad": 36000000.0
+        },
+        {
+          "graph_channel": "design_services",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Design",
+          "source_evidence_status": "observed",
+          "value_cad": 29400000.0
+        },
+        {
+          "graph_channel": "land_and_site",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Land and land improvements",
+          "source_evidence_status": "observed",
+          "value_cad": 28900000.0
+        },
+        {
+          "graph_channel": "construction_materials",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Pavement",
+          "source_evidence_status": "observed",
+          "value_cad": 27400000.0
+        },
+        {
+          "graph_channel": "financing_and_transaction",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Construction financing and transaction costs",
+          "source_evidence_status": "observed",
+          "value_cad": 47700000.0
+        },
+        {
+          "graph_channel": "operations_maintenance_and_financing",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Maintenance and associated financing",
+          "source_evidence_status": "observed",
+          "value_cad": 253600000.0
+        },
+        {
+          "graph_channel": "change_and_claims",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Change orders and additional costs",
+          "source_evidence_status": "observed",
+          "value_cad": 24800000.0
+        },
+        {
+          "graph_channel": "dispute_and_claims",
+          "graph_channel_evidence_status": "inferred",
+          "source_category": "Arbitration award",
+          "source_evidence_status": "observed",
+          "value_cad": 116700000.0
+        }
+      ],
+      "cost_outcome_panel_authorized": false,
+      "cost_variance_cad": 97800000.0,
+      "cost_variance_percent": 14.81818181818182,
+      "delivery_model": "design_build_finance_maintain",
+      "final_completion_date": "2022-06",
+      "geography_id": "PR_35",
+      "known_change_count": 1,
+      "latest_or_final_cost_as_of_date": "2024-10-31",
+      "latest_or_final_cost_cad": 757800000.0,
+      "latest_or_final_cost_status": "estimated_under_dispute_not_final",
+      "municipality": "Toronto-to-Vaughan corridor",
+      "outcome_case_id": "ON_OAGO_HIGHWAY_427_EXPANSION_2024",
+      "project_name": "Highway 427 Expansion",
+      "project_reference_id": "ON_HIGHWAY_427_EXPANSION",
+      "project_reference_id_status": "aiio_generated_named_project_reference_not_publisher_identifier",
+      "province": "Ontario",
+      "quality_flags": [
+        "price_basis_date_missing",
+        "latest_cost_estimated_under_dispute",
+        "approved_change_history_incomplete",
+        "generated_project_reference_id",
+        "baseline_start_date_missing",
+        "single_named_reference_case_not_panel"
+      ],
+      "reference_case_publication_authorized": false,
+      "schedule_delay_days": 344,
+      "schedule_outcome_panel_authorized": false,
+      "source_id": "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024",
+      "source_locators": {
+        "baseline_cost": "Section 4.4, report page 45 (PDF page 48): $616M fixed-price contract plus $44M contingency",
+        "latest_or_final_cost": "Figure 15, report page 46 (PDF page 49); dispute boundary on report page 45"
+      },
+      "source_reported_cost_variance_percent": 15.0,
+      "source_reported_schedule_delay": "one year later than planned"
+    }
+  ],
+  "coverage_summary": {
+    "complete_change_history_case_count": 0,
+    "completed_total_cost_case_count": 1,
+    "exact_day_substantial_completion_pair_count": 1,
+    "named_completed_project_count": 2,
+    "price_basis_date_case_count": 0,
+    "publisher_stable_project_id_case_count": 0
+  },
+  "evidence_status": "observed_named_cases_with_inferred_reconciliations",
+  "extract_id": "OAGO_SELECTED_INFRASTRUCTURE_OUTCOMES_2024_0_1",
+  "limitations": [
+    "The two cases are named audited references, not a reusable multi-region or quarterly outcome panel.",
+    "Neither case publishes an estimate price-basis date or complete approved-change history.",
+    "Lakeridge Gardens has mixed month/day completion precision, so no calendar-day delay is calculated.",
+    "Highway 427 cost was estimated, disputed and not finalized at the audit date.",
+    "No AI-attributable effect can be inferred from these project histories."
+  ],
+  "model_id": "AIIO_OAGO_AUDITED_PROJECT_OUTCOME_REFERENCES_0_1",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "public_project_cost_outcome_authorized": false,
+    "public_project_schedule_outcome_authorized": false,
+    "reason": "Two audited named-project reference cases improve field and scope discovery, but do not supply a reusable multi-region outcome panel, price-basis reconciliation, complete approved-change histories or realized AI-construction treatment.",
+    "reference_case_publication_authorized": false
+  },
+  "review": {
+    "review_record": "Rendered and visually inspected report pages 35-37, 45-46, 74 and 77; machine text anchors are rechecked during normalization.",
+    "reviewed_at": "2026-09-01",
+    "reviewed_by": "Codex primary-source audit",
+    "reviewer_type": "primary_model_visual_and_text_review",
+    "status": "primary_visual_review_complete_pending_independent_review"
+  },
+  "schema_version": "1.0.0",
+  "source_as_of_date": "2024-10-31",
+  "source_file": {
+    "archive_file": "2026-09-01_88cdf8a0966d.pdf",
+    "content_hash": "sha256:88cdf8a0966dff31f5c186ec786a0d276088b8b78243d8bf1fb6aba01d42aa1d",
+    "verified_anchor_count": 6
+  },
+  "source_id": "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024"
+}

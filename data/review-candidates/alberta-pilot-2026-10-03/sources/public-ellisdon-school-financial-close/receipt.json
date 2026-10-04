@@ -1,0 +1,15 @@
+{
+  "source_id": "public-ellisdon-school-financial-close",
+  "requested_url": "https://www.ellisdon.com/news/ellisdon-achieves-financial-close-on-alberta-s-p3-schools-bundle-5-project",
+  "retrieved_at": "2026-10-03T21:30:36.129701+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://www.ellisdon.com/news/ellisdon-achieves-financial-close-on-alberta-s-p3-schools-bundle-5-project",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 311572,
+  "sha256": "a05deb4962f8246e9c17f70e30ebef6490b58389de315f73419386768dc45d50",
+  "archive_path": "sources/public-ellisdon-school-financial-close/page.html",
+  "content_verification": "relevant_source_content_verified"
+}

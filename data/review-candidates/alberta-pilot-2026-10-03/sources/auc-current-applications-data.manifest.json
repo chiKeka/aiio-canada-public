@@ -1,0 +1,8 @@
+{
+  "source_url": "https://www.auc.ab.ca/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=6266&target_action=get-all-data&default_sorting=old_first&skip_rows=0&limit_rows=0&ninja_table_public_nonce=6e47e3ce59",
+  "retrieved_at": "2026-10-03T21:30:55.841131+00:00",
+  "content_hash": "sha256:5507698d2f30d049f8aeef381c2ecf59f81c7b26196a1fc131960bc20cbbdd2b",
+  "byte_length": 30190,
+  "result": "success",
+  "redistribution": "receipt_only_pending_review"
+}

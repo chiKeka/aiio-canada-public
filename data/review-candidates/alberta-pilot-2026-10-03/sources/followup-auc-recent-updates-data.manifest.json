@@ -1,0 +1,10 @@
+{
+  "source_id": "FOLLOWUP_AUC_RECENT_UPDATES_DATA",
+  "source_url": "https://www.auc.ab.ca/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=6253&target_action=get-all-data&default_sorting=old_first&skip_rows=0&limit_rows=0&ninja_table_public_nonce=6e47e3ce59",
+  "retrieved_at": "2026-10-03T23:00:38.773772+00:00",
+  "content_hash": "sha256:5d2177a0a778eef79967f490aca5e3e1907d731647f2700f7ff2e413412f537f",
+  "byte_length": 360422,
+  "result": "success",
+  "redistribution": "receipt_only_pending_review",
+  "local_raw_file": "followup-auc-recent-updates-data.raw"
+}

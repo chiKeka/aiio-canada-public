@@ -1,0 +1,2 @@
+{"source_id": "STATCAN_JVWS_14100444", "attempt": 1, "retrying": true, "registered_retrieval_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/14100444-eng.zip", "error_type": "URLError", "transport_reason_class": "ConnectionResetError", "transport_errno": 54}
+{"source_id": "STATCAN_BCPI_18100289", "attempt": 1, "retrying": true, "registered_retrieval_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/18100289-eng.zip", "error_type": "URLError", "transport_reason_class": "TimeoutError"}

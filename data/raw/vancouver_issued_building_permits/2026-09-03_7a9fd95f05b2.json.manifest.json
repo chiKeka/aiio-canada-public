@@ -1,0 +1,28 @@
+{
+  "archive_path": "data/raw/vancouver_issued_building_permits/2026-09-03_7a9fd95f05b2.json",
+  "byte_length": 66559,
+  "content_hash": "sha256:7a9fd95f05b2f757b139d60b1d7eb81cac25ca420c9059e2028f92a1973a7a5b",
+  "content_type": "application/json",
+  "dataset_id": "issued-building-permits",
+  "effective_url": "https://opendata.vancouver.ca/api/explore/v2.1/catalog/datasets/issued-building-permits/records?select=permitnumber%2Cpermitnumbercreateddate%2Cissuedate%2Cpermitelapseddays%2Cprojectvalue%2Ctypeofwork%2Cprojectdescription%2Cpropertyuse%2Cspecificusecategory%2Cissueyear%2Cyearmonth&where=search%28projectdescription%2C+%22data+centre%22%29+OR+search%28projectdescription%2C+%22data+center%22%29+OR+specificusecategory+%3D+%22Bulk+Data+Storage%22&order_by=issuedate%2Cpermitnumber&limit=100",
+  "excluded_fields": [
+    "address",
+    "applicant",
+    "applicantaddress",
+    "buildingcontractor",
+    "buildingcontractoraddress",
+    "geom",
+    "geo_point_2d"
+  ],
+  "query_parameters": {
+    "limit": "100",
+    "order_by": "issuedate,permitnumber",
+    "select": "permitnumber,permitnumbercreateddate,issuedate,permitelapseddays,projectvalue,typeofwork,projectdescription,propertyuse,specificusecategory,issueyear,yearmonth",
+    "where": "search(projectdescription, \"data centre\") OR search(projectdescription, \"data center\") OR specificusecategory = \"Bulk Data Storage\""
+  },
+  "result": "success",
+  "retrieval_id": "RET_VANCOUVER_ISSUED_BUILDING_PERMITS_7a9fd95f05b2f757",
+  "retrieved_at": "2026-09-03T01:30:53+00:00",
+  "row_count": 55,
+  "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS"
+}

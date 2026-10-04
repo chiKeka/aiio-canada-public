@@ -1,0 +1,15 @@
+{
+  "source_id": "public-followup-p3-overview",
+  "requested_url": "https://www.alberta.ca/public-private-partnerships",
+  "retrieved_at": "2026-10-03T22:59:30.517748+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://www.alberta.ca/public-private-partnerships",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 55729,
+  "sha256": "39eea9dd536b5387db377f8c5181c6a574dfb061b7e58550512afddb5947e1f3",
+  "archive_path": "sources/public-followup-p3-overview/page.html",
+  "content_verification": "relevant_source_content_verified"
+}

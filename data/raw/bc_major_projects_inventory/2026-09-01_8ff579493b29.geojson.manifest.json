@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_BC_MAJOR_PROJECTS_INVENTORY_8ff579493b294001",
+  "source_id": "BC_MAJOR_PROJECTS_INVENTORY",
+  "retrieved_at": "2026-09-01T02:29:54+00:00",
+  "effective_url": "https://delivery.maps.gov.bc.ca/arcgis/rest/services/whse/bcgw_pub_whse_human_cultural_economic/MapServer/13/query?where=1%3D1&outFields=%2A&returnGeometry=true&f=geojson",
+  "content_hash": "sha256:8ff579493b29400183e5664a3fad55e8eb40792549f2722efdf91d7b05fb4f5e",
+  "content_type": "application/geo+json",
+  "byte_length": 1007911,
+  "archive_path": "data/raw/bc_major_projects_inventory/2026-09-01_8ff579493b29.geojson",
+  "result": "success"
+}

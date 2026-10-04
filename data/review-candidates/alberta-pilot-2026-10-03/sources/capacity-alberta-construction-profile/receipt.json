@@ -1,0 +1,23 @@
+{
+  "source_id": "capacity-alberta-construction-profile",
+  "requested_url": "https://www.jobbank.gc.ca/trend-analysis/job-market-reports/alberta/sectoral-profile-construction",
+  "retrieved_at": "2026-10-03T23:01:00.608525+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "raw_redistribution": "pending_review",
+  "effective_url": "https://www.jobbank.gc.ca/trend-analysis/job-market-reports/alberta/sectoral-profile-construction",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "result": "success",
+  "byte_length": 63903,
+  "sha256": "3bf9b61ee3a6dc52150d4baf1bbafb2aa8bce68ac14900f3d84d234bc5944194",
+  "archive_path": "sources/capacity-alberta-construction-profile/page.html",
+  "content_verification": {
+    "expected_terms_present": {
+      "94.6": true,
+      "2024": true,
+      "246,500": true
+    },
+    "status": "relevant_source_content_verified"
+  }
+}

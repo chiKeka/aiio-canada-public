@@ -1,0 +1,53 @@
+{
+  "artifacts": [
+    {
+      "path": "public/data/latest.json",
+      "sha256": "7e2a3079f8003448aeb34d03c81dc42daef256819cf0dfbee7ed77b827272b9f"
+    },
+    {
+      "path": "public/data/manifest.json",
+      "sha256": "82c3a116d18ad0eb07041b99355cc32e687e2b47991b159252effa3ab29bfe01"
+    },
+    {
+      "path": "public/downloads/AIIO_Alberta_Pilot_0.6.0-dev.xlsx",
+      "sha256": "e298c3787e53c06b0624cff70433a735e403f45bd257be87d9fc33e74fb1b747"
+    },
+    {
+      "path": "public/downloads/alberta_ai_projects.csv",
+      "sha256": "46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199"
+    },
+    {
+      "path": "public/downloads/bcpi_alberta.csv",
+      "sha256": "4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1"
+    },
+    {
+      "path": "public/downloads/labour_availability_alberta.csv",
+      "sha256": "9454b563aafd4f2919fb996ba84950c55e4e635f1b67ef8b1bcf80f741ac5c24"
+    },
+    {
+      "path": "public/downloads/labour_availability_canada.csv",
+      "sha256": "47652b4a8b2dd9ab6eb77b1b16a44b5bbc62a018dd33272fdbefda710ea56f79"
+    },
+    {
+      "path": "public/downloads/labour_workforce_stock_canada.csv",
+      "sha256": "ddaeab6d7eff569738d3e3dac3576dbdd57890f0e0a06d3cc1c98bb202557a89"
+    },
+    {
+      "path": "public/downloads/bcpi_material_cost_screen_alberta.csv",
+      "sha256": "383210a67f771f3c0e63f1e415dc07601c7a6326382ec54736ce5eedf2bfbbaf"
+    },
+    {
+      "path": "public/downloads/public_project_exposure_alberta.csv",
+      "sha256": "748550be78361f31562bd64f494f3f9ff51be398c5877ae65e1404434d8f707d"
+    },
+    {
+      "path": "public/downloads/power_evidence_alberta.csv",
+      "sha256": "198317e01894f9ffba558067c58d7777cda7a4c80e9bcf5c8cee5c5ce5b7917d"
+    }
+  ],
+  "code_commit": "7ed419b95772334fc25724eeabc4fa60e7363528",
+  "input_manifest_hash": "sha256:21559b99b94ed85ace15546adb4f31223b87ab825859da326233e58c5e27085f",
+  "release_id": "AIIO_RELEASE_0_6_0_DEV",
+  "release_version": "0.6.0-dev",
+  "schema_version": "1.2.0"
+}

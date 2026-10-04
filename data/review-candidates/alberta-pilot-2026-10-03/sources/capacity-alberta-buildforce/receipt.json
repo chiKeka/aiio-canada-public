@@ -1,0 +1,23 @@
+{
+  "source_id": "capacity-alberta-buildforce",
+  "requested_url": "https://www.buildforce.ca/en/press-release/construction-activity-rises-in-alberta-to-2035-as-non-residential-growth-offsets-moderating-residential-demands/",
+  "retrieved_at": "2026-10-03T23:00:59.867964+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "raw_redistribution": "pending_review",
+  "effective_url": "https://www.buildforce.ca/en/press-release/construction-activity-rises-in-alberta-to-2035-as-non-residential-growth-offsets-moderating-residential-demands/",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "result": "success",
+  "byte_length": 89786,
+  "sha256": "063f8201566ce98e5af89a82f0e6c59ddafa4491890a2a9a9177d351ed9bb67d",
+  "archive_path": "sources/capacity-alberta-buildforce/page.html",
+  "content_verification": {
+    "expected_terms_present": {
+      "196,700": true,
+      "5,300": true,
+      "2035": true
+    },
+    "status": "relevant_source_content_verified"
+  }
+}

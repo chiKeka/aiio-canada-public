@@ -1,0 +1,10 @@
+{
+  "source_id": "public-followup-agreement",
+  "requested_url": "https://open.alberta.ca/dataset/0523e484-16d3-403d-9db2-c2092fb536dc/resource/4c79a5db-419a-456a-9bba-b6db6e2c5c6a/download/infra-agreement-dbfm-six-new-schools-2025.pdf",
+  "retrieved_at": "2026-10-03T22:59:30.723671+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "result": "error",
+  "error_type": "TimeoutError",
+  "http_status": null
+}

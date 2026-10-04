@@ -1,0 +1,20 @@
+{
+  "schema_version": "AIIO_SNAPSHOT_CATALOG_1.0",
+  "snapshots": [
+    {
+      "path": "data/vintages/snapshots/AB_PROJECTS_CAPTURE_20260831.json",
+      "sha256": "sha256:0cbc2a7802135455b40ef6b4f54dbe13206a7d3ef09e52bd88cbefd1a399ac4c",
+      "snapshot_id": "AB_PROJECTS_CAPTURE_20260831"
+    },
+    {
+      "path": "data/vintages/snapshots/BCPI_CAPTURE_20260831.json",
+      "sha256": "sha256:5856f368ffe03107b0acf330af1f029b9626849186a350333cf9f8a889823e53",
+      "snapshot_id": "BCPI_CAPTURE_20260831"
+    },
+    {
+      "path": "data/vintages/snapshots/EDM_PERMITS_CAPTURE_20260901.json",
+      "sha256": "sha256:774c9c0b380d453fb49695dc24de357d46ca486acbeab5aced099a6f3e26bee8",
+      "snapshot_id": "EDM_PERMITS_CAPTURE_20260901"
+    }
+  ]
+}

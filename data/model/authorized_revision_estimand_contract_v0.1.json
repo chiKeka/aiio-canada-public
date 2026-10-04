@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "contract_id": "AIIO_AUTHORIZED_REVISION_ESTIMAND_0_1",
+  "question": "Does realized or reconstructed data-centre construction exposure change the quarterly rate of publisher-authorized cost or completion-plan revisions for comparable public projects?",
+  "treatment": {
+    "preferred": "quarterly realized data-centre construction spend or labour hours",
+    "interim": "reconstructed quarterly construction-activity proxy",
+    "interim_status": "non_authorizing_proxy"
+  },
+  "outcomes": [
+    "authorized_cost_change_cad_or_percent_after_price_basis_reconciliation",
+    "authorized_completion_plan_change_months"
+  ],
+  "minimum_design": {
+    "treated_regions": 2,
+    "control_regions_per_cohort": 3,
+    "asset_classes": 2,
+    "pre_treatment_quarters": 8,
+    "post_treatment_quarters": 4
+  },
+  "estimator": "staggered_group_time_average_treatment_effect",
+  "prohibited_claims": [
+    "final cost outturn",
+    "actual schedule delay",
+    "AI-attributable effect from proxy treatment without independent authorization"
+  ],
+  "publication_status": "preregistered_not_authorized"
+}

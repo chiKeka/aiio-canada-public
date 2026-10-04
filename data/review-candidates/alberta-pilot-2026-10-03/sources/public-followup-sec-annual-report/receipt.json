@@ -1,0 +1,14 @@
+{
+  "source_id": "public-followup-sec-annual-report",
+  "requested_url": "https://www.sec.gov/Archives/edgar/data/810961/000119312525155469/d52186dex991.htm",
+  "retrieved_at": "2026-10-03T23:01:00.962946+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "result": "error",
+  "error_type": "HTTPError",
+  "http_status": 403,
+  "web_extract_path": "sources/public-followup-sec-annual-report/web-extract.json",
+  "web_extract_sha256": "7ed81834122165679645cd57cc02cf254198013cfdd23ca6e05da66ffa1ea4ea",
+  "full_raw_result": "error",
+  "content_verification": "issuer_primary_web_extract_only"
+}

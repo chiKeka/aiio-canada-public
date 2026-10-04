@@ -1,0 +1,45 @@
+{
+  "assumptions": {
+    "permit_estimate_realization_share": {
+      "central": 0.6,
+      "high": 0.85,
+      "low": 0.35
+    },
+    "project_reported_cost_realization_share": {
+      "central": 0.65,
+      "high": 0.8,
+      "low": 0.45
+    },
+    "project_timing_profile": "normalized symmetric construction S-curve over reported start/end years"
+  },
+  "costed_project_count": 1,
+  "geography_count": 2,
+  "input_manifest": {
+    "data/model-runs/alberta_ai_capex_announcement_ledger_v0.1.json": "sha256:88862880dda6b03809699b39eeb956184d1170632c473ce99da593f846474170",
+    "data/model-runs/edmonton_data_centre_permit_proxy_v0.1.json": "sha256:cdd6b47f7c7054088018b1db828f47595e24e07a007b070bfb0b0deb0a86ae76",
+    "data/processed/alberta_ai_projects.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "data/processed/edmonton_data_centre_permit_proxy.csv": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2"
+  },
+  "limitations": [
+    "Reported project cost is allocated through an assumed schedule profile and is not observed expenditure.",
+    "Permit value is an estimate of permitted work, not realized spend, and explicit data-centre text does not establish AI use.",
+    "Permit and major-project records are not project-linked; their components remain separately reported to expose possible overlap.",
+    "Under-construction projects without both cost and schedule remain activity counts and receive no imputed dollar dose."
+  ],
+  "model_id": "AIIO_E2_RECONSTRUCTED_AI_CONSTRUCTION_PROXY_0_1",
+  "output_path": "data/processed/ai_construction_proxy_alberta_v0.1.csv",
+  "output_sha256": "sha256:774eb46d94af9356a776c6a6ef9f979b777a72b84336c61d18a2307bac77f0ef",
+  "permit_candidate_count": 6,
+  "publication_boundary": {
+    "association_analysis_authorized": true,
+    "causal_effect_authorized": false,
+    "proxy_exposure_authorized": true,
+    "realized_treatment_authorized": false,
+    "reason": "The reconstruction supports transparent proxy and sensitivity analysis only."
+  },
+  "quarter_count": 38,
+  "row_count": 76,
+  "schema_version": "1.0.0",
+  "status": "reconstructed_proxy_only",
+  "uncosted_under_construction_project_count": 2
+}

@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035_a65541e3a9ad9026",
+  "source_id": "STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035",
+  "retrieved_at": "2026-09-01T07:28:29+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/34100035-eng.zip",
+  "content_hash": "sha256:a65541e3a9ad9026f90e9ff302157babff7e5845bb0c4c1d026d8e94c7b72120",
+  "content_type": "application/zip",
+  "byte_length": 1087768,
+  "archive_path": "data/raw/statcan_capex_industry_geography_34100035/2026-09-01_a65541e3a9ad.zip",
+  "result": "success"
+}

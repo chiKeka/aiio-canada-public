@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_IBC_34100293_08b6ce635560ed16",
+  "source_id": "STATCAN_IBC_34100293",
+  "retrieved_at": "2026-09-01T03:34:09+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/34100293-eng.zip",
+  "content_hash": "sha256:08b6ce635560ed1686194ffb057457ec8ffad2a8606abe51d3278cb74a64b6a4",
+  "content_type": "application/zip",
+  "byte_length": 56261936,
+  "archive_path": "data/raw/statcan_ibc_34100293/2026-09-01_08b6ce635560.zip",
+  "result": "success"
+}

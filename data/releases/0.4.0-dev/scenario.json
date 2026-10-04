@@ -1,0 +1,699 @@
+{
+  "annual_flows": [
+    {
+      "excluded_from_graph_capex_cad": 1080000000,
+      "local_civil_cad": 244800000,
+      "local_electrical_mechanical_cad": 302400000,
+      "local_grid_construction_cad": 115200000,
+      "total_capex_cad": 2000000000,
+      "year": 2027
+    },
+    {
+      "excluded_from_graph_capex_cad": 1890000000,
+      "local_civil_cad": 428400000,
+      "local_electrical_mechanical_cad": 529200000,
+      "local_grid_construction_cad": 201600000,
+      "total_capex_cad": 3500000000,
+      "year": 2028
+    },
+    {
+      "excluded_from_graph_capex_cad": 2700000000,
+      "local_civil_cad": 612000000,
+      "local_electrical_mechanical_cad": 756000000,
+      "local_grid_construction_cad": 288000000,
+      "total_capex_cad": 5000000000,
+      "year": 2029
+    },
+    {
+      "excluded_from_graph_capex_cad": 3240000000,
+      "local_civil_cad": 734400000,
+      "local_electrical_mechanical_cad": 907200000,
+      "local_grid_construction_cad": 345600000,
+      "total_capex_cad": 6000000000,
+      "year": 2030
+    },
+    {
+      "excluded_from_graph_capex_cad": 3780000000,
+      "local_civil_cad": 856800000,
+      "local_electrical_mechanical_cad": 1058400000,
+      "local_grid_construction_cad": 403200000,
+      "total_capex_cad": 7000000000,
+      "year": 2031
+    },
+    {
+      "excluded_from_graph_capex_cad": 3780000000,
+      "local_civil_cad": 856800000,
+      "local_electrical_mechanical_cad": 1058400000,
+      "local_grid_construction_cad": 403200000,
+      "total_capex_cad": 7000000000,
+      "year": 2032
+    },
+    {
+      "excluded_from_graph_capex_cad": 3510000000,
+      "local_civil_cad": 795600000,
+      "local_electrical_mechanical_cad": 982800000,
+      "local_grid_construction_cad": 374400000,
+      "total_capex_cad": 6500000000,
+      "year": 2033
+    },
+    {
+      "excluded_from_graph_capex_cad": 2970000000,
+      "local_civil_cad": 673200000,
+      "local_electrical_mechanical_cad": 831600000,
+      "local_grid_construction_cad": 316800000,
+      "total_capex_cad": 5500000000,
+      "year": 2034
+    },
+    {
+      "excluded_from_graph_capex_cad": 2430000000,
+      "local_civil_cad": 550800000,
+      "local_electrical_mechanical_cad": 680400000,
+      "local_grid_construction_cad": 259200000,
+      "total_capex_cad": 4500000000,
+      "year": 2035
+    },
+    {
+      "excluded_from_graph_capex_cad": 1620000000,
+      "local_civil_cad": 367200000,
+      "local_electrical_mechanical_cad": 453600000,
+      "local_grid_construction_cad": 172800000,
+      "total_capex_cad": 3000000000,
+      "year": 2036
+    }
+  ],
+  "case_note": "Low, central and high are co-moving structural weight-and-retention cases. They are not confidence bounds or a probability distribution.",
+  "description": "A counterfactual structural test of how a ten-year AI infrastructure capital program could propagate through selected Alberta construction resources and public-delivery pressures. It is not a forecast or an aggregation of announced projects.",
+  "diagnostic_scale": {
+    "display_score_range": "[0, 1)",
+    "display_transform": "raw_pressure / (1 + raw_pressure)",
+    "interpretation": "Monotone bounded display score only; not a probability, percentage, effect size or delay estimate."
+  },
+  "dominant_outcome_paths": [
+    {
+      "calendar_year": 2033,
+      "contribution": 0.0853,
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "period": 6,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2031:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2034,
+      "contribution": 0.0853,
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "period": 7,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2032:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2035,
+      "contribution": 0.0793,
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "period": 8,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2033:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2032,
+      "contribution": 0.0732,
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "period": 5,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2030:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2033,
+      "contribution": 0.0728,
+      "edge_path": [
+        "E001",
+        "E016"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+      ],
+      "period": 6,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2031:electrical_mechanical",
+      "target_node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2034,
+      "contribution": 0.0728,
+      "edge_path": [
+        "E001",
+        "E016"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+      ],
+      "period": 7,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2032:electrical_mechanical",
+      "target_node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2035,
+      "contribution": 0.0676,
+      "edge_path": [
+        "E001",
+        "E016"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+      ],
+      "period": 8,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2033:electrical_mechanical",
+      "target_node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2033,
+      "contribution": 0.0676,
+      "edge_path": [
+        "E001",
+        "E017"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_GOVERNMENT_DELAY_PRESSURE"
+      ],
+      "period": 6,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2031:electrical_mechanical",
+      "target_node_id": "SCHEDULE_GOVERNMENT_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2034,
+      "contribution": 0.0676,
+      "edge_path": [
+        "E001",
+        "E017"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_GOVERNMENT_DELAY_PRESSURE"
+      ],
+      "period": 7,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2032:electrical_mechanical",
+      "target_node_id": "SCHEDULE_GOVERNMENT_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2036,
+      "contribution": 0.0671,
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "period": 9,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2034:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2033,
+      "contribution": 0.0664,
+      "edge_path": [
+        "E007",
+        "E021"
+      ],
+      "node_path": [
+        "AI_GRID_CONSTRUCTION_DEMAND",
+        "TRADE_POWERLINE",
+        "SCHEDULE_UTILITIES_DELAY_PRESSURE"
+      ],
+      "period": 6,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2031:grid_construction",
+      "target_node_id": "SCHEDULE_UTILITIES_DELAY_PRESSURE"
+    },
+    {
+      "calendar_year": 2034,
+      "contribution": 0.0664,
+      "edge_path": [
+        "E007",
+        "E021"
+      ],
+      "node_path": [
+        "AI_GRID_CONSTRUCTION_DEMAND",
+        "TRADE_POWERLINE",
+        "SCHEDULE_UTILITIES_DELAY_PRESSURE"
+      ],
+      "period": 7,
+      "persistence_steps": 0,
+      "shock_label": "AB_50B_2027_2036_COUNTERFACTUAL:2032:grid_construction",
+      "target_node_id": "SCHEDULE_UTILITIES_DELAY_PRESSURE"
+    }
+  ],
+  "evidence_status": "scenario",
+  "excluded_component_share": 0.54,
+  "investment_total_cad": 50000000000,
+  "limitations": [
+    "Pressure scores are dimensionless diagnostic indices; 0.24 does not mean a 24% delay.",
+    "The graph excludes 54% of capex assigned to computing, networking, professional and other costs.",
+    "All graph weights, retention factors, absorption values, local capture and normalization denominators are declared assumptions pending calibration.",
+    "Uniform local capture is a simplifying assumption tested at 0.40, 0.72 and 0.90.",
+    "Power-system quantities are excluded from this CAD propagation model and published in an independent MW-based overlay."
+  ],
+  "local_capture_share": 0.72,
+  "modelled_component_share": 0.46,
+  "name": "Counterfactual Alberta $50B (uncalibrated diagnostic)",
+  "parameter_set_id": "AB_50B_PARAMETERS_0_2",
+  "public_delivery_pressure_order": [
+    {
+      "central": 0.3056,
+      "central_peak_year": 2035,
+      "high": 0.7041,
+      "high_peak_year": 2038,
+      "label": "Hospital delivery delay pressure",
+      "low": 0.0826,
+      "low_peak_year": 2034,
+      "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "node_type": "outcome",
+      "raw_central": 0.44,
+      "raw_high": 2.38,
+      "raw_low": 0.09
+    },
+    {
+      "central": 0.2308,
+      "central_peak_year": 2035,
+      "high": 0.5536,
+      "high_peak_year": 2037,
+      "label": "Regulated utility delivery delay pressure",
+      "low": 0.0654,
+      "low_peak_year": 2034,
+      "node_id": "SCHEDULE_UTILITIES_DELAY_PRESSURE",
+      "node_type": "outcome",
+      "raw_central": 0.3,
+      "raw_high": 1.24,
+      "raw_low": 0.07
+    },
+    {
+      "central": 0.2248,
+      "central_peak_year": 2035,
+      "high": 0.6169,
+      "high_peak_year": 2038,
+      "label": "School delivery delay pressure",
+      "low": 0.0476,
+      "low_peak_year": 2034,
+      "node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE",
+      "node_type": "outcome",
+      "raw_central": 0.29,
+      "raw_high": 1.61,
+      "raw_low": 0.05
+    },
+    {
+      "central": 0.1803,
+      "central_peak_year": 2035,
+      "high": 0.5556,
+      "high_peak_year": 2038,
+      "label": "Government facility delivery delay pressure",
+      "low": 0.0385,
+      "low_peak_year": 2034,
+      "node_id": "SCHEDULE_GOVERNMENT_DELAY_PRESSURE",
+      "node_type": "outcome",
+      "raw_central": 0.22,
+      "raw_high": 1.25,
+      "raw_low": 0.04
+    },
+    {
+      "central": 0.1071,
+      "central_peak_year": 2035,
+      "high": 0.3631,
+      "high_peak_year": 2037,
+      "label": "Road and municipal delivery delay pressure",
+      "low": 0.0196,
+      "low_peak_year": 2034,
+      "node_id": "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE",
+      "node_type": "outcome",
+      "raw_central": 0.12,
+      "raw_high": 0.57,
+      "raw_low": 0.02
+    }
+  ],
+  "scenario_id": "AB_50B_2027_2036_COUNTERFACTUAL",
+  "schema_version": "1.1.0",
+  "sensitivity": [
+    {
+      "absorption_adjustment": 0.0,
+      "denominator_multiplier": 1.0,
+      "label": "Central structural assumptions",
+      "local_capture_share": 0.72,
+      "retention_case": "central",
+      "sensitivity_id": "baseline",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2035,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.3056,
+        "raw_pressure_score": 0.44
+      },
+      "top_resource": {
+        "calendar_year": 2034,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.3827,
+        "raw_pressure_score": 0.62
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.0,
+      "denominator_multiplier": 0.5,
+      "label": "All denominators \u00d70.5",
+      "local_capture_share": 0.72,
+      "retention_case": "central",
+      "sensitivity_id": "denominator_half",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2035,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.4681,
+        "raw_pressure_score": 0.88
+      },
+      "top_resource": {
+        "calendar_year": 2034,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.5516,
+        "raw_pressure_score": 1.23
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.0,
+      "denominator_multiplier": 2.0,
+      "label": "All denominators \u00d72.0",
+      "local_capture_share": 0.72,
+      "retention_case": "central",
+      "sensitivity_id": "denominator_double",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2035,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.1803,
+        "raw_pressure_score": 0.22
+      },
+      "top_resource": {
+        "calendar_year": 2034,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.2366,
+        "raw_pressure_score": 0.31
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": -0.1,
+      "denominator_multiplier": 1.0,
+      "label": "All edge absorption \u22120.10",
+      "local_capture_share": 0.72,
+      "retention_case": "central",
+      "sensitivity_id": "absorption_minus_0_10",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2035,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.359,
+        "raw_pressure_score": 0.56
+      },
+      "top_resource": {
+        "calendar_year": 2034,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.4083,
+        "raw_pressure_score": 0.69
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.1,
+      "denominator_multiplier": 1.0,
+      "label": "All edge absorption +0.10",
+      "local_capture_share": 0.72,
+      "retention_case": "central",
+      "sensitivity_id": "absorption_plus_0_10",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2035,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.2537,
+        "raw_pressure_score": 0.34
+      },
+      "top_resource": {
+        "calendar_year": 2034,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.3548,
+        "raw_pressure_score": 0.55
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.0,
+      "denominator_multiplier": 1.0,
+      "label": "Local capture = 0.40",
+      "local_capture_share": 0.4,
+      "retention_case": "central",
+      "sensitivity_id": "capture_0_40",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2035,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.1935,
+        "raw_pressure_score": 0.24
+      },
+      "top_resource": {
+        "calendar_year": 2034,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.2537,
+        "raw_pressure_score": 0.34
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.0,
+      "denominator_multiplier": 1.0,
+      "label": "Local capture = 0.90",
+      "local_capture_share": 0.9,
+      "retention_case": "central",
+      "sensitivity_id": "capture_0_90",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2035,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.3548,
+        "raw_pressure_score": 0.55
+      },
+      "top_resource": {
+        "calendar_year": 2034,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.435,
+        "raw_pressure_score": 0.77
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.0,
+      "denominator_multiplier": 1.0,
+      "label": "Low retention only",
+      "local_capture_share": 0.72,
+      "retention_case": "low",
+      "sensitivity_id": "retention_low",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2034,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.1736,
+        "raw_pressure_score": 0.21
+      },
+      "top_resource": {
+        "calendar_year": 2033,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.2908,
+        "raw_pressure_score": 0.41
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.0,
+      "denominator_multiplier": 1.0,
+      "label": "High retention only",
+      "local_capture_share": 0.72,
+      "retention_case": "high",
+      "sensitivity_id": "retention_high",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2038,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.5455,
+        "raw_pressure_score": 1.2
+      },
+      "top_resource": {
+        "calendar_year": 2035,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.5025,
+        "raw_pressure_score": 1.01
+      },
+      "weight_case": "central"
+    },
+    {
+      "absorption_adjustment": 0.1,
+      "denominator_multiplier": 2.0,
+      "label": "Joint lower-pressure diagnostic",
+      "local_capture_share": 0.4,
+      "retention_case": "low",
+      "sensitivity_id": "joint_lower_pressure",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2034,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.0196,
+        "raw_pressure_score": 0.02
+      },
+      "top_resource": {
+        "calendar_year": 2033,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.0741,
+        "raw_pressure_score": 0.08
+      },
+      "weight_case": "low"
+    },
+    {
+      "absorption_adjustment": -0.1,
+      "denominator_multiplier": 0.5,
+      "label": "Joint higher-pressure diagnostic",
+      "local_capture_share": 0.9,
+      "retention_case": "high",
+      "sensitivity_id": "joint_higher_pressure",
+      "top_public_delivery_outcome": {
+        "calendar_year": 2038,
+        "label": "Hospital delivery delay pressure",
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "pressure_score": 0.8848,
+        "raw_pressure_score": 7.68
+      },
+      "top_resource": {
+        "calendar_year": 2035,
+        "label": "Building electricians",
+        "node_id": "TRADE_ELECTRICIANS",
+        "pressure_score": 0.7732,
+        "raw_pressure_score": 3.41
+      },
+      "weight_case": "high"
+    }
+  ],
+  "structural_test_banner": "UNCALIBRATED STRUCTURAL DIAGNOSTIC \u2014 not an empirical finding, forecast, probability interval, or project-level delay estimate.",
+  "trade_pressure_order": [
+    {
+      "central": 0.3827,
+      "central_peak_year": 2034,
+      "high": 0.5516,
+      "high_peak_year": 2035,
+      "label": "Building electricians",
+      "low": 0.2481,
+      "low_peak_year": 2033,
+      "node_id": "TRADE_ELECTRICIANS",
+      "node_type": "resource",
+      "raw_central": 0.62,
+      "raw_high": 1.23,
+      "raw_low": 0.33
+    },
+    {
+      "central": 0.2958,
+      "central_peak_year": 2034,
+      "high": 0.4709,
+      "high_peak_year": 2035,
+      "label": "HVAC mechanics",
+      "low": 0.1667,
+      "low_peak_year": 2033,
+      "node_id": "TRADE_HVAC",
+      "node_type": "resource",
+      "raw_central": 0.42,
+      "raw_high": 0.89,
+      "raw_low": 0.2
+    },
+    {
+      "central": 0.2248,
+      "central_peak_year": 2034,
+      "high": 0.3711,
+      "high_peak_year": 2035,
+      "label": "Power-line trades",
+      "low": 0.1228,
+      "low_peak_year": 2033,
+      "node_id": "TRADE_POWERLINE",
+      "node_type": "resource",
+      "raw_central": 0.29,
+      "raw_high": 0.59,
+      "raw_low": 0.14
+    },
+    {
+      "central": 0.2,
+      "central_peak_year": 2034,
+      "high": 0.3421,
+      "high_peak_year": 2035,
+      "label": "Concrete trades",
+      "low": 0.1071,
+      "low_peak_year": 2033,
+      "node_id": "TRADE_CONCRETE",
+      "node_type": "resource",
+      "raw_central": 0.25,
+      "raw_high": 0.52,
+      "raw_low": 0.12
+    }
+  ]
+}

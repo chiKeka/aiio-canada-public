@@ -1,0 +1,22 @@
+{
+  "source_id": "capacity-jobbank-outlook-method",
+  "requested_url": "https://www.jobbank.gc.ca/trend-analysis/search-job-outlooks/outlooks-methodology",
+  "retrieved_at": "2026-10-03T23:00:59.867851+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "raw_redistribution": "pending_review",
+  "effective_url": "https://www.jobbank.gc.ca/trend-analysis/search-job-outlooks/outlooks-methodology",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "result": "success",
+  "byte_length": 51491,
+  "sha256": "83e761c41639103f8e294c38c23519ba9bcc838ba487652b34f3b96d4a8366c9",
+  "archive_path": "sources/capacity-jobbank-outlook-method/page.html",
+  "content_verification": {
+    "expected_terms_present": {
+      "Maximum Entropy": true,
+      "Employment Insurance": true
+    },
+    "status": "relevant_source_content_verified"
+  }
+}

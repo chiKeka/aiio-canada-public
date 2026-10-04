@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.1.0",
+  "digest_id": "AIIO_DIGEST_2026_09_01",
+  "edition_date": "2026-09-01",
+  "status": "review",
+  "items": [
+    {
+      "item_id": "PROVINCIAL_PUBLIC_PROJECT_INTAKE_2026_09",
+      "headline": "Three provincial project inventories enter a common research-only schema",
+      "sources": [
+        {
+          "source_id": "BC_MAJOR_PROJECTS_INVENTORY",
+          "source_url": "https://catalogue.data.gov.bc.ca/dataset/ea4c0bdb-a63f-49a4-b14a-09c1560aad0b"
+        },
+        {
+          "source_id": "ONTARIO_BUILDS_PROJECTS",
+          "source_url": "https://data.ontario.ca/en/dataset/ontario-builds-key-infrastructure-projects"
+        },
+        {
+          "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+          "source_url": "https://www.tresor.gouv.qc.ca/infrastructures-publiques/tableau-de-bord"
+        }
+      ],
+      "observed_change": "AIIO retrieved and content-hashed official British Columbia, Ontario and Quebec project inventories containing 648, 5,935 and 649 source records. The deterministic adapter emits 7,231 normalized records after removing one exact Ontario duplicate. Publisher categories, original schedules, reported-cost status and source vintage remain visible beside inferred common fields.",
+      "model_implication": "Keep these records outside the public-project exposure engine. Ontario and Quebec do not publish comparable complete start periods, and the B.C. inventory is a retired historical program, so a pooled overlap or annualized expenditure result would manufacture comparability.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "PR_59",
+        "PR_35",
+        "PR_24"
+      ],
+      "model_action": "review_candidate",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "PROVINCIAL_POWER_PLANNING_CONTRACT_2026_09",
+      "headline": "Ontario, British Columbia and Quebec publish incompatible power-planning quantities",
+      "sources": [
+        {
+          "source_id": "IESO_APO_2026_DATA_TABLES",
+          "source_url": "https://ieso.ca/-/media/Files/IESO/Document-Library/planning-forecasts/apo/2026/2026-Annual-Planning-Outlook-Data-Tables.xlsx"
+        },
+        {
+          "source_id": "IESO_APO_2026_DEMAND_MODULE",
+          "source_url": "https://www.ieso.ca/-/media/Files/IESO/Document-Library/planning-forecasts/apo/2026/2026-APO-Demand-Forecast-Module.pdf"
+        },
+        {
+          "source_id": "BC_HYDRO_IRP_2025_SUMMARY",
+          "source_url": "https://www.bchydro.com/toolbar/about/strategies-plans-regulatory/supply-operations/long-term-electricity-planning/integrated-resource-plan.html"
+        },
+        {
+          "source_id": "QUEBEC_SUPPLY_PLAN_PROGRESS_2025",
+          "source_url": "https://www.regie-energie.qc.ca/storage/app/media/Suivis/Suivi%20D-2023-109/etat-davancement-2025.pdf"
+        },
+        {
+          "source_id": "HYDRO_QUEBEC_DATA_CENTRE_RATE_2026",
+          "source_url": "https://news.hydroquebec.com/news/press-releases/all-quebec/hydro-quebec-proposing-regie-energie-new-rate-large-data-centres-adjustment-rate-cryptographic-use-applied-blockchains.html"
+        }
+      ],
+      "observed_change": "Ontario's reference scenario publishes data-centre annual energy rising from 4.5 TWh in 2027 to 22.6 TWh in 2050. Quebec's supply-plan filing publishes data-centre winter peak rising from 297 MW in 2025-26 to 1,102 MW in 2034-35. B.C.'s public plan summary identifies supply and transmission actions but does not publish a directly comparable data-centre demand path.",
+      "model_implication": "Preserve energy, peak-demand and plan-action quantities in separate fields. Do not pool Ontario TWh with Quebec MW, treat B.C. supply actions as spare capacity, or derive a transmission build requirement from province-wide AI capital expenditure.",
+      "evidence_status": "observed",
+      "geography_ids": [
+        "PR_35",
+        "PR_59",
+        "PR_24"
+      ],
+      "model_action": "review_candidate",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "PROVINCIAL_BCPI_REFERENCE_GATE_2026_09",
+      "headline": "Provincial public-building price histories do not pass the locked forecast gate",
+      "sources": [
+        {
+          "source_id": "STATCAN_BCPI_18100289",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810028901"
+        }
+      ],
+      "observed_change": "The first British Columbia, Ontario and Quebec reference-class run preserves four public-building composites per province and 38 quarterly observations per series from 2017 Q1 through 2026 Q2. Under the predeclared Alberta validation protocol, all 60 province, asset and one- through five-year horizon checks are not assessed because the required calibration and validation origin counts are unavailable.",
+      "model_implication": "Keep every provincial reference projection null and Decision Mode unavailable outside Alberta. Do not transfer Calgary or Edmonton coefficients to another province or relax the protocol after seeing the result.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "PR_59",
+        "PR_35",
+        "PR_24"
+      ],
+      "model_action": "no_change",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "INFORMATION_SECTOR_CONSTRUCTION_CAPEX_SCREEN_2026_09",
+      "headline": "Broad information-sector construction capital adds context but cannot identify AI treatment",
+      "sources": [
+        {
+          "source_id": "STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410003501"
+        }
+      ],
+      "observed_change": "Statistics Canada table 34-10-0035-01 yields 294 annual Canada, province and territory cells for NAICS 51 construction capital from 2006 through 2026. Alberta reports $458.6 million in 2024 actual or revised construction capital, $996.1 million in 2025 preliminary actuals and $832.7 million in 2026 intentions; 99 cells across the panel are suppressed and remain blank.",
+      "model_implication": "Use the series only as broad regional information-sector activity context or a sensitivity control. NAICS 51 includes telecommunications, publishing, broadcasting and other information activities, and the annual provincial resolution does not satisfy the locked quarterly regional AI-treatment contract. Keep AI treatment onset, dose, cost escalation and schedule-delay attribution unauthorized.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "PR_10",
+        "PR_11",
+        "PR_12",
+        "PR_13",
+        "PR_24",
+        "PR_35",
+        "PR_46",
+        "PR_47",
+        "PR_48",
+        "PR_59",
+        "PR_60",
+        "PR_61",
+        "PR_62"
+      ],
+      "model_action": "no_change",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "CMA_REFERENCE_COST_EXPANSION_2026_09",
+      "headline": "Long CMA price histories support nine Vancouver horizons without authorizing national transfer",
+      "sources": [
+        {
+          "source_id": "STATCAN_BCPI_18100289",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810028901"
+        }
+      ],
+      "observed_change": "The current Statistics Canada BCPI cube provides 182 contiguous quarterly observations from 1981 Q1 through 2026 Q2 for institutional, school and office reference classes in Vancouver, Toronto and Montréal. Bus-depot histories begin in 2017. The unchanged locked validation protocol produces 9 gate-passing, 36 gate-failed and 15 not-assessed horizons; all nine passing horizons are Vancouver results.",
+      "model_implication": "Preserve city-market and province-level artifacts separately. Keep Toronto, Montréal and every failed or short-history result null, do not relabel Vancouver as British Columbia evidence, and withhold all nine internal Vancouver projections until independent modelling review authorizes individual horizons.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "CMA_933",
+        "CMA_535",
+        "CMA_462"
+      ],
+      "model_action": "review_candidate",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "PROVINCE_LINKED_BCPI_BACKCAST_2026_09",
+      "headline": "CMA-linked history extends provincial validation research without creating official observations",
+      "sources": [
+        {
+          "source_id": "STATCAN_BCPI_18100289",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810028901"
+        }
+      ],
+      "observed_change": "The locked BCPI cube contains official British Columbia, Ontario and Quebec indexes from 2017 Q1 and long Vancouver, Toronto and Montréal histories from 1981 Q1 for institutional, school and office reference classes. A single-anchor bridge produces 1,296 explicitly inferred pre-2017 values plus 456 untouched official observations. All 12 overlap screens pass a predeclared 3% MAPE threshold; the largest overlap MAPE is below 0.3%.",
+      "model_implication": "Use the bridge to test long-horizon model stability, not as an official provincial history. The unchanged validation protocol yields nine internal passes, all in British Columbia-linked classes, while Ontario and Quebec fail and municipal-operations histories remain too short. Keep all projections, project-cost translations and AI effects withheld pending independent review.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "PR_24",
+        "PR_35",
+        "PR_59"
+      ],
+      "model_action": "review_candidate",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "ALBERTA_PROJECT_HISTORICAL_ANALOG_2026_09",
+      "headline": "Coherent historical paths turn project schedules into transparent stress tests",
+      "sources": [
+        {
+          "source_id": "STATCAN_BCPI_18100289",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810028901"
+        }
+      ],
+      "observed_change": "The locked Calgary and Edmonton BCPI histories support 1,560 reproducible combinations across four public-building reference classes, two CMAs, three declared expenditure shapes and schedules ending up to ten years after the June 2026 price basis. Each combination weights a complete observed historical trajectory rather than combining independent horizon quantiles.",
+      "model_implication": "Decision Mode may show the resulting p10, median and p90 historical markers and arithmetic budget equivalents after the user confirms the estimate price basis. Label every value as a historical-path stress test; do not describe the markers as probabilities, forecast bounds, recommended contingencies or AI-attributable escalation, and do not add graph pressure scores.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "CMA_825",
+        "CMA_835"
+      ],
+      "model_action": "review_candidate",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "ALBERTA_AI_CAPEX_ANNOUNCEMENT_LEDGER_2026_09",
+      "headline": "A formal Alberta announcement ledger separates reported estimates from realized treatment",
+      "sources": [
+        {
+          "source_id": "ALBERTA_MAJOR_PROJECTS",
+          "source_url": "https://www.majorprojects.alberta.ca/"
+        }
+      ],
+      "observed_change": "The 2026-08-31 Alberta Major Projects snapshot contains 22 AI-relevant publisher records: 19 core data-centre records and three enabling-power records. Ten records report estimated costs totalling $55.41 billion, split between $49.01 billion for core facilities and $6.40 billion for enabling power. Four records carry an Under Construction publisher stage; three records report both a start and end year.",
+      "model_implication": "Use the ledger to monitor announcement, stage, schedule and source-completeness changes. The estimated-cost sum is partial, missing values are not zero, enabling power remains separate, and no stage probabilities are applied. Zero records supply verified realized construction onset or realized regional-period spend, so the ledger cannot define causal treatment or authorize an AI-attributable effect.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "PR_48"
+      ],
+      "model_action": "review_candidate",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "AI_ATTRIBUTION_PANEL_ACQUISITION_PREFLIGHT_2026_09",
+      "headline": "Causal-panel preflight turns evidence gaps into a field-complete acquisition queue",
+      "sources": [
+        {
+          "source_id": "ALBERTA_MAJOR_PROJECTS",
+          "source_url": "https://www.majorprojects.alberta.ca/"
+        },
+        {
+          "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+          "source_url": "https://data.edmonton.ca/Urban-Planning-Economy/General-Building-Permits/24uj-dj8v"
+        },
+        {
+          "source_id": "CANADABUYS_PROCUREMENT_DATA",
+          "source_url": "https://canadabuys.canada.ca/en/procurement-and-contracting-data"
+        },
+        {
+          "source_id": "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024",
+          "source_url": "https://www.auditor.on.ca/en/content/annualreports/audits/en2024/AR-PA_infrastructureON_en24.html"
+        },
+        {
+          "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+          "source_url": "https://www.tresor.gouv.qc.ca/infrastructures-publiques/tableau-de-bord"
+        }
+      ],
+      "observed_change": "The E2 preflight now reconciles eleven hash-locked evidence receipts against five candidate CMAs, three public asset classes and all 27 authorizing field instances. Candidate scope meets the planned minimum counts, but zero regions, asset classes or panel rows are currently eligible for estimation.",
+      "model_implication": "Prioritize four explicit acquisition tasks: quarterly realized construction dose, estimate-to-outturn cost records, baseline-to-actual physical schedules and procurement competition with compliant bidder counts. Do not assemble partial panel rows, run an effect estimator or convert announcements, MW, permit values, graph scores, authorized revisions or catalog disappearances into authorizing treatment or outcomes.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "CMA_825",
+        "CMA_835",
+        "CMA_933",
+        "CMA_535",
+        "CMA_462"
+      ],
+      "model_action": "no_change",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "AI_TREATMENT_SOURCE_FEASIBILITY_2026_09",
+      "headline": "Eight plausible public sources still leave realized AI-construction treatment unidentified",
+      "sources": [
+        {
+          "source_id": "STATCAN_SCIEU_5034_2024",
+          "source_url": "https://www.statcan.gc.ca/en/statistical-programs/instrument/5034_Q14_V5"
+        },
+        {
+          "source_id": "STATCAN_SCIEU_5034_2024_RELEASE",
+          "source_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260813/dq260813a-eng.htm"
+        },
+        {
+          "source_id": "STATCAN_BUILDING_PERMITS_34100285",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410028501"
+        },
+        {
+          "source_id": "STATCAN_CMA_INDUSTRY_EMPLOYMENT_14100468",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410046802"
+        }
+      ],
+      "observed_change": "A deterministic screen now tests eight plausible public sources against seven required characteristics: data-centre specificity, construction specificity, realized measurement, project or regional linkage, quarterly frequency, public retrieval and revision provenance. No source passes all seven. The 2024 commercial-building energy survey collects valuable data-centre operating characteristics, but the public release does not expose building-level construction dose.",
+      "model_implication": "Use the new energy survey as operating-stock and power context only. Keep permits, announcements, broad building investment, information-sector capex and broad employment outside the authorizing treatment field. Continue seeking a public or disclosure-authorized quarterly source for realized project or regional spend or construction labour hours.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "CA",
+        "PR_48",
+        "CMA_825",
+        "CMA_835"
+      ],
+      "model_action": "no_change",
+      "automatic_model_change": false
+    },
+    {
+      "item_id": "REGIONAL_MACRO_CONTROL_PANEL_2026_09",
+      "headline": "Seven separate regional macro controls add context without manufacturing an AI effect",
+      "sources": [
+        {
+          "source_id": "STATCAN_CPI_18100004",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000401"
+        },
+        {
+          "source_id": "STATCAN_POPULATION_17100009",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710000901"
+        },
+        {
+          "source_id": "STATCAN_SEPH_EARNINGS_14100223",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410022301"
+        },
+        {
+          "source_id": "STATCAN_CMHC_HOUSING_STARTS_34100156",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410015601"
+        },
+        {
+          "source_id": "STATCAN_IBC_34100293",
+          "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3410029301"
+        }
+      ],
+      "observed_change": "A content-hashed quarterly panel now contains 3,116 cells across 82 jurisdiction-indicator series from 2017 Q1 through 2026 Q2. Alberta's latest year-over-year context is +3.5% for all-items CPI, +1.3% for shelter CPI, +2.0% for all-industry weekly earnings, -2.1% for construction weekly earnings, +0.9% for population, -24.8% for housing starts at SAAR and +25.5% for non-residential building investment in current dollars.",
+      "model_implication": "Display each metric separately as dated regional context. Do not combine them into a macro pressure score, use them to calibrate the $50B scenario, translate them into a project contingency or describe them as AI-caused movement.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "PR_10",
+        "PR_11",
+        "PR_12",
+        "PR_13",
+        "PR_24",
+        "PR_35",
+        "PR_46",
+        "PR_47",
+        "PR_48",
+        "PR_59",
+        "PR_60",
+        "PR_61",
+        "PR_62"
+      ],
+      "model_action": "no_change",
+      "automatic_model_change": false
+    }
+  ]
+}

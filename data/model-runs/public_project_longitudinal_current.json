@@ -1,0 +1,74 @@
+{
+  "ai_attributable_effect_authorized": false,
+  "alberta_outcome_gap": "Released Alberta evidence has one capture. Review candidate observations are not released outcomes; inventory capture dates are not revision effective dates.",
+  "existing_comparator_archive": {
+    "limitations": [
+      "One publisher CSV is structurally unusable and is represented by the official paired XLSX for the same snapshot date.",
+      "A stable ID disappearance without an explicit prior complete-service and retirement statement has an unknown cause.",
+      "Publisher-declared complete service and planned dashboard retirement are not independently audited final completion outcomes.",
+      "The November 2020 publication-threshold change confounds threshold entry with ordinary project entry.",
+      "Authorized cost and completion fields are plans, not final audited outturns, and no common estimate price-basis date is available.",
+      "No AI treatment is present, so no AI-attributable effect is estimated."
+    ],
+    "linked_change_diagnostics": {
+      "authorized_cost_change_pair_count": 763,
+      "comparable_completion_pair_count": 17739,
+      "comparable_cost_pair_count": 19774,
+      "completion_month_change_pair_count": 513,
+      "consecutive_observation_pair_count": 41885
+    },
+    "province": "Quebec",
+    "publication_boundary": {
+      "ai_attributable_effect_authorized": false,
+      "all_snapshots_parsed_directly_from_csv": false,
+      "catalog_snapshot_coverage_complete": true,
+      "project_exit_outcome_authorized": false,
+      "public_project_cost_outcome_authorized": false,
+      "public_project_schedule_outcome_authorized": false,
+      "publisher_declared_retirement_is_final_outcome": false,
+      "reason": "All 69 official snapshot dates are represented and stable-ID transitions are reproducible, but one official XLSX substitution is required, most disappearance causes remain unclassified, authorized parameters are not final outturns and no AI treatment is observed.",
+      "status": "complete_catalog_selection_diagnostic_research_only"
+    },
+    "report_hash": "sha256:0e1b1fdd98732ce7882b3294e8dd16388132f059cc14bcbf88c1e9dd121f8095",
+    "report_path": "data/model-runs/quebec_pqi_full_archive_longitudinal_v0.1.json"
+  },
+  "schema_version": "1.0.0",
+  "sources": {
+    "ALBERTA_MAJOR_PROJECTS": {
+      "dated_vintage_count": 1,
+      "distinct_content_count": 1,
+      "outcome_status": "baseline_only_no_longitudinal_outcome",
+      "reconciled_events": [],
+      "source_observation_dates": [
+        "2026-08-31"
+      ]
+    },
+    "BC_MAJOR_PROJECTS_INVENTORY": {
+      "dated_vintage_count": 1,
+      "distinct_content_count": 1,
+      "outcome_status": "baseline_only_no_longitudinal_outcome",
+      "reconciled_events": [],
+      "source_observation_dates": [
+        "2024-12-01"
+      ]
+    },
+    "ONTARIO_BUILDS_PROJECTS": {
+      "dated_vintage_count": 1,
+      "distinct_content_count": 1,
+      "outcome_status": "baseline_only_no_longitudinal_outcome",
+      "reconciled_events": [],
+      "source_observation_dates": [
+        "2026-06-12"
+      ]
+    },
+    "QUEBEC_PQI_PROJECT_DASHBOARD": {
+      "dated_vintage_count": 1,
+      "distinct_content_count": 1,
+      "outcome_status": "baseline_only_no_longitudinal_outcome",
+      "reconciled_events": [],
+      "source_observation_dates": [
+        "2026-08-20"
+      ]
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "evidence_digest_only",
+  "decision": "approved",
+  "reviewer_role": "internal_editorial",
+  "reviewer": "Codex internal editorial",
+  "reviewed_at": "2026-10-04T01:38:13.271582+00:00",
+  "automatic_model_change": false,
+  "independent_model_review_waived": false,
+  "items_sha256": "sha256:f9b4c0817792bad0e6da2c212ad901a0ed941c4ecd12064c7d91d569bb504bc4",
+  "source_registry_sha256": "sha256:4bea23fa75e7311e5a2b59f2c1b81432c3902f2e0cd72d55759c98ad6f03edcf",
+  "candidate_items_path": "docs/reviews/2026-10-04-digest-editorial-candidate.json",
+  "candidate_items_sha256": "sha256:81b920237efd75a0fc1d6bf843e3627b5944d69227d20bb8d0689dbd0e156d74",
+  "source_artifacts": [
+    {
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/model-runs/edmonton_data_centre_permit_proxy_v0.1.json",
+      "sha256": "sha256:b26713f6407478cce4edbbce222c73dafc82e75ae4290147f9cde214a9ec8fd4"
+    },
+    {
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/edmonton_general_building_permits/2026-10-03_7dbe50868340.json.manifest.json",
+      "sha256": "sha256:ffdd7855d91c0bf8432c7784c81f06c6470affd4888e9eab096a3d25f734cf2c"
+    },
+    {
+      "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/model-runs/vancouver_data_centre_permit_proxy_v0.1.json",
+      "sha256": "sha256:157f0f018f1a5104cf6aba057537d26c811df5dc8d501a486e87f2287e95a356"
+    },
+    {
+      "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/vancouver_issued_building_permits/2026-10-03_1cba64a020f2.json.manifest.json",
+      "sha256": "sha256:53e48d206d0ecab090fefb2ca99ff3a9795a9b52da71417ef4d3d76d6d3935e0"
+    },
+    {
+      "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/model-runs/toronto_data_centre_permit_proxy_v0.1.json",
+      "sha256": "sha256:9c51a19eaa3fbfc15902d19ea6749ba2419c667e4e688f1d07af879335e05c8c"
+    },
+    {
+      "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/toronto_cleared_building_permits/2026-10-03_7c2c48c48c14.json.manifest.json",
+      "sha256": "sha256:1dc7c53cc49226ec3f2951d1442b4e4d582fa726cb17f8c4960d59d441e428ec"
+    },
+    {
+      "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/model-runs/montreal_data_centre_permit_proxy_v0.1.json",
+      "sha256": "sha256:bcd9cc0037868152edbe55e6d45a1943c53b873927db593100a99d06432fc271"
+    },
+    {
+      "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/montreal_construction_permits/2026-10-03_873c39acca43.json.manifest.json",
+      "sha256": "sha256:2982c3de28577697b18cdfeab413520b7dff92fb18b66e4d79d40b98232f8b08"
+    }
+  ],
+  "context_artifacts": [
+    {
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/digests/items/2026-10-03.json",
+      "sha256": "sha256:91264821f3cdc37aeb0ab1ea77c98b3ca87062f6c290f0e401b357e79df19382"
+    },
+    {
+      "path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/manifest.json",
+      "sha256": "sha256:44a5082dc9f783866d4a21d98ac466d26149994c91c43156abcb09fd557abfac"
+    },
+    {
+      "path": "public/data/latest.json",
+      "sha256": "sha256:7e2a3079f8003448aeb34d03c81dc42daef256819cf0dfbee7ed77b827272b9f"
+    },
+    {
+      "path": "public/data/source-freshness.json",
+      "sha256": "sha256:e35e6d9ea9827b5498edf1b7e84757f5672372a7ed73aab149fd035228b7321a"
+    },
+    {
+      "path": "data/governance/program-gates.json",
+      "sha256": "sha256:0e2162499164246b644718132a096ead9d5f34f32850c27e5dd05acdf53bd486"
+    },
+    {
+      "path": "data/processed/toronto_data_centre_permit_proxy.csv",
+      "sha256": "sha256:3f25a13eebb31c4aad47841f1f6383aba50f47df1ff45a7fd0506bfb9b15dd31"
+    },
+    {
+      "path": "docs/reviews/2026-10-04-digest-editorial-review.md",
+      "sha256": "sha256:d08c58975649f6f149e55e502f3b1d9fb6733d91bda2a74b1e361af1cad4bd0f"
+    }
+  ],
+  "retained_claims": [
+    "retrieval dates and hashes",
+    "existing adapter screened counts with identity limitations"
+  ],
+  "rejected_interpretations": [
+    "new AI projects or October permit observations",
+    "Toronto missing declared value as realized cost decrease",
+    "derived panel and association rows as validated findings",
+    "independent model review or baseline promotion"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "alberta-boom-2005-2008",
+  "evidence_status": "observed_historical_comparison",
+  "retrieved_at": "2026-09-06",
+  "geography": "Edmonton CMA",
+  "measure": "Non-residential building construction price index, institutional structures",
+  "series": "v7717856",
+  "index_base": "1997=100",
+  "observations": [
+    {"period": "2005 Q2", "value": 131.9},
+    {"period": "2006 Q2", "value": 144.2},
+    {"period": "2007 Q2", "value": 169.2},
+    {"period": "2008 Q2", "value": 193.1}
+  ],
+  "source": "https://www150.statcan.gc.ca/n1/pub/62-007-x/2008002/6000199-eng.htm",
+  "source_vintage": "2008-11-17",
+  "formula": "Cumulative change percent = (last index / first index - 1) * 100. Constant-scope reprice = original price * last index / first index.",
+  "worked_example": {"base_cost_millions": 100, "status": "index_repricing_example_not_observed_project"},
+  "context": [
+    {"measure": "Non-residential price change, Q2 2007 year-over-year", "Calgary_percent": 20.6, "Edmonton_percent": 18.9, "source": "https://www150.statcan.gc.ca/n1/daily-quotidien/070810/dq070810b-eng.htm"},
+    {"measure": "Alberta average annual wage growth, 2003–2007", "value_percent": 4.5, "source": "https://www.bankofcanada.ca/wp-content/uploads/2010/06/review_autumn08.pdf", "page": 45},
+    {"measure": "Oil sands investment proposed or under way, June 2008", "value_over_cad_billions": 150, "scope": "Multi-year announced pipeline, not annual realized spending", "source": "https://www.bankofcanada.ca/2008/06/capitalizing-commodity-boom-role-monetary-policy/"}
+  ],
+  "limitations": [
+    "The institutional index uses a school model, not a register of hospital or public tender awards.",
+    "Concurrent commodity, housing, population, currency and investment changes are not controlled for.",
+    "One selected episode is a historical analog, not a base-rate distribution or a causal multiplier.",
+    "Trade mix, modularization, labour mobility and imported equipment differ from data centres.",
+    "No scenario coefficient or forecast authorization is changed by this comparison."
+  ]
+}

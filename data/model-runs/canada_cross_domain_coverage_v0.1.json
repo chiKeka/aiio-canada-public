@@ -1,0 +1,629 @@
+{
+  "domain_count": 7,
+  "domain_status_counts": {
+    "building_investment": {
+      "available": 13
+    },
+    "information_sector_capex": {
+      "available": 2,
+      "available_with_missingness": 11
+    },
+    "labour": {
+      "available_with_missingness": 13
+    },
+    "materials": {
+      "available": 9,
+      "not_available": 4
+    },
+    "power_planning": {
+      "available": 4,
+      "not_available": 9
+    },
+    "public_projects": {
+      "available": 4,
+      "not_available": 9
+    },
+    "regional_macro": {
+      "available": 10,
+      "available_with_missingness": 3
+    }
+  },
+  "domains": [
+    "labour",
+    "materials",
+    "building_investment",
+    "regional_macro",
+    "public_projects",
+    "power_planning",
+    "information_sector_capex"
+  ],
+  "geographies": [
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 8,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 5,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 0,
+          "role": "observed_proxy",
+          "status": "not_available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 16,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 20,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 21,
+          "role": "broad_sector_proxy",
+          "status": "available"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 11,
+          "role": "non_comparable_physical_context",
+          "status": "available"
+        },
+        "public_projects": {
+          "record_count": 649,
+          "role": "source_specific_inventory",
+          "status": "available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_24",
+      "geography_label": "Quebec"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 21,
+          "role": "broad_sector_proxy",
+          "status": "available"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 32,
+          "role": "non_comparable_physical_context",
+          "status": "available"
+        },
+        "public_projects": {
+          "record_count": 5934,
+          "role": "source_specific_inventory",
+          "status": "available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_35",
+      "geography_label": "Ontario"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 20,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 16,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 19,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 10,
+          "role": "non_comparable_physical_context",
+          "status": "available"
+        },
+        "public_projects": {
+          "record_count": 541,
+          "role": "source_specific_inventory",
+          "status": "available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_48",
+      "geography_label": "Alberta"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 20,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 16,
+          "role": "observed_proxy",
+          "status": "available"
+        },
+        "power_planning": {
+          "record_count": 4,
+          "role": "non_comparable_physical_context",
+          "status": "available"
+        },
+        "public_projects": {
+          "record_count": 648,
+          "role": "source_specific_inventory",
+          "status": "available"
+        },
+        "regional_macro": {
+          "record_count": 7,
+          "role": "observed_control_series",
+          "status": "available"
+        }
+      },
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 2,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 0,
+          "role": "observed_proxy",
+          "status": "not_available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 4,
+          "role": "observed_control_series",
+          "status": "available_with_missingness"
+        }
+      },
+      "geography_id": "PR_60",
+      "geography_label": "Yukon"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 3,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 0,
+          "role": "observed_proxy",
+          "status": "not_available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 4,
+          "role": "observed_control_series",
+          "status": "available_with_missingness"
+        }
+      },
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories"
+    },
+    {
+      "domains": {
+        "building_investment": {
+          "record_count": 304,
+          "role": "observed_control",
+          "status": "available"
+        },
+        "information_sector_capex": {
+          "record_count": 3,
+          "role": "broad_sector_proxy",
+          "status": "available_with_missingness"
+        },
+        "labour": {
+          "record_count": 522,
+          "role": "observed_context",
+          "status": "available_with_missingness"
+        },
+        "materials": {
+          "record_count": 0,
+          "role": "observed_proxy",
+          "status": "not_available"
+        },
+        "power_planning": {
+          "record_count": 0,
+          "role": "non_comparable_physical_context",
+          "status": "not_available"
+        },
+        "public_projects": {
+          "record_count": 0,
+          "role": "source_specific_inventory",
+          "status": "not_available"
+        },
+        "regional_macro": {
+          "record_count": 4,
+          "role": "observed_control_series",
+          "status": "available_with_missingness"
+        }
+      },
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut"
+    }
+  ],
+  "geography_count": 13,
+  "input_manifest": {
+    "alberta_power": {
+      "path": "data/model-runs/power_evidence_alberta_v0.1.json",
+      "sha256": "sha256:21162fac6ec3bf4dffef118183d4b80fc73a4360d74e54ce71cc2f00b20a031d"
+    },
+    "alberta_projects": {
+      "path": "data/processed/public_project_exposure_alberta.csv",
+      "sha256": "sha256:748550be78361f31562bd64f494f3f9ff51be398c5877ae65e1404434d8f707d"
+    },
+    "capex": {
+      "path": "data/model-runs/information_sector_construction_capex_screen_v0.1.json",
+      "sha256": "sha256:06ed4e591bf350ea7c82a31e60558c4495c716cbd9e5479f27328c04fd742a6e"
+    },
+    "investment": {
+      "path": "data/model-runs/building_investment_controls_canada_v0.1.json",
+      "sha256": "sha256:efc353850648d0f3d919ae9494535c5238a7f96f7f06ac25e42f71f1d1a2fc31"
+    },
+    "labour_availability": {
+      "path": "data/processed/labour_availability_canada.csv",
+      "sha256": "sha256:47652b4a8b2dd9ab6eb77b1b16a44b5bbc62a018dd33272fdbefda710ea56f79"
+    },
+    "macro": {
+      "path": "data/model-runs/regional_macro_controls_canada_v0.1.json",
+      "sha256": "sha256:43bd0642c78fdb5ecb0b1633534246f041221bc412835677a37b0d2cd1f1e3c8"
+    },
+    "materials": {
+      "path": "data/model-runs/bcpi_material_cost_screen_provinces_v0.1.json",
+      "sha256": "sha256:34574b7f4479a5fa9877c4f3e06d6dff1e98ad42feb4b40a9e72ab5ce32dfcfc"
+    },
+    "provincial_power": {
+      "path": "data/model-runs/provincial_power_planning_contract_v0.1.json",
+      "sha256": "sha256:2e026719e2658952dfa784fa83845b427aae4b5a32167d1399ffc3be1142a377"
+    },
+    "provincial_projects": {
+      "path": "data/processed/public_projects_bc_on_qc.csv",
+      "sha256": "sha256:aecba64233970132e94950067dc0ada365a324393a0cf3adb3165539bc7d5f8a"
+    },
+    "workforce_stock": {
+      "path": "data/processed/labour_workforce_stock_canada.csv",
+      "sha256": "sha256:ddaeab6d7eff569738d3e3dac3576dbdd57890f0e0a06d3cc1c98bb202557a89"
+    }
+  },
+  "matrix_cell_count": 91,
+  "model_id": "AIIO_CANADA_CROSS_DOMAIN_COVERAGE_0_1",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "cross_province_comparison_authorized": false,
+    "missingness_imputed": false,
+    "province_model_calibration_authorized": false,
+    "reason": "Availability does not establish common definitions, comparable measurement, treatment identification or province-specific model calibration.",
+    "status": "coverage_inventory_only"
+  },
+  "schema_version": "1.0.0"
+}

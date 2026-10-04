@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_AESO_INTERIM_LARGE_LOAD_2025_06_86ea3ce051e0faf8",
+  "source_id": "AESO_INTERIM_LARGE_LOAD_2025_06",
+  "retrieved_at": "2026-08-31T23:41:44+00:00",
+  "effective_url": "https://www.aeso.ca/aeso/newsroom/aeso-announces-interim-approach-to-large-load-connections/",
+  "content_hash": "sha256:86ea3ce051e0faf81d5356c141b4a45b27c2b43ef85520cfe1eb871bc55a9009",
+  "content_type": "text/html",
+  "byte_length": 69408,
+  "archive_path": "data/raw/aeso_interim_large_load_2025_06/2026-08-31_86ea3ce051e0.html",
+  "result": "success"
+}

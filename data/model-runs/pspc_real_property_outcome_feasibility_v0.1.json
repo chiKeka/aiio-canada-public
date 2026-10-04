@@ -1,0 +1,50 @@
+{
+  "field_availability": {
+    "asset_class": false,
+    "baseline_and_actual_dates": false,
+    "estimate_and_outturn_cost": false,
+    "geography_id": false,
+    "ordinal_time_budget_scope_health": true,
+    "stable_cross_year_project_id": false
+  },
+  "fiscal_years": [
+    "2024-2025"
+  ],
+  "input_sha256": "sha256:7d4aa37ee6b2b65eae213e839f7cf1e2a9a9190b57a68b9c0f60976289fc8cfd",
+  "model_id": "AIIO_PSPC_REAL_PROPERTY_OUTCOME_FEASIBILITY_0_1",
+  "output_path": "data/processed/pspc_real_property_outcome_context_2024_2025.csv",
+  "output_sha256": "sha256:296e51e0496b41dd859eee925e77103b576fa2d8f143e964e45f5f7f501975f3",
+  "publication_boundary": {
+    "aggregate_delivery_risk_context_authorized": true,
+    "causal_effect_authorized": false,
+    "panel_linkage_authorized": false,
+    "project_outcome_authorized": false,
+    "reason": "The public file provides anonymous ordinal statuses without geography, asset class, cost values, schedule dates or stable longitudinal project identity."
+  },
+  "record_count": 691,
+  "retrieval_manifest_sha256": "sha256:8b1a97b03e3b14d82f19047310f314fc6ea8fb90660b253bf31eee00a92becbd",
+  "schema_version": "1.0.0",
+  "status": "aggregate_outcome_context_only",
+  "status_counts": {
+    "on_budget_status": {
+      "1": 647,
+      "2": 32,
+      "3": 12
+    },
+    "on_scope_status": {
+      "1": 652,
+      "2": 33,
+      "3": 6
+    },
+    "on_time_status": {
+      "1": 583,
+      "2": 83,
+      "3": 25
+    },
+    "overall_health_status": {
+      "1": 564,
+      "2": 97,
+      "3": 30
+    }
+  }
+}

@@ -1,0 +1,2925 @@
+{
+  "evidence_status": "inferred",
+  "geography_scope": "13 provinces and territories; Canada totals excluded",
+  "interpretation": "A screening diagnostic for recruitment pressure. It is not the Statistics Canada job vacancy rate, not a current workforce denominator and not a measure of spare capacity.",
+  "limitations": [
+    "The numerator and denominator come from different surveys and reference periods.",
+    "The 2021 Census reference week occurred during the COVID-19 pandemic's third wave.",
+    "Census counts use the 25% long-form sample and random rounding.",
+    "A trade-node ranking is published only when every component NOC has a published vacancy and a positive workforce denominator.",
+    "The diagnostic does not calibrate graph-edge effect sizes or estimate project delay."
+  ],
+  "metric_id": "JVWS_VACANCIES_PER_1000_CENSUS_2021_EMPLOYED",
+  "metric_label": "Cross-vintage vacancies per 1,000 employed persons in the 2021 Census",
+  "model_id": "AIIO_LABOUR_RECRUITMENT_PRESSURE_0_1",
+  "occupation_diagnostics": [
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1150.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 15.0,
+      "vacancies_per_1_000_2021_employed": 30.0,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 500.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 120.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 320.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 190.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 70.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 410.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 40.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published_and_workforce_denominator_zero",
+      "evidence_status": "observed",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding",
+        "wds_response_status_code:2",
+        "census_zero_filler"
+      ],
+      "workforce_stock": 0.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 65.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 80.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 20.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 2185.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 610.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 40.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 305.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 630.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 95.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1795.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 15.0,
+      "vacancies_per_1_000_2021_employed": 37.04,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:D"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 405.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 105.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 410.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 445.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 75.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 645.0,
+      "vacancies_per_1_000_2021_employed": 35.56,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:D"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 18140.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 100.0,
+      "vacancies_per_1_000_2021_employed": 43.2,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:C"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 2315.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": 170.0,
+      "vacancies_per_1_000_2021_employed": 152.47,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:B"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1115.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": 40.0,
+      "vacancies_per_1_000_2021_employed": 13.94,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 2870.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": 145.0,
+      "vacancies_per_1_000_2021_employed": 26.58,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 5455.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 2505.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 730.0,
+      "vacancies_per_1_000_2021_employed": 23.82,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 30645.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 290.0,
+      "vacancies_per_1_000_2021_employed": 37.98,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:C"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 7635.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1685.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": 55.0,
+      "vacancies_per_1_000_2021_employed": 13.89,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:D"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 3960.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": 270.0,
+      "vacancies_per_1_000_2021_employed": 18.93,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:D"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 14260.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 2610.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 3795.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 10.0,
+      "vacancies_per_1_000_2021_employed": 14.93,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:D"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 670.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 210.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": 0.0,
+      "vacancies_per_1_000_2021_employed": 0.0,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:A"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 625.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1070.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 290.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 2780.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 30.0,
+      "vacancies_per_1_000_2021_employed": 32.61,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 920.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 130.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 820.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": 5.0,
+      "vacancies_per_1_000_2021_employed": 9.62,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 520.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 165.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 460.0,
+      "vacancies_per_1_000_2021_employed": 34.39,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 13375.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 80.0,
+      "vacancies_per_1_000_2021_employed": 19.16,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 4175.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 770.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1725.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": 230.0,
+      "vacancies_per_1_000_2021_employed": 74.31,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 3095.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1105.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 15325.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 2715.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 490.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1210.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 3330.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1330.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 140.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 10.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 15.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 20.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 10.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published_and_workforce_denominator_zero",
+      "evidence_status": "observed",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding",
+        "wds_response_status_code:2",
+        "census_zero_filler"
+      ],
+      "workforce_stock": 0.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 85.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 20.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 20.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 25.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 10.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published_and_workforce_denominator_zero",
+      "evidence_status": "observed",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding",
+        "wds_response_status_code:2",
+        "census_zero_filler"
+      ],
+      "workforce_stock": 0.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 35.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published_and_workforce_denominator_zero",
+      "evidence_status": "observed",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding",
+        "wds_response_status_code:2",
+        "census_zero_filler"
+      ],
+      "workforce_stock": 0.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 10.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 10.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published_and_workforce_denominator_zero",
+      "evidence_status": "observed",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding",
+        "wds_response_status_code:2",
+        "census_zero_filler"
+      ],
+      "workforce_stock": 0.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published_and_workforce_denominator_zero",
+      "evidence_status": "observed",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-03-31",
+      "vacancy_quality_flags": [
+        "status:..",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding",
+        "wds_response_status_code:2",
+        "census_zero_filler"
+      ],
+      "workforce_stock": 0.0,
+      "workforce_unit": "Persons"
+    }
+  ],
+  "period_gap_days": 1788,
+  "rankings": [
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete"
+      ],
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "ranked_trade_node_ids": [
+        "trade_power_line",
+        "trade_electricians",
+        "trade_hvac"
+      ]
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "ranked_trade_node_ids": [
+        "trade_electricians",
+        "trade_hvac"
+      ]
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "ranked_trade_node_ids": [
+        "trade_hvac"
+      ]
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "ranked_trade_node_ids": [
+        "trade_hvac",
+        "trade_electricians"
+      ]
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "ranked_trade_node_ids": []
+    },
+    {
+      "excluded_trade_node_ids": [
+        "trade_concrete",
+        "trade_electricians",
+        "trade_hvac",
+        "trade_power_line"
+      ],
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "ranked_trade_node_ids": []
+    }
+  ],
+  "schema_version": "1.0.0",
+  "trade_diagnostics": [
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 1,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 1,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "available",
+      "complete_cells": 2,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": 745.0,
+      "vacancies_per_1_000_2021_employed": 36.42,
+      "workforce_stock": 20455.0
+    },
+    {
+      "availability": "available",
+      "complete_cells": 1,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": 145.0,
+      "vacancies_per_1_000_2021_employed": 26.58,
+      "workforce_stock": 5455.0
+    },
+    {
+      "availability": "available",
+      "complete_cells": 2,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": 210.0,
+      "vacancies_per_1_000_2021_employed": 52.7,
+      "workforce_stock": 3985.0
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "available",
+      "complete_cells": 2,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": 1020.0,
+      "vacancies_per_1_000_2021_employed": 26.65,
+      "workforce_stock": 38280.0
+    },
+    {
+      "availability": "available",
+      "complete_cells": 1,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": 270.0,
+      "vacancies_per_1_000_2021_employed": 18.93,
+      "workforce_stock": 14260.0
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 1,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 1,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 1,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 1,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "available",
+      "complete_cells": 1,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": 5.0,
+      "vacancies_per_1_000_2021_employed": 9.62,
+      "workforce_stock": 520.0
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "available",
+      "complete_cells": 2,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": 540.0,
+      "vacancies_per_1_000_2021_employed": 30.77,
+      "workforce_stock": 17550.0
+    },
+    {
+      "availability": "available",
+      "complete_cells": 1,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": 230.0,
+      "vacancies_per_1_000_2021_employed": 74.31,
+      "workforce_stock": 3095.0
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_codes": [
+        "73100"
+      ],
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_codes": [
+        "72200",
+        "72201"
+      ],
+      "trade_node_id": "trade_electricians",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 1,
+      "evidence_status": "inferred",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_codes": [
+        "72402"
+      ],
+      "trade_node_id": "trade_hvac",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    },
+    {
+      "availability": "incomplete_components",
+      "complete_cells": 0,
+      "component_cells": 2,
+      "evidence_status": "inferred",
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "noc_codes": [
+        "72202",
+        "72203"
+      ],
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "workforce_stock": null
+    }
+  ],
+  "vacancy_period_end": "2026-03-31",
+  "vacancy_source_id": "STATCAN_JVWS_14100444",
+  "workforce_period_end": "2021-05-08",
+  "workforce_period_start": "2021-05-02",
+  "workforce_source_id": "STATCAN_CENSUS_OCCUPATION_98100449"
+}

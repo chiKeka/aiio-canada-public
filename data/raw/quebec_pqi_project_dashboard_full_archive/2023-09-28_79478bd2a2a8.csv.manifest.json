@@ -1,0 +1,16 @@
+{
+  "archive_catalog_source_id": "QUEBEC_PQI_ARCHIVE_CATALOG",
+  "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-09-28_79478bd2a2a8.csv",
+  "byte_length": 722787,
+  "content_hash": "sha256:79478bd2a2a8634bb66facfc2573cbe61b0b71365b9b258692ca213b0e6ff781",
+  "content_type": "text/csv",
+  "effective_url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/4cc1f619-b67b-417e-843c-49bfb717deea/download/donnees_ouvertes_tb_20230928.csv",
+  "format": "CSV",
+  "resource_id": "4cc1f619-b67b-417e-843c-49bfb717deea",
+  "resource_name": "Tableau de bord en date du 28 septembre 2023",
+  "result": "success",
+  "retrieval_id": "RET_QUEBEC_PQI_PROJECT_DASHBOARD_4cc1f619b67b",
+  "retrieved_at": "2026-09-01T06:13:49+00:00",
+  "snapshot_date": "2023-09-28",
+  "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD"
+}

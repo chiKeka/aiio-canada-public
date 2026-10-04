@@ -1,0 +1,30 @@
+{
+  "code_commit": "HEAD",
+  "configuration_hash": "sha256:87f3e7ccb1251fffc4765f78654745ba473af892028e9700bb319fb7137ade9d",
+  "created_at": "2026-08-31T13:15:00Z",
+  "dirty_worktree": true,
+  "input_manifest_hash": "sha256:c4b4534a6982da59d35654b242f0ba002755e76ba28a3d617bc8d8c1e39051ec",
+  "inputs": {
+    "alberta_ai_projects": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "bcpi_alberta": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1",
+    "digest_items": "sha256:dff0059ac3fd878b9b2d31ba2e2c0223efbc81c9b2c532657f784296c39b6835",
+    "graph": "sha256:581f7ab9104ea8edac697422c233a786af91627c45cb9ce378de2c570771a5fe",
+    "model_run": "sha256:c4d90554551edf2599235f26ec32b0c5f5460d19ee3fc48df760430141b29e16",
+    "scenario": "sha256:ec03441e4bf4f51d9211e5e2593fe20b2df49aab432801d753b2073bba4c4efb",
+    "source_registry": "sha256:e972791b68896a0ecfd2983214c4df1a8387407215e9852f80d4077c36c29899"
+  },
+  "model_version": "AIIO_AB_GRAPH_0_1",
+  "outputs": {
+    "alberta_ai_projects.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "baseline.json": "sha256:fccb881e40be17cca0d52cf23c0fa6b85b7d46ee9a174ae99692de0380abaa8a",
+    "bcpi_alberta.csv": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1",
+    "digest.json": "sha256:5a25a81b49b65443f1d3e7be45195e690cf47faabadb699d299e3ca1c3d8f69e",
+    "scenario.json": "sha256:170338f23c2282142f1eb4b7549a66481bef50e6c7c2ab532e74ac0edd08a24b",
+    "sources.json": "sha256:954266d34c086a6927871fff967e8ff20d2febf8e9634dcaae2e73454cc5f310"
+  },
+  "publication_note": "Development release. Observations, inferences and scenarios remain explicitly separated.",
+  "release_id": "AIIO_RELEASE_0_1_0_DEV",
+  "schema_version": "1.0.0",
+  "status": "development",
+  "version": "0.1.0-dev"
+}

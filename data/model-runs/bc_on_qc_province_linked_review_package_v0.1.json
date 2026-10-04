@@ -1,0 +1,240 @@
+{
+  "artifact_as_of_date": "2026-06-30",
+  "facts_to_reconcile": {
+    "diagnostic_count": 12,
+    "gate_passing_geographies": [
+      "PR_59"
+    ],
+    "horizon_status_counts": {
+      "gate_failed": 36,
+      "gate_passed": 9,
+      "not_assessed": 15
+    },
+    "inferred_observation_count": 1296,
+    "maximum_overlap_mape_percent": 0.259071,
+    "official_observation_count": 456,
+    "total_observation_count": 1752
+  },
+  "input_manifest": [
+    {
+      "path": "data/processed/bcpi_reference_bc_on_qc.csv",
+      "role": "official_province_input",
+      "sha256": "sha256:8d6f2bce624176f736d68ac40f87fc5a3e78aec68d7ad0493ee26b3cfba60a5e"
+    },
+    {
+      "path": "data/processed/bcpi_reference_van_tor_mtl.csv",
+      "role": "cma_reference_input",
+      "sha256": "sha256:ac7f0603d84460c8049f335042d2ebc305671f1dab97174fdea159cfdbea1d4c"
+    },
+    {
+      "path": "data/processed/bcpi_province_linked_history_bc_on_qc.csv",
+      "role": "linked_history",
+      "sha256": "sha256:be1fb4655cf4a3625cad0e96dd304a5e0a1d4ee932be8d42d80d7965cc0f2f0f"
+    },
+    {
+      "path": "data/model-runs/bc_on_qc_province_linked_reference_baseline_v0.1.json",
+      "role": "model_artifact",
+      "sha256": "sha256:4a9a19269a889db967b1c170173ce017722161eeb335122e89ee1730147c5d0b"
+    },
+    {
+      "path": "research/src/aiio/provincial_backcast.py",
+      "role": "backcast_implementation",
+      "sha256": "sha256:353b72c3df83dc8a1cdb66c023687da3dce4dffc19e33c17754ced6c6c0b8cca"
+    },
+    {
+      "path": "research/src/aiio/calibration.py",
+      "role": "forecast_implementation",
+      "sha256": "sha256:e1f727c620c556ae40150824cab11afae49cd26cafe5e568d5438265185c413d"
+    },
+    {
+      "path": "research/src/aiio/provincial_backcast_review.py",
+      "role": "review_packager",
+      "sha256": "sha256:545c8418fc4e79c7405c794cca6ef75f68e04aba8d3ba3856b72d68703db9112"
+    },
+    {
+      "path": "research/tests/test_provincial_backcast.py",
+      "role": "artifact_tests",
+      "sha256": "sha256:ba7067449692ebcbcf20876e5d4683e83484370e48d20427b33d8b52b66c6409"
+    },
+    {
+      "path": "docs/methodology/province-linked-bcpi-backcast.md",
+      "role": "method_protocol",
+      "sha256": "sha256:72fbf6fa45b153175417498d3d2d5c4714c0b34faa838bcc35b77643caf5f6fe"
+    },
+    {
+      "path": "docs/product/decision-mode.md",
+      "role": "product_contract",
+      "sha256": "sha256:44c1a177a67249c229a4f76d6d65bf4e9a3e2b0a063061f5965453caffb68a8d"
+    }
+  ],
+  "model_artifact_sha256": "sha256:4a9a19269a889db967b1c170173ce017722161eeb335122e89ee1730147c5d0b",
+  "model_id": "AIIO_CA_BC_ON_QC_PROVINCE_LINKED_REFERENCE_BASELINE_0_1",
+  "package_id": "AIIO_CA_PROVINCE_LINKED_BCPI_REVIEW_PACKAGE_0_1",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "independent_review_complete": false,
+    "project_cost_translation_authorized": false,
+    "province_linked_backcast_authorized_for_research_display": true,
+    "public_projection_authorized": false,
+    "reason": "This deterministic packet is a review instrument, not an independent verdict."
+  },
+  "required_criteria": [
+    {
+      "criterion_id": "source_lineage",
+      "question": "Do both normalized inputs reconcile to the locked Statistics Canada BCPI source and retain their distinct province/CMA geographies?",
+      "required": true
+    },
+    {
+      "criterion_id": "evidence_status_boundary",
+      "question": "Are official provincial observations preserved and every pre-2017 bridge value unambiguously labelled inferred and not official?",
+      "required": true
+    },
+    {
+      "criterion_id": "anchor_formula",
+      "question": "Is the single-anchor scaling formula implemented deterministically without using future provincial values to alter pre-anchor growth?",
+      "required": true
+    },
+    {
+      "criterion_id": "reference_market_choice",
+      "question": "Are Montr\u00e9al, Toronto and Vancouver defensible, sufficiently disclosed historical reference markets for the narrow research-validation use?",
+      "required": true
+    },
+    {
+      "criterion_id": "overlap_diagnostic",
+      "question": "Is the predeclared 3% overlap MAPE screen correctly calculated, interpreted and insufficient on its own to establish historical representativeness?",
+      "required": true
+    },
+    {
+      "criterion_id": "splice_integrity",
+      "question": "Are quarter continuity, anchor continuity, units, index base, source IDs and DGUID lineage preserved across the inferred/observed splice?",
+      "required": true
+    },
+    {
+      "criterion_id": "forecast_validation",
+      "question": "Does the unchanged rolling-origin protocol remain temporally valid when applied to the mixed inferred/observed history?",
+      "required": true
+    },
+    {
+      "criterion_id": "fail_closed_outputs",
+      "question": "Do failed and unassessed horizons remain null and do all internal passes remain withheld from project-cost translation?",
+      "required": true
+    },
+    {
+      "criterion_id": "reproducibility",
+      "question": "Do the hashes, deterministic artifacts and tests reproduce all 1,752 observations, 12 diagnostics and 60 horizon dispositions?",
+      "required": true
+    },
+    {
+      "criterion_id": "public_claim_boundary",
+      "question": "Would any authorization remain limited to research display of the bridge, with no official-history, project-cost, AI-effect or province-wide representativeness claim?",
+      "required": true
+    }
+  ],
+  "review_scope": "BC, Ontario and Quebec province-linked BCPI historical bridge and held-out reference validation",
+  "review_status": "pending_independent_review",
+  "reviewer_instructions": [
+    "Perform a read-only review and verify every manifest hash before forming a verdict.",
+    "Run the declared tests or record why they were not run; passing tests do not substitute for methodological judgment.",
+    "Disposition every criterion with file-, row-, formula- or test-backed notes.",
+    "Any conditional/failed criterion or unresolved critical/high finding requires a hold verdict.",
+    "A pass may recommend research display of the labelled bridge only; it cannot authorize a public projection, project-cost translation, AI effect or official pre-2017 provincial history.",
+    "Return a separate JSON verdict and do not edit the package, artifact or governance gate."
+  ],
+  "schema_version": "1.0.0",
+  "test_commands": [
+    "PYTHONPATH=research/src python3 -m unittest research.tests.test_provincial_backcast -v",
+    "PYTHONPATH=research/src python3 -m aiio.cli --root . audit-program-readiness"
+  ],
+  "verdict_contract": {
+    "claim_boundary_acknowledged": true,
+    "criteria": [
+      {
+        "criterion_id": "source_lineage",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "evidence_status_boundary",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "anchor_formula",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "reference_market_choice",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "overlap_diagnostic",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "splice_integrity",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "forecast_validation",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "fail_closed_outputs",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "reproducibility",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "public_claim_boundary",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      }
+    ],
+    "findings": [
+      {
+        "criterion_id": "<required criterion ID>",
+        "evidence": "<file/line or test evidence>",
+        "finding_id": "<unique>",
+        "severity": "critical|high|medium|low|observation",
+        "status": "open|resolved|accepted_limitation",
+        "summary": "<nonblank>"
+      }
+    ],
+    "overall_verdict": "pass|hold",
+    "package_id": "AIIO_CA_PROVINCE_LINKED_BCPI_REVIEW_PACKAGE_0_1",
+    "package_sha256": "sha256:<hash of this package file>",
+    "publication_recommendation": "authorize_research_display_only|withhold",
+    "reviewed_at": "YYYY-MM-DD",
+    "reviewer": {
+      "conflicts_of_interest": "<none or disclosure>",
+      "independence_declaration": "<nonblank>",
+      "name": "<nonblank>",
+      "organization": "<nonblank or independent>",
+      "reviewer_is_not_model_author": true,
+      "reviewer_type": [
+        "claude_cli",
+        "grok_cli",
+        "human_subject_matter_expert"
+      ],
+      "tool_version": "<version or not_applicable>"
+    },
+    "schema_version": "1.0.0",
+    "summary": "<nonblank>",
+    "tests_run": [
+      {
+        "command": "<command>",
+        "notes": "<nonblank>",
+        "status": "pass|fail|not_run"
+      }
+    ]
+  }
+}

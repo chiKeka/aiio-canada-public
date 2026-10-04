@@ -1,0 +1,15 @@
+{
+  "source_id": "public-balzac-project-register",
+  "requested_url": "https://majorprojects.alberta.ca/details/Hwy-2-SH-566-Interchange-Upgrades-Balzac/2976",
+  "retrieved_at": "2026-10-03T21:30:31.853893+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://majorprojects.alberta.ca/details/Hwy-2-SH-566-Interchange-Upgrades-Balzac/2976",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 302109,
+  "sha256": "24e92bee2824d6dab177805082cb6fff3776f248cdefe3160eaab070484a50d9",
+  "archive_path": "sources/public-balzac-project-register/page.html",
+  "content_verification": "relevant_source_content_verified"
+}

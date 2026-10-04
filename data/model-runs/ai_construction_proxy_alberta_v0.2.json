@@ -1,0 +1,77 @@
+{
+  "contract_sha256": "sha256:271cb404bbaf4bea02f6d4bd6c49ecf98dd10a2fd492b64ea927818135c16c59",
+  "costed_project_count": 1,
+  "implementation_manifest": {
+    "research/src/aiio/full_schedule_proxy.py": "sha256:4e6e18eb5c8cd3700a1273a95aa8cd60b1b6dcc4c8c3813d0850ff36373162e9",
+    "research/src/aiio/proxy_treatment.py": "sha256:337d878733859a3ab07f460fc0bc2ea98ef575014b2884f680df56d8fb3d558f"
+  },
+  "input_manifest": {
+    "data/model-runs/ai_attribution_empirical_covariate_panel_v0.1.json": "sha256:66e141922ae503b4fc85c7f5c7200b075beb13c424bafb2a562ad7c743b2f68c",
+    "data/model-runs/ai_construction_proxy_alberta_v0.1.json": "sha256:63053c4316fb2d634020588602fd8f6fdf9ad8f6f4c2fa0b389fcee292fb5fb6",
+    "data/model-runs/alberta_quarterly_planning_benchmark_v0.1.json": "sha256:5e78a8d4bedfa83cd3baf968dd5333d0d00b09ce6b45dfcea3187e735d70b91e",
+    "data/model/alberta_quarterly_planning_benchmark_contract_v0.1.json": "sha256:09d0d980688ac39d33380007d2e7b8541b805c6564216834bbb6d01016f7f15e",
+    "data/processed/ai_attribution_empirical_covariate_panel_v0.1.csv": "sha256:399d320e4be4057eee482ac0e3d7838dc17f1e19efde258c5345c4ad3d788620",
+    "data/processed/ai_construction_proxy_alberta_v0.1.csv": "sha256:774eb46d94af9356a776c6a6ef9f979b777a72b84336c61d18a2307bac77f0ef",
+    "data/processed/alberta_ai_projects.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "data/processed/edmonton_data_centre_permit_proxy.csv": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2",
+    "research/src/aiio/planning_benchmark.py": "sha256:5d5782df46d11f4d90d8cf92cecfd118ac9b67d2018fef57d74544b51bbcc323",
+    "research/src/aiio/proxy_treatment.py": "sha256:337d878733859a3ab07f460fc0bc2ea98ef575014b2884f680df56d8fb3d558f"
+  },
+  "limitations": [
+    "Allocation uses the current reported start/end years and an assumed within-year profile; no realized spending or historical publication availability is established.",
+    "Outside-window ledger rows preserve assumed allocation, not observations or approved forecasts.",
+    "Permit scope and linkage remain unreviewed; no draft exclusions or deduplication are applied.",
+    "The immutable v0.1 proxy and benchmark are not overwritten."
+  ],
+  "model_id": "AIIO_E2_RECONSTRUCTED_AI_CONSTRUCTION_PROXY_0_2",
+  "output_manifest": {
+    "data/processed/ai_construction_project_allocations_alberta_v0.2.csv": "sha256:c84aabee748490f81ee344c08f8d374711b1e453c8103356646dc8e7a60f64df",
+    "data/processed/ai_construction_proxy_alberta_v0.2.csv": "sha256:b0ee791aada6fa14a588a61e88a7c49da5da3da940c905d6a98634b25769583b"
+  },
+  "permit_candidate_count": 6,
+  "predecessor_model_id": "AIIO_E2_RECONSTRUCTED_AI_CONSTRUCTION_PROXY_0_1",
+  "project_allocation_totals_cad": {
+    "after": "97260748.96",
+    "before": "0.00",
+    "inside": "652739251.04"
+  },
+  "project_reconciliation": [
+    {
+      "after_window_cad": "97260748.96",
+      "before_window_cad": "0.00",
+      "full_schedule_quarters": 12,
+      "inside_window_cad": "652739251.04",
+      "project_id": "ABMP_11416",
+      "reconciles_to_reported_cost": true,
+      "reported_cost_cad": "750000000.00"
+    }
+  ],
+  "publication_boundary": {
+    "automatic_promotion_allowed": false,
+    "causal_attribution_allowed": false,
+    "monthly_project_cost_translation_allowed": false,
+    "schedule_delay_prediction_allowed": false,
+    "validated_proxy_estimate_allowed": false
+  },
+  "reconstruction": {
+    "eligible_projects": "same core data-centre, Under Construction, supported CMA, positive cost and complete start/end years as v0.1",
+    "money_allocation": "integer cents, largest remainder over full schedule, chronological ties",
+    "outside_window": "preserve full project allocation ledger and report pre-window/deferred totals; never renormalize retained quarters",
+    "permit_realization": {
+      "central": 0.6,
+      "high": 0.85,
+      "low": 0.35
+    },
+    "permit_selection": "unchanged v0.1; no draft-review exclusions or facility deduplication",
+    "project_realization": {
+      "central": 0.65,
+      "high": 0.8,
+      "low": 0.45
+    },
+    "schedule": "same symmetric profile as v0.1, normalized over ALL reported start/end quarters before slicing the output window",
+    "window_end": "2026-Q2",
+    "window_start": "2017-Q1"
+  },
+  "row_count": 76,
+  "status": "timing_corrected_research_proxy_not_validated"
+}

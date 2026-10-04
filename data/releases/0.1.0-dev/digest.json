@@ -1,0 +1,23 @@
+{
+  "edition_date": "2026-08-31",
+  "items": [
+    {
+      "evidence_status": "observed",
+      "headline": "Alberta non-residential building cost indexes rose in 2026 Q2",
+      "model_implication": "Update the Alberta construction-cost baseline after validating component-level movements. Do not attribute the change to AI investment; it is a pre-scenario market observation.",
+      "observed_change": "The non-residential building composite rose from 110.1 to 111.9 in Calgary and from 111.5 to 113.1 in Edmonton between 2026 Q1 and Q2 (2023=100). These are approximately 1.6% and 1.4% quarter-over-quarter increases, respectively; the series is not seasonally adjusted and can be revised.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810028901"
+    },
+    {
+      "evidence_status": "observed",
+      "headline": "AESO's 2026 outlook design treats data-centre growth as a major uncertainty",
+      "model_implication": "Keep multiple load-realization pathways and connection-stage probabilities in the Alberta power module rather than using a single data-centre load forecast.",
+      "observed_change": "AESO's 2026 Long-Term Outlook engagement material explicitly identifies increased data-centre development interest as a source of uncertainty for load growth and generation needs through 2050. The final outlook has not yet been published on this page.",
+      "source_id": "AESO_LTO_2026_INPUTS",
+      "source_url": "https://aesoengage.aeso.ca/2026-long-term-outlook-plan"
+    }
+  ],
+  "promotion_rule": "Digest evidence does not change model values until reviewed and included in a versioned release.",
+  "status": "review"
+}

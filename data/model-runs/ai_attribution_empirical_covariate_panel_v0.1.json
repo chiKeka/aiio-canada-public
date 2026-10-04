@@ -1,0 +1,71 @@
+{
+  "asset_class_count": 3,
+  "authorizing_outcome_cell_count": 0,
+  "authorizing_treatment_cell_count": 0,
+  "complete_investment_control_cell_count": 555,
+  "complete_market_price_cell_count": 555,
+  "estimation_eligible_row_count": 0,
+  "field_completeness": {
+    "construction_weekly_earnings_cad": {
+      "non_missing_count": 555,
+      "row_count": 555
+    },
+    "cpi_all_items_index": {
+      "non_missing_count": 555,
+      "row_count": 555
+    },
+    "cpi_shelter_index": {
+      "non_missing_count": 555,
+      "row_count": 555
+    },
+    "housing_starts_saar": {
+      "non_missing_count": 555,
+      "row_count": 555
+    },
+    "population": {
+      "non_missing_count": 555,
+      "row_count": 555
+    },
+    "trade_average_offered_wage_cad": {
+      "non_missing_count": 525,
+      "row_count": 555
+    },
+    "trade_job_vacancies": {
+      "non_missing_count": 501,
+      "row_count": 555
+    }
+  },
+  "first_period_end": "2017-03-31",
+  "frequency": "quarterly",
+  "input_manifest": {
+    "data/model/ai_attribution_panel_acquisition_contract_v0.1.json": "sha256:d71986f67fcedf43cccecf2a77e368429811093b2ceff42fde248cc81712cb7d",
+    "data/model/ai_attribution_panel_contract_v0.1.json": "sha256:1c53deb5653265bddc5f38fd62c7b3ca99c396f2f13b6d246fd220dcd079d77b",
+    "data/processed/ai_construction_proxy_alberta_v0.1.csv": "sha256:774eb46d94af9356a776c6a6ef9f979b777a72b84336c61d18a2307bac77f0ef",
+    "data/processed/bcpi_alberta.csv": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1",
+    "data/processed/bcpi_reference_van_tor_mtl.csv": "sha256:ac7f0603d84460c8049f335042d2ebc305671f1dab97174fdea159cfdbea1d4c",
+    "data/processed/building_investment_controls_canada.csv": "sha256:95121c9ffe97ad972509d481d2517b8231c32af5d3f34d743f0910305996d33e",
+    "data/processed/labour_availability_canada.csv": "sha256:47652b4a8b2dd9ab6eb77b1b16a44b5bbc62a018dd33272fdbefda710ea56f79",
+    "data/processed/regional_macro_controls_canada.csv": "sha256:512312573bc3f8e67e444279effd9b575b8b62cb5092b959446e032e91288908"
+  },
+  "latest_period_end": "2026-03-31",
+  "output_path": "data/processed/ai_attribution_empirical_covariate_panel_v0.1.csv",
+  "output_sha256": "sha256:399d320e4be4057eee482ac0e3d7838dc17f1e19efde258c5345c4ad3d788620",
+  "panel_id": "AIIO_E2_EMPIRICAL_COVARIATE_PANEL_0_1",
+  "proxy_treatment_cell_count": 222,
+  "proxy_treatment_geography_count": 2,
+  "publication_boundary": {
+    "ai_attributable_increment": null,
+    "descriptive_covariate_panel_authorized": true,
+    "effect_estimation_authorized": false,
+    "market_price_proxy_authorized": true,
+    "public_project_outcome_authorized": false,
+    "reason": "The panel assembles observed comparison-market covariates and price-index proxies, but contains no authorizing realized AI-construction dose or public-project outcome.",
+    "treatment_authorized": false
+  },
+  "quarter_count": 37,
+  "region_count": 5,
+  "row_count": 555,
+  "schema_version": "1.0.0",
+  "status": "covariate_panel_assembled_estimation_withheld",
+  "unit_of_analysis": "region_quarter_asset_class"
+}

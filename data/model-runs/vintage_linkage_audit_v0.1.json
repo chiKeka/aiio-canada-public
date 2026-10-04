@@ -1,0 +1,337 @@
+{
+  "archive_inventory": [
+    {
+      "distinct_content_count": 1,
+      "earliest_archived_retrieval": "2026-08-31T13:10:54+00:00",
+      "evidence_basis": "committed retrieval manifests; retrieval time is not publication time",
+      "retrieval_count": 1,
+      "retrievals": [
+        {
+          "archive_path": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv",
+          "content_hash": "sha256:450d7bfc94650944cbd5f0b4639752d876bd6f3b3e2f3ff5d1527381251bd032",
+          "manifest_path": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json",
+          "retrieved_at": "2026-08-31T13:10:54+00:00"
+        }
+      ],
+      "source_id": "ALBERTA_MAJOR_PROJECTS"
+    },
+    {
+      "distinct_content_count": 1,
+      "earliest_archived_retrieval": "2026-09-01T04:32:51+00:00",
+      "evidence_basis": "committed retrieval manifests; retrieval time is not publication time",
+      "retrieval_count": 3,
+      "retrievals": [
+        {
+          "archive_path": "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json",
+          "content_hash": "sha256:f4da956ae985c7eb9abb9cd993407c57bfdf23a8191bba77605e20482d9b6f17",
+          "manifest_path": "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json.manifest.json",
+          "retrieved_at": "2026-09-01T04:32:51+00:00"
+        },
+        {
+          "archive_path": "data/raw/edmonton_general_building_permits/2026-09-02_f4da956ae985.json",
+          "content_hash": "sha256:f4da956ae985c7eb9abb9cd993407c57bfdf23a8191bba77605e20482d9b6f17",
+          "manifest_path": "data/raw/edmonton_general_building_permits/2026-09-02_f4da956ae985.json.manifest.json",
+          "retrieved_at": "2026-09-02T12:13:46+00:00"
+        },
+        {
+          "archive_path": "data/raw/edmonton_general_building_permits/2026-09-03_f4da956ae985.json",
+          "content_hash": "sha256:f4da956ae985c7eb9abb9cd993407c57bfdf23a8191bba77605e20482d9b6f17",
+          "manifest_path": "data/raw/edmonton_general_building_permits/2026-09-03_f4da956ae985.json.manifest.json",
+          "retrieved_at": "2026-09-03T01:30:51+00:00"
+        }
+      ],
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS"
+    },
+    {
+      "distinct_content_count": 1,
+      "earliest_archived_retrieval": "2026-08-31T13:06:36+00:00",
+      "evidence_basis": "committed retrieval manifests; retrieval time is not publication time",
+      "retrieval_count": 1,
+      "retrievals": [
+        {
+          "archive_path": "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip",
+          "content_hash": "sha256:d0d11fda82bf37c3720d159c1d441bc1f15abd73ba9b7d9e750f4b1929b26612",
+          "manifest_path": "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip.manifest.json",
+          "retrieved_at": "2026-08-31T13:06:36+00:00"
+        }
+      ],
+      "source_id": "STATCAN_BCPI_18100289"
+    }
+  ],
+  "audit_id": "AIIO_VINTAGE_LINKAGE_AUDIT_0_1",
+  "component_overlap": {
+    "finding": "No same-cell project/permit dollar overlap in the frozen proxy.",
+    "permits_deduplicated": false,
+    "scope": "current included dollar components and declared CMA mapping only; not proof of distinct facilities or permit work packages",
+    "simultaneously_positive_market_quarter_cells": 0
+  },
+  "contract_sha256": "sha256:0c3c17684ca12b75ad2fcd93a6537ac9d94862cae3a428544d9b475757c963a3",
+  "facility_candidate_groups": [
+    {
+      "candidate_id": "FACILITY_CANDIDATE_ENBRIDGE",
+      "confirmed_link": false,
+      "permit_ids": [
+        "EDMBP_1_634601931"
+      ]
+    },
+    {
+      "candidate_id": "FACILITY_CANDIDATE_HEALTH_INSTITUTION",
+      "confirmed_link": false,
+      "permit_ids": [
+        "EDMBP_1_429959179"
+      ]
+    },
+    {
+      "candidate_id": "FACILITY_CANDIDATE_POWERHOUSE",
+      "confirmed_link": false,
+      "permit_ids": [
+        "EDMBP_0_309784686"
+      ]
+    },
+    {
+      "candidate_id": "FACILITY_CANDIDATE_ROGERS_ARMSTRONG",
+      "confirmed_link": false,
+      "permit_ids": [
+        "EDMBP_0_292502657",
+        "EDMBP_1_356648187"
+      ]
+    },
+    {
+      "candidate_id": "FACILITY_CANDIDATE_WOLFPAW",
+      "confirmed_link": false,
+      "permit_ids": [
+        "EDMBP_1_461055944"
+      ]
+    }
+  ],
+  "forecast_origin_audit": [
+    {
+      "forecast_origin_end": "2024-03-31",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2024-Q2"
+    },
+    {
+      "forecast_origin_end": "2024-06-30",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2024-Q3"
+    },
+    {
+      "forecast_origin_end": "2024-09-30",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2024-Q4"
+    },
+    {
+      "forecast_origin_end": "2024-12-31",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2025-Q1"
+    },
+    {
+      "forecast_origin_end": "2025-03-31",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2025-Q2"
+    },
+    {
+      "forecast_origin_end": "2025-06-30",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2025-Q3"
+    },
+    {
+      "forecast_origin_end": "2025-09-30",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2025-Q4"
+    },
+    {
+      "forecast_origin_end": "2025-12-31",
+      "sources_with_archived_snapshot_by_origin": [],
+      "status": "no_complete_point_in_time_evidence",
+      "target_quarter": "2026-Q1"
+    }
+  ],
+  "historical_publication_vintages_verified": false,
+  "implementation_manifest": {
+    "research/src/aiio/planning_benchmark.py": "sha256:5d5782df46d11f4d90d8cf92cecfd118ac9b67d2018fef57d74544b51bbcc323",
+    "research/src/aiio/proxy_treatment.py": "sha256:337d878733859a3ab07f460fc0bc2ea98ef575014b2884f680df56d8fb3d558f",
+    "research/src/aiio/vintage_linkage.py": "sha256:3ee777a4fbc254e6d76fcb57948bc57c2d67aa30c10c1d6f60ea08183ca4a537"
+  },
+  "included_permit_review": [
+    {
+      "ai_specificity_status": "not_observed",
+      "description_sha256": "sha256:70b46e80dda8029cf10dff4c731b471bdd90288b4582fe54b2997047d9f46758",
+      "facility_candidate_id": "FACILITY_CANDIDATE_ROGERS_ARMSTRONG",
+      "facility_match_status": "candidate_unconfirmed",
+      "geography_id": "CMA_835",
+      "independent_review_status": "pending",
+      "issue_date": "2018-10-16",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_0_292502657",
+      "reported_value_cad": "180000.00",
+      "source_row_id": "0-292502657",
+      "work_class": "maintenance",
+      "work_scope": "fire_alarm_alteration"
+    },
+    {
+      "ai_specificity_status": "not_observed",
+      "description_sha256": "sha256:73c52472d1bd2db60cf90bc3e0e849384fb83db68308c4ec37943fb22da9184a",
+      "facility_candidate_id": "FACILITY_CANDIDATE_POWERHOUSE",
+      "facility_match_status": "candidate_unconfirmed",
+      "geography_id": "CMA_835",
+      "independent_review_status": "pending",
+      "issue_date": "2019-04-26",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_0_309784686",
+      "reported_value_cad": "35000.00",
+      "source_row_id": "0-309784686",
+      "work_class": "fitout",
+      "work_scope": "data_room_fitout"
+    },
+    {
+      "ai_specificity_status": "not_observed",
+      "description_sha256": "sha256:338efc0dcba9ce081c0c38058407b15b90584eee0224e35a4d67295e6398bafa",
+      "facility_candidate_id": "FACILITY_CANDIDATE_ROGERS_ARMSTRONG",
+      "facility_match_status": "candidate_unconfirmed",
+      "geography_id": "CMA_835",
+      "independent_review_status": "pending",
+      "issue_date": "2020-05-21",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_356648187",
+      "reported_value_cad": "4000000.00",
+      "source_row_id": "1-356648187",
+      "work_class": "expansion",
+      "work_scope": "data_centre_expansion"
+    },
+    {
+      "ai_specificity_status": "not_observed",
+      "description_sha256": "sha256:5a515446bbd96fb7348af67a8bd01c921145c51cdf2057fa8c0b9d5cc2ee3599",
+      "facility_candidate_id": "FACILITY_CANDIDATE_HEALTH_INSTITUTION",
+      "facility_match_status": "candidate_unconfirmed",
+      "geography_id": "CMA_835",
+      "independent_review_status": "pending",
+      "issue_date": "2023-04-03",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_429959179",
+      "reported_value_cad": "658000.00",
+      "source_row_id": "1-429959179",
+      "work_class": "maintenance",
+      "work_scope": "hospital_cooling_replacement"
+    },
+    {
+      "ai_specificity_status": "not_observed",
+      "description_sha256": "sha256:a8af8247510e313c4b7f1235a41d7dcf0df54110147c7519fa66950b9843b1fd",
+      "facility_candidate_id": "FACILITY_CANDIDATE_WOLFPAW",
+      "facility_match_status": "candidate_unconfirmed",
+      "geography_id": "CMA_835",
+      "independent_review_status": "pending",
+      "issue_date": "2023-02-17",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_461055944",
+      "reported_value_cad": "150000.00",
+      "source_row_id": "1-461055944",
+      "work_class": "fitout",
+      "work_scope": "server_room_expansion"
+    },
+    {
+      "ai_specificity_status": "not_observed",
+      "description_sha256": "sha256:93138e168aa1022df47f2df0d9fc1ca97f277e1cca83bd64d4315b28c7aaedc8",
+      "facility_candidate_id": "FACILITY_CANDIDATE_ENBRIDGE",
+      "facility_match_status": "candidate_unconfirmed",
+      "geography_id": "CMA_835",
+      "independent_review_status": "pending",
+      "issue_date": "2025-11-12",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_634601931",
+      "reported_value_cad": "25000.00",
+      "source_row_id": "1-634601931",
+      "work_class": "maintenance",
+      "work_scope": "fire_suppression_panel_replacement"
+    }
+  ],
+  "input_manifest": {
+    "data/model-runs/ai_construction_proxy_alberta_v0.1.json": "sha256:63053c4316fb2d634020588602fd8f6fdf9ad8f6f4c2fa0b389fcee292fb5fb6",
+    "data/model-runs/alberta_quarterly_planning_benchmark_v0.1.json": "sha256:5e78a8d4bedfa83cd3baf968dd5333d0d00b09ce6b45dfcea3187e735d70b91e",
+    "data/model/alberta_quarterly_planning_benchmark_contract_v0.1.json": "sha256:09d0d980688ac39d33380007d2e7b8541b805c6564216834bbb6d01016f7f15e",
+    "data/processed/ai_construction_proxy_alberta_v0.1.csv": "sha256:774eb46d94af9356a776c6a6ef9f979b777a72b84336c61d18a2307bac77f0ef",
+    "data/processed/alberta_ai_projects.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "data/processed/edmonton_data_centre_permit_proxy.csv": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2",
+    "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json": "sha256:2c4b91f7d4ffcc1d8a6e9930867f6e265b65140abb3c97f0551c6b5b73279df3",
+    "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json.manifest.json": "sha256:c03f68ec541cc43f8e7b4870f147cd8912f05fe720fe439f352bd11a654b581c",
+    "data/raw/edmonton_general_building_permits/2026-09-02_f4da956ae985.json.manifest.json": "sha256:1cdbfe3b3c7e6c210474356bcd8f4d2f9917f18c7441cdfc6714814fd23d3099",
+    "data/raw/edmonton_general_building_permits/2026-09-03_f4da956ae985.json.manifest.json": "sha256:c6b5f92c3e7e965719a19d7b9629d72bd20ce5519d1298ab0eda6073d0987bb3",
+    "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip.manifest.json": "sha256:1ca88d0ccbbdc2be7d10a91ea4f3f373c9bd342841e3e201104a5e5d97b1f639",
+    "data/reviews/edmonton_included_permit_review_v0.1.json": "sha256:f0646f8a92f7ba4f54058da35bba7dac67c5cf612f00debef8929ac08d2f97a4"
+  },
+  "limitations": [
+    "Inventory covers the pinned local archive only; it does not establish whether external historical archives exist.",
+    "Proposed work classes and facility candidates are analyst interpretations awaiting independent review.",
+    "Neither permits, reported project costs, nor timing profiles establish realized AI expenditure."
+  ],
+  "next_evidence_required": [
+    "Archived project cost, schedule and stage records with publication dates before each forecast origin.",
+    "Historical BCPI release vintages; an old reference quarter in a current extract is insufficient.",
+    "Permit publication/update history; issue dates alone cannot establish historical availability.",
+    "Independently reviewed facility and work-package linkage for the two Rogers candidates; do not collapse separate maintenance and expansion permits.",
+    "A separately versioned full-schedule denominator and source-ablation protocol before any refit."
+  ],
+  "project_inventory": [
+    {
+      "enters_dollar_proxy": true,
+      "geography_id": "CMA_825",
+      "permit_match": "no_confirmed_link",
+      "project_id": "ABMP_11416"
+    },
+    {
+      "enters_dollar_proxy": false,
+      "geography_id": "CMA_825",
+      "permit_match": "no_confirmed_link",
+      "project_id": "ABMP_11866"
+    },
+    {
+      "enters_dollar_proxy": false,
+      "geography_id": "CMA_825",
+      "permit_match": "no_confirmed_link",
+      "project_id": "ABMP_12173"
+    }
+  ],
+  "publication_boundary": {
+    "automatic_model_changes_allowed": false,
+    "causal_attribution_allowed": false,
+    "confirmed_facility_linkage": false,
+    "new_treatment_authorized": false,
+    "validated_proxy_estimate_allowed": false
+  },
+  "schedule_horizon_audit": [
+    {
+      "archived_proxy_window_quarters": 10,
+      "full_schedule_denominator_allocation_cad": 652739251.04,
+      "full_schedule_quarters": 12,
+      "model_modified": false,
+      "project_id": "ABMP_11416",
+      "status": "truncated_schedule_denominator_requires_versioned_fix",
+      "v0_1_clipped_schedule_allocation_cad": 750000000.0
+    }
+  ],
+  "status": "audit_complete_evidence_and_review_pending",
+  "work_scope_summary": [
+    {
+      "record_count": 1,
+      "reported_value_cad": "4000000.00",
+      "work_class": "expansion"
+    },
+    {
+      "record_count": 2,
+      "reported_value_cad": "185000.00",
+      "work_class": "fitout"
+    },
+    {
+      "record_count": 3,
+      "reported_value_cad": "863000.00",
+      "work_class": "maintenance"
+    }
+  ]
+}

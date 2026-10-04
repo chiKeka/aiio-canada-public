@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_ONTARIO_BUILDS_PROJECTS_acd5e57a1989517a",
+  "source_id": "ONTARIO_BUILDS_PROJECTS",
+  "retrieved_at": "2026-09-01T02:29:03+00:00",
+  "effective_url": "https://data.ontario.ca/dataset/aefd72d3-f67c-44ed-b017-b74e7ecd9258/resource/35dc5416-2b86-4a79-b3e6-acbfe004c81a/download/ontbuilds-all-20260612.csv",
+  "content_hash": "sha256:acd5e57a1989517aaae269b5836f7d1e56b22b2f948d0254500b8c3b54b5bae4",
+  "content_type": "application/csv",
+  "byte_length": 2333990,
+  "archive_path": "data/raw/ontario_builds_projects/2026-09-01_acd5e57a1989.csv",
+  "result": "success"
+}

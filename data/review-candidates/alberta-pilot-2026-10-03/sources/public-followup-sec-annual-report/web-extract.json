@@ -1,0 +1,23 @@
+{
+  "source_url": "https://www.sec.gov/Archives/edgar/data/810961/000119312525155469/d52186dex991.htm",
+  "retrieved_at": "2026-10-03T23:01:54.699397+00:00",
+  "retrieval_method": "web_tool_text_extract",
+  "document": "Government of Alberta Annual Report 2024\u201325, consolidated financial statements Note 8",
+  "document_author": "Government of Alberta",
+  "host": "US Securities and Exchange Commission issuer filing",
+  "full_raw_download": "HTTP403; not captured",
+  "facts": {
+    "approval_date": "2025-06-16",
+    "bundle_id": "P3SB5",
+    "counterparty": "Ellisdon Infrastructure Alberta P3SB5 General Partnership",
+    "contract_date_precision": "2025-03",
+    "scheduled_completion_precision": "2027-09",
+    "capital_payments_begin_precision": "2027-09",
+    "school_specific_price": null
+  },
+  "classification": "bundle_governing_context_not_school_package_cost",
+  "limitations": [
+    "Web extracted note, not downloaded complete signed agreement",
+    "No school-specific uncommitted amount or escalation clause established"
+  ]
+}

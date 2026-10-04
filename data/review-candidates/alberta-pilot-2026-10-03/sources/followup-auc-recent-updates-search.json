@@ -1,0 +1,11 @@
+{
+  "source_receipt": "followup-auc-recent-updates-data.manifest.json",
+  "search_terms": [
+    "31020",
+    "eStruxture"
+  ],
+  "row_count": 1100,
+  "matches": [],
+  "search_scope": "published_recent_updates_index_not_all_efiling_documents",
+  "absence_is_not_proof_of_no_approval": true
+}

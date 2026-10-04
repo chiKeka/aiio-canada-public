@@ -1,0 +1,22 @@
+{
+  "source_id": "capacity-western-electrical-name-exclusion",
+  "requested_url": "https://www.westernelectrical.com/projects/",
+  "retrieved_at": "2026-10-03T23:01:00.693363+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "raw_redistribution": "pending_review",
+  "effective_url": "https://www.westernelectrical.com/projects/",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 34112,
+  "sha256": "7639f26d5b74739060b742f340668f92608877d159414943b0fd64d7ac3aab47",
+  "archive_path": "sources/capacity-western-electrical-name-exclusion/page.html",
+  "content_verification": {
+    "expected_terms_present": {
+      "Q9": true,
+      "2007": true
+    },
+    "status": "relevant_source_content_verified"
+  }
+}

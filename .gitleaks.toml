@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Reviewed public Matachewan building-area narrative; not authentication data"
+condition = "AND"
+paths = ['''(?:^|/)data/(?:processed/public_projects_bc_on_qc\.csv|raw/ontario_builds_projects/2026-09-01_acd5e57a1989\.csv)$''']
+regexTarget = "match"
+regexes = ['''(?i)accessible 7,540-square-foot''']

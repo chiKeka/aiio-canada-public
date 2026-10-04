@@ -1,0 +1,13 @@
+{
+  "archive_path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/statcan_jvws_14100444/2026-10-03_bb50ed47b2b5.zip",
+  "byte_length": 99676598,
+  "content_hash": "sha256:bb50ed47b2b5149c481e11f7be3289f137867df7457f17d7e58e37c5ea6a0080",
+  "content_type": "application/zip",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/14100444-eng.zip",
+  "original_archive_path": "data/raw/statcan_jvws_14100444/2026-10-03_bb50ed47b2b5.zip",
+  "result": "success",
+  "retrieval_id": "RET_STATCAN_JVWS_14100444_bb50ed47b2b5149c",
+  "retrieved_at": "2026-10-03T23:45:13+00:00",
+  "review_status": "candidate_only_not_release_promoted",
+  "source_id": "STATCAN_JVWS_14100444"
+}

@@ -1,0 +1,22 @@
+{
+  "source_id": "capacity-statcan-regional-occupation",
+  "requested_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410046603",
+  "retrieved_at": "2026-10-03T23:01:00.666899+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "raw_redistribution": "pending_review",
+  "effective_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410046603",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "result": "success",
+  "byte_length": 116333,
+  "sha256": "83ead22831f54047c8c297e9553c6461d3b79641fa81c505ce58c1f913199316",
+  "archive_path": "sources/capacity-statcan-regional-occupation/page.html",
+  "content_verification": {
+    "expected_terms_present": {
+      "Employment by occupation": true,
+      "economic region": true
+    },
+    "status": "relevant_source_content_verified"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "overlay_id": "AB_AI_POWER_OVERLAY_2027_2036",
+  "parameter_set_id": "AB_POWER_PARAMETERS_0_1",
+  "name": "Independent Alberta AI load and transmission overlay",
+  "description": "A transparent MW-based scenario overlay for possible AI data-centre load commissioned between 2027 and 2036. It is independent of the $50B capex scenario.",
+  "geography_id": "PR_48",
+  "evidence_status": "scenario",
+  "start_year": 2027,
+  "end_year": 2036,
+  "annual_commissioning_profile": [0.05, 0.07, 0.10, 0.13, 0.15, 0.15, 0.13, 0.10, 0.07, 0.05],
+  "cases": {
+    "low": {
+      "it_load_mw_at_full_buildout": 2000,
+      "energy_pue": 1.20,
+      "peak_to_it_factor": 1.05,
+      "load_factor": 0.88,
+      "grid_supply_share": 0.20,
+      "peak_coincidence": 0.85,
+      "planning_margin": 0.15
+    },
+    "central": {
+      "it_load_mw_at_full_buildout": 4000,
+      "energy_pue": 1.25,
+      "peak_to_it_factor": 1.10,
+      "load_factor": 0.94,
+      "grid_supply_share": 0.40,
+      "peak_coincidence": 0.90,
+      "planning_margin": 0.15
+    },
+    "high": {
+      "it_load_mw_at_full_buildout": 6000,
+      "energy_pue": 1.35,
+      "peak_to_it_factor": 1.15,
+      "load_factor": 0.96,
+      "grid_supply_share": 0.70,
+      "peak_coincidence": 0.95,
+      "planning_margin": 0.20
+    }
+  },
+  "assumption_note": "All load, efficiency, grid-share, coincidence, commissioning and margin values are declared scenario assumptions. The transfer proxy is not an AESO needs assessment.",
+  "author": "AIIO Canada research build",
+  "status": "uncalibrated_power_overlay"
+}

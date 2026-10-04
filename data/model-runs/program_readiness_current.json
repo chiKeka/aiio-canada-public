@@ -1,0 +1,491 @@
+{
+  "as_of_date": "2026-09-29",
+  "audit_id": "AIIO_PROGRAM_READINESS_2026_09_29",
+  "checks": [
+    {
+      "category": "research_design",
+      "check_id": "formal_research_program",
+      "evidence": [
+        "docs/research-charter.md",
+        "docs/architecture.md",
+        "docs/governance/publication-policy.md",
+        "docs/governance/dissertation-alignment.md",
+        "docs/methodology/pspe-integration-audit.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The named research program, framing question, governance boundary and PSPE integration are documented."
+    },
+    {
+      "category": "research_design",
+      "check_id": "pspe_method_lineage",
+      "evidence": [
+        "data/model/pspe_method_lineage_contract_v0.1.json",
+        "data/model-runs/pspe_method_lineage_v0.1.json",
+        "docs/methodology/pspe-source-lineage.md",
+        "research/src/aiio/pspe_lineage.py"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "Five PSPE concept-to-AIIO mappings are hash-locked against the local Git-backed method repository, while the separate unavailable engine source and unimplemented layers remain explicit."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "canada_cross_domain_coverage",
+      "evidence": [
+        "data/model-runs/canada_cross_domain_coverage_v0.1.json",
+        "research/src/aiio/canada_coverage.py",
+        "docs/expansion/canada-cross-domain-coverage.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "All 13 provinces and territories have an explicit seven-domain coverage and missingness inventory without authorizing comparison or calibration."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "public_evidence_registry",
+      "evidence": [
+        "data/registry/sources.json",
+        "raw_manifest_count=113"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The public-source registry validates with 44 unique sources."
+    },
+    {
+      "category": "analysis_engine",
+      "check_id": "alberta_graph_scenario_engine",
+      "evidence": [
+        "data/model/alberta_graph_v0.2.json",
+        "data/scenarios/alberta_50b_counterfactual_v0.2.json",
+        "data/model-runs/alberta_50b_counterfactual_v0.2.json",
+        "data/scenarios/alberta_power_overlay_v0.1.json",
+        "data/model-runs/alberta_power_overlay_v0.1.json",
+        "docs/scenarios/alberta-50b-protocol.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The graph engine, sealed $50B Alberta scenario, independent power overlay and protocol are present."
+    },
+    {
+      "category": "analysis_engine",
+      "check_id": "alberta_scenario_variant_suite",
+      "evidence": [
+        "data/model/alberta_50b_scenario_suite_contract_v0.1.json",
+        "data/scenarios/alberta_50b_front_loaded_v0.1.json",
+        "data/scenarios/alberta_50b_constrained_delivery_v0.1.json",
+        "data/scenarios/alberta_50b_high_local_capture_v0.1.json",
+        "data/model-runs/alberta_50b_front_loaded_v0.1.json",
+        "data/model-runs/alberta_50b_constrained_delivery_v0.1.json",
+        "data/model-runs/alberta_50b_high_local_capture_v0.1.json",
+        "data/model-runs/alberta_50b_scenario_suite_v0.1.json",
+        "docs/scenarios/alberta-50b-variant-suite.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "Four invariant-controlled Alberta scenario runs are hash-locked in a fail-closed comparison suite."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "alberta_evidence_spine",
+      "evidence": [
+        "data/processed/alberta_ai_projects.csv",
+        "data/processed/bcpi_alberta.csv",
+        "data/processed/labour_availability_alberta.csv",
+        "data/model-runs/labour_recruitment_pressure_canada_v0.1.json",
+        "data/model-runs/bcpi_material_cost_screen_alberta_v0.1.json",
+        "data/model-runs/public_project_exposure_alberta_v0.1.json",
+        "data/model-runs/power_evidence_alberta_v0.1.json"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "Alberta project, price, labour, material, public-project and power evidence artifacts are present."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "alberta_ai_capex_announcement_ledger",
+      "evidence": [
+        "data/processed/alberta_ai_projects.csv",
+        "data/model-runs/alberta_ai_capex_announcement_ledger_v0.1.json",
+        "research/src/aiio/ai_capex_ledger.py",
+        "docs/methodology/ai-capex-announcement-ledger.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Alberta announcement ledger hash-locks project-stage, reported-cost and schedule coverage while authorizing no realized treatment or AI effect."
+    },
+    {
+      "category": "canada_expansion",
+      "check_id": "canada_labour_spine",
+      "evidence": [
+        "data/processed/labour_availability_canada.csv",
+        "data/processed/labour_workforce_stock_canada.csv",
+        "vacancy_geographies=13",
+        "workforce_geographies=13"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The common vacancy/wage and workforce-stock spine covers all 13 provinces and territories."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "regional_building_investment_controls",
+      "evidence": [
+        "data/processed/building_investment_controls_canada.csv",
+        "data/model-runs/building_investment_controls_canada_v0.1.json",
+        "docs/methodology/regional-building-investment-controls.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The quarterly regional building-investment control is hash-locked across 13 provinces/territories and 36 CMAs or CMA parts."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "regional_macro_control_panel",
+      "evidence": [
+        "data/processed/regional_macro_controls_canada.csv",
+        "data/model-runs/regional_macro_controls_canada_v0.1.json",
+        "research/src/aiio/macro_controls.py",
+        "docs/methodology/regional-macro-controls.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "Seven separate quarterly macro controls are hash-locked across 82 Canada-wide jurisdiction series and remain descriptive only."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "federal_procurement_outcome_feasibility",
+      "evidence": [
+        "data/processed/canadabuys_construction_outcome_feasibility.csv",
+        "data/model-runs/canadabuys_construction_outcome_feasibility_v0.1.json",
+        "docs/methodology/canadabuys-procurement-outcome-intake.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The CanadaBuys construction intake is hash-locked and proves useful procurement fields without authorizing project outcomes."
+    },
+    {
+      "category": "canada_expansion",
+      "check_id": "provincial_pilot_intake",
+      "evidence": [
+        "data/model-runs/public_projects_bc_on_qc_intake_v0.1.json",
+        "data/model-runs/bcpi_material_cost_screen_provinces_v0.1.json",
+        "data/model-runs/bc_on_qc_bcpi_reference_baseline_v0.1.json",
+        "data/model-runs/provincial_power_planning_contract_v0.1.json"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The BC, Ontario and Quebec project, cost and power intakes are reproducible and remain research-only."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "quebec_authorized_revision_panel",
+      "evidence": [
+        "data/processed/quebec_pqi_authorized_project_revisions.csv",
+        "data/processed/quebec_pqi_authorized_revision_events.csv",
+        "data/model-runs/quebec_pqi_authorized_project_revisions_v0.1.json",
+        "docs/methodology/quebec-authorized-project-revisions.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Quebec lifecycle panel is hash-reconciled, preserves stable project IDs and authorized revision chains, and remains research-only."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "quebec_milestone_longitudinal_panel",
+      "evidence": [
+        "data/model/quebec_pqi_milestone_vintage_contract_v0.1.json",
+        "data/model-runs/quebec_pqi_milestone_longitudinal_v0.1.json",
+        "data/processed/quebec_pqi_milestone_project_vintages.csv",
+        "data/processed/quebec_pqi_milestone_project_lifecycles.csv",
+        "data/model-runs/quebec_pqi_parser_review_package_v0.1.json",
+        "data/reviews/quebec_pqi_parser_review_sample_v0.1.csv",
+        "docs/methodology/quebec-milestone-longitudinal-panel.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Quebec archive selection, milestone lifecycle diagnostics and stratified parser-review package reproduce and remain explicitly non-authorizing."
+    },
+    {
+      "category": "evidence_pipeline",
+      "check_id": "quebec_complete_catalog_longitudinal_panel",
+      "evidence": [
+        "data/model/quebec_pqi_full_archive_contract_v0.1.json",
+        "data/model-runs/quebec_pqi_full_archive_longitudinal_v0.1.json",
+        "data/processed/quebec_pqi_full_archive_project_vintages.csv",
+        "data/processed/quebec_pqi_full_archive_project_lifecycles.csv",
+        "data/processed/quebec_pqi_full_archive_transitions.csv",
+        "docs/methodology/quebec-full-archive-longitudinal-panel.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "All 69 Quebec catalog dates, stable-ID transitions and the official paired-XLSX fallback reproduce while outcome and AI-effect claims remain closed."
+    },
+    {
+      "category": "living_program",
+      "check_id": "weekly_evidence_operation",
+      "evidence": [
+        "data/digests/items/2026-09-21.json",
+        "data/digests/2026-09-21.md",
+        "data/digests/2026-09-21.manifest.json",
+        "age_days=8"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The weekly digest is current at 2026-09-21, hash-reconciled and cannot change the model automatically."
+    },
+    {
+      "category": "product",
+      "check_id": "dual_mode_public_product",
+      "evidence": [
+        "app/page.tsx",
+        "app/scenario/page.tsx",
+        "app/pressure/page.tsx",
+        "app/evidence/page.tsx",
+        "app/digest/page.tsx",
+        "app/methods/page.tsx",
+        "app/research/page.tsx",
+        "app/downloads/page.tsx",
+        "components/mode-toggle.tsx",
+        "components/decision-workbench.tsx",
+        "components/impact-path-graph.tsx",
+        "scripts/a11y-audit.mjs",
+        ".github/workflows/quality.yml"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The executive/research dual-mode website, dependency graph, evidence routes and automated quality gates are implemented."
+    },
+    {
+      "category": "product",
+      "check_id": "research_surface_provenance",
+      "evidence": [
+        "public/data/research-surface.json",
+        "artifact_manifest_sha256=sha256:5ae75d6c34599acc83f36bd79c5ba5f6206523fffe2b83a0a688ae43e526faf5",
+        "research/src/aiio/research_surface.py"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The evolving research website reconciles 51 hash-locked artifacts above the frozen release without promoting them."
+    },
+    {
+      "category": "product",
+      "check_id": "auditable_workbook_component",
+      "evidence": [
+        "outputs/01a0579f-936b-77b3-93e5-be6035628b16/AIIO_Canada_Research_0.27.0-dev.xlsx",
+        "workbook_sha256=sha256:6d4b08a7937f717a236e7bc3835b588ca2de81d4330a44a349b73a72fe5b3905",
+        "outputs/01a0579f-936b-77b3-93e5-be6035628b16/AIIO_Canada_Research_0.27.0-dev.xlsx.inspect.ndjson",
+        "outputs/01a0579f-936b-77b3-93e5-be6035628b16/AIIO_Canada_Research_0.27.0-dev.xlsx.receipt.json"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Canada development workbook, inspection and build receipt hash-lock the builder and coverage artifact with a passing reconciliation."
+    },
+    {
+      "category": "release",
+      "check_id": "frozen_public_release_integrity",
+      "evidence": [
+        "public/data/manifest.json",
+        "public/data/latest.json",
+        "data/releases/0.6.0-dev/manifest.json"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The frozen public release 0.6.0-dev reconciles to its immutable manifest and output hashes."
+    },
+    {
+      "category": "governance",
+      "check_id": "reference_cost_review_instrument",
+      "evidence": [
+        "data/model-runs/alberta_reference_cost_review_package_v0.1.json",
+        "docs/reviews/2026-09-01-reference-cost-review-prompt.md",
+        "research/src/aiio/model_review.py"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Alberta E1 review packet hash-locks the model, method, tests and ten-criterion verdict contract while remaining non-authorizing."
+    },
+    {
+      "category": "decision_support",
+      "check_id": "alberta_historical_cost_envelope",
+      "evidence": [
+        "data/processed/bcpi_alberta.csv",
+        "data/model-runs/alberta_bcpi_historical_envelope_v0.1.json",
+        "research/src/aiio/historical_envelope.py",
+        "docs/methodology/historical-cost-envelope.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Alberta product exposes hash-locked descriptive 1-5 year BCPI history while future, AI-effect and project-cost translations remain closed."
+    },
+    {
+      "category": "decision_support",
+      "check_id": "alberta_project_historical_analog_stress_test",
+      "evidence": [
+        "data/processed/bcpi_alberta.csv",
+        "data/model-runs/alberta_project_historical_analog_matrix_v0.1.json",
+        "research/src/aiio/historical_analog.py",
+        "docs/methodology/project-historical-analog-stress-test.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Alberta product can translate declared project schedules through coherent observed BCPI trajectories while forecast, probability, allowance and AI-effect claims remain closed."
+    },
+    {
+      "category": "decision_grade_outputs",
+      "check_id": "alberta_reference_cost_projection",
+      "evidence": [
+        "data/model-runs/alberta_bcpi_reference_baseline_v0.1.json"
+      ],
+      "release_gate": true,
+      "status": "pending",
+      "summary": "The reproducible Alberta reference-cost run is built, but publication remains withheld pending independent modelling review."
+    },
+    {
+      "category": "research_design",
+      "check_id": "information_sector_capex_treatment_screen",
+      "evidence": [
+        "data/raw/statcan_capex_industry_geography_34100035/2026-09-01_a65541e3a9ad.zip",
+        "data/processed/information_sector_construction_capex_canada.csv",
+        "data/model-runs/information_sector_construction_capex_screen_v0.1.json",
+        "docs/methodology/information-sector-construction-capex-screen.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Statistics Canada NAICS 51 construction-capex screen is hash-locked, preserves suppression and remains a descriptive non-authorizing proxy."
+    },
+    {
+      "category": "research_design",
+      "check_id": "causal_attribution_workstream",
+      "evidence": [
+        "data/model/ai_attribution_panel_contract_v0.1.json",
+        "data/model-runs/ai_attribution_identification_readiness_v0.1.json",
+        "docs/methodology/ai-attribution-identification.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The E2 treatment/outcome panel contract and fail-closed identification-readiness pipeline are implemented."
+    },
+    {
+      "category": "research_design",
+      "check_id": "ai_treatment_source_feasibility",
+      "evidence": [
+        "data/model/ai_attribution_treatment_source_feasibility_contract_v0.1.json",
+        "data/model-runs/ai_attribution_treatment_source_feasibility_v0.1.json",
+        "research/src/aiio/treatment_source_feasibility.py",
+        "docs/methodology/ai-attribution-treatment-source-feasibility.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "Eight plausible public sources are reproducibly screened against seven locked gates; none authorizes realized AI-construction treatment and effect fields remain null."
+    },
+    {
+      "category": "research_design",
+      "check_id": "attribution_panel_acquisition_preflight",
+      "evidence": [
+        "data/model/ai_attribution_panel_contract_v0.1.json",
+        "data/model/ai_attribution_panel_acquisition_contract_v0.1.json",
+        "data/model-runs/ai_attribution_panel_preflight_v0.1.json",
+        "data/model-runs/ai_attribution_treatment_source_feasibility_v0.1.json",
+        "research/src/aiio/panel_preflight.py",
+        "docs/methodology/ai-attribution-panel-acquisition.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The hash-locked E2 preflight covers five candidate regions, three public asset classes, thirteen evidence receipts and all 27 authorizing field instances while assembling zero ineligible panel rows."
+    },
+    {
+      "category": "decision_grade_outputs",
+      "check_id": "ai_attributable_cost_schedule_effect",
+      "evidence": [
+        "data/model-runs/alberta_bcpi_reference_baseline_v0.1.json"
+      ],
+      "release_gate": true,
+      "status": "pending",
+      "summary": "No historical treatment/counterfactual panel yet identifies an AI-attributable cost or schedule effect; the product correctly returns null."
+    },
+    {
+      "category": "canada_expansion",
+      "check_id": "cma_reference_cost_expansion",
+      "evidence": [
+        "data/processed/bcpi_reference_van_tor_mtl.csv",
+        "data/model-runs/vancouver_toronto_montreal_bcpi_reference_baseline_v0.1.json",
+        "research/src/aiio/adapters/statcan.py",
+        "research/src/aiio/cma_calibration.py",
+        "docs/methodology/cma-reference-cost-expansion.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The Vancouver, Toronto and Montr\u00e9al CMA baseline is hash-locked; nine Vancouver horizons pass internally while every result remains withheld pending review."
+    },
+    {
+      "category": "canada_expansion",
+      "check_id": "province_linked_reference_backcast",
+      "evidence": [
+        "data/processed/bcpi_province_linked_history_bc_on_qc.csv",
+        "data/model-runs/bc_on_qc_province_linked_reference_baseline_v0.1.json",
+        "research/src/aiio/provincial_backcast.py",
+        "docs/methodology/province-linked-bcpi-backcast.md"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The BC, Ontario and Quebec pre-2017 reference bridge is hash-locked, labels 1,296 inferred CMA-linked observations and keeps every projection withheld."
+    },
+    {
+      "category": "governance",
+      "check_id": "province_linked_backcast_review_instrument",
+      "evidence": [
+        "data/model-runs/bc_on_qc_province_linked_review_package_v0.1.json",
+        "docs/reviews/2026-09-01-province-linked-bcpi-review-prompt.md",
+        "research/src/aiio/provincial_backcast_review.py"
+      ],
+      "release_gate": true,
+      "status": "pass",
+      "summary": "The province-linked BCPI packet hash-locks ten inputs and ten method criteria while granting no projection, project-cost or AI-effect authority."
+    },
+    {
+      "category": "decision_grade_outputs",
+      "check_id": "provincial_decision_models",
+      "evidence": [
+        "data/model-runs/bc_on_qc_province_linked_reference_baseline_v0.1.json"
+      ],
+      "release_gate": true,
+      "status": "pending",
+      "summary": "The province-linked historical bridge now supports internal validation, but it remains an inferred CMA-linked proxy and is withheld pending independent method review."
+    },
+    {
+      "category": "governance",
+      "check_id": "independent_review",
+      "evidence": [
+        "data/governance/program-gates.json",
+        "docs/reviews/2026-09-01-grok-digest-workbook-gate.md"
+      ],
+      "release_gate": true,
+      "status": "blocked",
+      "summary": "Independent review is not complete; no passing verdict is inferred from a prepared review package."
+    },
+    {
+      "category": "release",
+      "check_id": "current_publication",
+      "evidence": [
+        "data/governance/program-gates.json",
+        "public/data/manifest.json"
+      ],
+      "release_gate": true,
+      "status": "pending",
+      "summary": "Publication is held; the live/public bundle remains on the frozen 0.6.0-dev basis."
+    }
+  ],
+  "decision_grade_ready": false,
+  "program_name": "AI Infrastructure Impact Observatory Canada",
+  "publication_ready": false,
+  "release_ready": false,
+  "schema_version": "1.0.0",
+  "status_counts": {
+    "blocked": 1,
+    "fail": 0,
+    "pass": 31,
+    "pending": 4
+  },
+  "structural_integrity": true
+}

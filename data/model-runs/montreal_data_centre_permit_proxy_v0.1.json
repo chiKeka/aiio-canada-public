@@ -1,0 +1,33 @@
+{
+  "as_of_date": "2026-09-03",
+  "broad_screen_row_count": 15,
+  "candidate_reported_value_total_cad_proxy": 0.0,
+  "completion_duration_available_count": 0,
+  "data_centre_candidate_count": 14,
+  "evidence_status": "observed_permit_fields_with_inferred_keyword_classification",
+  "explicit_ai_reference_count": 0,
+  "input_sha256": "sha256:1b94b0fb10454b4eedbaa4d671a1ac097b4b1ab8b0463d0a692dd88a8b853aab",
+  "limitations": [
+    "Keyword classification requires review and does not establish AI use.",
+    "Permit records may include multiple permit types or revisions for one underlying project.",
+    "Declared construction cost, where present, is not realized expenditure.",
+    "Precise location and named-party fields are excluded from the processed artifact."
+  ],
+  "model_id": "AIIO_MONTREAL_DATA_CENTRE_PERMIT_PROXY_0_1",
+  "output_sha256": "sha256:5c28108fc7f77f657c95f092cbfd7dbe9eded79e0299635283f041a79e40f94f",
+  "publication_boundary": {
+    "causal_effect_authorized": false,
+    "permit_completion_duration_authorized": false,
+    "proxy_exposure_authorized": true,
+    "realized_ai_construction_treatment_authorized": false,
+    "realized_construction_spend_authorized": false,
+    "reason": "Permit milestones and declared cost are administrative proxies, not quarterly realized expenditure or labour hours; text does not establish AI use.",
+    "status": "municipal_permit_activity_proxy_only"
+  },
+  "reported_value_available_count": 0,
+  "retrieval_manifest_sha256": "sha256:3bfc21fa808dddb0ca6c3d5889b0eebe2eca1f5c19f0a98c99825f8e5a8c1c21",
+  "schema_version": "0.1.0",
+  "source_ids": [
+    "MONTREAL_CONSTRUCTION_PERMITS"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "upstream": "@esbuild-kit/core-utils@3.3.2",
+  "origin": "https://registry.npmjs.org/@esbuild-kit/core-utils/-/core-utils-3.3.2.tgz",
+  "files": {
+    "LICENSE": "8dded67841a9261a622c739fb61c81785e93765de852828ceeb9403d20a74581",
+    "README.md": "953bf83ec67d7bd778b9b00b15857551eec34c984a227d449dcc387e7cddbb60",
+    "package.json": "80f3fe0f8dbd03e69c7c0dbd2029c14aec6bcb9c0dca8db3e27d2d6007474cf3",
+    "dist/index.js": "d6d06a0d53716c5e4fe3ad5202ae8cb63f311065890bf7118b76bfdc187d398d",
+    "dist/index.d.ts": "52fc40f744e6670fe4424771dfff0a97925cb7221b75393c68532128c34efb92"
+  },
+  "change": "Implementation unchanged. Local compatible fork pins patched esbuild0.25.12 for its transformSync/transform API; no serve or build API use. Compatibility regression tests and migration generation parity required.",
+  "forkFiles": {
+    "LICENSE": "8dded67841a9261a622c739fb61c81785e93765de852828ceeb9403d20a74581",
+    "README.md": "87f28ad505e166da4f9efff503b1f92e204c3787be3dfac514cf56533901e740",
+    "package.json": "69aa716a4679f6fe3a01d191d72225d7ab8e4614ba22810b28bdd1ec676474d3",
+    "dist/index.js": "d6d06a0d53716c5e4fe3ad5202ae8cb63f311065890bf7118b76bfdc187d398d",
+    "dist/index.d.ts": "52fc40f744e6670fe4424771dfff0a97925cb7221b75393c68532128c34efb92"
+  }
+}

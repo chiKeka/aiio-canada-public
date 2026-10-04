@@ -1,0 +1,12 @@
+{
+  "source_id": "FOLLOWUP_COUNTY_CAL3_PERMIT_RECORD",
+  "source_url": "https://atlasmap.rockyview.ca/arcgis/rest/services/DevMaps/Development_Permits/MapServer/0/query?where=PermitNumber+%3D+%27PRDP20251314%27&outFields=%2A&returnGeometry=false&f=json",
+  "effective_url": "https://atlasmap.rockyview.ca/arcgis/rest/services/DevMaps/Development_Permits/MapServer/0/query?where=PermitNumber+%3D+%27PRDP20251314%27&outFields=%2A&returnGeometry=false&f=json",
+  "retrieved_at": "2026-10-03T23:04:36.079507+00:00",
+  "content_hash": "sha256:e77981f0e712502d181df477135fdbb7fe3a88871ccf417aa0e2b9283c254c8a",
+  "byte_length": 5161,
+  "content_type": "application/json",
+  "result": "success",
+  "local_raw_file": "followup-county-cal3-permit-record.raw",
+  "redistribution": "receipt_only_pending_review"
+}

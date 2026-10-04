@@ -1,0 +1,39 @@
+{
+  "contract_id": "AIIO_VINTAGE_LINKAGE_AUDIT_0_1",
+  "input_manifest": {
+    "data/model-runs/ai_construction_proxy_alberta_v0.1.json": "sha256:63053c4316fb2d634020588602fd8f6fdf9ad8f6f4c2fa0b389fcee292fb5fb6",
+    "data/model-runs/alberta_quarterly_planning_benchmark_v0.1.json": "sha256:5e78a8d4bedfa83cd3baf968dd5333d0d00b09ce6b45dfcea3187e735d70b91e",
+    "data/model/alberta_quarterly_planning_benchmark_contract_v0.1.json": "sha256:09d0d980688ac39d33380007d2e7b8541b805c6564216834bbb6d01016f7f15e",
+    "data/processed/ai_construction_proxy_alberta_v0.1.csv": "sha256:774eb46d94af9356a776c6a6ef9f979b777a72b84336c61d18a2307bac77f0ef",
+    "data/processed/alberta_ai_projects.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "data/processed/edmonton_data_centre_permit_proxy.csv": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2",
+    "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json": "sha256:2c4b91f7d4ffcc1d8a6e9930867f6e265b65140abb3c97f0551c6b5b73279df3",
+    "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json.manifest.json": "sha256:c03f68ec541cc43f8e7b4870f147cd8912f05fe720fe439f352bd11a654b581c",
+    "data/raw/edmonton_general_building_permits/2026-09-02_f4da956ae985.json.manifest.json": "sha256:1cdbfe3b3c7e6c210474356bcd8f4d2f9917f18c7441cdfc6714814fd23d3099",
+    "data/raw/edmonton_general_building_permits/2026-09-03_f4da956ae985.json.manifest.json": "sha256:c6b5f92c3e7e965719a19d7b9629d72bd20ce5519d1298ab0eda6073d0987bb3",
+    "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip.manifest.json": "sha256:1ca88d0ccbbdc2be7d10a91ea4f3f373c9bd342841e3e201104a5e5d97b1f639",
+    "data/reviews/edmonton_included_permit_review_v0.1.json": "sha256:f0646f8a92f7ba4f54058da35bba7dac67c5cf612f00debef8929ac08d2f97a4"
+  },
+  "publication_boundary": {
+    "automatic_model_changes_allowed": false,
+    "causal_attribution_allowed": false,
+    "confirmed_facility_linkage": false,
+    "new_treatment_authorized": false,
+    "validated_proxy_estimate_allowed": false
+  },
+  "review_path": "data/reviews/edmonton_included_permit_review_v0.1.json",
+  "scope": "Local archive and current reconstructed proxy only",
+  "snapshot_manifests": {
+    "ALBERTA_MAJOR_PROJECTS": [
+      "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json"
+    ],
+    "EDMONTON_GENERAL_BUILDING_PERMITS": [
+      "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json.manifest.json",
+      "data/raw/edmonton_general_building_permits/2026-09-02_f4da956ae985.json.manifest.json",
+      "data/raw/edmonton_general_building_permits/2026-09-03_f4da956ae985.json.manifest.json"
+    ],
+    "STATCAN_BCPI_18100289": [
+      "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip.manifest.json"
+    ]
+  }
+}

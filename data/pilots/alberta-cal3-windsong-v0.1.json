@@ -1,0 +1,507 @@
+{
+  "schemaVersion": "1.0",
+  "pilotId": "AB_CAL3_WINDSONG_2026_2027",
+  "evidenceCutoff": "2026-10-03",
+  "publicationStatus": "candidate_only_not_release_promoted",
+  "sources": {
+    "CAL3_OPERATOR_DESIGN": {
+      "url": "https://info.estruxture.com/hubfs/Data%20Sheets/eStruxture_Datasheet_CAL3%20EN%20V2%202025.pdf",
+      "sha256": "bad5564fe998036c64877d68fbf44f6299ff666ecf0e94287e85fd32e853e2fc",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/cal3-data-sheet.manifest.json",
+      "retrievedAt": "2026-10-03T21:30:12.723136+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review"
+    },
+    "CAL3_OPERATOR_TENANT": {
+      "url": "https://www.estruxture.com/press-releases/estruxture-announces-coreweave-as-anchor-tenant-for-cal-3-its-landmark-ai-ready-facility-in-alberta",
+      "sha256": "4ad4b9af34e445467d03d271b4857dbf3ebcd9726fad59d99c0af5462b47d0e9",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/cal3-tenant-announcement.manifest.json",
+      "retrievedAt": "2026-10-03T21:30:16.540814+00:00",
+      "publicationDate": "2026-05-14",
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review"
+    },
+    "CAL3_AUC_APPLICATION": {
+      "url": "https://www.auc.ab.ca/wp-admin/admin-ajax.php?action=wp_ajax_ninja_tables_public_action&table_id=6266&target_action=get-all-data&default_sorting=old_first&skip_rows=0&limit_rows=0&ninja_table_public_nonce=6e47e3ce59",
+      "sha256": "5507698d2f30d049f8aeef381c2ecf59f81c7b26196a1fc131960bc20cbbdd2b",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/auc-current-applications-data.manifest.json",
+      "retrievedAt": "2026-10-03T21:30:55.841131+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review"
+    },
+    "WINDSONG_OWNER_AWARD": {
+      "url": "https://www.rockyview.ab.ca/download/513802",
+      "sha256": "5fdde7173188466ddb00c989d5241d1b647f2310f17fe7dac688ca70105c9252",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/public-windsong-board-release/receipt.json",
+      "retrievedAt": "2026-10-03T21:30:30.494937+00:00",
+      "publicationDate": "2025-06-03",
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review"
+    },
+    "WINDSONG_CONTRACTOR_CLOSE": {
+      "url": "https://www.ellisdon.com/news/ellisdon-achieves-financial-close-on-alberta-s-p3-schools-bundle-5-project",
+      "sha256": "a05deb4962f8246e9c17f70e30ebef6490b58389de315f73419386768dc45d50",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/public-ellisdon-school-financial-close/receipt.json",
+      "retrievedAt": "2026-10-03T21:30:36.129701+00:00",
+      "publicationDate": "2025-03-31",
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review"
+    },
+    "WINDSONG_OWNER_STATUS": {
+      "url": "https://www.rockyview.ab.ca/about-rvs/building-our-student-spaces",
+      "sha256": "a81b5829d70668e3bee9ecff13de50b1ce4c1826dc504a2e61a4ed0ea2b3915f",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/public-rvs-project-status/receipt.json",
+      "retrievedAt": "2026-10-03T21:30:30.895745+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review"
+    },
+    "ALBERTA_REGISTER_RELEASE": {
+      "url": "https://majorprojects.alberta.ca/",
+      "sha256": "46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+      "artifactPath": "data/processed/alberta_ai_projects.csv",
+      "observationDate": "2026-08-31",
+      "reviewStatus": "existing_release"
+    },
+    "CAL3_MUNICIPAL_CONDITIONS": {
+      "url": "https://gis.rockyview.ca/planning/PRDP/PRDP20251314_Online_Package.pdf",
+      "sha256": "ae7965236a50083e05e13cb5b1ba029a0d231514588f0245093d55b33343f4d7",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/followup-county-cal3-planning-package.manifest.json",
+      "retrievedAt": "2026-10-03T23:04:55.957337+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review",
+      "hashKind": "raw_bytes"
+    },
+    "WINDSONG_PROJECT_ESTIMATE": {
+      "url": "https://majorprojects.alberta.ca/details/New-K-8-School-in-Windsong-SW-Airdrie/11248",
+      "sha256": "d2e748df8c53196f2481ba239443f43672bc8974d2b35988b77b7dcc3677da85",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/public-followup-windsong-cost-estimate/receipt.json",
+      "retrievedAt": "2026-10-03T23:01:18.492119+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review",
+      "hashKind": "raw_bytes"
+    },
+    "WINDSONG_OWNER_DBFM": {
+      "url": "https://www.alberta.ca/public-private-partnerships",
+      "sha256": "39eea9dd536b5387db377f8c5181c6a574dfb061b7e58550512afddb5947e1f3",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/public-followup-p3-overview/receipt.json",
+      "retrievedAt": "2026-10-03T22:59:30.517748+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review",
+      "hashKind": "raw_bytes"
+    },
+    "WINDSONG_BUNDLE_PAYMENT_TIMING": {
+      "url": "https://www.sec.gov/Archives/edgar/data/810961/000119312525155469/d52186dex991.htm",
+      "sha256": "7ed81834122165679645cd57cc02cf254198013cfdd23ca6e05da66ffa1ea4ea",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/public-followup-sec-annual-report/receipt.json",
+      "retrievedAt": "2026-10-03T23:01:00.962946+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review",
+      "hashKind": "issuer_primary_web_extract_only"
+    },
+    "CALGARY_ELECTRICAL_CONTEXT": {
+      "url": "https://www.jobbank.gc.ca/marketreport/outlook-occupation/20684/geo25411",
+      "sha256": "1a7ffc77949dbb472c573863a5567566a1063b95b0bf6ebe4524baee8fd93bca",
+      "receiptPath": "data/review-candidates/alberta-pilot-2026-10-03/sources/capacity-calgary-electrician-jobbank/receipt.json",
+      "retrievedAt": "2026-10-03T23:00:59.867353+00:00",
+      "publicationDate": null,
+      "reviewStatus": "candidate_only",
+      "rawRedistribution": "pending_review",
+      "hashKind": "raw_bytes"
+    }
+  },
+  "facts": {
+    "aiAnchor": {
+      "value": "CAL-3 Phase 1; CoreWeave anchor tenant in unspecified portion",
+      "status": "observed",
+      "sourceIds": [
+        "CAL3_OPERATOR_TENANT"
+      ],
+      "note": "Operator announcement; tenant portion and actual operating commencement not disclosed."
+    },
+    "aiFacilityRegisterId": {
+      "value": "ABMP_11416",
+      "status": "observed",
+      "sourceIds": [
+        "ALBERTA_REGISTER_RELEASE"
+      ],
+      "note": ""
+    },
+    "aiWholeFacilityEstimateCad": {
+      "value": 750000000,
+      "status": "observed",
+      "sourceIds": [
+        "ALBERTA_REGISTER_RELEASE"
+      ],
+      "note": "Whole facility estimated project cost; NOT Phase 1 budget or measured spend; 2026-08-31 register vintage."
+    },
+    "aiPhaseCostCad": {
+      "value": null,
+      "status": "unknown",
+      "sourceIds": [],
+      "note": "No phase-specific budget; regional $1B statements and wholefacility $750m cannot be substituted."
+    },
+    "aiServiceTarget": {
+      "value": "H2 2026",
+      "status": "observed",
+      "sourceIds": [
+        "CAL3_OPERATOR_TENANT"
+      ],
+      "note": "Target service, not observed completion."
+    },
+    "aiPowerDesign": {
+      "value": "Multiple 15 MW utility lines serving dedicated lineups; Fortis provider; operator sheet 90 MW total and 70 MW critical design ratings; 2N standby topology",
+      "status": "observed",
+      "sourceIds": [
+        "CAL3_OPERATOR_DESIGN"
+      ],
+      "note": "Operator design disclosure; facility ratings are not assigned to tenant or phase-specific demand. No measured demand or commissioning certification. Publication day unknown."
+    },
+    "publicProject": {
+      "value": "South Windsong school, Airdrie; EllisDon; P3 Schools Bundle5",
+      "status": "observed",
+      "sourceIds": [
+        "WINDSONG_OWNER_AWARD",
+        "WINDSONG_CONTRACTOR_CLOSE"
+      ],
+      "note": "Owner June2025 K9 label and contractor March2025 K8 description retained; same Airdrie school identified through bundle/site context, with grade-description discrepancy unresolved."
+    },
+    "publicSite": {
+      "value": "560 Osborne Drive SW, Airdrie",
+      "status": "observed",
+      "sourceIds": [
+        "WINDSONG_OWNER_STATUS"
+      ],
+      "note": "Undated live page; capture date is not progress observation date."
+    },
+    "publicWholeProjectAward": {
+      "value": "EllisDon construction award confirmed by 2025-06-03; bundlefinancialclose 2025-03-31",
+      "status": "observed",
+      "sourceIds": [
+        "WINDSONG_OWNER_AWARD",
+        "WINDSONG_CONTRACTOR_CLOSE"
+      ],
+      "note": "Wholeproject award does not establish electrical subcontract status or uncommitted exposure."
+    },
+    "publicConstructionInterval": {
+      "value": "Spring 2025 start; expected fall2027opening",
+      "status": "observed",
+      "sourceIds": [
+        "WINDSONG_OWNER_AWARD",
+        "WINDSONG_OWNER_STATUS"
+      ],
+      "note": "Seasonal target, not exact contractual finish."
+    },
+    "publicElectricalPackageMilestones": {
+      "value": null,
+      "status": "unknown",
+      "sourceIds": [],
+      "note": "Issue/award/release/completion dates unavailable."
+    },
+    "publicUncommittedExposureCad": {
+      "value": null,
+      "status": "unknown",
+      "sourceIds": [],
+      "note": "School electrical remaining quantities, risk transfer and repricing clauses unavailable."
+    },
+    "actualPaidHours": {
+      "value": null,
+      "status": "unknown",
+      "sourceIds": [],
+      "note": "No measured school/DC electrical package paid hours."
+    },
+    "actualTradeCapacity": {
+      "value": null,
+      "status": "unknown",
+      "sourceIds": [],
+      "note": "No measured regional electrical capacity or spare workforce."
+    },
+    "actualResourceOverlap": {
+      "value": null,
+      "status": "unknown",
+      "sourceIds": [],
+      "note": "Geographic proximity does not prove common contractor, crews or labour market competition."
+    },
+    "publicWholeProjectEstimateCad": {
+      "value": 64300000,
+      "status": "observed",
+      "sourceIds": [
+        "WINDSONG_PROJECT_ESTIMATE"
+      ],
+      "note": "Publisher estimated whole-school envelope; basis/scope unspecified. Not a subcontract award, remaining exposure, outturn or CAL3-attributable cost."
+    },
+    "publicBundlePaymentSchedule": {
+      "value": {
+        "contractMonth": "2025-03",
+        "scheduledCompletion": "2027-09",
+        "capitalPaymentsStart": "2027-09"
+      },
+      "status": "observed",
+      "sourceIds": [
+        "WINDSONG_BUNDLE_PAYMENT_TIMING"
+      ],
+      "note": "Province financial statements Note8, issuer-primary web extract only; full raw retrieval403. Six-school DBFM bundle context, not school electrical package dates, actual completion or risk allocation."
+    },
+    "publicDBFMResponsibilities": {
+      "value": {
+        "schoolOwner": "school jurisdiction",
+        "maintenanceThrough": "2057-09",
+        "delivery": "design-build-finance-maintain"
+      },
+      "status": "observed",
+      "sourceIds": [
+        "WINDSONG_OWNER_DBFM"
+      ],
+      "note": "Owner identifies southwest Airdrie in March2025 six-school bundle; responsibility context does not establish inflation/change-order risk transfer."
+    },
+    "calgaryElectricalEmploymentContext": {
+      "value": {
+        "occupation": "NOC72200 installation electricians excluding industrial/power-system",
+        "region": "Calgary",
+        "approximateWorkers": 6290,
+        "constructionSharePercent": 88,
+        "stockBaseYear": null,
+        "historicalAssessmentPeriod": "2023-2025",
+        "historicalAssessment": "labour shortage",
+        "assessmentUpdated": "2026-07-28",
+        "forecastPeriod": "2025-2027",
+        "forecast": "Moderate",
+        "forecastUpdated": "2025-12-10"
+      },
+      "status": "observed",
+      "sourceIds": [
+        "CALGARY_ELECTRICAL_CONTEXT"
+      ],
+      "note": "Employment stock, historical assessment and forecast context only. Not available contractor hours or workforce eligible for utility line work. No conversion to monthly model supply."
+    },
+    "municipalServiceObligations": {
+      "value": {
+        "permit": "PRDP20251314",
+        "meterPaymentRole": "Applicant/Owner",
+        "preallocatedWaterCubicMetresPerDay": 2.56,
+        "additionalCapacityPurchase": "conditional on excess demand; Applicant/Owner role",
+        "offsiteServicingPrerequisite": "necessary High Plains Phase5b infrastructure and County construction completion certificate before occupancy"
+      },
+      "status": "observed",
+      "sourceIds": [
+        "CAL3_MUNICIPAL_CONDITIONS"
+      ],
+      "note": "Printedp2c6/c8,p3c9/c11,p4c17,p5c21. Whole-site conditions, not Phase1 budgets, actual payments or completed assets. Cover dateFeb11 conflicts with later amended drawings/notification; final approval date not inferred."
+    }
+  },
+  "enablingAssets": [
+    {
+      "id": "CAL3_FORTIS_SERVICE_LINEUPS",
+      "aiPhaseIds": [
+        "CAL3_PHASE1"
+      ],
+      "scope": {
+        "value": "Multiple15MWutilityfeeds and dedicated electrical lineups",
+        "status": "observed",
+        "sourceIds": [
+          "CAL3_OPERATOR_DESIGN"
+        ],
+        "note": "Design/application evidence only; registration is not approval."
+      },
+      "incrementality": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Baseline versus incremental enabling scope unavailable."
+      },
+      "costCad": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No separate enablingasset budget."
+      },
+      "payer": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Utility provider/applicant does not establish ultimate incidence."
+      },
+      "funding": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No funding commitment evidence."
+      },
+      "aiCapexMembership": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Do not add asset cost to wholefacilityCAPEX without scope reconciliation."
+      },
+      "inServiceMilestone": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No energization/commissioning record."
+      }
+    },
+    {
+      "id": "CAL3_STANDBY_GENERATORS_31020",
+      "aiPhaseIds": [
+        "CAL3_PHASE1"
+      ],
+      "scope": {
+        "value": "Emergency standbygenerators application31020-A001 registered2026-08-28",
+        "status": "observed",
+        "sourceIds": [
+          "CAL3_AUC_APPLICATION"
+        ],
+        "note": "Design/application evidence only; registration is not approval."
+      },
+      "incrementality": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Baseline versus incremental enabling scope unavailable."
+      },
+      "costCad": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No separate enablingasset budget."
+      },
+      "payer": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Utility provider/applicant does not establish ultimate incidence."
+      },
+      "funding": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No funding commitment evidence."
+      },
+      "aiCapexMembership": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Do not add asset cost to wholefacilityCAPEX without scope reconciliation."
+      },
+      "inServiceMilestone": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No energization/commissioning record."
+      }
+    },
+    {
+      "id": "CAL3_HIGH_PLAINS_WATER_WASTEWATER",
+      "aiPhaseIds": [],
+      "scope": {
+        "value": "Potable water and wastewater ties to High Plains Industrial Park systems, service meter and allocation requirements",
+        "status": "observed",
+        "sourceIds": [
+          "CAL3_MUNICIPAL_CONDITIONS"
+        ],
+        "note": "Permit whole-site scope; exact Phase1 allocation and baseline/incremental works unresolved. Printedp2c6/c8,p3c9/c11,p5c21."
+      },
+      "incrementality": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Baseline versus incremental enabling scope unavailable."
+      },
+      "costCad": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No separate enablingasset budget."
+      },
+      "payer": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Whole-asset ultimate payer shares unknown; permit separately assigns specific meter and conditional additional-capacity charges to Applicant/Owner."
+      },
+      "funding": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "No funding commitment evidence."
+      },
+      "aiCapexMembership": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Do not add asset cost to wholefacilityCAPEX without scope reconciliation."
+      },
+      "inServiceMilestone": {
+        "value": null,
+        "status": "unknown",
+        "sourceIds": [],
+        "note": "Required ties/County construction completion certificate are pre-occupancy conditions; actual service and occupancy unverified."
+      },
+      "siteId": "CAL3_SITE",
+      "payerObligations": {
+        "value": "Applicant/Owner pays meter/transmitter before permit release; additional capacity purchase/payment conditional on demand beyond allocated service",
+        "status": "observed",
+        "sourceIds": [
+          "CAL3_MUNICIPAL_CONDITIONS"
+        ],
+        "note": "Role obligations for specified charges only, not quantified ultimate asset payer shares or executed payment. No government cost is established."
+      }
+    }
+  ],
+  "scenarioAssumptions": {
+    "catchment": {
+      "value": "Rocky View\u2013Airdrie electrical",
+      "status": "assumption",
+      "sourceIds": [],
+      "note": "Scenario resource-sharing catchment; not empirically established."
+    },
+    "workUnits": {
+      "value": {
+        "school": 100,
+        "private": 50,
+        "dc": 100
+      },
+      "status": "assumption",
+      "sourceIds": [],
+      "note": "Normalized paid-work units; no conversion to actual paid hours, FTE or dollars."
+    },
+    "calendar": {
+      "value": {
+        "origin": "2026-01",
+        "schoolReleaseMonth": 0,
+        "schoolFinishMonth": 20,
+        "dcReleaseMonth": 0,
+        "dcFinishMonth": 8,
+        "horizonEndMonth": 36
+      },
+      "status": "assumption",
+      "sourceIds": [],
+      "note": "School electrical portion Jan2026\u2013Sep2027 assumed within wholeproject spring2025\u2013fall2027. Sep2027 is planning interpretation, not precise contractual opening. DC package Jan2026\u2013Sep2026 assumed; operator H2 target does not establish workpackage chronology."
+    },
+    "capacity": {
+      "value": null,
+      "status": "unknown",
+      "sourceIds": [],
+      "note": "Default capacity unknown. Numeric capacity candidates are scenario assumptions only. JobBank employment stock/context does not establish actual available hours."
+    },
+    "policies": {
+      "value": [
+        "pro-rata",
+        "protect-background",
+        "prefer-dc"
+      ],
+      "status": "assumption",
+      "sourceIds": [],
+      "note": "Allocation rules are illustrative; no intervention efficacy asserted."
+    }
+  },
+  "supportedUse": "Conditional normalized-resource reverse-stress demonstration and acquisition checklist; no causal, delay or dollar forecast.",
+  "dollarImpact": null,
+  "causalEvidence": "not_established"
+}

@@ -1,0 +1,15 @@
+{
+  "source_id": "public-windsong-board-release",
+  "requested_url": "https://www.rockyview.ab.ca/download/513802",
+  "retrieved_at": "2026-10-03T21:30:30.494937+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://www.rockyview.ab.ca/download/513802",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "result": "success",
+  "byte_length": 102589,
+  "sha256": "5fdde7173188466ddb00c989d5241d1b647f2310f17fe7dac688ca70105c9252",
+  "archive_path": "sources/public-windsong-board-release/release.pdf",
+  "content_verification": "relevant_source_content_verified"
+}

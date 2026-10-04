@@ -1,0 +1,2253 @@
+{
+  "schema_version": "1.0.0",
+  "model_id": "AIIO_AB_BCPI_REFERENCE_BASELINE_0_1",
+  "source_id": "STATCAN_BCPI_18100289",
+  "input_sha256": "4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1",
+  "code_sha256": "e1f727c620c556ae40150824cab11afae49cd26cafe5e568d5438265185c413d",
+  "as_of_date": "2026-06-30",
+  "evidence_status": "observed_series_with_held_out_model_validation",
+  "release_state": "baseline_only",
+  "publication_authorization": {
+    "status": "withheld_pending_independent_modelling_review",
+    "public_projection_authorized": false,
+    "reason": "The reproducible internal run is complete, but the required independent modelling gate has not returned a verdict."
+  },
+  "estimand": "Cumulative percentage change in a BCPI model-building reference index from the latest observed quarter to the stated horizon.",
+  "publication_summary": {
+    "reference_series_count": 8,
+    "horizon_result_count": 40,
+    "horizon_status_counts": {
+      "gate_failed": 29,
+      "gate_passed": 1,
+      "not_assessed": 10
+    },
+    "warning": "A baseline_only release state means at least one reference-series horizon passed. Each requested asset, geography and horizon must be checked individually; failed values remain null."
+  },
+  "configuration": {
+    "horizons_years": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "lookback_quarters": 20,
+    "max_backtest_origins": 40,
+    "calibration_partition": "earlier half of retained rolling origins",
+    "validation_partition": "later half of retained rolling origins",
+    "candidate_methods": [
+      "flat_index",
+      "median_recent_yoy_drift"
+    ],
+    "empirical_error_band_percentiles": [
+      10,
+      90
+    ],
+    "gates": {
+      "minimum_calibration_origins": 15,
+      "minimum_validation_origins": 10,
+      "maximum_validation_mape_percent": 15.0,
+      "maximum_absolute_validation_bias_percent": 10.0,
+      "maximum_degradation_from_flat_percentage_points": 2.0,
+      "minimum_validation_interval_coverage_percent": 60.0
+    }
+  },
+  "reference_class_results": [
+    {
+      "asset_class": "health_facilities",
+      "asset_class_label": "Health facility",
+      "reference_indicator_id": "BCPI_INSTITUTIONAL_BUILDINGS_62213_DIVISION_COMPOSITE",
+      "reference_class_label": "Institutional buildings division composite",
+      "mapping_status": "proxy",
+      "mapping_note": "The source is an institutional-building aggregate, not a hospital-specific index.",
+      "geography_id": "CMA_825",
+      "geography_label": "Calgary CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 182,
+      "first_period_end": "1981-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 109.9,
+      "release_state": "not_assessed",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "median_recent_yoy_drift",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2015-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.463,
+                "mean_percentage_error": 1.008,
+                "root_mean_squared_percentage_error": 1.688
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.172,
+                "mean_percentage_error": -0.051,
+                "root_mean_squared_percentage_error": 1.523
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.619,
+              "p90": 1.527
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2020-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 2.798,
+              "mean_percentage_error": 2.087,
+              "root_mean_squared_percentage_error": 3.506
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 4.565,
+              "mean_percentage_error": 4.565,
+              "root_mean_squared_percentage_error": 4.933
+            },
+            "empirical_interval_coverage_percent": 35.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2014-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.479,
+                "mean_percentage_error": 1.506,
+                "root_mean_squared_percentage_error": 2.772
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.385,
+                "mean_percentage_error": -0.816,
+                "root_mean_squared_percentage_error": 2.917
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.781,
+              "p90": 3.799
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2019-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 9.004,
+              "mean_percentage_error": 9.004,
+              "root_mean_squared_percentage_error": 9.352
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 9.004,
+              "mean_percentage_error": 9.004,
+              "root_mean_squared_percentage_error": 9.352
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2013-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.88,
+                "mean_percentage_error": 2.008,
+                "root_mean_squared_percentage_error": 3.373
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.182,
+                "mean_percentage_error": -1.573,
+                "root_mean_squared_percentage_error": 3.661
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.249,
+              "p90": 5.349
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2018-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 12.939,
+              "mean_percentage_error": 12.939,
+              "root_mean_squared_percentage_error": 13.344
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 12.939,
+              "mean_percentage_error": 12.939,
+              "root_mean_squared_percentage_error": 13.344
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2012-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.484,
+                "mean_percentage_error": 2.326,
+                "root_mean_squared_percentage_error": 3.352
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 4.806,
+                "mean_percentage_error": -3.839,
+                "root_mean_squared_percentage_error": 5.786
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -0.061,
+              "p90": 5.913
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2017-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.65,
+              "mean_percentage_error": 16.65,
+              "root_mean_squared_percentage_error": 17.105
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.65,
+              "mean_percentage_error": 16.65,
+              "root_mean_squared_percentage_error": 17.105
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2011-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.668,
+                "mean_percentage_error": 2.668,
+                "root_mean_squared_percentage_error": 3.105
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 7.8,
+                "mean_percentage_error": -7.545,
+                "root_mean_squared_percentage_error": 9.165
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": 1.444,
+              "p90": 3.816
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2016-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 19.553,
+              "mean_percentage_error": 19.553,
+              "root_mean_squared_percentage_error": 20.03
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 19.553,
+              "mean_percentage_error": 19.553,
+              "root_mean_squared_percentage_error": 20.03
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    },
+    {
+      "asset_class": "health_facilities",
+      "asset_class_label": "Health facility",
+      "reference_indicator_id": "BCPI_INSTITUTIONAL_BUILDINGS_62213_DIVISION_COMPOSITE",
+      "reference_class_label": "Institutional buildings division composite",
+      "mapping_status": "proxy",
+      "mapping_note": "The source is an institutional-building aggregate, not a hospital-specific index.",
+      "geography_id": "CMA_835",
+      "geography_label": "Edmonton CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 182,
+      "first_period_end": "1981-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 110.8,
+      "release_state": "not_assessed",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2015-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.609,
+                "mean_percentage_error": 1.024,
+                "root_mean_squared_percentage_error": 1.935
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.516,
+                "mean_percentage_error": 0.115,
+                "root_mean_squared_percentage_error": 1.997
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.128,
+              "p90": 2.8
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2020-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 5.579,
+              "mean_percentage_error": 5.579,
+              "root_mean_squared_percentage_error": 6.247
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 5.579,
+              "mean_percentage_error": 5.579,
+              "root_mean_squared_percentage_error": 6.247
+            },
+            "empirical_interval_coverage_percent": 10.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2014-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.95,
+                "mean_percentage_error": 1.446,
+                "root_mean_squared_percentage_error": 3.202
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.612,
+                "mean_percentage_error": -1.02,
+                "root_mean_squared_percentage_error": 4.452
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -2.851,
+              "p90": 4.316
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2019-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 11.12,
+              "mean_percentage_error": 11.12,
+              "root_mean_squared_percentage_error": 11.776
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 11.12,
+              "mean_percentage_error": 11.12,
+              "root_mean_squared_percentage_error": 11.776
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2013-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.357,
+                "mean_percentage_error": 1.861,
+                "root_mean_squared_percentage_error": 3.812
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 5.763,
+                "mean_percentage_error": -2.93,
+                "root_mean_squared_percentage_error": 6.635
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -2.268,
+              "p90": 5.361
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2018-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.193,
+              "mean_percentage_error": 16.193,
+              "root_mean_squared_percentage_error": 16.744
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.193,
+              "mean_percentage_error": 16.193,
+              "root_mean_squared_percentage_error": 16.744
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2012-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.552,
+                "mean_percentage_error": 1.952,
+                "root_mean_squared_percentage_error": 3.567
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 8.15,
+                "mean_percentage_error": -6.531,
+                "root_mean_squared_percentage_error": 9.177
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -0.87,
+              "p90": 5.756
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2017-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 21.174,
+              "mean_percentage_error": 21.174,
+              "root_mean_squared_percentage_error": 21.658
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 21.174,
+              "mean_percentage_error": 21.174,
+              "root_mean_squared_percentage_error": 21.658
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2011-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.172,
+                "mean_percentage_error": 2.147,
+                "root_mean_squared_percentage_error": 3.046
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 12.065,
+                "mean_percentage_error": -11.758,
+                "root_mean_squared_percentage_error": 12.942
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": 0.113,
+              "p90": 3.17
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2016-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 25.013,
+              "mean_percentage_error": 25.013,
+              "root_mean_squared_percentage_error": 25.557
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 25.013,
+              "mean_percentage_error": 25.013,
+              "root_mean_squared_percentage_error": 25.557
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    },
+    {
+      "asset_class": "schools_and_postsecondary",
+      "asset_class_label": "School or post-secondary facility",
+      "reference_indicator_id": "BCPI_SCHOOL_DIVISION_COMPOSITE",
+      "reference_class_label": "School division composite",
+      "mapping_status": "direct_for_school_proxy_for_postsecondary",
+      "mapping_note": "The source represents schools directly and is only a proxy for post-secondary facilities.",
+      "geography_id": "CMA_825",
+      "geography_label": "Calgary CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 182,
+      "first_period_end": "1981-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 109.9,
+      "release_state": "not_assessed",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "median_recent_yoy_drift",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2015-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.463,
+                "mean_percentage_error": 1.008,
+                "root_mean_squared_percentage_error": 1.688
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.172,
+                "mean_percentage_error": -0.051,
+                "root_mean_squared_percentage_error": 1.523
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.619,
+              "p90": 1.527
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2020-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 2.798,
+              "mean_percentage_error": 2.087,
+              "root_mean_squared_percentage_error": 3.506
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 4.565,
+              "mean_percentage_error": 4.565,
+              "root_mean_squared_percentage_error": 4.933
+            },
+            "empirical_interval_coverage_percent": 35.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2014-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.479,
+                "mean_percentage_error": 1.506,
+                "root_mean_squared_percentage_error": 2.772
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.385,
+                "mean_percentage_error": -0.816,
+                "root_mean_squared_percentage_error": 2.917
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.781,
+              "p90": 3.799
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2019-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 9.004,
+              "mean_percentage_error": 9.004,
+              "root_mean_squared_percentage_error": 9.352
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 9.004,
+              "mean_percentage_error": 9.004,
+              "root_mean_squared_percentage_error": 9.352
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2013-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.88,
+                "mean_percentage_error": 2.008,
+                "root_mean_squared_percentage_error": 3.373
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.182,
+                "mean_percentage_error": -1.573,
+                "root_mean_squared_percentage_error": 3.661
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.249,
+              "p90": 5.349
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2018-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 12.939,
+              "mean_percentage_error": 12.939,
+              "root_mean_squared_percentage_error": 13.344
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 12.939,
+              "mean_percentage_error": 12.939,
+              "root_mean_squared_percentage_error": 13.344
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2012-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.484,
+                "mean_percentage_error": 2.326,
+                "root_mean_squared_percentage_error": 3.352
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 4.806,
+                "mean_percentage_error": -3.839,
+                "root_mean_squared_percentage_error": 5.786
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -0.061,
+              "p90": 5.913
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2017-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.65,
+              "mean_percentage_error": 16.65,
+              "root_mean_squared_percentage_error": 17.105
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.65,
+              "mean_percentage_error": 16.65,
+              "root_mean_squared_percentage_error": 17.105
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2011-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.668,
+                "mean_percentage_error": 2.668,
+                "root_mean_squared_percentage_error": 3.105
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 7.8,
+                "mean_percentage_error": -7.545,
+                "root_mean_squared_percentage_error": 9.165
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": 1.444,
+              "p90": 3.816
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2016-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 19.553,
+              "mean_percentage_error": 19.553,
+              "root_mean_squared_percentage_error": 20.03
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 19.553,
+              "mean_percentage_error": 19.553,
+              "root_mean_squared_percentage_error": 20.03
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    },
+    {
+      "asset_class": "schools_and_postsecondary",
+      "asset_class_label": "School or post-secondary facility",
+      "reference_indicator_id": "BCPI_SCHOOL_DIVISION_COMPOSITE",
+      "reference_class_label": "School division composite",
+      "mapping_status": "direct_for_school_proxy_for_postsecondary",
+      "mapping_note": "The source represents schools directly and is only a proxy for post-secondary facilities.",
+      "geography_id": "CMA_835",
+      "geography_label": "Edmonton CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 182,
+      "first_period_end": "1981-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 110.8,
+      "release_state": "not_assessed",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2015-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.609,
+                "mean_percentage_error": 1.024,
+                "root_mean_squared_percentage_error": 1.935
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.516,
+                "mean_percentage_error": 0.115,
+                "root_mean_squared_percentage_error": 1.997
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.128,
+              "p90": 2.8
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2020-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 5.579,
+              "mean_percentage_error": 5.579,
+              "root_mean_squared_percentage_error": 6.247
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 5.579,
+              "mean_percentage_error": 5.579,
+              "root_mean_squared_percentage_error": 6.247
+            },
+            "empirical_interval_coverage_percent": 10.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2014-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.95,
+                "mean_percentage_error": 1.446,
+                "root_mean_squared_percentage_error": 3.202
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.612,
+                "mean_percentage_error": -1.02,
+                "root_mean_squared_percentage_error": 4.452
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -2.851,
+              "p90": 4.316
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2019-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 11.12,
+              "mean_percentage_error": 11.12,
+              "root_mean_squared_percentage_error": 11.776
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 11.12,
+              "mean_percentage_error": 11.12,
+              "root_mean_squared_percentage_error": 11.776
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2013-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.357,
+                "mean_percentage_error": 1.861,
+                "root_mean_squared_percentage_error": 3.812
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 5.763,
+                "mean_percentage_error": -2.93,
+                "root_mean_squared_percentage_error": 6.635
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -2.268,
+              "p90": 5.361
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2018-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.193,
+              "mean_percentage_error": 16.193,
+              "root_mean_squared_percentage_error": 16.744
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 16.193,
+              "mean_percentage_error": 16.193,
+              "root_mean_squared_percentage_error": 16.744
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2012-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.552,
+                "mean_percentage_error": 1.952,
+                "root_mean_squared_percentage_error": 3.567
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 8.15,
+                "mean_percentage_error": -6.531,
+                "root_mean_squared_percentage_error": 9.177
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -0.87,
+              "p90": 5.756
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2017-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 21.174,
+              "mean_percentage_error": 21.174,
+              "root_mean_squared_percentage_error": 21.658
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 21.174,
+              "mean_percentage_error": 21.174,
+              "root_mean_squared_percentage_error": 21.658
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2011-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.172,
+                "mean_percentage_error": 2.147,
+                "root_mean_squared_percentage_error": 3.046
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 12.065,
+                "mean_percentage_error": -11.758,
+                "root_mean_squared_percentage_error": 12.942
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": 0.113,
+              "p90": 3.17
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2016-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 25.013,
+              "mean_percentage_error": 25.013,
+              "root_mean_squared_percentage_error": 25.557
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 25.013,
+              "mean_percentage_error": 25.013,
+              "root_mean_squared_percentage_error": 25.557
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    },
+    {
+      "asset_class": "government_and_civic_facilities",
+      "asset_class_label": "Government administrative facility",
+      "reference_indicator_id": "BCPI_OFFICE_BUILDING_62212_DIVISION_COMPOSITE",
+      "reference_class_label": "Office building division composite",
+      "mapping_status": "proxy_for_administrative_facilities_only",
+      "mapping_note": "The source may inform administrative offices but not every civic facility subtype.",
+      "geography_id": "CMA_825",
+      "geography_label": "Calgary CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 182,
+      "first_period_end": "1981-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 111.4,
+      "release_state": "not_assessed",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "median_recent_yoy_drift",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2015-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.417,
+                "mean_percentage_error": 0.971,
+                "root_mean_squared_percentage_error": 1.674
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.192,
+                "mean_percentage_error": 0.008,
+                "root_mean_squared_percentage_error": 1.459
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.439,
+              "p90": 1.409
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2020-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 3.023,
+              "mean_percentage_error": 2.327,
+              "root_mean_squared_percentage_error": 3.707
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 4.949,
+              "mean_percentage_error": 4.949,
+              "root_mean_squared_percentage_error": 5.274
+            },
+            "empirical_interval_coverage_percent": 30.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "median_recent_yoy_drift",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2014-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.418,
+                "mean_percentage_error": 1.485,
+                "root_mean_squared_percentage_error": 2.779
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.236,
+                "mean_percentage_error": -0.578,
+                "root_mean_squared_percentage_error": 2.683
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -4.228,
+              "p90": 2.273
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2019-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 5.929,
+              "mean_percentage_error": 5.606,
+              "root_mean_squared_percentage_error": 6.957
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 9.575,
+              "mean_percentage_error": 9.575,
+              "root_mean_squared_percentage_error": 9.999
+            },
+            "empirical_interval_coverage_percent": 25.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2013-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.897,
+                "mean_percentage_error": 1.949,
+                "root_mean_squared_percentage_error": 3.378
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.88,
+                "mean_percentage_error": -1.412,
+                "root_mean_squared_percentage_error": 3.431
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.494,
+              "p90": 5.231
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2018-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 13.723,
+              "mean_percentage_error": 13.723,
+              "root_mean_squared_percentage_error": 14.276
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 13.723,
+              "mean_percentage_error": 13.723,
+              "root_mean_squared_percentage_error": 14.276
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2012-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.462,
+                "mean_percentage_error": 2.242,
+                "root_mean_squared_percentage_error": 3.291
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.796,
+                "mean_percentage_error": -3.036,
+                "root_mean_squared_percentage_error": 4.542
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -0.182,
+              "p90": 6.054
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2017-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 17.524,
+              "mean_percentage_error": 17.524,
+              "root_mean_squared_percentage_error": 18.122
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 17.524,
+              "mean_percentage_error": 17.524,
+              "root_mean_squared_percentage_error": 18.122
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2011-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.586,
+                "mean_percentage_error": 2.586,
+                "root_mean_squared_percentage_error": 3.01
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 5.483,
+                "mean_percentage_error": -5.315,
+                "root_mean_squared_percentage_error": 6.103
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": 1.337,
+              "p90": 3.695
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2016-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 20.323,
+              "mean_percentage_error": 20.323,
+              "root_mean_squared_percentage_error": 20.986
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 20.323,
+              "mean_percentage_error": 20.323,
+              "root_mean_squared_percentage_error": 20.986
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    },
+    {
+      "asset_class": "government_and_civic_facilities",
+      "asset_class_label": "Government administrative facility",
+      "reference_indicator_id": "BCPI_OFFICE_BUILDING_62212_DIVISION_COMPOSITE",
+      "reference_class_label": "Office building division composite",
+      "mapping_status": "proxy_for_administrative_facilities_only",
+      "mapping_note": "The source may inform administrative offices but not every civic facility subtype.",
+      "geography_id": "CMA_835",
+      "geography_label": "Edmonton CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 182,
+      "first_period_end": "1981-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 113.0,
+      "release_state": "baseline_only",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "gate_passed",
+          "reason": null,
+          "selected_method": "median_recent_yoy_drift",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2015-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.602,
+                "mean_percentage_error": 0.963,
+                "root_mean_squared_percentage_error": 1.979
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.466,
+                "mean_percentage_error": -0.016,
+                "root_mean_squared_percentage_error": 1.924
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -2.29,
+              "p90": 2.297
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2020-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 3.86,
+              "mean_percentage_error": 3.211,
+              "root_mean_squared_percentage_error": 5.131
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 6.132,
+              "mean_percentage_error": 6.132,
+              "root_mean_squared_percentage_error": 6.648
+            },
+            "empirical_interval_coverage_percent": 60.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": true,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": true
+          },
+          "projected_index": 118.849,
+          "projected_cumulative_change_percent": 5.176,
+          "empirical_error_band_low_index": 116.128,
+          "empirical_error_band_high_index": 121.579,
+          "empirical_error_band_low_change_percent": 2.768,
+          "empirical_error_band_high_change_percent": 7.592
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2014-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.017,
+                "mean_percentage_error": 1.305,
+                "root_mean_squared_percentage_error": 3.316
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.404,
+                "mean_percentage_error": -1.209,
+                "root_mean_squared_percentage_error": 4.269
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -3.362,
+              "p90": 4.535
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2019-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 12.0,
+              "mean_percentage_error": 12.0,
+              "root_mean_squared_percentage_error": 12.614
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 12.0,
+              "mean_percentage_error": 12.0,
+              "root_mean_squared_percentage_error": 12.614
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": true,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2013-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 3.592,
+                "mean_percentage_error": 1.58,
+                "root_mean_squared_percentage_error": 3.926
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 5.226,
+                "mean_percentage_error": -3.096,
+                "root_mean_squared_percentage_error": 6.336
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -2.992,
+              "p90": 5.431
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2018-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 17.372,
+              "mean_percentage_error": 17.372,
+              "root_mean_squared_percentage_error": 17.974
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 17.372,
+              "mean_percentage_error": 17.372,
+              "root_mean_squared_percentage_error": 17.974
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2012-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 2.782,
+                "mean_percentage_error": 1.515,
+                "root_mean_squared_percentage_error": 3.565
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 7.558,
+                "mean_percentage_error": -6.442,
+                "root_mean_squared_percentage_error": 8.835
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -1.633,
+              "p90": 5.433
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2017-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 22.554,
+              "mean_percentage_error": 22.554,
+              "root_mean_squared_percentage_error": 23.126
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 22.554,
+              "mean_percentage_error": 22.554,
+              "root_mean_squared_percentage_error": 23.126
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "gate_failed",
+          "reason": "one or more predeclared validation gates failed",
+          "selected_method": "flat_index",
+          "selection_rule": "drift must improve calibration MAPE by more than 0.10 percentage points; otherwise select flat",
+          "calibration_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2011-09-30",
+            "last_target_period_end": "2021-06-30",
+            "candidate_metrics": {
+              "flat_index": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 1.81,
+                "mean_percentage_error": 1.544,
+                "root_mean_squared_percentage_error": 2.803
+              },
+              "median_recent_yoy_drift": {
+                "origin_count": 20,
+                "mean_absolute_percentage_error": 11.822,
+                "mean_percentage_error": -11.441,
+                "root_mean_squared_percentage_error": 12.889
+              }
+            },
+            "selected_error_percentiles": {
+              "p10": -0.644,
+              "p90": 2.813
+            }
+          },
+          "validation_period": {
+            "origin_count": 20,
+            "first_origin_period_end": "2016-09-30",
+            "last_target_period_end": "2026-06-30",
+            "selected_method_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 26.424,
+              "mean_percentage_error": 26.424,
+              "root_mean_squared_percentage_error": 27.171
+            },
+            "flat_benchmark_metrics": {
+              "origin_count": 20,
+              "mean_absolute_percentage_error": 26.424,
+              "mean_percentage_error": 26.424,
+              "root_mean_squared_percentage_error": 27.171
+            },
+            "empirical_interval_coverage_percent": 0.0
+          },
+          "gates": {
+            "minimum_partition_sizes": true,
+            "validation_mape_at_most_15_percent": false,
+            "absolute_validation_bias_at_most_10_percent": false,
+            "not_materially_worse_than_flat_benchmark": true,
+            "validation_interval_coverage_at_least_60_percent": false
+          },
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    },
+    {
+      "asset_class": "municipal_operations_facilities",
+      "asset_class_label": "Municipal operations facility",
+      "reference_indicator_id": "BCPI_BUS_DEPOT_WITH_MAINTENANCE_AND_REPAIR_FACILITIES_DIVISION_COMPOSITE",
+      "reference_class_label": "Bus depot with maintenance and repair facilities division composite",
+      "mapping_status": "proxy",
+      "mapping_note": "The source is a municipal-operations building proxy and does not represent water or resilience works.",
+      "geography_id": "CMA_825",
+      "geography_label": "Calgary CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 38,
+      "first_period_end": "2017-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 112.2,
+      "release_state": "not_assessed",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 15,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 11,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 7,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 3,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 0,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    },
+    {
+      "asset_class": "municipal_operations_facilities",
+      "asset_class_label": "Municipal operations facility",
+      "reference_indicator_id": "BCPI_BUS_DEPOT_WITH_MAINTENANCE_AND_REPAIR_FACILITIES_DIVISION_COMPOSITE",
+      "reference_class_label": "Bus depot with maintenance and repair facilities division composite",
+      "mapping_status": "proxy",
+      "mapping_note": "The source is a municipal-operations building proxy and does not represent water or resilience works.",
+      "geography_id": "CMA_835",
+      "geography_label": "Edmonton CMA",
+      "unit": "Index, 2023=100",
+      "observation_count": 38,
+      "first_period_end": "2017-03-31",
+      "latest_period_end": "2026-06-30",
+      "latest_index": 115.3,
+      "release_state": "not_assessed",
+      "horizons": [
+        {
+          "horizon_years": 1,
+          "horizon_quarters": 4,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 15,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 2,
+          "horizon_quarters": 8,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 11,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 3,
+          "horizon_quarters": 12,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 7,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 4,
+          "horizon_quarters": 16,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 3,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        },
+        {
+          "horizon_years": 5,
+          "horizon_quarters": 20,
+          "status": "not_assessed",
+          "reason": "insufficient rolling-origin history for locked partitions",
+          "available_origin_count": 0,
+          "required_calibration_origin_count": 15,
+          "required_validation_origin_count": 10,
+          "selected_method": null,
+          "projected_index": null,
+          "projected_cumulative_change_percent": null,
+          "empirical_error_band_low_index": null,
+          "empirical_error_band_high_index": null,
+          "empirical_error_band_low_change_percent": null,
+          "empirical_error_band_high_change_percent": null
+        }
+      ]
+    }
+  ],
+  "unsupported_asset_classes": [
+    {
+      "asset_class": "roads_transit_and_airports",
+      "status": "not_assessed",
+      "reason": "The BCPI building reference classes do not represent horizontal civil or transportation construction."
+    },
+    {
+      "asset_class": "municipal_water_and_resilience",
+      "status": "not_assessed",
+      "reason": "The BCPI building reference classes do not represent water, wastewater or resilience infrastructure."
+    },
+    {
+      "asset_class": "power_sector_infrastructure",
+      "status": "not_assessed",
+      "reason": "The BCPI building reference classes do not represent generation, transmission or distribution construction."
+    }
+  ],
+  "ai_attributable_increment": {
+    "status": "not_calibrated",
+    "cost_escalation_percent": null,
+    "cost_escalation_cad": null,
+    "schedule_delay_days": null,
+    "reason": "No reviewed historical treatment, counterfactual and project-outcome panel currently identifies an AI-infrastructure effect."
+  },
+  "graph_role": "Mechanism and exposure ranking only; graph pressure scores are not inputs to the reference-index projection.",
+  "limitations": [
+    "BCPI measures contractor bid-price change for model buildings, not the realized cost of a particular project.",
+    "Calgary and Edmonton CMA results are not province-wide substitutes.",
+    "Empirical error bands are historical forecast-error ranges, not confidence intervals or probability guarantees.",
+    "A project-cost translation requires a known estimate price basis and a declared expenditure profile.",
+    "The baseline contains no AI-attributable effect and must not be added to a graph pressure score."
+  ]
+}

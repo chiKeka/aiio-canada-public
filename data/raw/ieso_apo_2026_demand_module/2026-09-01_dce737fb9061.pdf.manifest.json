@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_IESO_APO_2026_DEMAND_MODULE_dce737fb9061fafe",
+  "source_id": "IESO_APO_2026_DEMAND_MODULE",
+  "retrieved_at": "2026-09-01T02:38:11+00:00",
+  "effective_url": "https://www.ieso.ca/-/media/Files/IESO/Document-Library/planning-forecasts/apo/2026/2026-APO-Demand-Forecast-Module.pdf",
+  "content_hash": "sha256:dce737fb9061fafed2c0d2371681f2de0860c8511aec47cb95e19196e912f597",
+  "content_type": "application/pdf",
+  "byte_length": 677598,
+  "archive_path": "data/raw/ieso_apo_2026_demand_module/2026-09-01_dce737fb9061.pdf",
+  "result": "success"
+}

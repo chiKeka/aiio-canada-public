@@ -1,0 +1,169 @@
+{
+  "as_of_date": "2026-08-31",
+  "evidence_status": "observed_with_scoped_interpretation",
+  "geography_id": "PR_48",
+  "limitations": [
+    "Requested MW, executed load-contract MW, connected MW, coincident peak and transmission capacity are distinct quantities.",
+    "The Q3 2025 request quantity and the later executed-contract record have different publication vintages and must not be treated as one queue-conversion snapshot.",
+    "No province-wide scalar can convert the $50B CAD scenario into a transmission build requirement.",
+    "The independent scenario power overlay remains separate and is not calibrated by this evidence screen."
+  ],
+  "manual_extraction_review": {
+    "review_record": "docs/reviews/2026-08-31-grok-evidence-screen-gate.md",
+    "reviewed_at": "2026-08-31",
+    "reviewed_by": "Grok CLI source-level re-extraction",
+    "reviewer_type": "independent_machine_review",
+    "status": "independently_reviewed"
+  },
+  "metrics": [
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_DC_REQUESTED_LOAD",
+      "period": "2024-Q2",
+      "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+      "source_locator": "page 1, Data Centre Cumulative Requested Load bar chart",
+      "unit": "MW",
+      "value": 5000.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_DC_REQUESTED_LOAD",
+      "period": "2024-Q3",
+      "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+      "source_locator": "page 1, Data Centre Cumulative Requested Load bar chart",
+      "unit": "MW",
+      "value": 6400.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_DC_REQUESTED_LOAD",
+      "period": "2024-Q4",
+      "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+      "source_locator": "page 1, Data Centre Cumulative Requested Load bar chart",
+      "unit": "MW",
+      "value": 10900.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_DC_REQUESTED_LOAD",
+      "period": "2025-Q1",
+      "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+      "source_locator": "page 1, Data Centre Cumulative Requested Load bar chart",
+      "unit": "MW",
+      "value": 14600.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_DC_REQUESTED_LOAD",
+      "period": "2025-Q2",
+      "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+      "source_locator": "page 1, Data Centre Cumulative Requested Load bar chart",
+      "unit": "MW",
+      "value": 19800.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_DC_REQUESTED_LOAD",
+      "period": "2025-Q3",
+      "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+      "source_locator": "page 1, Data Centre Cumulative Requested Load bar chart",
+      "unit": "MW",
+      "value": 20700.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_PHASE1_INTERIM_LIMIT",
+      "period": "2025-06-04",
+      "source_id": "AESO_INTERIM_LARGE_LOAD_2025_06",
+      "source_locator": "Managing Demand Responsibly, interim limit",
+      "unit": "MW",
+      "value": 1200.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_PHASE1_ALLOCATED_LOAD_CONTRACTS",
+      "period": "2026-08-31",
+      "source_id": "AESO_LARGE_LOAD_PROJECTS",
+      "source_locator": "Phase 1: Large Load Integration | Complete",
+      "unit": "MW",
+      "value": 1200.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_P2936_EXECUTED_LOAD_CONTRACT",
+      "period": "2026-08-31",
+      "source_id": "AESO_LARGE_LOAD_PROJECTS",
+      "source_locator": "Phase 1 project list, P2936",
+      "unit": "MW",
+      "value": 970.0
+    },
+    {
+      "evidence_status": "observed",
+      "metric_id": "AESO_P3083_EXECUTED_LOAD_CONTRACT",
+      "period": "2026-08-31",
+      "source_id": "AESO_LARGE_LOAD_PROJECTS",
+      "source_locator": "Phase 1 project list, P3083",
+      "unit": "MW",
+      "value": 230.0
+    }
+  ],
+  "model_id": "AIIO_AB_POWER_EVIDENCE_SCREEN_0_1",
+  "phase1": {
+    "allocated_mw": 1200.0,
+    "executed_load_contracts": [
+      {
+        "mw": 970.0,
+        "project_id": "P2936",
+        "project_name": "GLDC Load"
+      },
+      {
+        "mw": 230.0,
+        "project_id": "P3083",
+        "project_name": "Keephills Data Centre Phase I"
+      }
+    ],
+    "interim_limit_mw": 1200.0
+  },
+  "requested_load": {
+    "latest_application_period": "2025-Q3",
+    "latest_requested_load_mw": 20700.0,
+    "series": [
+      {
+        "application_period": "2024-Q2",
+        "requested_load_mw": 5000.0
+      },
+      {
+        "application_period": "2024-Q3",
+        "requested_load_mw": 6400.0
+      },
+      {
+        "application_period": "2024-Q4",
+        "requested_load_mw": 10900.0
+      },
+      {
+        "application_period": "2025-Q1",
+        "requested_load_mw": 14600.0
+      },
+      {
+        "application_period": "2025-Q2",
+        "requested_load_mw": 19800.0
+      },
+      {
+        "application_period": "2025-Q3",
+        "requested_load_mw": 20700.0
+      }
+    ],
+    "warning": "Connection requests are not contracts, forecasts or realized load and may include projects that do not proceed."
+  },
+  "source_files": {
+    "data_centre_update_pdf": "sha256:d997820b3ed234324f1f7bbca5b8b75fdc1bf5f64859816f4dc6cc084b229428",
+    "interim_approach_html": "sha256:86ea3ce051e0faf81d5356c141b4a45b27c2b43ef85520cfe1eb871bc55a9009",
+    "large_load_projects_html": "sha256:43d55ccde5588a8c3754861a37fbd4274e605035a0dba32f72ad97cd98e86a56"
+  },
+  "transmission_boundary": {
+    "additional_transmission_required_for_50b_counterfactual_mw": null,
+    "interpretation": "AESO stated that no new transmission reinforcements or upgrades were required for the scoped Phase 1 approach. This does not establish the need for larger, later or differently located loads. The $50B counterfactual requires project locations, connection studies and a system needs assessment before physical transmission additions can be stated.",
+    "phase1_new_transmission_reinforcement_required": false,
+    "scope": "AESO 1,200 MW interim approach through 2028"
+  }
+}

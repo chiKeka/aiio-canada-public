@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_SEPH_EARNINGS_14100223_06c7a79f80a0f86c",
+  "source_id": "STATCAN_SEPH_EARNINGS_14100223",
+  "retrieved_at": "2026-09-01T08:13:18+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/14100223-eng.zip",
+  "content_hash": "sha256:06c7a79f80a0f86cd304ece688f517e036af6e86465bba271d7f5df771058bde",
+  "content_type": "application/zip",
+  "byte_length": 3315930,
+  "archive_path": "data/raw/statcan_seph_earnings_14100223/2026-09-01_06c7a79f80a0.zip",
+  "result": "success"
+}

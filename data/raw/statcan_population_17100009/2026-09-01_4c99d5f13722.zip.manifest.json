@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_POPULATION_17100009_4c99d5f137222ca7",
+  "source_id": "STATCAN_POPULATION_17100009",
+  "retrieved_at": "2026-09-01T08:13:17+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/17100009-eng.zip",
+  "content_hash": "sha256:4c99d5f137222ca7bcbb3c2c0e23b422c374e2712b68412965d06411bb0f31f5",
+  "content_type": "application/zip",
+  "byte_length": 30127,
+  "archive_path": "data/raw/statcan_population_17100009/2026-09-01_4c99d5f13722.zip",
+  "result": "success"
+}

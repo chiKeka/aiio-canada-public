@@ -1,0 +1,228 @@
+{
+  "catalog_content_hash": "sha256:c3a16c24dbe0d19dbce495fd7a6966e6417d2f96be95b93d55552731e72800c1",
+  "catalog_csv_resource_count": 69,
+  "catalog_end_date": "2026-08-20",
+  "catalog_source_id": "QUEBEC_PQI_ARCHIVE_CATALOG",
+  "catalog_start_date": "2020-05-19",
+  "contract_id": "AIIO_QUEBEC_PQI_MILESTONE_VINTAGES_0_1",
+  "dashboard_source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "attrition_interpretation_authorized": false,
+    "longitudinal_outcome_panel_authorized": false,
+    "reason": "The milestone design can reveal entry, persistence and interval disappearance across official snapshots, including the November 2020 threshold change, but it is not the complete 69-vintage panel and disappearance does not identify completion, cancellation or another exit cause.",
+    "status": "milestone_vintage_research_candidate"
+  },
+  "rejected_candidate_count": 2,
+  "rejected_candidates": [
+    {
+      "reason": "Quebec milestone CSV schema missing no_projet: 2024-11-01",
+      "resource_id": "be33a97d-7892-4f35-b0cf-a419467634fd",
+      "resource_name": "Tableau de bord en date du 1er novembre 2024",
+      "snapshot_date": "2024-11-01",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/be33a97d-7892-4f35-b0cf-a419467634fd/download/donnees_ouvertes_tb_20241101.csv"
+    },
+    {
+      "reason": "Quebec milestone CSV schema missing no_projet: 2024-12-04",
+      "resource_id": "82074481-37a5-40ac-a5ed-60dc74d066e4",
+      "resource_name": "Tableau de bord en date du 4 d\u00e9cembre 2024",
+      "snapshot_date": "2024-12-04",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/82074481-37a5-40ac-a5ed-60dc74d066e4/download/donnees_ouvertes_tb_20241204.csv"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "selected_vintage_count": 10,
+  "selected_vintages": [
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-05-19_cac42720e5bf.csv",
+      "byte_length": 293437,
+      "content_hash": "sha256:cac42720e5bfb07a7d6a20dfa0849e067e3004450406d8592f36bc617591f1fd",
+      "created": "2020-05-19T10:28:56.163711",
+      "last_modified": "2020-06-04T19:30:04.484368",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-05-19_cac42720e5bf.csv.manifest.json",
+      "resource_id": "73f86929-8813-4421-ac32-f2edcde0fdd3",
+      "resource_name": "Tableau de bord en date du 19 mai 2020",
+      "retrieved_at": "2026-09-01T05:46:09+00:00",
+      "row_count": 281,
+      "selection_reasons": [
+        "earliest_official_csv"
+      ],
+      "snapshot_date": "2020-05-19",
+      "threshold_regime": "cad_50m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/73f86929-8813-4421-ac32-f2edcde0fdd3/download/tableaubordinfrastructures2020-05-19.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-10-26_4c8952eff4f0.csv",
+      "byte_length": 290936,
+      "content_hash": "sha256:4c8952eff4f0726681fa975b9cf8a9e0cde52e99b61e32ec2ad822a2e76bff36",
+      "created": "2020-10-28T09:05:54.327773",
+      "last_modified": "2020-10-28T13:05:54.177845",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-10-26_4c8952eff4f0.csv.manifest.json",
+      "resource_id": "10ad1260-2779-40eb-83d9-f12372c5485f",
+      "resource_name": "Tableau de bord en date du 26 octobre 2020",
+      "retrieved_at": "2026-09-01T05:46:11+00:00",
+      "row_count": 280,
+      "selection_reasons": [
+        "last_pre_threshold_snapshot"
+      ],
+      "snapshot_date": "2020-10-26",
+      "threshold_regime": "cad_50m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/10ad1260-2779-40eb-83d9-f12372c5485f/download/tableaubordinfrastructures2020-10-26.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-11-16_418368c9ba76.csv",
+      "byte_length": 385551,
+      "content_hash": "sha256:418368c9ba76f001ad2b500a1ea5303a2b54a871aeec032e00a8089ba23cd32e",
+      "created": "2020-12-15T15:03:43.777914",
+      "last_modified": "2020-12-15T15:03:43.716635",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-11-16_418368c9ba76.csv.manifest.json",
+      "resource_id": "175e8546-c062-4f78-a1ed-d4955c53c051",
+      "resource_name": "Tableau de bord en date du 16 novembre",
+      "retrieved_at": "2026-09-01T05:46:12+00:00",
+      "row_count": 398,
+      "selection_reasons": [
+        "first_post_threshold_snapshot"
+      ],
+      "snapshot_date": "2020-11-16",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/175e8546-c062-4f78-a1ed-d4955c53c051/download/tableau_bord_infrastructures_2020-11-16.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-12-03_ec45f635dc8d.csv",
+      "byte_length": 387143,
+      "content_hash": "sha256:ec45f635dc8d2f15b25d9f2cdc551d5504310110e6ae1f88309ec3faae240c82",
+      "created": "2020-12-07T16:37:06.052740",
+      "last_modified": "2020-12-07T16:37:05.981745",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-12-03_ec45f635dc8d.csv.manifest.json",
+      "resource_id": "a2cd18cb-1860-41c8-88f6-6070b755e917",
+      "resource_name": "Tableau de bord en date du 3 d\u00e9cembre 2020",
+      "retrieved_at": "2026-09-01T05:46:13+00:00",
+      "row_count": 398,
+      "selection_reasons": [
+        "latest_schema_valid_snapshot_in_2020"
+      ],
+      "snapshot_date": "2020-12-03",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/a2cd18cb-1860-41c8-88f6-6070b755e917/download/tableau_bord_infrastructures_2020-12-03.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2021-12-06_902401198e51.csv",
+      "byte_length": 550618,
+      "content_hash": "sha256:902401198e51a5dcd4c87cd2f66a09b4bdddd73baffc00d7bee057c05b4d9e1a",
+      "created": "2021-12-08T14:53:18.583046",
+      "last_modified": "2021-12-10T20:13:44.768444",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2021-12-06_902401198e51.csv.manifest.json",
+      "resource_id": "38add45e-8624-4a6e-983e-689399a004f2",
+      "resource_name": "Tableau de bord en date du 6 d\u00e9cembre 2021",
+      "retrieved_at": "2026-09-01T05:46:14+00:00",
+      "row_count": 595,
+      "selection_reasons": [
+        "latest_schema_valid_snapshot_in_2021"
+      ],
+      "snapshot_date": "2021-12-06",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/38add45e-8624-4a6e-983e-689399a004f2/download/tableau_bord_infrastructures_2021-12-06.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2022-12-08_50c404d3573a.csv",
+      "byte_length": 776059,
+      "content_hash": "sha256:50c404d3573abf5c0cb5cedb28117f234da81449f06375f34bb62122782f8d74",
+      "created": "2022-12-08T21:01:30.548408",
+      "last_modified": "2023-02-02T14:04:57.642407",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2022-12-08_50c404d3573a.csv.manifest.json",
+      "resource_id": "d2ea392d-85d8-45dd-b070-e5be4ff1edcc",
+      "resource_name": "Tableau de bord en date du 8 d\u00e9cembre 2022",
+      "retrieved_at": "2026-09-01T05:46:15+00:00",
+      "row_count": 696,
+      "selection_reasons": [
+        "latest_schema_valid_snapshot_in_2022"
+      ],
+      "snapshot_date": "2022-12-08",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/d2ea392d-85d8-45dd-b070-e5be4ff1edcc/download/tableau_bord_infrastructures_2022-12-08.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2023-12-08_8187ad50e6d5.csv",
+      "byte_length": 723435,
+      "content_hash": "sha256:8187ad50e6d58b300f8063cd46125dc9e6947b4501b07e52e4fc5cec03547697",
+      "created": "2023-12-08T16:11:25.940954",
+      "last_modified": "2023-12-13T18:22:07.469497",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2023-12-08_8187ad50e6d5.csv.manifest.json",
+      "resource_id": "ac14fb28-2c7f-48e3-b59f-c5ab5688420d",
+      "resource_name": "Tableau de bord en date du 8 d\u00e9cembre 2023",
+      "retrieved_at": "2026-09-01T05:46:16+00:00",
+      "row_count": 682,
+      "selection_reasons": [
+        "latest_schema_valid_snapshot_in_2023"
+      ],
+      "snapshot_date": "2023-12-08",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/ac14fb28-2c7f-48e3-b59f-c5ab5688420d/download/donnees_ouvertes_tb_20231208_v3.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2024-10-09_0cb66745c2cc.csv",
+      "byte_length": 821015,
+      "content_hash": "sha256:0cb66745c2ccfec4575e4185f925565ecdcd803b1e3e8994334474db99261f7b",
+      "created": "2024-10-11T13:40:51.100049",
+      "last_modified": "2024-10-11T13:40:50.812590",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2024-10-09_0cb66745c2cc.csv.manifest.json",
+      "resource_id": "0ecee9d7-5c5e-4883-a799-9f8e79a796d6",
+      "resource_name": "Tableau de bord en date du 9 octobre 2024",
+      "retrieved_at": "2026-09-01T05:47:55+00:00",
+      "row_count": 702,
+      "selection_reasons": [
+        "latest_schema_valid_snapshot_in_2024"
+      ],
+      "snapshot_date": "2024-10-09",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/0ecee9d7-5c5e-4883-a799-9f8e79a796d6/download/donnees_ouvertes_tb_20241009.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2025-12-19_698d8f701956.csv",
+      "byte_length": 774884,
+      "content_hash": "sha256:698d8f701956474c217fc6132750ad1c6be57dd97af6ac1b2ef2df656a5e0d9c",
+      "created": "2025-12-19T15:18:01.555636",
+      "last_modified": "2025-12-19T15:18:01.103462",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2025-12-19_698d8f701956.csv.manifest.json",
+      "resource_id": "35de39af-84c5-4478-9857-2b4c65564c15",
+      "resource_name": "Tableau de bord en date du 19 d\u00e9cembre 2025",
+      "retrieved_at": "2026-09-01T05:47:56+00:00",
+      "row_count": 682,
+      "selection_reasons": [
+        "latest_schema_valid_snapshot_in_2025"
+      ],
+      "snapshot_date": "2025-12-19",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/35de39af-84c5-4478-9857-2b4c65564c15/download/donnees_ouvertes_tb_20251219.csv"
+    },
+    {
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2026-08-20_a437f7ba9a74.csv",
+      "byte_length": 765994,
+      "content_hash": "sha256:a437f7ba9a749f33b130ec5a1a724821134b1b91bc7a2970bcf2597e8ff5877b",
+      "created": "2026-08-24T12:54:49.311775",
+      "last_modified": "2026-08-24T12:54:48.845371",
+      "manifest_path": "data/raw/quebec_pqi_project_dashboard_vintages/2026-08-20_a437f7ba9a74.csv.manifest.json",
+      "resource_id": "1f3ea7fa-d8c6-4054-937d-fcc76be81803",
+      "resource_name": "Tableau de bord en date du 20 ao\u00fbt 2026",
+      "retrieved_at": "2026-09-01T05:47:57+00:00",
+      "row_count": 649,
+      "selection_reasons": [
+        "latest_official_csv",
+        "latest_schema_valid_snapshot_in_2026"
+      ],
+      "snapshot_date": "2026-08-20",
+      "threshold_regime": "cad_20m_and_over",
+      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+  ],
+  "selection_rule": {
+    "complete_monthly_panel": false,
+    "earliest_official_csv": true,
+    "first_post_threshold_snapshot": true,
+    "last_pre_threshold_snapshot": true,
+    "latest_official_csv": true,
+    "latest_snapshot_in_each_calendar_year": true,
+    "schema_invalid_candidates_fall_back_with_audit_record": true
+  },
+  "threshold_change_date": "2020-11-01"
+}

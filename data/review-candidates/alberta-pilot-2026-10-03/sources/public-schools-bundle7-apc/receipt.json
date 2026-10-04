@@ -1,0 +1,15 @@
+{
+  "source_id": "public-schools-bundle7-apc",
+  "requested_url": "https://purchasing.alberta.ca/posting/AB-2025-03975",
+  "retrieved_at": "2026-10-03T21:30:43.604941+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://purchasing.alberta.ca/posting/AB-2025-03975",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 108692,
+  "sha256": "93b9bb1239e1d46f110d2a4c520e8d35de050fc04227771708bbf8edbb875d95",
+  "archive_path": "sources/public-schools-bundle7-apc/page.html",
+  "content_verification": "app_shell_not_verified"
+}

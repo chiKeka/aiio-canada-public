@@ -1,0 +1,5044 @@
+{
+  "schema_version": "1.1.0",
+  "engine_version": "AIIO_GRAPH_ENGINE_0.2.0",
+  "engine_hash": "sha256:096330349fbf6744e7259c7c503ae4c169b33bf75e011bf700373bee9e4dddd9",
+  "code_hashes": {
+    "graph_engine": "sha256:3d1dd5fd9a3de7c5a3f3b0dae4e23ecc3685d5ef894ef14c74555b505ed07d10",
+    "scenario_engine": "sha256:721416319d4d8e3eb8fd9a0d2350eed529e78b86ecfe383cd5a4c5700cd0e6e8"
+  },
+  "model_id": "AIIO_AB_GRAPH_0_2",
+  "scenario_id": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE",
+  "parameter_set_id": "AB_50B_HIGH_LOCAL_CAPTURE_PARAMETERS_0_1",
+  "scenario_name": "High-local-capture Alberta $50B (uncalibrated diagnostic)",
+  "scenario_description": "A counterfactual structural stress test that holds total investment, component mix and annual timing equal to the staggered reference while increasing the assumed Alberta capture of modelled construction activity from 72% to 90%. It is not a forecast or a measured retention rate.",
+  "geography_id": "PR_48",
+  "evidence_status": "scenario",
+  "structural_test_banner": "UNCALIBRATED STRUCTURAL DIAGNOSTIC \u2014 not an empirical finding, forecast, probability interval, or project-level delay estimate.",
+  "scenario_file_hash": "sha256:1bc501310f5ebbb7af330886df547167a18a2782ba44995e38323f08cc787610",
+  "graph_file_hash": "sha256:4ae7347787f0fa53e670f8f03b80c1f7c93f03bc8d75a6b99168e3a3763e1a22",
+  "horizon_start_year": 2027,
+  "horizon_end_year": 2042,
+  "investment_total_cad": 50000000000,
+  "modelled_component_share": 0.46,
+  "excluded_component_share": 0.54,
+  "local_capture_share": 0.9,
+  "annual_flows": [
+    {
+      "year": 2027,
+      "total_capex_cad": 2000000000,
+      "local_civil_cad": 306000000,
+      "local_electrical_mechanical_cad": 378000000,
+      "local_grid_construction_cad": 144000000,
+      "excluded_from_graph_capex_cad": 1080000000
+    },
+    {
+      "year": 2028,
+      "total_capex_cad": 3500000000,
+      "local_civil_cad": 535500000,
+      "local_electrical_mechanical_cad": 661500000,
+      "local_grid_construction_cad": 252000000,
+      "excluded_from_graph_capex_cad": 1890000000
+    },
+    {
+      "year": 2029,
+      "total_capex_cad": 5000000000,
+      "local_civil_cad": 765000000,
+      "local_electrical_mechanical_cad": 945000000,
+      "local_grid_construction_cad": 360000000,
+      "excluded_from_graph_capex_cad": 2700000000
+    },
+    {
+      "year": 2030,
+      "total_capex_cad": 6000000000,
+      "local_civil_cad": 918000000,
+      "local_electrical_mechanical_cad": 1134000000,
+      "local_grid_construction_cad": 432000000,
+      "excluded_from_graph_capex_cad": 3240000000
+    },
+    {
+      "year": 2031,
+      "total_capex_cad": 7000000000,
+      "local_civil_cad": 1071000000,
+      "local_electrical_mechanical_cad": 1323000000,
+      "local_grid_construction_cad": 504000000,
+      "excluded_from_graph_capex_cad": 3780000000
+    },
+    {
+      "year": 2032,
+      "total_capex_cad": 7000000000,
+      "local_civil_cad": 1071000000,
+      "local_electrical_mechanical_cad": 1323000000,
+      "local_grid_construction_cad": 504000000,
+      "excluded_from_graph_capex_cad": 3780000000
+    },
+    {
+      "year": 2033,
+      "total_capex_cad": 6500000000,
+      "local_civil_cad": 994500000,
+      "local_electrical_mechanical_cad": 1228500000,
+      "local_grid_construction_cad": 468000000,
+      "excluded_from_graph_capex_cad": 3510000000
+    },
+    {
+      "year": 2034,
+      "total_capex_cad": 5500000000,
+      "local_civil_cad": 841500000,
+      "local_electrical_mechanical_cad": 1039500000,
+      "local_grid_construction_cad": 396000000,
+      "excluded_from_graph_capex_cad": 2970000000
+    },
+    {
+      "year": 2035,
+      "total_capex_cad": 4500000000,
+      "local_civil_cad": 688500000,
+      "local_electrical_mechanical_cad": 850500000,
+      "local_grid_construction_cad": 324000000,
+      "excluded_from_graph_capex_cad": 2430000000
+    },
+    {
+      "year": 2036,
+      "total_capex_cad": 3000000000,
+      "local_civil_cad": 459000000,
+      "local_electrical_mechanical_cad": 567000000,
+      "local_grid_construction_cad": 216000000,
+      "excluded_from_graph_capex_cad": 1620000000
+    }
+  ],
+  "pressure_peaks": [
+    {
+      "node_id": "TRADE_ELECTRICIANS",
+      "label": "Building electricians",
+      "node_type": "resource",
+      "low": 0.41,
+      "low_peak_year": 2033,
+      "central": 0.77,
+      "central_peak_year": 2034,
+      "high": 1.54,
+      "high_peak_year": 2035
+    },
+    {
+      "node_id": "MATERIAL_BUILDING_ELECTRICAL",
+      "label": "Building electrical equipment",
+      "node_type": "material",
+      "low": 0.35,
+      "low_peak_year": 2033,
+      "central": 0.62,
+      "central_peak_year": 2033,
+      "high": 1.16,
+      "high_peak_year": 2034
+    },
+    {
+      "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "label": "Hospital delivery delay pressure",
+      "node_type": "outcome",
+      "low": 0.11,
+      "low_peak_year": 2034,
+      "central": 0.55,
+      "central_peak_year": 2035,
+      "high": 2.97,
+      "high_peak_year": 2038
+    },
+    {
+      "node_id": "TRADE_HVAC",
+      "label": "HVAC mechanics",
+      "node_type": "resource",
+      "low": 0.24,
+      "low_peak_year": 2033,
+      "central": 0.52,
+      "central_peak_year": 2034,
+      "high": 1.11,
+      "high_peak_year": 2035
+    },
+    {
+      "node_id": "SCHEDULE_UTILITIES_DELAY_PRESSURE",
+      "label": "Regulated utility delivery delay pressure",
+      "node_type": "outcome",
+      "low": 0.09,
+      "low_peak_year": 2034,
+      "central": 0.38,
+      "central_peak_year": 2035,
+      "high": 1.55,
+      "high_peak_year": 2037
+    },
+    {
+      "node_id": "NONRES_CONSTRUCTION_COST",
+      "label": "Non-residential construction cost pressure",
+      "node_type": "signal",
+      "low": 0.09,
+      "low_peak_year": 2034,
+      "central": 0.36,
+      "central_peak_year": 2035,
+      "high": 1.39,
+      "high_peak_year": 2036
+    },
+    {
+      "node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE",
+      "label": "School delivery delay pressure",
+      "node_type": "outcome",
+      "low": 0.07,
+      "low_peak_year": 2034,
+      "central": 0.36,
+      "central_peak_year": 2035,
+      "high": 2.01,
+      "high_peak_year": 2038
+    },
+    {
+      "node_id": "TRADE_POWERLINE",
+      "label": "Power-line trades",
+      "node_type": "resource",
+      "low": 0.17,
+      "low_peak_year": 2033,
+      "central": 0.36,
+      "central_peak_year": 2034,
+      "high": 0.73,
+      "high_peak_year": 2035
+    },
+    {
+      "node_id": "TRADE_CONCRETE",
+      "label": "Concrete trades",
+      "node_type": "resource",
+      "low": 0.15,
+      "low_peak_year": 2033,
+      "central": 0.31,
+      "central_peak_year": 2034,
+      "high": 0.64,
+      "high_peak_year": 2035
+    },
+    {
+      "node_id": "SCHEDULE_GOVERNMENT_DELAY_PRESSURE",
+      "label": "Government facility delivery delay pressure",
+      "node_type": "outcome",
+      "low": 0.05,
+      "low_peak_year": 2034,
+      "central": 0.28,
+      "central_peak_year": 2035,
+      "high": 1.56,
+      "high_peak_year": 2038
+    },
+    {
+      "node_id": "MATERIAL_GRID_EQUIPMENT",
+      "label": "Grid electrical equipment",
+      "node_type": "material",
+      "low": 0.14,
+      "low_peak_year": 2033,
+      "central": 0.27,
+      "central_peak_year": 2033,
+      "high": 0.54,
+      "high_peak_year": 2034
+    },
+    {
+      "node_id": "MATERIAL_CONCRETE",
+      "label": "Ready-mix concrete",
+      "node_type": "material",
+      "low": 0.11,
+      "low_peak_year": 2033,
+      "central": 0.22,
+      "central_peak_year": 2033,
+      "high": 0.44,
+      "high_peak_year": 2034
+    },
+    {
+      "node_id": "MATERIAL_STEEL",
+      "label": "Structural steel",
+      "node_type": "material",
+      "low": 0.08,
+      "low_peak_year": 2033,
+      "central": 0.18,
+      "central_peak_year": 2033,
+      "high": 0.38,
+      "high_peak_year": 2034
+    },
+    {
+      "node_id": "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE",
+      "label": "Road and municipal delivery delay pressure",
+      "node_type": "outcome",
+      "low": 0.03,
+      "low_peak_year": 2034,
+      "central": 0.15,
+      "central_peak_year": 2035,
+      "high": 0.72,
+      "high_peak_year": 2037
+    }
+  ],
+  "dominant_outcome_paths": [
+    {
+      "period": 6,
+      "calendar_year": 2033,
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "contribution": 0.1067,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2031:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 7,
+      "calendar_year": 2034,
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "contribution": 0.1067,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2032:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 8,
+      "calendar_year": 2035,
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "contribution": 0.0991,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2033:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 5,
+      "calendar_year": 2032,
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "contribution": 0.0914,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2030:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 6,
+      "calendar_year": 2033,
+      "target_node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE",
+      "contribution": 0.091,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E016"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2031:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 7,
+      "calendar_year": 2034,
+      "target_node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE",
+      "contribution": 0.091,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E016"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2032:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 6,
+      "calendar_year": 2033,
+      "target_node_id": "SCHEDULE_GOVERNMENT_DELAY_PRESSURE",
+      "contribution": 0.0845,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_GOVERNMENT_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E017"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2031:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 7,
+      "calendar_year": 2034,
+      "target_node_id": "SCHEDULE_GOVERNMENT_DELAY_PRESSURE",
+      "contribution": 0.0845,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_GOVERNMENT_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E017"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2032:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 8,
+      "calendar_year": 2035,
+      "target_node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE",
+      "contribution": 0.0845,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_SCHOOLS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E016"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2033:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 9,
+      "calendar_year": 2036,
+      "target_node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "contribution": 0.0838,
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E001",
+        "E015"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2034:electrical_mechanical",
+      "persistence_steps": 0
+    },
+    {
+      "period": 6,
+      "calendar_year": 2033,
+      "target_node_id": "SCHEDULE_UTILITIES_DELAY_PRESSURE",
+      "contribution": 0.083,
+      "node_path": [
+        "AI_GRID_CONSTRUCTION_DEMAND",
+        "TRADE_POWERLINE",
+        "SCHEDULE_UTILITIES_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E007",
+        "E021"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2031:grid_construction",
+      "persistence_steps": 0
+    },
+    {
+      "period": 7,
+      "calendar_year": 2034,
+      "target_node_id": "SCHEDULE_UTILITIES_DELAY_PRESSURE",
+      "contribution": 0.083,
+      "node_path": [
+        "AI_GRID_CONSTRUCTION_DEMAND",
+        "TRADE_POWERLINE",
+        "SCHEDULE_UTILITIES_DELAY_PRESSURE"
+      ],
+      "edge_path": [
+        "E007",
+        "E021"
+      ],
+      "shock_label": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE:2032:grid_construction",
+      "persistence_steps": 0
+    }
+  ],
+  "sensitivity": [
+    {
+      "sensitivity_id": "baseline",
+      "label": "Central structural assumptions",
+      "weight_case": "central",
+      "retention_case": "central",
+      "denominator_multiplier": 1.0,
+      "absorption_adjustment": 0.0,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.77,
+        "calendar_year": 2034
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.55,
+        "calendar_year": 2035
+      }
+    },
+    {
+      "sensitivity_id": "denominator_half",
+      "label": "All denominators \u00d70.5",
+      "weight_case": "central",
+      "retention_case": "central",
+      "denominator_multiplier": 0.5,
+      "absorption_adjustment": 0.0,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 1.54,
+        "calendar_year": 2034
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 1.1,
+        "calendar_year": 2035
+      }
+    },
+    {
+      "sensitivity_id": "denominator_double",
+      "label": "All denominators \u00d72.0",
+      "weight_case": "central",
+      "retention_case": "central",
+      "denominator_multiplier": 2.0,
+      "absorption_adjustment": 0.0,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.39,
+        "calendar_year": 2034
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.28,
+        "calendar_year": 2035
+      }
+    },
+    {
+      "sensitivity_id": "absorption_minus_0_10",
+      "label": "All edge absorption \u22120.10",
+      "weight_case": "central",
+      "retention_case": "central",
+      "denominator_multiplier": 1.0,
+      "absorption_adjustment": -0.1,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.86,
+        "calendar_year": 2034
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.7,
+        "calendar_year": 2035
+      }
+    },
+    {
+      "sensitivity_id": "absorption_plus_0_10",
+      "label": "All edge absorption +0.10",
+      "weight_case": "central",
+      "retention_case": "central",
+      "denominator_multiplier": 1.0,
+      "absorption_adjustment": 0.1,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.69,
+        "calendar_year": 2034
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.42,
+        "calendar_year": 2035
+      }
+    },
+    {
+      "sensitivity_id": "capture_0_40",
+      "label": "Local capture = 0.40",
+      "weight_case": "central",
+      "retention_case": "central",
+      "denominator_multiplier": 1.0,
+      "absorption_adjustment": 0.0,
+      "local_capture_share": 0.4,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.34,
+        "calendar_year": 2034
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.24,
+        "calendar_year": 2035
+      }
+    },
+    {
+      "sensitivity_id": "capture_0_90",
+      "label": "Local capture = 0.90",
+      "weight_case": "central",
+      "retention_case": "central",
+      "denominator_multiplier": 1.0,
+      "absorption_adjustment": 0.0,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.77,
+        "calendar_year": 2034
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.55,
+        "calendar_year": 2035
+      }
+    },
+    {
+      "sensitivity_id": "retention_low",
+      "label": "Low retention only",
+      "weight_case": "central",
+      "retention_case": "low",
+      "denominator_multiplier": 1.0,
+      "absorption_adjustment": 0.0,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.52,
+        "calendar_year": 2033
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.26,
+        "calendar_year": 2034
+      }
+    },
+    {
+      "sensitivity_id": "retention_high",
+      "label": "High retention only",
+      "weight_case": "central",
+      "retention_case": "high",
+      "denominator_multiplier": 1.0,
+      "absorption_adjustment": 0.0,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 1.26,
+        "calendar_year": 2035
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 1.5,
+        "calendar_year": 2038
+      }
+    },
+    {
+      "sensitivity_id": "joint_lower_pressure",
+      "label": "Joint lower-pressure diagnostic",
+      "weight_case": "low",
+      "retention_case": "low",
+      "denominator_multiplier": 2.0,
+      "absorption_adjustment": 0.1,
+      "local_capture_share": 0.4,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 0.08,
+        "calendar_year": 2033
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 0.02,
+        "calendar_year": 2034
+      }
+    },
+    {
+      "sensitivity_id": "joint_higher_pressure",
+      "label": "Joint higher-pressure diagnostic",
+      "weight_case": "high",
+      "retention_case": "high",
+      "denominator_multiplier": 0.5,
+      "absorption_adjustment": -0.1,
+      "local_capture_share": 0.9,
+      "top_resource": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "pressure_score": 3.41,
+        "calendar_year": 2035
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "pressure_score": 7.68,
+        "calendar_year": 2038
+      }
+    }
+  ],
+  "propagation": {
+    "low": {
+      "weight_case": "low",
+      "retention_case": "low",
+      "absorption_adjustment": 0.0,
+      "horizon": 15,
+      "states": {
+        "0": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.102,
+            "positive": 0.102,
+            "negative": 0.0,
+            "absolute": 0.102
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.189,
+            "positive": 0.189,
+            "negative": 0.0,
+            "absolute": 0.189
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.096,
+            "positive": 0.096,
+            "negative": 0.0,
+            "absolute": 0.096
+          }
+        },
+        "1": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.1785,
+            "positive": 0.1785,
+            "negative": 0.0,
+            "absolute": 0.1785
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.33075,
+            "positive": 0.33075,
+            "negative": 0.0,
+            "absolute": 0.33075
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.168,
+            "positive": 0.168,
+            "negative": 0.0,
+            "absolute": 0.168
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.08505,
+            "positive": 0.08505,
+            "negative": 0.0,
+            "absolute": 0.08505
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.02601,
+            "positive": 0.02601,
+            "negative": 0.0,
+            "absolute": 0.02601
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.033792,
+            "positive": 0.033792,
+            "negative": 0.0,
+            "absolute": 0.033792
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.0204,
+            "positive": 0.0204,
+            "negative": 0.0,
+            "absolute": 0.0204
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.03468,
+            "positive": 0.03468,
+            "negative": 0.0,
+            "absolute": 0.03468
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.093555,
+            "positive": 0.093555,
+            "negative": 0.0,
+            "absolute": 0.093555
+          },
+          "TRADE_HVAC": {
+            "net": 0.0562275,
+            "positive": 0.0562275,
+            "negative": 0.0,
+            "absolute": 0.0562275
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.03888,
+            "positive": 0.03888,
+            "negative": 0.0,
+            "absolute": 0.03888
+          }
+        },
+        "2": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.255,
+            "positive": 0.255,
+            "negative": 0.0,
+            "absolute": 0.255
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.4725,
+            "positive": 0.4725,
+            "negative": 0.0,
+            "absolute": 0.4725
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.24,
+            "positive": 0.24,
+            "negative": 0.0,
+            "absolute": 0.24
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.161595,
+            "positive": 0.161595,
+            "negative": 0.0,
+            "absolute": 0.161595
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.049419,
+            "positive": 0.049419,
+            "negative": 0.0,
+            "absolute": 0.049419
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.0642048,
+            "positive": 0.0642048,
+            "negative": 0.0,
+            "absolute": 0.0642048
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.03876,
+            "positive": 0.03876,
+            "negative": 0.0,
+            "absolute": 0.03876
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.0196505025,
+            "positive": 0.0196505025,
+            "negative": 0.0,
+            "absolute": 0.0196505025
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.010216206,
+            "positive": 0.010216206,
+            "negative": 0.0,
+            "absolute": 0.010216206
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.0200505375,
+            "positive": 0.0200505375,
+            "negative": 0.0,
+            "absolute": 0.0200505375
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.00610368,
+            "positive": 0.00610368,
+            "negative": 0.0,
+            "absolute": 0.00610368
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.012943503,
+            "positive": 0.012943503,
+            "negative": 0.0,
+            "absolute": 0.012943503
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.01771968,
+            "positive": 0.01771968,
+            "negative": 0.0,
+            "absolute": 0.01771968
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.067626,
+            "positive": 0.067626,
+            "negative": 0.0,
+            "absolute": 0.067626
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.18243225,
+            "positive": 0.18243225,
+            "negative": 0.0,
+            "absolute": 0.18243225
+          },
+          "TRADE_HVAC": {
+            "net": 0.109643625,
+            "positive": 0.109643625,
+            "negative": 0.0,
+            "absolute": 0.109643625
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.075816,
+            "positive": 0.075816,
+            "negative": 0.0,
+            "absolute": 0.075816
+          }
+        },
+        "3": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.306,
+            "positive": 0.306,
+            "negative": 0.0,
+            "absolute": 0.306
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.567,
+            "positive": 0.567,
+            "negative": 0.0,
+            "absolute": 0.567
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.288,
+            "positive": 0.288,
+            "negative": 0.0,
+            "absolute": 0.288
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.23686425,
+            "positive": 0.23686425,
+            "negative": 0.0,
+            "absolute": 0.23686425
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.07243785,
+            "positive": 0.07243785,
+            "negative": 0.0,
+            "absolute": 0.07243785
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.09411072,
+            "positive": 0.09411072,
+            "negative": 0.0,
+            "absolute": 0.09411072
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.056814,
+            "positive": 0.056814,
+            "negative": 0.0,
+            "absolute": 0.056814
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.039649778625,
+            "positive": 0.039649778625,
+            "negative": 0.0,
+            "absolute": 0.039649778625
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.02187930492,
+            "positive": 0.02187930492,
+            "negative": 0.0,
+            "absolute": 0.02187930492
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.04302755211,
+            "positive": 0.04302755211,
+            "negative": 0.0,
+            "absolute": 0.04302755211
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.012817728,
+            "positive": 0.012817728,
+            "negative": 0.0,
+            "absolute": 0.012817728
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.0277129467,
+            "positive": 0.0277129467,
+            "negative": 0.0,
+            "absolute": 0.0277129467
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.036924096,
+            "positive": 0.036924096,
+            "negative": 0.0,
+            "absolute": 0.036924096
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.1002252,
+            "positive": 0.1002252,
+            "negative": 0.0,
+            "absolute": 0.1002252
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.27037395,
+            "positive": 0.27037395,
+            "negative": 0.0,
+            "absolute": 0.27037395
+          },
+          "TRADE_HVAC": {
+            "net": 0.162497475,
+            "positive": 0.162497475,
+            "negative": 0.0,
+            "absolute": 0.162497475
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.1123632,
+            "positive": 0.1123632,
+            "negative": 0.0,
+            "absolute": 0.1123632
+          }
+        },
+        "4": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.357,
+            "positive": 0.357,
+            "negative": 0.0,
+            "absolute": 0.357
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.6615,
+            "positive": 0.6615,
+            "negative": 0.0,
+            "absolute": 0.6615
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.336,
+            "positive": 0.336,
+            "negative": 0.0,
+            "absolute": 0.336
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.2906796375,
+            "positive": 0.2906796375,
+            "negative": 0.0,
+            "absolute": 0.2906796375
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.0888956775,
+            "positive": 0.0888956775,
+            "negative": 0.0,
+            "absolute": 0.0888956775
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.115492608,
+            "positive": 0.115492608,
+            "negative": 0.0,
+            "absolute": 0.115492608
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.0697221,
+            "positive": 0.0697221,
+            "negative": 0.0,
+            "absolute": 0.0697221
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.059424051937,
+            "positive": 0.059424051937,
+            "negative": 0.0,
+            "absolute": 0.059424051937
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.033692909382,
+            "positive": 0.033692909382,
+            "negative": 0.0,
+            "absolute": 0.033692909382
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.066320239184,
+            "positive": 0.066320239184,
+            "negative": 0.0,
+            "absolute": 0.066320239184
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.0195622944,
+            "positive": 0.0195622944,
+            "negative": 0.0,
+            "absolute": 0.0195622944
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.042671388555,
+            "positive": 0.042671388555,
+            "negative": 0.0,
+            "absolute": 0.042671388555
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.0561453024,
+            "positive": 0.0561453024,
+            "negative": 0.0,
+            "absolute": 0.0561453024
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.12408504,
+            "positive": 0.12408504,
+            "negative": 0.0,
+            "absolute": 0.12408504
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.33473979,
+            "positive": 0.33473979,
+            "negative": 0.0,
+            "absolute": 0.33473979
+          },
+          "TRADE_HVAC": {
+            "net": 0.201181995,
+            "positive": 0.201181995,
+            "negative": 0.0,
+            "absolute": 0.201181995
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.13911264,
+            "positive": 0.13911264,
+            "negative": 0.0,
+            "absolute": 0.13911264
+          }
+        },
+        "5": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.357,
+            "positive": 0.357,
+            "negative": 0.0,
+            "absolute": 0.357
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.6615,
+            "positive": 0.6615,
+            "negative": 0.0,
+            "absolute": 0.6615
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.336,
+            "positive": 0.336,
+            "negative": 0.0,
+            "absolute": 0.336
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.341276945625,
+            "positive": 0.341276945625,
+            "negative": 0.0,
+            "absolute": 0.341276945625
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.104369351625,
+            "positive": 0.104369351625,
+            "negative": 0.0,
+            "absolute": 0.104369351625
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.1355958912,
+            "positive": 0.1355958912,
+            "negative": 0.0,
+            "absolute": 0.1355958912
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.081858315,
+            "positive": 0.081858315,
+            "negative": 0.0,
+            "absolute": 0.081858315
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.074220729581,
+            "positive": 0.074220729581,
+            "negative": 0.0,
+            "absolute": 0.074220729581
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.042955008733,
+            "positive": 0.042955008733,
+            "negative": 0.0,
+            "absolute": 0.042955008733
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.084608414777,
+            "positive": 0.084608414777,
+            "negative": 0.0,
+            "absolute": 0.084608414777
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.0247733112,
+            "positive": 0.0247733112,
+            "negative": 0.0,
+            "absolute": 0.0247733112
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.054396921089,
+            "positive": 0.054396921089,
+            "negative": 0.0,
+            "absolute": 0.054396921089
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.07090223184,
+            "positive": 0.07090223184,
+            "negative": 0.0,
+            "absolute": 0.07090223184
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.146197008,
+            "positive": 0.146197008,
+            "negative": 0.0,
+            "absolute": 0.146197008
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.394390458,
+            "positive": 0.394390458,
+            "negative": 0.0,
+            "absolute": 0.394390458
+          },
+          "TRADE_HVAC": {
+            "net": 0.237032649,
+            "positive": 0.237032649,
+            "negative": 0.0,
+            "absolute": 0.237032649
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.163902528,
+            "positive": 0.163902528,
+            "negative": 0.0,
+            "absolute": 0.163902528
+          }
+        },
+        "6": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.3315,
+            "positive": 0.3315,
+            "negative": 0.0,
+            "absolute": 0.3315
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.61425,
+            "positive": 0.61425,
+            "negative": 0.0,
+            "absolute": 0.61425
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.312,
+            "positive": 0.312,
+            "negative": 0.0,
+            "absolute": 0.312
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.348866541844,
+            "positive": 0.348866541844,
+            "negative": 0.0,
+            "absolute": 0.348866541844
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.106690402744,
+            "positive": 0.106690402744,
+            "negative": 0.0,
+            "absolute": 0.106690402744
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.13861138368,
+            "positive": 0.13861138368,
+            "negative": 0.0,
+            "absolute": 0.13861138368
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.08367874725,
+            "positive": 0.08367874725,
+            "negative": 0.0,
+            "absolute": 0.08367874725
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.087688492397,
+            "positive": 0.087688492397,
+            "negative": 0.0,
+            "absolute": 0.087688492397
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.051212342888,
+            "positive": 0.051212342888,
+            "negative": 0.0,
+            "absolute": 0.051212342888
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.100903224157,
+            "positive": 0.100903224157,
+            "negative": 0.0,
+            "absolute": 0.100903224157
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.029446670088,
+            "positive": 0.029446670088,
+            "negative": 0.0,
+            "absolute": 0.029446670088
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.064851236365,
+            "positive": 0.064851236365,
+            "negative": 0.0,
+            "absolute": 0.064851236365
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.084168614904,
+            "positive": 0.084168614904,
+            "negative": 0.0,
+            "absolute": 0.084168614904
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.1506194016,
+            "positive": 0.1506194016,
+            "negative": 0.0,
+            "absolute": 0.1506194016
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.4063205916,
+            "positive": 0.4063205916,
+            "negative": 0.0,
+            "absolute": 0.4063205916
+          },
+          "TRADE_HVAC": {
+            "net": 0.2442027798,
+            "positive": 0.2442027798,
+            "negative": 0.0,
+            "absolute": 0.2442027798
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.1688605056,
+            "positive": 0.1688605056,
+            "negative": 0.0,
+            "absolute": 0.1688605056
+          }
+        },
+        "7": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.2805,
+            "positive": 0.2805,
+            "negative": 0.0,
+            "absolute": 0.2805
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.51975,
+            "positive": 0.51975,
+            "negative": 0.0,
+            "absolute": 0.51975
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.264,
+            "positive": 0.264,
+            "negative": 0.0,
+            "absolute": 0.264
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.328742481277,
+            "positive": 0.328742481277,
+            "negative": 0.0,
+            "absolute": 0.328742481277
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.100536060412,
+            "positive": 0.100536060412,
+            "negative": 0.0,
+            "absolute": 0.100536060412
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.130615707552,
+            "positive": 0.130615707552,
+            "negative": 0.0,
+            "absolute": 0.130615707552
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.078851812088,
+            "positive": 0.078851812088,
+            "negative": 0.0,
+            "absolute": 0.078851812088
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.091055860999,
+            "positive": 0.091055860999,
+            "negative": 0.0,
+            "absolute": 0.091055860999
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.054072106794,
+            "positive": 0.054072106794,
+            "negative": 0.0,
+            "absolute": 0.054072106794
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.106594142026,
+            "positive": 0.106594142026,
+            "negative": 0.0,
+            "absolute": 0.106594142026
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.030926015195,
+            "positive": 0.030926015195,
+            "negative": 0.0,
+            "absolute": 0.030926015195
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.068467930651,
+            "positive": 0.068467930651,
+            "negative": 0.0,
+            "absolute": 0.068467930651
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.088198263186,
+            "positive": 0.088198263186,
+            "negative": 0.0,
+            "absolute": 0.088198263186
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.14283388032,
+            "positive": 0.14283388032,
+            "negative": 0.0,
+            "absolute": 0.14283388032
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.38531786832,
+            "positive": 0.38531786832,
+            "negative": 0.0,
+            "absolute": 0.38531786832
+          },
+          "TRADE_HVAC": {
+            "net": 0.23157993096,
+            "positive": 0.23157993096,
+            "negative": 0.0,
+            "absolute": 0.23157993096
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.16013210112,
+            "positive": 0.16013210112,
+            "negative": 0.0,
+            "absolute": 0.16013210112
+          }
+        },
+        "8": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.2295,
+            "positive": 0.2295,
+            "negative": 0.0,
+            "absolute": 0.2295
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.42525,
+            "positive": 0.42525,
+            "negative": 0.0,
+            "absolute": 0.42525
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.216,
+            "positive": 0.216,
+            "negative": 0.0,
+            "absolute": 0.216
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.283198872191,
+            "positive": 0.283198872191,
+            "negative": 0.0,
+            "absolute": 0.283198872191
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.086607909062,
+            "positive": 0.086607909062,
+            "negative": 0.0,
+            "absolute": 0.086607909062
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.112520356133,
+            "positive": 0.112520356133,
+            "negative": 0.0,
+            "absolute": 0.112520356133
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.067927771813,
+            "positive": 0.067927771813,
+            "negative": 0.0,
+            "absolute": 0.067927771813
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.086827536695,
+            "positive": 0.086827536695,
+            "negative": 0.0,
+            "absolute": 0.086827536695
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.052304285556,
+            "positive": 0.052304285556,
+            "negative": 0.0,
+            "absolute": 0.052304285556
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.10315605595,
+            "positive": 0.10315605595,
+            "negative": 0.0,
+            "absolute": 0.10315605595
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.029777665216,
+            "positive": 0.029777665216,
+            "negative": 0.0,
+            "absolute": 0.029777665216
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.066225559593,
+            "positive": 0.066225559593,
+            "negative": 0.0,
+            "absolute": 0.066225559593
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.084755096907,
+            "positive": 0.084755096907,
+            "negative": 0.0,
+            "absolute": 0.084755096907
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.123936776064,
+            "positive": 0.123936776064,
+            "negative": 0.0,
+            "absolute": 0.123936776064
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.334339823664,
+            "positive": 0.334339823664,
+            "negative": 0.0,
+            "absolute": 0.334339823664
+          },
+          "TRADE_HVAC": {
+            "net": 0.200941611192,
+            "positive": 0.200941611192,
+            "negative": 0.0,
+            "absolute": 0.200941611192
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.138946420224,
+            "positive": 0.138946420224,
+            "negative": 0.0,
+            "absolute": 0.138946420224
+          }
+        },
+        "9": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.153,
+            "positive": 0.153,
+            "negative": 0.0,
+            "absolute": 0.153
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.2835,
+            "positive": 0.2835,
+            "negative": 0.0,
+            "absolute": 0.2835
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.144,
+            "positive": 0.144,
+            "negative": 0.0,
+            "absolute": 0.144
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.233842330829,
+            "positive": 0.233842330829,
+            "negative": 0.0,
+            "absolute": 0.233842330829
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.071513686359,
+            "positive": 0.071513686359,
+            "negative": 0.0,
+            "absolute": 0.071513686359
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.09291005342,
+            "positive": 0.09291005342,
+            "negative": 0.0,
+            "absolute": 0.09291005342
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.056089165772,
+            "positive": 0.056089165772,
+            "negative": 0.0,
+            "absolute": 0.056089165772
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.075816395556,
+            "positive": 0.075816395556,
+            "negative": 0.0,
+            "absolute": 0.075816395556
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.046389673903,
+            "positive": 0.046389673903,
+            "negative": 0.0,
+            "absolute": 0.046389673903
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.091535776549,
+            "positive": 0.091535776549,
+            "negative": 0.0,
+            "absolute": 0.091535776549
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.02627952237,
+            "positive": 0.02627952237,
+            "negative": 0.0,
+            "absolute": 0.02627952237
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.058733004516,
+            "positive": 0.058733004516,
+            "negative": 0.0,
+            "absolute": 0.058733004516
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.074637222508,
+            "positive": 0.074637222508,
+            "negative": 0.0,
+            "absolute": 0.074637222508
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.102817355213,
+            "positive": 0.102817355213,
+            "negative": 0.0,
+            "absolute": 0.102817355213
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.277366714733,
+            "positive": 0.277366714733,
+            "negative": 0.0,
+            "absolute": 0.277366714733
+          },
+          "TRADE_HVAC": {
+            "net": 0.166700197238,
+            "positive": 0.166700197238,
+            "negative": 0.0,
+            "absolute": 0.166700197238
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.115269284045,
+            "positive": 0.115269284045,
+            "negative": 0.0,
+            "absolute": 0.115269284045
+          }
+        },
+        "10": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.162651349624,
+            "positive": 0.162651349624,
+            "negative": 0.0,
+            "absolute": 0.162651349624
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.049742052954,
+            "positive": 0.049742052954,
+            "negative": 0.0,
+            "absolute": 0.049742052954
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.064624508013,
+            "positive": 0.064624508013,
+            "negative": 0.0,
+            "absolute": 0.064624508013
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.039013374866,
+            "positive": 0.039013374866,
+            "negative": 0.0,
+            "absolute": 0.039013374866
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.063111736464,
+            "positive": 0.063111736464,
+            "negative": 0.0,
+            "absolute": 0.063111736464
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.039038189674,
+            "positive": 0.039038189674,
+            "negative": 0.0,
+            "absolute": 0.039038189674
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.077056232051,
+            "positive": 0.077056232051,
+            "negative": 0.0,
+            "absolute": 0.077056232051
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.022037782873,
+            "positive": 0.022037782873,
+            "negative": 0.0,
+            "absolute": 0.022037782873
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.049423252637,
+            "positive": 0.049423252637,
+            "negative": 0.0,
+            "absolute": 0.049423252637
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.062493231943,
+            "positive": 0.062493231943,
+            "negative": 0.0,
+            "absolute": 0.062493231943
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.072583471043,
+            "positive": 0.072583471043,
+            "negative": 0.0,
+            "absolute": 0.072583471043
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.195805842947,
+            "positive": 0.195805842947,
+            "negative": 0.0,
+            "absolute": 0.195805842947
+          },
+          "TRADE_HVAC": {
+            "net": 0.117681289448,
+            "positive": 0.117681289448,
+            "negative": 0.0,
+            "absolute": 0.117681289448
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.081373856809,
+            "positive": 0.081373856809,
+            "negative": 0.0,
+            "absolute": 0.081373856809
+          }
+        },
+        "11": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.024397702444,
+            "positive": 0.024397702444,
+            "negative": 0.0,
+            "absolute": 0.024397702444
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.007461307943,
+            "positive": 0.007461307943,
+            "negative": 0.0,
+            "absolute": 0.007461307943
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.009693676202,
+            "positive": 0.009693676202,
+            "negative": 0.0,
+            "absolute": 0.009693676202
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.00585200623,
+            "positive": 0.00585200623,
+            "negative": 0.0,
+            "absolute": 0.00585200623
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.04515046546,
+            "positive": 0.04515046546,
+            "negative": 0.0,
+            "absolute": 0.04515046546
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.028737561029,
+            "positive": 0.028737561029,
+            "negative": 0.0,
+            "absolute": 0.028737561029
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.056772831673,
+            "positive": 0.056772831673,
+            "negative": 0.0,
+            "absolute": 0.056772831673
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.016080358334,
+            "positive": 0.016080358334,
+            "negative": 0.0,
+            "absolute": 0.016080358334
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.036378373518,
+            "positive": 0.036378373518,
+            "negative": 0.0,
+            "absolute": 0.036378373518
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.045423299051,
+            "positive": 0.045423299051,
+            "negative": 0.0,
+            "absolute": 0.045423299051
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.014516694209,
+            "positive": 0.014516694209,
+            "negative": 0.0,
+            "absolute": 0.014516694209
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.039161168589,
+            "positive": 0.039161168589,
+            "negative": 0.0,
+            "absolute": 0.039161168589
+          },
+          "TRADE_HVAC": {
+            "net": 0.02353625789,
+            "positive": 0.02353625789,
+            "negative": 0.0,
+            "absolute": 0.02353625789
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.016274771362,
+            "positive": 0.016274771362,
+            "negative": 0.0,
+            "absolute": 0.016274771362
+          }
+        },
+        "12": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.003659655293,
+            "positive": 0.003659655293,
+            "negative": 0.0,
+            "absolute": 0.003659655293
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.001119196169,
+            "positive": 0.001119196169,
+            "negative": 0.0,
+            "absolute": 0.001119196169
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.001454051401,
+            "positive": 0.001454051401,
+            "negative": 0.0,
+            "absolute": 0.001454051401
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.000877800917,
+            "positive": 0.000877800917,
+            "negative": 0.0,
+            "absolute": 0.000877800917
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.011070903872,
+            "positive": 0.011070903872,
+            "negative": 0.0,
+            "absolute": 0.011070903872
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.009677188663,
+            "positive": 0.009677188663,
+            "negative": 0.0,
+            "absolute": 0.009677188663
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.019270884595,
+            "positive": 0.019270884595,
+            "negative": 0.0,
+            "absolute": 0.019270884595
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.004966991703,
+            "positive": 0.004966991703,
+            "negative": 0.0,
+            "absolute": 0.004966991703
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.012237467851,
+            "positive": 0.012237467851,
+            "negative": 0.0,
+            "absolute": 0.012237467851
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.013474048866,
+            "positive": 0.013474048866,
+            "negative": 0.0,
+            "absolute": 0.013474048866
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.002903338842,
+            "positive": 0.002903338842,
+            "negative": 0.0,
+            "absolute": 0.002903338842
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.007832233718,
+            "positive": 0.007832233718,
+            "negative": 0.0,
+            "absolute": 0.007832233718
+          },
+          "TRADE_HVAC": {
+            "net": 0.004707251578,
+            "positive": 0.004707251578,
+            "negative": 0.0,
+            "absolute": 0.004707251578
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.003254954272,
+            "positive": 0.003254954272,
+            "negative": 0.0,
+            "absolute": 0.003254954272
+          }
+        },
+        "13": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.000548948294,
+            "positive": 0.000548948294,
+            "negative": 0.0,
+            "absolute": 0.000548948294
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.000167879386,
+            "positive": 0.000167879386,
+            "negative": 0.0,
+            "absolute": 0.000167879386
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.000218107659,
+            "positive": 0.000218107659,
+            "negative": 0.0,
+            "absolute": 0.000218107659
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.000131670107,
+            "positive": 0.000131670107,
+            "negative": 0.0,
+            "absolute": 0.000131670107
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.002236459775,
+            "positive": 0.002236459775,
+            "negative": 0.0,
+            "absolute": 0.002236459775
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.002630229061,
+            "positive": 0.002630229061,
+            "negative": 0.0,
+            "absolute": 0.002630229061
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.005269868703,
+            "positive": 0.005269868703,
+            "negative": 0.0,
+            "absolute": 0.005269868703
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.001256035923,
+            "positive": 0.001256035923,
+            "negative": 0.0,
+            "absolute": 0.001256035923
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.003323442485,
+            "positive": 0.003323442485,
+            "negative": 0.0,
+            "absolute": 0.003323442485
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.003270821091,
+            "positive": 0.003270821091,
+            "negative": 0.0,
+            "absolute": 0.003270821091
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.000580667768,
+            "positive": 0.000580667768,
+            "negative": 0.0,
+            "absolute": 0.000580667768
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.001566446744,
+            "positive": 0.001566446744,
+            "negative": 0.0,
+            "absolute": 0.001566446744
+          },
+          "TRADE_HVAC": {
+            "net": 0.000941450316,
+            "positive": 0.000941450316,
+            "negative": 0.0,
+            "absolute": 0.000941450316
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.000650990854,
+            "positive": 0.000650990854,
+            "negative": 0.0,
+            "absolute": 0.000650990854
+          }
+        },
+        "14": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 8.2342225e-05,
+            "positive": 8.2342225e-05,
+            "negative": 0.0,
+            "absolute": 8.2342225e-05
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 2.5181852e-05,
+            "positive": 2.5181852e-05,
+            "negative": 0.0,
+            "absolute": 2.5181852e-05
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 3.2716076e-05,
+            "positive": 3.2716076e-05,
+            "negative": 0.0,
+            "absolute": 3.2716076e-05
+          },
+          "MATERIAL_STEEL": {
+            "net": 1.9750472e-05,
+            "positive": 1.9750472e-05,
+            "negative": 0.0,
+            "absolute": 1.9750472e-05
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.000422247814,
+            "positive": 0.000422247814,
+            "negative": 0.0,
+            "absolute": 0.000422247814
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.000644087079,
+            "positive": 0.000644087079,
+            "negative": 0.0,
+            "absolute": 0.000644087079
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.001296276078,
+            "positive": 0.001296276078,
+            "negative": 0.0,
+            "absolute": 0.001296276078
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.000290602464,
+            "positive": 0.000290602464,
+            "negative": 0.0,
+            "absolute": 0.000290602464
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.00081335741,
+            "positive": 0.00081335741,
+            "negative": 0.0,
+            "absolute": 0.00081335741
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.000728205337,
+            "positive": 0.000728205337,
+            "negative": 0.0,
+            "absolute": 0.000728205337
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.000116133525,
+            "positive": 0.000116133525,
+            "negative": 0.0,
+            "absolute": 0.000116133525
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.000313289272,
+            "positive": 0.000313289272,
+            "negative": 0.0,
+            "absolute": 0.000313289272
+          },
+          "TRADE_HVAC": {
+            "net": 0.000188290017,
+            "positive": 0.000188290017,
+            "negative": 0.0,
+            "absolute": 0.000188290017
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.000130198139,
+            "positive": 0.000130198139,
+            "negative": 0.0,
+            "absolute": 0.000130198139
+          }
+        },
+        "15": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 1.2351306e-05,
+            "positive": 1.2351306e-05,
+            "negative": 0.0,
+            "absolute": 1.2351306e-05
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 3.77721e-06,
+            "positive": 3.77721e-06,
+            "negative": 0.0,
+            "absolute": 3.77721e-06
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 4.907324e-06,
+            "positive": 4.907324e-06,
+            "negative": 0.0,
+            "absolute": 4.907324e-06
+          },
+          "MATERIAL_STEEL": {
+            "net": 2.962518e-06,
+            "positive": 2.962518e-06,
+            "negative": 0.0,
+            "absolute": 2.962518e-06
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 7.7852576e-05,
+            "positive": 7.7852576e-05,
+            "negative": 0.0,
+            "absolute": 7.7852576e-05
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.000148297279,
+            "positive": 0.000148297279,
+            "negative": 0.0,
+            "absolute": 0.000148297279
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.000299445553,
+            "positive": 0.000299445553,
+            "negative": 0.0,
+            "absolute": 0.000299445553
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 6.4029408e-05,
+            "positive": 6.4029408e-05,
+            "negative": 0.0,
+            "absolute": 6.4029408e-05
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.000187188542,
+            "positive": 0.000187188542,
+            "negative": 0.0,
+            "absolute": 0.000187188542
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.00015489192,
+            "positive": 0.00015489192,
+            "negative": 0.0,
+            "absolute": 0.00015489192
+          },
+          "TRADE_CONCRETE": {
+            "net": 2.3226655e-05,
+            "positive": 2.3226655e-05,
+            "negative": 0.0,
+            "absolute": 2.3226655e-05
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 6.2657854e-05,
+            "positive": 6.2657854e-05,
+            "negative": 0.0,
+            "absolute": 6.2657854e-05
+          },
+          "TRADE_HVAC": {
+            "net": 3.7657923e-05,
+            "positive": 3.7657923e-05,
+            "negative": 0.0,
+            "absolute": 3.7657923e-05
+          },
+          "TRADE_POWERLINE": {
+            "net": 2.6039572e-05,
+            "positive": 2.6039572e-05,
+            "negative": 0.0,
+            "absolute": 2.6039572e-05
+          }
+        }
+      }
+    },
+    "central": {
+      "weight_case": "central",
+      "retention_case": "central",
+      "absorption_adjustment": 0.0,
+      "horizon": 15,
+      "states": {
+        "0": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.102,
+            "positive": 0.102,
+            "negative": 0.0,
+            "absolute": 0.102
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.189,
+            "positive": 0.189,
+            "negative": 0.0,
+            "absolute": 0.189
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.096,
+            "positive": 0.096,
+            "negative": 0.0,
+            "absolute": 0.096
+          }
+        },
+        "1": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.1785,
+            "positive": 0.1785,
+            "negative": 0.0,
+            "absolute": 0.1785
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.33075,
+            "positive": 0.33075,
+            "negative": 0.0,
+            "absolute": 0.33075
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.168,
+            "positive": 0.168,
+            "negative": 0.0,
+            "absolute": 0.168
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.110565,
+            "positive": 0.110565,
+            "negative": 0.0,
+            "absolute": 0.110565
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.039015,
+            "positive": 0.039015,
+            "negative": 0.0,
+            "absolute": 0.039015
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.0489984,
+            "positive": 0.0489984,
+            "negative": 0.0,
+            "absolute": 0.0489984
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.03264,
+            "positive": 0.03264,
+            "negative": 0.0,
+            "absolute": 0.03264
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.047685,
+            "positive": 0.047685,
+            "negative": 0.0,
+            "absolute": 0.047685
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.11907,
+            "positive": 0.11907,
+            "negative": 0.0,
+            "absolute": 0.11907
+          },
+          "TRADE_HVAC": {
+            "net": 0.080325,
+            "positive": 0.080325,
+            "negative": 0.0,
+            "absolute": 0.080325
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.05616,
+            "positive": 0.05616,
+            "negative": 0.0,
+            "absolute": 0.05616
+          }
+        },
+        "2": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.255,
+            "positive": 0.255,
+            "negative": 0.0,
+            "absolute": 0.255
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.4725,
+            "positive": 0.4725,
+            "negative": 0.0,
+            "absolute": 0.4725
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.24,
+            "positive": 0.24,
+            "negative": 0.0,
+            "absolute": 0.24
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.23771475,
+            "positive": 0.23771475,
+            "negative": 0.0,
+            "absolute": 0.23771475
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.08388225,
+            "positive": 0.08388225,
+            "negative": 0.0,
+            "absolute": 0.08388225
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.10534656,
+            "positive": 0.10534656,
+            "negative": 0.0,
+            "absolute": 0.10534656
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.070176,
+            "positive": 0.070176,
+            "negative": 0.0,
+            "absolute": 0.070176
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.0442072425,
+            "positive": 0.0442072425,
+            "negative": 0.0,
+            "absolute": 0.0442072425
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.024147396,
+            "positive": 0.024147396,
+            "negative": 0.0,
+            "absolute": 0.024147396
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.047398365,
+            "positive": 0.047398365,
+            "negative": 0.0,
+            "absolute": 0.047398365
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.01449624,
+            "positive": 0.01449624,
+            "negative": 0.0,
+            "absolute": 0.01449624
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.030811536,
+            "positive": 0.030811536,
+            "negative": 0.0,
+            "absolute": 0.030811536
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.038299008,
+            "positive": 0.038299008,
+            "negative": 0.0,
+            "absolute": 0.038299008
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.10729125,
+            "positive": 0.10729125,
+            "negative": 0.0,
+            "absolute": 0.10729125
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.2679075,
+            "positive": 0.2679075,
+            "negative": 0.0,
+            "absolute": 0.2679075
+          },
+          "TRADE_HVAC": {
+            "net": 0.18073125,
+            "positive": 0.18073125,
+            "negative": 0.0,
+            "absolute": 0.18073125
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.12636,
+            "positive": 0.12636,
+            "negative": 0.0,
+            "absolute": 0.12636
+          }
+        },
+        "3": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.306,
+            "positive": 0.306,
+            "negative": 0.0,
+            "absolute": 0.306
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.567,
+            "positive": 0.567,
+            "negative": 0.0,
+            "absolute": 0.567
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.288,
+            "positive": 0.288,
+            "negative": 0.0,
+            "absolute": 0.288
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.3714984,
+            "positive": 0.3714984,
+            "negative": 0.0,
+            "absolute": 0.3714984
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.1310904,
+            "positive": 0.1310904,
+            "negative": 0.0,
+            "absolute": 0.1310904
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.164634624,
+            "positive": 0.164634624,
+            "negative": 0.0,
+            "absolute": 0.164634624
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.1096704,
+            "positive": 0.1096704,
+            "negative": 0.0,
+            "absolute": 0.1096704
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.109821366375,
+            "positive": 0.109821366375,
+            "negative": 0.0,
+            "absolute": 0.109821366375
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.066058745832,
+            "positive": 0.066058745832,
+            "negative": 0.0,
+            "absolute": 0.066058745832
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.129588764082,
+            "positive": 0.129588764082,
+            "negative": 0.0,
+            "absolute": 0.129588764082
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.038415036,
+            "positive": 0.038415036,
+            "negative": 0.0,
+            "absolute": 0.038415036
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.084408098976,
+            "positive": 0.084408098976,
+            "negative": 0.0,
+            "absolute": 0.084408098976
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.1000346688,
+            "positive": 0.1000346688,
+            "negative": 0.0,
+            "absolute": 0.1000346688
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.172858125,
+            "positive": 0.172858125,
+            "negative": 0.0,
+            "absolute": 0.172858125
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.43162875,
+            "positive": 0.43162875,
+            "negative": 0.0,
+            "absolute": 0.43162875
+          },
+          "TRADE_HVAC": {
+            "net": 0.291178125,
+            "positive": 0.291178125,
+            "negative": 0.0,
+            "absolute": 0.291178125
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.20358,
+            "positive": 0.20358,
+            "negative": 0.0,
+            "absolute": 0.20358
+          }
+        },
+        "4": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.357,
+            "positive": 0.357,
+            "negative": 0.0,
+            "absolute": 0.357
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.6615,
+            "positive": 0.6615,
+            "negative": 0.0,
+            "absolute": 0.6615
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.336,
+            "positive": 0.336,
+            "negative": 0.0,
+            "absolute": 0.336
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.48029436,
+            "positive": 0.48029436,
+            "negative": 0.0,
+            "absolute": 0.48029436
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.16948116,
+            "positive": 0.16948116,
+            "negative": 0.0,
+            "absolute": 0.16948116
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.2128490496,
+            "positive": 0.2128490496,
+            "negative": 0.0,
+            "absolute": 0.2128490496
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.14178816,
+            "positive": 0.14178816,
+            "negative": 0.0,
+            "absolute": 0.14178816
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.185493843675,
+            "positive": 0.185493843675,
+            "negative": 0.0,
+            "absolute": 0.185493843675
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.119359680948,
+            "positive": 0.119359680948,
+            "negative": 0.0,
+            "absolute": 0.119359680948
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.234058184313,
+            "positive": 0.234058184313,
+            "negative": 0.0,
+            "absolute": 0.234058184313
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.0679148844,
+            "positive": 0.0679148844,
+            "negative": 0.0,
+            "absolute": 0.0679148844
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.152657553744,
+            "positive": 0.152657553744,
+            "negative": 0.0,
+            "absolute": 0.152657553744
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.17498486016,
+            "positive": 0.17498486016,
+            "negative": 0.0,
+            "absolute": 0.17498486016
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.2294840625,
+            "positive": 0.2294840625,
+            "negative": 0.0,
+            "absolute": 0.2294840625
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.573024375,
+            "positive": 0.573024375,
+            "negative": 0.0,
+            "absolute": 0.573024375
+          },
+          "TRADE_HVAC": {
+            "net": 0.3865640625,
+            "positive": 0.3865640625,
+            "negative": 0.0,
+            "absolute": 0.3865640625
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.27027,
+            "positive": 0.27027,
+            "negative": 0.0,
+            "absolute": 0.27027
+          }
+        },
+        "5": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.357,
+            "positive": 0.357,
+            "negative": 0.0,
+            "absolute": 0.357
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.6615,
+            "positive": 0.6615,
+            "negative": 0.0,
+            "absolute": 0.6615
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.336,
+            "positive": 0.336,
+            "negative": 0.0,
+            "absolute": 0.336
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.579095244,
+            "positive": 0.579095244,
+            "negative": 0.0,
+            "absolute": 0.579095244
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.204344964,
+            "positive": 0.204344964,
+            "negative": 0.0,
+            "absolute": 0.204344964
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.25663401984,
+            "positive": 0.25663401984,
+            "negative": 0.0,
+            "absolute": 0.25663401984
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.170955264,
+            "positive": 0.170955264,
+            "negative": 0.0,
+            "absolute": 0.170955264
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.254775734764,
+            "positive": 0.254775734764,
+            "negative": 0.0,
+            "absolute": 0.254775734764
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.173402398078,
+            "positive": 0.173402398078,
+            "negative": 0.0,
+            "absolute": 0.173402398078
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.339926330744,
+            "positive": 0.339926330744,
+            "negative": 0.0,
+            "absolute": 0.339926330744
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.09692910876,
+            "positive": 0.09692910876,
+            "negative": 0.0,
+            "absolute": 0.09692910876
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.221942448429,
+            "positive": 0.221942448429,
+            "negative": 0.0,
+            "absolute": 0.221942448429
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.24747858432,
+            "positive": 0.24747858432,
+            "negative": 0.0,
+            "absolute": 0.24747858432
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.28163953125,
+            "positive": 0.28163953125,
+            "negative": 0.0,
+            "absolute": 0.28163953125
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.7032571875,
+            "positive": 0.7032571875,
+            "negative": 0.0,
+            "absolute": 0.7032571875
+          },
+          "TRADE_HVAC": {
+            "net": 0.47441953125,
+            "positive": 0.47441953125,
+            "negative": 0.0,
+            "absolute": 0.47441953125
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.331695,
+            "positive": 0.331695,
+            "negative": 0.0,
+            "absolute": 0.331695
+          }
+        },
+        "6": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.3315,
+            "positive": 0.3315,
+            "negative": 0.0,
+            "absolute": 0.3315
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.61425,
+            "positive": 0.61425,
+            "negative": 0.0,
+            "absolute": 0.61425
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.312,
+            "positive": 0.312,
+            "negative": 0.0,
+            "absolute": 0.312
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.6186155976,
+            "positive": 0.6186155976,
+            "negative": 0.0,
+            "absolute": 0.6186155976
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.2182904856,
+            "positive": 0.2182904856,
+            "negative": 0.0,
+            "absolute": 0.2182904856
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.274148007936,
+            "positive": 0.274148007936,
+            "negative": 0.0,
+            "absolute": 0.274148007936
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.1826221056,
+            "positive": 0.1826221056,
+            "negative": 0.0,
+            "absolute": 0.1826221056
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.318093408922,
+            "positive": 0.318093408922,
+            "negative": 0.0,
+            "absolute": 0.318093408922
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.225345360409,
+            "positive": 0.225345360409,
+            "negative": 0.0,
+            "absolute": 0.225345360409
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.441654898348,
+            "positive": 0.441654898348,
+            "negative": 0.0,
+            "absolute": 0.441654898348
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.124390061004,
+            "positive": 0.124390061004,
+            "negative": 0.0,
+            "absolute": 0.124390061004
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.288576071943,
+            "positive": 0.288576071943,
+            "negative": 0.0,
+            "absolute": 0.288576071943
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.31544802263,
+            "positive": 0.31544802263,
+            "negative": 0.0,
+            "absolute": 0.31544802263
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.307717265625,
+            "positive": 0.307717265625,
+            "negative": 0.0,
+            "absolute": 0.307717265625
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.76837359375,
+            "positive": 0.76837359375,
+            "negative": 0.0,
+            "absolute": 0.76837359375
+          },
+          "TRADE_HVAC": {
+            "net": 0.518347265625,
+            "positive": 0.518347265625,
+            "negative": 0.0,
+            "absolute": 0.518347265625
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.3624075,
+            "positive": 0.3624075,
+            "negative": 0.0,
+            "absolute": 0.3624075
+          }
+        },
+        "7": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.2805,
+            "positive": 0.2805,
+            "negative": 0.0,
+            "absolute": 0.2805
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.51975,
+            "positive": 0.51975,
+            "negative": 0.0,
+            "absolute": 0.51975
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.264,
+            "positive": 0.264,
+            "negative": 0.0,
+            "absolute": 0.264
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.60678248904,
+            "positive": 0.60678248904,
+            "negative": 0.0,
+            "absolute": 0.60678248904
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.21411494424,
+            "positive": 0.21411494424,
+            "negative": 0.0,
+            "absolute": 0.21411494424
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.268904003174,
+            "positive": 0.268904003174,
+            "negative": 0.0,
+            "absolute": 0.268904003174
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.17912884224,
+            "positive": 0.17912884224,
+            "negative": 0.0,
+            "absolute": 0.17912884224
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.355757478238,
+            "positive": 0.355757478238,
+            "negative": 0.0,
+            "absolute": 0.355757478238
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.262998502198,
+            "positive": 0.262998502198,
+            "negative": 0.0,
+            "absolute": 0.262998502198
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.515336127833,
+            "positive": 0.515336127833,
+            "negative": 0.0,
+            "absolute": 0.515336127833
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.143302073152,
+            "positive": 0.143302073152,
+            "negative": 0.0,
+            "absolute": 0.143302073152
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.336973379656,
+            "positive": 0.336973379656,
+            "negative": 0.0,
+            "absolute": 0.336973379656
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.360819169413,
+            "positive": 0.360819169413,
+            "negative": 0.0,
+            "absolute": 0.360819169413
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.308834882813,
+            "positive": 0.308834882813,
+            "negative": 0.0,
+            "absolute": 0.308834882813
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.771164296875,
+            "positive": 0.771164296875,
+            "negative": 0.0,
+            "absolute": 0.771164296875
+          },
+          "TRADE_HVAC": {
+            "net": 0.520229882813,
+            "positive": 0.520229882813,
+            "negative": 0.0,
+            "absolute": 0.520229882813
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.36372375,
+            "positive": 0.36372375,
+            "negative": 0.0,
+            "absolute": 0.36372375
+          }
+        },
+        "8": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.2295,
+            "positive": 0.2295,
+            "negative": 0.0,
+            "absolute": 0.2295
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.42525,
+            "positive": 0.42525,
+            "negative": 0.0,
+            "absolute": 0.42525
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.216,
+            "positive": 0.216,
+            "negative": 0.0,
+            "absolute": 0.216
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.546766745616,
+            "positive": 0.546766745616,
+            "negative": 0.0,
+            "absolute": 0.546766745616
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.192937227696,
+            "positive": 0.192937227696,
+            "negative": 0.0,
+            "absolute": 0.192937227696
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.24230720127,
+            "positive": 0.24230720127,
+            "negative": 0.0,
+            "absolute": 0.24230720127
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.161411536896,
+            "positive": 0.161411536896,
+            "negative": 0.0,
+            "absolute": 0.161411536896
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.364300157403,
+            "positive": 0.364300157403,
+            "negative": 0.0,
+            "absolute": 0.364300157403
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.281075755434,
+            "positive": 0.281075755434,
+            "negative": 0.0,
+            "absolute": 0.281075755434
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.550638118073,
+            "positive": 0.550638118073,
+            "negative": 0.0,
+            "absolute": 0.550638118073
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.151206633636,
+            "positive": 0.151206633636,
+            "negative": 0.0,
+            "absolute": 0.151206633636
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.360321170685,
+            "positive": 0.360321170685,
+            "negative": 0.0,
+            "absolute": 0.360321170685
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.37796352071,
+            "positive": 0.37796352071,
+            "negative": 0.0,
+            "absolute": 0.37796352071
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.285551191406,
+            "positive": 0.285551191406,
+            "negative": 0.0,
+            "absolute": 0.285551191406
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.713024648438,
+            "positive": 0.713024648438,
+            "negative": 0.0,
+            "absolute": 0.713024648438
+          },
+          "TRADE_HVAC": {
+            "net": 0.481008691406,
+            "positive": 0.481008691406,
+            "negative": 0.0,
+            "absolute": 0.481008691406
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.336301875,
+            "positive": 0.336301875,
+            "negative": 0.0,
+            "absolute": 0.336301875
+          }
+        },
+        "9": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.153,
+            "positive": 0.153,
+            "negative": 0.0,
+            "absolute": 0.153
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.2835,
+            "positive": 0.2835,
+            "negative": 0.0,
+            "absolute": 0.2835
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.144,
+            "positive": 0.144,
+            "negative": 0.0,
+            "absolute": 0.144
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.467477948246,
+            "positive": 0.467477948246,
+            "negative": 0.0,
+            "absolute": 0.467477948246
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.164958641078,
+            "positive": 0.164958641078,
+            "negative": 0.0,
+            "absolute": 0.164958641078
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.207169280508,
+            "positive": 0.207169280508,
+            "negative": 0.0,
+            "absolute": 0.207169280508
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.138004614758,
+            "positive": 0.138004614758,
+            "negative": 0.0,
+            "absolute": 0.138004614758
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.343692198772,
+            "positive": 0.343692198772,
+            "negative": 0.0,
+            "absolute": 0.343692198772
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.277441730995,
+            "positive": 0.277441730995,
+            "negative": 0.0,
+            "absolute": 0.277441730995
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.543398193793,
+            "positive": 0.543398193793,
+            "negative": 0.0,
+            "absolute": 0.543398193793
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.147290215642,
+            "positive": 0.147290215642,
+            "negative": 0.0,
+            "absolute": 0.147290215642
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.355849985078,
+            "positive": 0.355849985078,
+            "negative": 0.0,
+            "absolute": 0.355849985078
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.365325712662,
+            "positive": 0.365325712662,
+            "negative": 0.0,
+            "absolute": 0.365325712662
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.250066845703,
+            "positive": 0.250066845703,
+            "negative": 0.0,
+            "absolute": 0.250066845703
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.624419824219,
+            "positive": 0.624419824219,
+            "negative": 0.0,
+            "absolute": 0.624419824219
+          },
+          "TRADE_HVAC": {
+            "net": 0.421235595703,
+            "positive": 0.421235595703,
+            "negative": 0.0,
+            "absolute": 0.421235595703
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.2945109375,
+            "positive": 0.2945109375,
+            "negative": 0.0,
+            "absolute": 0.2945109375
+          }
+        },
+        "10": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.352838679299,
+            "positive": 0.352838679299,
+            "negative": 0.0,
+            "absolute": 0.352838679299
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.124505956431,
+            "positive": 0.124505956431,
+            "negative": 0.0,
+            "absolute": 0.124505956431
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.156365312203,
+            "positive": 0.156365312203,
+            "negative": 0.0,
+            "absolute": 0.156365312203
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.104161845903,
+            "positive": 0.104161845903,
+            "negative": 0.0,
+            "absolute": 0.104161845903
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.305398811616,
+            "positive": 0.305398811616,
+            "negative": 0.0,
+            "absolute": 0.305398811616
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.257336621233,
+            "positive": 0.257336621233,
+            "negative": 0.0,
+            "absolute": 0.257336621233
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.503916843089,
+            "positive": 0.503916843089,
+            "negative": 0.0,
+            "absolute": 0.503916843089
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.13493640735,
+            "positive": 0.13493640735,
+            "negative": 0.0,
+            "absolute": 0.13493640735
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.330223472999,
+            "positive": 0.330223472999,
+            "negative": 0.0,
+            "absolute": 0.330223472999
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.332164566016,
+            "positive": 0.332164566016,
+            "negative": 0.0,
+            "absolute": 0.332164566016
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.196560922852,
+            "positive": 0.196560922852,
+            "negative": 0.0,
+            "absolute": 0.196560922852
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.490814912109,
+            "positive": 0.490814912109,
+            "negative": 0.0,
+            "absolute": 0.490814912109
+          },
+          "TRADE_HVAC": {
+            "net": 0.331105297852,
+            "positive": 0.331105297852,
+            "negative": 0.0,
+            "absolute": 0.331105297852
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.23149546875,
+            "positive": 0.23149546875,
+            "negative": 0.0,
+            "absolute": 0.23149546875
+          }
+        },
+        "11": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.141135471719,
+            "positive": 0.141135471719,
+            "negative": 0.0,
+            "absolute": 0.141135471719
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.049802382573,
+            "positive": 0.049802382573,
+            "negative": 0.0,
+            "absolute": 0.049802382573
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.062546124881,
+            "positive": 0.062546124881,
+            "negative": 0.0,
+            "absolute": 0.062546124881
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.041664738361,
+            "positive": 0.041664738361,
+            "negative": 0.0,
+            "absolute": 0.041664738361
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.246784615961,
+            "positive": 0.246784615961,
+            "negative": 0.0,
+            "absolute": 0.246784615961
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.220408799234,
+            "positive": 0.220408799234,
+            "negative": 0.0,
+            "absolute": 0.220408799234
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.431491245329,
+            "positive": 0.431491245329,
+            "negative": 0.0,
+            "absolute": 0.431491245329
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.113729083487,
+            "positive": 0.113729083487,
+            "negative": 0.0,
+            "absolute": 0.113729083487
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.283012555781,
+            "positive": 0.283012555781,
+            "negative": 0.0,
+            "absolute": 0.283012555781
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.277168192787,
+            "positive": 0.277168192787,
+            "negative": 0.0,
+            "absolute": 0.277168192787
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.098280461426,
+            "positive": 0.098280461426,
+            "negative": 0.0,
+            "absolute": 0.098280461426
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.245407456055,
+            "positive": 0.245407456055,
+            "negative": 0.0,
+            "absolute": 0.245407456055
+          },
+          "TRADE_HVAC": {
+            "net": 0.165552648926,
+            "positive": 0.165552648926,
+            "negative": 0.0,
+            "absolute": 0.165552648926
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.115747734375,
+            "positive": 0.115747734375,
+            "negative": 0.0,
+            "absolute": 0.115747734375
+          }
+        },
+        "12": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.056454188688,
+            "positive": 0.056454188688,
+            "negative": 0.0,
+            "absolute": 0.056454188688
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.019920953029,
+            "positive": 0.019920953029,
+            "negative": 0.0,
+            "absolute": 0.019920953029
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.025018449953,
+            "positive": 0.025018449953,
+            "negative": 0.0,
+            "absolute": 0.025018449953
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.016665895345,
+            "positive": 0.016665895345,
+            "negative": 0.0,
+            "absolute": 0.016665895345
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.14234063112,
+            "positive": 0.14234063112,
+            "negative": 0.0,
+            "absolute": 0.14234063112
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.152899234192,
+            "positive": 0.152899234192,
+            "negative": 0.0,
+            "absolute": 0.152899234192
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.299111686795,
+            "positive": 0.299111686795,
+            "negative": 0.0,
+            "absolute": 0.299111686795
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.075368893668,
+            "positive": 0.075368893668,
+            "negative": 0.0,
+            "absolute": 0.075368893668
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.196664791107,
+            "positive": 0.196664791107,
+            "negative": 0.0,
+            "absolute": 0.196664791107
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.178366592267,
+            "positive": 0.178366592267,
+            "negative": 0.0,
+            "absolute": 0.178366592267
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.049140230713,
+            "positive": 0.049140230713,
+            "negative": 0.0,
+            "absolute": 0.049140230713
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.122703728027,
+            "positive": 0.122703728027,
+            "negative": 0.0,
+            "absolute": 0.122703728027
+          },
+          "TRADE_HVAC": {
+            "net": 0.082776324463,
+            "positive": 0.082776324463,
+            "negative": 0.0,
+            "absolute": 0.082776324463
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.057873867188,
+            "positive": 0.057873867188,
+            "negative": 0.0,
+            "absolute": 0.057873867188
+          }
+        },
+        "13": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.022581675475,
+            "positive": 0.022581675475,
+            "negative": 0.0,
+            "absolute": 0.022581675475
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.007968381212,
+            "positive": 0.007968381212,
+            "negative": 0.0,
+            "absolute": 0.007968381212
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.010007379981,
+            "positive": 0.010007379981,
+            "negative": 0.0,
+            "absolute": 0.010007379981
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.006666358138,
+            "positive": 0.006666358138,
+            "negative": 0.0,
+            "absolute": 0.006666358138
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.073143916539,
+            "positive": 0.073143916539,
+            "negative": 0.0,
+            "absolute": 0.073143916539
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.095675805703,
+            "positive": 0.095675805703,
+            "negative": 0.0,
+            "absolute": 0.095675805703
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.187039648621,
+            "positive": 0.187039648621,
+            "negative": 0.0,
+            "absolute": 0.187039648621
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.045086187604,
+            "positive": 0.045086187604,
+            "negative": 0.0,
+            "absolute": 0.045086187604
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.123260140543,
+            "positive": 0.123260140543,
+            "negative": 0.0,
+            "absolute": 0.123260140543
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.103235547268,
+            "positive": 0.103235547268,
+            "negative": 0.0,
+            "absolute": 0.103235547268
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.024570115356,
+            "positive": 0.024570115356,
+            "negative": 0.0,
+            "absolute": 0.024570115356
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.061351864014,
+            "positive": 0.061351864014,
+            "negative": 0.0,
+            "absolute": 0.061351864014
+          },
+          "TRADE_HVAC": {
+            "net": 0.041388162231,
+            "positive": 0.041388162231,
+            "negative": 0.0,
+            "absolute": 0.041388162231
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.028936933594,
+            "positive": 0.028936933594,
+            "negative": 0.0,
+            "absolute": 0.028936933594
+          }
+        },
+        "14": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.00903267019,
+            "positive": 0.00903267019,
+            "negative": 0.0,
+            "absolute": 0.00903267019
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.003187352485,
+            "positive": 0.003187352485,
+            "negative": 0.0,
+            "absolute": 0.003187352485
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.004002951992,
+            "positive": 0.004002951992,
+            "negative": 0.0,
+            "absolute": 0.004002951992
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.002666543255,
+            "positive": 0.002666543255,
+            "negative": 0.0,
+            "absolute": 0.002666543255
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.035679680178,
+            "positive": 0.035679680178,
+            "negative": 0.0,
+            "absolute": 0.035679680178
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.056287199856,
+            "positive": 0.056287199856,
+            "negative": 0.0,
+            "absolute": 0.056287199856
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.109974780518,
+            "positive": 0.109974780518,
+            "negative": 0.0,
+            "absolute": 0.109974780518
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.02550379011,
+            "positive": 0.02550379011,
+            "negative": 0.0,
+            "absolute": 0.02550379011
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.072612930349,
+            "positive": 0.072612930349,
+            "negative": 0.0,
+            "absolute": 0.072612930349
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.056494375201,
+            "positive": 0.056494375201,
+            "negative": 0.0,
+            "absolute": 0.056494375201
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.012285057678,
+            "positive": 0.012285057678,
+            "negative": 0.0,
+            "absolute": 0.012285057678
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.030675932007,
+            "positive": 0.030675932007,
+            "negative": 0.0,
+            "absolute": 0.030675932007
+          },
+          "TRADE_HVAC": {
+            "net": 0.020694081116,
+            "positive": 0.020694081116,
+            "negative": 0.0,
+            "absolute": 0.020694081116
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.014468466797,
+            "positive": 0.014468466797,
+            "negative": 0.0,
+            "absolute": 0.014468466797
+          }
+        },
+        "15": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.003613068076,
+            "positive": 0.003613068076,
+            "negative": 0.0,
+            "absolute": 0.003613068076
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.001274940994,
+            "positive": 0.001274940994,
+            "negative": 0.0,
+            "absolute": 0.001274940994
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.001601180797,
+            "positive": 0.001601180797,
+            "negative": 0.0,
+            "absolute": 0.001601180797
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.001066617302,
+            "positive": 0.001066617302,
+            "negative": 0.0,
+            "absolute": 0.001066617302
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.016978413308,
+            "positive": 0.016978413308,
+            "negative": 0.0,
+            "absolute": 0.016978413308
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.031786655214,
+            "positive": 0.031786655214,
+            "negative": 0.0,
+            "absolute": 0.031786655214
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.062076539305,
+            "positive": 0.062076539305,
+            "negative": 0.0,
+            "absolute": 0.062076539305
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.013936173578,
+            "positive": 0.013936173578,
+            "negative": 0.0,
+            "absolute": 0.013936173578
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.041050724518,
+            "positive": 0.041050724518,
+            "negative": 0.0,
+            "absolute": 0.041050724518
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.029900108673,
+            "positive": 0.029900108673,
+            "negative": 0.0,
+            "absolute": 0.029900108673
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.006142528839,
+            "positive": 0.006142528839,
+            "negative": 0.0,
+            "absolute": 0.006142528839
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.015337966003,
+            "positive": 0.015337966003,
+            "negative": 0.0,
+            "absolute": 0.015337966003
+          },
+          "TRADE_HVAC": {
+            "net": 0.010347040558,
+            "positive": 0.010347040558,
+            "negative": 0.0,
+            "absolute": 0.010347040558
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.007234233398,
+            "positive": 0.007234233398,
+            "negative": 0.0,
+            "absolute": 0.007234233398
+          }
+        }
+      }
+    },
+    "high": {
+      "weight_case": "high",
+      "retention_case": "high",
+      "absorption_adjustment": 0.0,
+      "horizon": 15,
+      "states": {
+        "0": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.102,
+            "positive": 0.102,
+            "negative": 0.0,
+            "absolute": 0.102
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.189,
+            "positive": 0.189,
+            "negative": 0.0,
+            "absolute": 0.189
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.096,
+            "positive": 0.096,
+            "negative": 0.0,
+            "absolute": 0.096
+          }
+        },
+        "1": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.1785,
+            "positive": 0.1785,
+            "negative": 0.0,
+            "absolute": 0.1785
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.33075,
+            "positive": 0.33075,
+            "negative": 0.0,
+            "absolute": 0.33075
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.168,
+            "positive": 0.168,
+            "negative": 0.0,
+            "absolute": 0.168
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.13608,
+            "positive": 0.13608,
+            "negative": 0.0,
+            "absolute": 0.13608
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.05202,
+            "positive": 0.05202,
+            "negative": 0.0,
+            "absolute": 0.05202
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.06336,
+            "positive": 0.06336,
+            "negative": 0.0,
+            "absolute": 0.06336
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.04488,
+            "positive": 0.04488,
+            "negative": 0.0,
+            "absolute": 0.04488
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.06069,
+            "positive": 0.06069,
+            "negative": 0.0,
+            "absolute": 0.06069
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.144585,
+            "positive": 0.144585,
+            "negative": 0.0,
+            "absolute": 0.144585
+          },
+          "TRADE_HVAC": {
+            "net": 0.1044225,
+            "positive": 0.1044225,
+            "negative": 0.0,
+            "absolute": 0.1044225
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.06912,
+            "positive": 0.06912,
+            "negative": 0.0,
+            "absolute": 0.06912
+          }
+        },
+        "2": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.255,
+            "positive": 0.255,
+            "negative": 0.0,
+            "absolute": 0.255
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.4725,
+            "positive": 0.4725,
+            "negative": 0.0,
+            "absolute": 0.4725
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.24,
+            "positive": 0.24,
+            "negative": 0.0,
+            "absolute": 0.24
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.326592,
+            "positive": 0.326592,
+            "negative": 0.0,
+            "absolute": 0.326592
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.124848,
+            "positive": 0.124848,
+            "negative": 0.0,
+            "absolute": 0.124848
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.152064,
+            "positive": 0.152064,
+            "negative": 0.0,
+            "absolute": 0.152064
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.107712,
+            "positive": 0.107712,
+            "negative": 0.0,
+            "absolute": 0.107712
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.079821936,
+            "positive": 0.079821936,
+            "negative": 0.0,
+            "absolute": 0.079821936
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.04511052,
+            "positive": 0.04511052,
+            "negative": 0.0,
+            "absolute": 0.04511052
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.08810046,
+            "positive": 0.08810046,
+            "negative": 0.0,
+            "absolute": 0.08810046
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.0267036,
+            "positive": 0.0267036,
+            "negative": 0.0,
+            "absolute": 0.0267036
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.056979342,
+            "positive": 0.056979342,
+            "negative": 0.0,
+            "absolute": 0.056979342
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.06342336,
+            "positive": 0.06342336,
+            "negative": 0.0,
+            "absolute": 0.06342336
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.151725,
+            "positive": 0.151725,
+            "negative": 0.0,
+            "absolute": 0.151725
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.3614625,
+            "positive": 0.3614625,
+            "negative": 0.0,
+            "absolute": 0.3614625
+          },
+          "TRADE_HVAC": {
+            "net": 0.26105625,
+            "positive": 0.26105625,
+            "negative": 0.0,
+            "absolute": 0.26105625
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.1728,
+            "positive": 0.1728,
+            "negative": 0.0,
+            "absolute": 0.1728
+          }
+        },
+        "3": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.306,
+            "positive": 0.306,
+            "negative": 0.0,
+            "absolute": 0.306
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.567,
+            "positive": 0.567,
+            "negative": 0.0,
+            "absolute": 0.567
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.288,
+            "positive": 0.288,
+            "negative": 0.0,
+            "absolute": 0.288
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.5524848,
+            "positive": 0.5524848,
+            "negative": 0.0,
+            "absolute": 0.5524848
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.2112012,
+            "positive": 0.2112012,
+            "negative": 0.0,
+            "absolute": 0.2112012
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.2572416,
+            "positive": 0.2572416,
+            "negative": 0.0,
+            "absolute": 0.2572416
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.1822128,
+            "positive": 0.1822128,
+            "negative": 0.0,
+            "absolute": 0.1822128
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.2343042,
+            "positive": 0.2343042,
+            "negative": 0.0,
+            "absolute": 0.2343042
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.14818678056,
+            "positive": 0.14818678056,
+            "negative": 0.0,
+            "absolute": 0.14818678056
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.28823499684,
+            "positive": 0.28823499684,
+            "negative": 0.0,
+            "absolute": 0.28823499684
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.08411634,
+            "positive": 0.08411634,
+            "negative": 0.0,
+            "absolute": 0.08411634
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.18785681082,
+            "positive": 0.18785681082,
+            "negative": 0.0,
+            "absolute": 0.18785681082
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.197090784,
+            "positive": 0.197090784,
+            "negative": 0.0,
+            "absolute": 0.197090784
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.26551875,
+            "positive": 0.26551875,
+            "negative": 0.0,
+            "absolute": 0.26551875
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.632559375,
+            "positive": 0.632559375,
+            "negative": 0.0,
+            "absolute": 0.632559375
+          },
+          "TRADE_HVAC": {
+            "net": 0.4568484375,
+            "positive": 0.4568484375,
+            "negative": 0.0,
+            "absolute": 0.4568484375
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.3024,
+            "positive": 0.3024,
+            "negative": 0.0,
+            "absolute": 0.3024
+          }
+        },
+        "4": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.357,
+            "positive": 0.357,
+            "negative": 0.0,
+            "absolute": 0.357
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.6615,
+            "positive": 0.6615,
+            "negative": 0.0,
+            "absolute": 0.6615
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.336,
+            "positive": 0.336,
+            "negative": 0.0,
+            "absolute": 0.336
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.76735512,
+            "positive": 0.76735512,
+            "negative": 0.0,
+            "absolute": 0.76735512
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.29334078,
+            "positive": 0.29334078,
+            "negative": 0.0,
+            "absolute": 0.29334078
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.35728704,
+            "positive": 0.35728704,
+            "negative": 0.0,
+            "absolute": 0.35728704
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.25307832,
+            "positive": 0.25307832,
+            "negative": 0.0,
+            "absolute": 0.25307832
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.4501140048,
+            "positive": 0.4501140048,
+            "negative": 0.0,
+            "absolute": 0.4501140048
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.312600647628,
+            "positive": 0.312600647628,
+            "negative": 0.0,
+            "absolute": 0.312600647628
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 0.606100602942,
+            "positive": 0.606100602942,
+            "negative": 0.0,
+            "absolute": 0.606100602942
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.171503871,
+            "positive": 0.171503871,
+            "negative": 0.0,
+            "absolute": 0.171503871
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.397407531771,
+            "positive": 0.397407531771,
+            "negative": 0.0,
+            "absolute": 0.397407531771
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.3971038896,
+            "positive": 0.3971038896,
+            "negative": 0.0,
+            "absolute": 0.3971038896
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.3812090625,
+            "positive": 0.3812090625,
+            "negative": 0.0,
+            "absolute": 0.3812090625
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.90817453125,
+            "positive": 0.90817453125,
+            "negative": 0.0,
+            "absolute": 0.90817453125
+          },
+          "TRADE_HVAC": {
+            "net": 0.655903828125,
+            "positive": 0.655903828125,
+            "negative": 0.0,
+            "absolute": 0.655903828125
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.43416,
+            "positive": 0.43416,
+            "negative": 0.0,
+            "absolute": 0.43416
+          }
+        },
+        "5": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.357,
+            "positive": 0.357,
+            "negative": 0.0,
+            "absolute": 0.357
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.6615,
+            "positive": 0.6615,
+            "negative": 0.0,
+            "absolute": 0.6615
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.336,
+            "positive": 0.336,
+            "negative": 0.0,
+            "absolute": 0.336
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.975060828,
+            "positive": 0.975060828,
+            "negative": 0.0,
+            "absolute": 0.975060828
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.372741507,
+            "positive": 0.372741507,
+            "negative": 0.0,
+            "absolute": 0.372741507
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.453996576,
+            "positive": 0.453996576,
+            "negative": 0.0,
+            "absolute": 0.453996576
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.321580908,
+            "positive": 0.321580908,
+            "negative": 0.0,
+            "absolute": 0.321580908
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.69328811052,
+            "positive": 0.69328811052,
+            "negative": 0.0,
+            "absolute": 0.69328811052
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.52466284811,
+            "positive": 0.52466284811,
+            "negative": 0.0,
+            "absolute": 0.52466284811
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 1.01445696363,
+            "positive": 1.01445696363,
+            "negative": 0.0,
+            "absolute": 1.01445696363
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.27920950365,
+            "positive": 0.27920950365,
+            "negative": 0.0,
+            "absolute": 0.27920950365
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.668634101016,
+            "positive": 0.668634101016,
+            "negative": 0.0,
+            "absolute": 0.668634101016
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.63920100024,
+            "positive": 0.63920100024,
+            "negative": 0.0,
+            "absolute": 0.63920100024
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.498321796875,
+            "positive": 0.498321796875,
+            "negative": 0.0,
+            "absolute": 0.498321796875
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 1.187178398438,
+            "positive": 1.187178398438,
+            "negative": 0.0,
+            "absolute": 1.187178398438
+          },
+          "TRADE_HVAC": {
+            "net": 0.857406621094,
+            "positive": 0.857406621094,
+            "negative": 0.0,
+            "absolute": 0.857406621094
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.56754,
+            "positive": 0.56754,
+            "negative": 0.0,
+            "absolute": 0.56754
+          }
+        },
+        "6": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.3315,
+            "positive": 0.3315,
+            "negative": 0.0,
+            "absolute": 0.3315
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.61425,
+            "positive": 0.61425,
+            "negative": 0.0,
+            "absolute": 0.61425
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.312,
+            "positive": 0.312,
+            "negative": 0.0,
+            "absolute": 0.312
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 1.1100695382,
+            "positive": 1.1100695382,
+            "negative": 0.0,
+            "absolute": 1.1100695382
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.42435197955,
+            "positive": 0.42435197955,
+            "negative": 0.0,
+            "absolute": 0.42435197955
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.5168577744,
+            "positive": 0.5168577744,
+            "negative": 0.0,
+            "absolute": 0.5168577744
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.3661075902,
+            "positive": 0.3661075902,
+            "negative": 0.0,
+            "absolute": 0.3661075902
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.948087854838,
+            "positive": 0.948087854838,
+            "negative": 0.0,
+            "absolute": 0.948087854838
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.772793807607,
+            "positive": 0.772793807607,
+            "negative": 0.0,
+            "absolute": 0.772793807607
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 1.490809366181,
+            "positive": 1.490809366181,
+            "negative": 0.0,
+            "absolute": 1.490809366181
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.400747767998,
+            "positive": 0.400747767998,
+            "negative": 0.0,
+            "absolute": 0.400747767998
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 0.986840513645,
+            "positive": 0.986840513645,
+            "negative": 0.0,
+            "absolute": 0.986840513645
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.908090314956,
+            "positive": 0.908090314956,
+            "negative": 0.0,
+            "absolute": 0.908090314956
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.586156347656,
+            "positive": 0.586156347656,
+            "negative": 0.0,
+            "absolute": 0.586156347656
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 1.396431298828,
+            "positive": 1.396431298828,
+            "negative": 0.0,
+            "absolute": 1.396431298828
+          },
+          "TRADE_HVAC": {
+            "net": 1.00853371582,
+            "positive": 1.00853371582,
+            "negative": 0.0,
+            "absolute": 1.00853371582
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.667575,
+            "positive": 0.667575,
+            "negative": 0.0,
+            "absolute": 0.667575
+          }
+        },
+        "7": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.2805,
+            "positive": 0.2805,
+            "negative": 0.0,
+            "absolute": 0.2805
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.51975,
+            "positive": 0.51975,
+            "negative": 0.0,
+            "absolute": 0.51975
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.264,
+            "positive": 0.264,
+            "negative": 0.0,
+            "absolute": 0.264
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 1.16380519983,
+            "positive": 1.16380519983,
+            "negative": 0.0,
+            "absolute": 1.16380519983
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.444893786708,
+            "positive": 0.444893786708,
+            "negative": 0.0,
+            "absolute": 0.444893786708
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.54187755336,
+            "positive": 0.54187755336,
+            "negative": 0.0,
+            "absolute": 0.54187755336
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.38382993363,
+            "positive": 0.38382993363,
+            "negative": 0.0,
+            "absolute": 0.38382993363
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 1.16751882522,
+            "positive": 1.16751882522,
+            "negative": 0.0,
+            "absolute": 1.16751882522
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.025179210415,
+            "positive": 1.025179210415,
+            "negative": 0.0,
+            "absolute": 1.025179210415
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 1.973385489331,
+            "positive": 1.973385489331,
+            "negative": 0.0,
+            "absolute": 1.973385489331
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.518394842167,
+            "positive": 0.518394842167,
+            "negative": 0.0,
+            "absolute": 0.518394842167
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.311632314408,
+            "positive": 1.311632314408,
+            "negative": 0.0,
+            "absolute": 1.311632314408
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 1.162402858841,
+            "positive": 1.162402858841,
+            "negative": 0.0,
+            "absolute": 1.162402858841
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.636859760742,
+            "positive": 0.636859760742,
+            "negative": 0.0,
+            "absolute": 0.636859760742
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 1.517224724121,
+            "positive": 1.517224724121,
+            "negative": 0.0,
+            "absolute": 1.517224724121
+          },
+          "TRADE_HVAC": {
+            "net": 1.095773411865,
+            "positive": 1.095773411865,
+            "negative": 0.0,
+            "absolute": 1.095773411865
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.72532125,
+            "positive": 0.72532125,
+            "negative": 0.0,
+            "absolute": 0.72532125
+          }
+        },
+        "8": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.2295,
+            "positive": 0.2295,
+            "negative": 0.0,
+            "absolute": 0.2295
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.42525,
+            "positive": 0.42525,
+            "negative": 0.0,
+            "absolute": 0.42525
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.216,
+            "positive": 0.216,
+            "negative": 0.0,
+            "absolute": 0.216
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 1.13069337989,
+            "positive": 1.13069337989,
+            "negative": 0.0,
+            "absolute": 1.13069337989
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.43223596136,
+            "positive": 0.43223596136,
+            "negative": 0.0,
+            "absolute": 0.43223596136
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.526460409684,
+            "positive": 0.526460409684,
+            "negative": 0.0,
+            "absolute": 0.526460409684
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.37290945686,
+            "positive": 0.37290945686,
+            "negative": 0.0,
+            "absolute": 0.37290945686
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 1.321181176837,
+            "positive": 1.321181176837,
+            "negative": 0.0,
+            "absolute": 1.321181176837
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.251331275144,
+            "positive": 1.251331275144,
+            "negative": 0.0,
+            "absolute": 1.251331275144
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 2.403642249774,
+            "positive": 2.403642249774,
+            "negative": 0.0,
+            "absolute": 2.403642249774
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.617174942135,
+            "positive": 0.617174942135,
+            "negative": 0.0,
+            "absolute": 0.617174942135
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.603919587456,
+            "positive": 1.603919587456,
+            "negative": 0.0,
+            "absolute": 1.603919587456
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 1.368829438425,
+            "positive": 1.368829438425,
+            "negative": 0.0,
+            "absolute": 1.368829438425
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.644542320557,
+            "positive": 0.644542320557,
+            "negative": 0.0,
+            "absolute": 0.644542320557
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 1.535527293091,
+            "positive": 1.535527293091,
+            "negative": 0.0,
+            "absolute": 1.535527293091
+          },
+          "TRADE_HVAC": {
+            "net": 1.108991933899,
+            "positive": 1.108991933899,
+            "negative": 0.0,
+            "absolute": 1.108991933899
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.7340709375,
+            "positive": 0.7340709375,
+            "negative": 0.0,
+            "absolute": 0.7340709375
+          }
+        },
+        "9": {
+          "AI_CIVIL_DEMAND": {
+            "net": 0.153,
+            "positive": 0.153,
+            "negative": 0.0,
+            "absolute": 0.153
+          },
+          "AI_ELECTRICAL_MECHANICAL_DEMAND": {
+            "net": 0.2835,
+            "positive": 0.2835,
+            "negative": 0.0,
+            "absolute": 0.2835
+          },
+          "AI_GRID_CONSTRUCTION_DEMAND": {
+            "net": 0.144,
+            "positive": 0.144,
+            "negative": 0.0,
+            "absolute": 0.144
+          },
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 1.041130696928,
+            "positive": 1.041130696928,
+            "negative": 0.0,
+            "absolute": 1.041130696928
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.397998374884,
+            "positive": 0.397998374884,
+            "negative": 0.0,
+            "absolute": 0.397998374884
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.484759266295,
+            "positive": 0.484759266295,
+            "negative": 0.0,
+            "absolute": 0.484759266295
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.343371146959,
+            "positive": 0.343371146959,
+            "negative": 0.0,
+            "absolute": 0.343371146959
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 1.389023303858,
+            "positive": 1.389023303858,
+            "negative": 0.0,
+            "absolute": 1.389023303858
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.423857470377,
+            "positive": 1.423857470377,
+            "negative": 0.0,
+            "absolute": 1.423857470377
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 2.72934760137,
+            "positive": 2.72934760137,
+            "negative": 0.0,
+            "absolute": 2.72934760137
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.684762333433,
+            "positive": 0.684762333433,
+            "negative": 0.0,
+            "absolute": 0.684762333433
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.828367462511,
+            "positive": 1.828367462511,
+            "negative": 0.0,
+            "absolute": 1.828367462511
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 1.501074264092,
+            "positive": 1.501074264092,
+            "negative": 0.0,
+            "absolute": 1.501074264092
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.619959240417,
+            "positive": 0.619959240417,
+            "negative": 0.0,
+            "absolute": 0.619959240417
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 1.476961719818,
+            "positive": 1.476961719818,
+            "negative": 0.0,
+            "absolute": 1.476961719818
+          },
+          "TRADE_HVAC": {
+            "net": 1.066694575424,
+            "positive": 1.066694575424,
+            "negative": 0.0,
+            "absolute": 1.066694575424
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.706073203125,
+            "positive": 0.706073203125,
+            "negative": 0.0,
+            "absolute": 0.706073203125
+          }
+        },
+        "10": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.880854953003,
+            "positive": 0.880854953003,
+            "negative": 0.0,
+            "absolute": 0.880854953003
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.336728943675,
+            "positive": 0.336728943675,
+            "negative": 0.0,
+            "absolute": 0.336728943675
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.410133523091,
+            "positive": 0.410133523091,
+            "negative": 0.0,
+            "absolute": 0.410133523091
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.290511245523,
+            "positive": 0.290511245523,
+            "negative": 0.0,
+            "absolute": 0.290511245523
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 1.377547566884,
+            "positive": 1.377547566884,
+            "negative": 0.0,
+            "absolute": 1.377547566884
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.530422541681,
+            "positive": 1.530422541681,
+            "negative": 0.0,
+            "absolute": 1.530422541681
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 2.927719499465,
+            "positive": 2.927719499465,
+            "negative": 0.0,
+            "absolute": 2.927719499465
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.717877582515,
+            "positive": 0.717877582515,
+            "negative": 0.0,
+            "absolute": 0.717877582515
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.968634856587,
+            "positive": 1.968634856587,
+            "negative": 0.0,
+            "absolute": 1.968634856587
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 1.554527611085,
+            "positive": 1.554527611085,
+            "negative": 0.0,
+            "absolute": 1.554527611085
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.556004430313,
+            "positive": 0.556004430313,
+            "negative": 0.0,
+            "absolute": 0.556004430313
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 1.324598789864,
+            "positive": 1.324598789864,
+            "negative": 0.0,
+            "absolute": 1.324598789864
+          },
+          "TRADE_HVAC": {
+            "net": 0.956654681568,
+            "positive": 0.956654681568,
+            "negative": 0.0,
+            "absolute": 0.956654681568
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.633234902344,
+            "positive": 0.633234902344,
+            "negative": 0.0,
+            "absolute": 0.633234902344
+          }
+        },
+        "11": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.572555719452,
+            "positive": 0.572555719452,
+            "negative": 0.0,
+            "absolute": 0.572555719452
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.218873813388,
+            "positive": 0.218873813388,
+            "negative": 0.0,
+            "absolute": 0.218873813388
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.266586790009,
+            "positive": 0.266586790009,
+            "negative": 0.0,
+            "absolute": 0.266586790009
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.18883230959,
+            "positive": 0.18883230959,
+            "negative": 0.0,
+            "absolute": 0.18883230959
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 1.281292820202,
+            "positive": 1.281292820202,
+            "negative": 0.0,
+            "absolute": 1.281292820202
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.557284125194,
+            "positive": 1.557284125194,
+            "negative": 0.0,
+            "absolute": 1.557284125194
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 2.972855036882,
+            "positive": 2.972855036882,
+            "negative": 0.0,
+            "absolute": 2.972855036882
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.711262377973,
+            "positive": 0.711262377973,
+            "negative": 0.0,
+            "absolute": 0.711262377973
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 2.006819966766,
+            "positive": 2.006819966766,
+            "negative": 0.0,
+            "absolute": 2.006819966766
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 1.519097722957,
+            "positive": 1.519097722957,
+            "negative": 0.0,
+            "absolute": 1.519097722957
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.417003322735,
+            "positive": 0.417003322735,
+            "negative": 0.0,
+            "absolute": 0.417003322735
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.993449092398,
+            "positive": 0.993449092398,
+            "negative": 0.0,
+            "absolute": 0.993449092398
+          },
+          "TRADE_HVAC": {
+            "net": 0.717491011176,
+            "positive": 0.717491011176,
+            "negative": 0.0,
+            "absolute": 0.717491011176
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.474926176758,
+            "positive": 0.474926176758,
+            "negative": 0.0,
+            "absolute": 0.474926176758
+          }
+        },
+        "12": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.372161217644,
+            "positive": 0.372161217644,
+            "negative": 0.0,
+            "absolute": 0.372161217644
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.142267978702,
+            "positive": 0.142267978702,
+            "negative": 0.0,
+            "absolute": 0.142267978702
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.173281413506,
+            "positive": 0.173281413506,
+            "negative": 0.0,
+            "absolute": 0.173281413506
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.122741001234,
+            "positive": 0.122741001234,
+            "negative": 0.0,
+            "absolute": 0.122741001234
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 1.051624253424,
+            "positive": 1.051624253424,
+            "negative": 0.0,
+            "absolute": 1.051624253424
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.468024179608,
+            "positive": 1.468024179608,
+            "negative": 0.0,
+            "absolute": 1.468024179608
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 2.794424936121,
+            "positive": 2.794424936121,
+            "negative": 0.0,
+            "absolute": 2.794424936121
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.645802007685,
+            "positive": 0.645802007685,
+            "negative": 0.0,
+            "absolute": 0.645802007685
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.896461126819,
+            "positive": 1.896461126819,
+            "negative": 0.0,
+            "absolute": 1.896461126819
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 1.351473927004,
+            "positive": 1.351473927004,
+            "negative": 0.0,
+            "absolute": 1.351473927004
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.312752492051,
+            "positive": 0.312752492051,
+            "negative": 0.0,
+            "absolute": 0.312752492051
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.745086819298,
+            "positive": 0.745086819298,
+            "negative": 0.0,
+            "absolute": 0.745086819298
+          },
+          "TRADE_HVAC": {
+            "net": 0.538118258382,
+            "positive": 0.538118258382,
+            "negative": 0.0,
+            "absolute": 0.538118258382
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.356194632568,
+            "positive": 0.356194632568,
+            "negative": 0.0,
+            "absolute": 0.356194632568
+          }
+        },
+        "13": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.241904791469,
+            "positive": 0.241904791469,
+            "negative": 0.0,
+            "absolute": 0.241904791469
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.092474186157,
+            "positive": 0.092474186157,
+            "negative": 0.0,
+            "absolute": 0.092474186157
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.112632918779,
+            "positive": 0.112632918779,
+            "negative": 0.0,
+            "absolute": 0.112632918779
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.079781650802,
+            "positive": 0.079781650802,
+            "negative": 0.0,
+            "absolute": 0.079781650802
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.812328076945,
+            "positive": 0.812328076945,
+            "negative": 0.0,
+            "absolute": 0.812328076945
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.316424301359,
+            "positive": 1.316424301359,
+            "negative": 0.0,
+            "absolute": 1.316424301359
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 2.498781537368,
+            "positive": 2.498781537368,
+            "negative": 0.0,
+            "absolute": 2.498781537368
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.557382401498,
+            "positive": 0.557382401498,
+            "negative": 0.0,
+            "absolute": 0.557382401498
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.70472472754,
+            "positive": 1.70472472754,
+            "negative": 0.0,
+            "absolute": 1.70472472754
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 1.140173419289,
+            "positive": 1.140173419289,
+            "negative": 0.0,
+            "absolute": 1.140173419289
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.234564369038,
+            "positive": 0.234564369038,
+            "negative": 0.0,
+            "absolute": 0.234564369038
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.558815114474,
+            "positive": 0.558815114474,
+            "negative": 0.0,
+            "absolute": 0.558815114474
+          },
+          "TRADE_HVAC": {
+            "net": 0.403588693787,
+            "positive": 0.403588693787,
+            "negative": 0.0,
+            "absolute": 0.403588693787
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.267145974426,
+            "positive": 0.267145974426,
+            "negative": 0.0,
+            "absolute": 0.267145974426
+          }
+        },
+        "14": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.157238114455,
+            "positive": 0.157238114455,
+            "negative": 0.0,
+            "absolute": 0.157238114455
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.060108221002,
+            "positive": 0.060108221002,
+            "negative": 0.0,
+            "absolute": 0.060108221002
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.073211397206,
+            "positive": 0.073211397206,
+            "negative": 0.0,
+            "absolute": 0.073211397206
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.051858073021,
+            "positive": 0.051858073021,
+            "negative": 0.0,
+            "absolute": 0.051858073021
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.606934670178,
+            "positive": 0.606934670178,
+            "negative": 0.0,
+            "absolute": 0.606934670178
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 1.139482759851,
+            "positive": 1.139482759851,
+            "negative": 0.0,
+            "absolute": 1.139482759851
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 2.157401983568,
+            "positive": 2.157401983568,
+            "negative": 0.0,
+            "absolute": 2.157401983568
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.465506883351,
+            "positive": 0.465506883351,
+            "negative": 0.0,
+            "absolute": 0.465506883351
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.478796791804,
+            "positive": 1.478796791804,
+            "negative": 0.0,
+            "absolute": 1.478796791804
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.930034787516,
+            "positive": 0.930034787516,
+            "negative": 0.0,
+            "absolute": 0.930034787516
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.175923276779,
+            "positive": 0.175923276779,
+            "negative": 0.0,
+            "absolute": 0.175923276779
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.419111335855,
+            "positive": 0.419111335855,
+            "negative": 0.0,
+            "absolute": 0.419111335855
+          },
+          "TRADE_HVAC": {
+            "net": 0.30269152034,
+            "positive": 0.30269152034,
+            "negative": 0.0,
+            "absolute": 0.30269152034
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.20035948082,
+            "positive": 0.20035948082,
+            "negative": 0.0,
+            "absolute": 0.20035948082
+          }
+        },
+        "15": {
+          "MATERIAL_BUILDING_ELECTRICAL": {
+            "net": 0.102204774395,
+            "positive": 0.102204774395,
+            "negative": 0.0,
+            "absolute": 0.102204774395
+          },
+          "MATERIAL_CONCRETE": {
+            "net": 0.039070343651,
+            "positive": 0.039070343651,
+            "negative": 0.0,
+            "absolute": 0.039070343651
+          },
+          "MATERIAL_GRID_EQUIPMENT": {
+            "net": 0.047587408184,
+            "positive": 0.047587408184,
+            "negative": 0.0,
+            "absolute": 0.047587408184
+          },
+          "MATERIAL_STEEL": {
+            "net": 0.033707747464,
+            "positive": 0.033707747464,
+            "negative": 0.0,
+            "absolute": 0.033707747464
+          },
+          "NONRES_CONSTRUCTION_COST": {
+            "net": 0.444869693738,
+            "positive": 0.444869693738,
+            "negative": 0.0,
+            "absolute": 0.444869693738
+          },
+          "SCHEDULE_GOVERNMENT_DELAY_PRESSURE": {
+            "net": 0.960709870291,
+            "positive": 0.960709870291,
+            "negative": 0.0,
+            "absolute": 0.960709870291
+          },
+          "SCHEDULE_HOSPITALS_DELAY_PRESSURE": {
+            "net": 1.814865675724,
+            "positive": 1.814865675724,
+            "negative": 0.0,
+            "absolute": 1.814865675724
+          },
+          "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE": {
+            "net": 0.379985715961,
+            "positive": 0.379985715961,
+            "negative": 0.0,
+            "absolute": 0.379985715961
+          },
+          "SCHEDULE_SCHOOLS_DELAY_PRESSURE": {
+            "net": 1.249149627293,
+            "positive": 1.249149627293,
+            "negative": 0.0,
+            "absolute": 1.249149627293
+          },
+          "SCHEDULE_UTILITIES_DELAY_PRESSURE": {
+            "net": 0.741427261571,
+            "positive": 0.741427261571,
+            "negative": 0.0,
+            "absolute": 0.741427261571
+          },
+          "TRADE_CONCRETE": {
+            "net": 0.131942457584,
+            "positive": 0.131942457584,
+            "negative": 0.0,
+            "absolute": 0.131942457584
+          },
+          "TRADE_ELECTRICIANS": {
+            "net": 0.314333501891,
+            "positive": 0.314333501891,
+            "negative": 0.0,
+            "absolute": 0.314333501891
+          },
+          "TRADE_HVAC": {
+            "net": 0.227018640255,
+            "positive": 0.227018640255,
+            "negative": 0.0,
+            "absolute": 0.227018640255
+          },
+          "TRADE_POWERLINE": {
+            "net": 0.150269610615,
+            "positive": 0.150269610615,
+            "negative": 0.0,
+            "absolute": 0.150269610615
+          }
+        }
+      }
+    }
+  },
+  "case_note": "Low, central and high are co-moving structural weight-and-retention cases. They are not confidence bounds or a probability distribution.",
+  "limitations": [
+    "Pressure scores are dimensionless diagnostic indices; 0.24 does not mean a 24% delay.",
+    "The graph excludes 54% of capex assigned to computing, networking, professional and other costs.",
+    "All graph weights, retention factors, absorption values, local capture and normalization denominators are declared assumptions pending calibration.",
+    "Uniform local capture is a simplifying assumption tested at 0.40, 0.72 and 0.90.",
+    "Power-system quantities are excluded from this CAD propagation model and published in an independent MW-based overlay."
+  ]
+}

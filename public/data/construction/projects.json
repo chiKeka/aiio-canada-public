@@ -1,0 +1,211 @@
+[
+  {
+    "id": "ABMP_11416",
+    "name": "eStruxture CAL-3 Data Centre",
+    "region": "Rocky View County",
+    "stage": "Under Construction",
+    "cost": 750000000.0,
+    "start": 2024,
+    "end": 2026,
+    "source": "https://info.estruxture.com/hubfs/Data%20Sheets/eStruxture_Datasheet_CAL3%20EN%20V2%202025.pdf?__hstc=17468411.9cbf58fbaac1d56717987d205a46139e.1778703431220.1778703431220.1778703431220.1&__hssc=17468411.4.1779463158036&__hsfp=31c185fa9baa393ca4363973b4df6c18",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11477",
+    "name": "Wonder Valley AI Data Centre Park (Phase 1)",
+    "region": "Greenview No. 16",
+    "stage": "Proposed",
+    "cost": 12000000000.0,
+    "start": null,
+    "end": null,
+    "source": "https://www.olearydigital.ai/",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11490",
+    "name": "Beacon Foothills AI Data Centre Hub",
+    "region": "Foothills No. 31",
+    "stage": "Proposed",
+    "cost": 4000000000.0,
+    "start": null,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11491",
+    "name": "Beacon Harry Smith AI Data Centre Hub",
+    "region": "Parkland County",
+    "stage": "Proposed",
+    "cost": null,
+    "start": null,
+    "end": null,
+    "source": "https://beacondatacenters.com/campuses/",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11492",
+    "name": "Beacon Indus Data Centre Hub",
+    "region": "Rocky View County",
+    "stage": "Proposed",
+    "cost": null,
+    "start": null,
+    "end": null,
+    "source": "https://beacondatacenters.com/wp-content/uploads/2026/02/BEA_IndusCGY-FAQ.pdf",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11493",
+    "name": "Beacon Heartland AI Data Centre Hub",
+    "region": "Sturgeon County",
+    "stage": "Proposed",
+    "cost": null,
+    "start": null,
+    "end": 2027,
+    "source": "https://beacondatacenters.com/campuses/",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11494",
+    "name": "Beacon Saunders Lake AI Data Centre Hub",
+    "region": "Leduc County",
+    "stage": "Proposed",
+    "cost": null,
+    "start": null,
+    "end": null,
+    "source": "https://beacondatacenters.com/campuses/",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11556",
+    "name": "Crusoe AI Data Centres Alberta",
+    "region": "Brazeau County|Red Deer County|Rocky View County",
+    "stage": "Proposed",
+    "cost": 3000000000.0,
+    "start": null,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11638",
+    "name": "HubOne AI & BTC High Density Compute Park",
+    "region": "Wheatland County",
+    "stage": "Proposed",
+    "cost": null,
+    "start": null,
+    "end": null,
+    "source": "https://hub1.ca/",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11820",
+    "name": "Prairie Sky Data Solutions Strathmore Data Center (Phase 1)",
+    "region": "Strathmore",
+    "stage": "Proposed",
+    "cost": null,
+    "start": null,
+    "end": 2026,
+    "source": "https://www.prairieskydata.com/",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11866",
+    "name": "eStruxture CAL-1 Data Centre - Phase 4 Alterations",
+    "region": "Calgary",
+    "stage": "Under Construction",
+    "cost": null,
+    "start": 2025,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11890",
+    "name": "Blindman Industrial Park AI Data Centre",
+    "region": "Red Deer County",
+    "stage": "Under Construction",
+    "cost": null,
+    "start": 2026,
+    "end": 2026,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_11969",
+    "name": "Technologies New Energy & Data District Data Centres (Phase 1)",
+    "region": "Olds|Calgary|Edmonton|Bonnyville No. 87",
+    "stage": "Proposed",
+    "cost": 1260000000.0,
+    "start": 2026,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_12068",
+    "name": "Data Centre (Clive)",
+    "region": "Lacombe County",
+    "stage": "Proposed",
+    "cost": null,
+    "start": 2026,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_12097",
+    "name": "Mihta Askiy Data Centre",
+    "region": "Northern Sunrise County",
+    "stage": "Proposed",
+    "cost": null,
+    "start": 2027,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_12113",
+    "name": "Beacon Chestermere AI Data Centre Hub",
+    "region": "Chestermere",
+    "stage": "Proposed",
+    "cost": null,
+    "start": null,
+    "end": 2027,
+    "source": "https://beacondatacenters.com/campuses/",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_12173",
+    "name": "K-Tech and Aurora AZ Energy Compute Facility",
+    "region": "Calgary",
+    "stage": "Under Construction",
+    "cost": null,
+    "start": 2026,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_12183",
+    "name": "Meta Data Centre",
+    "region": "Sturgeon County",
+    "stage": "Proposed",
+    "cost": 13000000000.0,
+    "start": null,
+    "end": null,
+    "source": "",
+    "asOf": "2026-08-31"
+  },
+  {
+    "id": "ABMP_12192",
+    "name": "Malachite One Data Centre",
+    "region": "Yellowhead County",
+    "stage": "Proposed",
+    "cost": 15000000000.0,
+    "start": 2027,
+    "end": 2030,
+    "source": "",
+    "asOf": "2026-08-31"
+  }
+]

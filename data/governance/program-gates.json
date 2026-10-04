@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "as_of_date": "2026-09-01",
+  "independent_review": {
+    "grok": {
+      "status": "blocked",
+      "reason": "The deterministic E1 and province-linked review packets are ready. The user authorized external review transmission, but Grok did not produce a verdict: repository-tool runs were unstable and the self-contained evidence bundle exceeded the available context window.",
+      "evidence": "docs/reviews/2026-09-01-province-linked-bcpi-review-execution.md"
+    },
+    "claude": {
+      "status": "blocked",
+      "reason": "The deterministic E1 and province-linked review packets are ready, but both installed Claude CLI versions report no authenticated session; no verdict has been produced.",
+      "evidence": "docs/reviews/2026-09-01-province-linked-bcpi-review-execution.md"
+    }
+  },
+  "deployment": {
+    "status": "authorized",
+    "published_release_basis": "0.6.0-dev",
+    "reason": "The user explicitly authorized deployment on 2026-09-01. Deployment does not authorize model outputs, independent-review gates, forecasts, or decision-grade use."
+  }
+}

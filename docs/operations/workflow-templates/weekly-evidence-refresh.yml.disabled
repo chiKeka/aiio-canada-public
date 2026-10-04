@@ -1,0 +1,123 @@
+name: AIIO weekly evidence refresh
+
+on:
+  schedule:
+    - cron: '0 15 * * 1'
+  workflow_dispatch:
+    inputs:
+      edition_date:
+        description: Optional UTC edition date (YYYY-MM-DD)
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: aiio-weekly-evidence-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+
+    steps:
+      - name: Check out reviewed main
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh official evidence feeds
+        env:
+          EDITION_DATE: ${{ inputs.edition_date }}
+        run: |
+          if [ -n "$EDITION_DATE" ]; then
+            python3 research/scripts/review_evidence_refresh.py --root . --edition-date "$EDITION_DATE"
+          else
+            npm run evidence:refresh-weekly
+          fi
+
+      - name: Build operational source receipts
+        if: always()
+        run: PYTHONPATH=research/src python3 -m aiio.cli --root . build-source-freshness-report --as-of "$(date -u +%F)" --output public/data/source-receipts.json
+
+      - name: Retain refresh diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-refresh-receipts
+          path: |
+            data/model-runs/construction-source-refresh.json
+            data/model-runs/weekly-source-refresh.json
+            public/data/source-receipts.json
+            data/review-candidates/weekly-evidence-*/manifest.json
+            data/review-candidates/weekly-evidence-*/refresh.log
+          if-no-files-found: ignore
+
+      - name: Verify refreshed evidence and application
+        run: |
+          npm run research:validate
+          python3 research/scripts/review_evidence_refresh.py --root . --check-candidates
+          npm run research:test
+          npm run test:briefing
+          npm run test:construction-refresh
+          npm run lint
+          npm run build
+          npm run build:sites
+
+      - name: Detect reviewable changes
+        id: changes
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain --untracked-files=normal)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit refreshed evidence to a review branch
+        if: steps.changes.outputs.changed == 'true'
+        id: branch
+        run: |
+          EDITION="${{ inputs.edition_date }}"
+          if [ -z "$EDITION" ]; then EDITION="$(date -u +%F)"; fi
+          BRANCH="automation/weekly-evidence-${EDITION}-${GITHUB_RUN_ID}"
+          git config user.name "aiio-evidence-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/raw data/processed data/model-runs data/digests data/review-candidates public/data/latest-digest.json public/data/source-freshness.json public/data/source-receipts.json public/data/research-surface.json public/data/construction
+          git commit -m "Refresh weekly evidence ${EDITION}"
+          git push origin "$BRANCH"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          echo "edition=$EDITION" >> "$GITHUB_OUTPUT"
+
+      - name: Open research review pull request
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          gh pr create \
+            --draft \
+            --base main \
+            --head "${{ steps.branch.outputs.branch }}" \
+            --title "Weekly evidence refresh — ${{ steps.branch.outputs.edition }}" \
+            --body "Automated refresh of registered official evidence sources. All generated outputs passed registry validation, research tests, lint, the Next.js build, and the Sites build. No model parameter or frozen release is promoted automatically. New processed evidence and the dated digest remain isolated review candidates; the published digest and frozen research packet are preserved. Review source changes, classifications, limitations, and candidate hashes before any promotion."
+
+      - name: Record no-change run
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "Official-source refresh completed with no repository changes."

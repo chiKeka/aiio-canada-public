@@ -1,0 +1,12 @@
+{
+  "source_id": "FOLLOWUP_COUNTY_PERMIT_LAYER",
+  "source_url": "https://atlasmap.rockyview.ca/arcgis/rest/services/DevMaps/Development_Permits/MapServer/0?f=pjson",
+  "effective_url": "https://atlasmap.rockyview.ca/arcgis/rest/services/DevMaps/Development_Permits/MapServer/0?f=pjson",
+  "retrieved_at": "2026-10-03T23:04:15.956096+00:00",
+  "content_hash": "sha256:6a382648aa4b91275a9461890e4360e07065cec57b10bcdcade70b071ebf33f3",
+  "byte_length": 13145,
+  "content_type": "text/plain",
+  "result": "success",
+  "local_raw_file": "followup-county-permit-layer.raw",
+  "redistribution": "receipt_only_pending_review"
+}

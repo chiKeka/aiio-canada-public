@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024_88cdf8a0966dff31",
+  "source_id": "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024",
+  "retrieved_at": "2026-09-01T04:58:43+00:00",
+  "effective_url": "https://www.auditor.on.ca/en/content/annualreports/arreports/en24/pa_infrastructureON_en24.pdf",
+  "content_hash": "sha256:88cdf8a0966dff31f5c186ec786a0d276088b8b78243d8bf1fb6aba01d42aa1d",
+  "content_type": "application/pdf",
+  "byte_length": 3155384,
+  "archive_path": "data/raw/oago_selected_infrastructure_projects_2024/2026-09-01_88cdf8a0966d.pdf",
+  "result": "success"
+}

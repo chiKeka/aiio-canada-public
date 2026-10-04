@@ -1,0 +1,476 @@
+{
+  "version": "0.1",
+  "as_of": "2026-09-05",
+  "purpose": "Research requirement inputs; not active application model parameters",
+  "promotion_status": "not_promoted",
+  "sources": [
+    {
+      "id": "NECA",
+      "url": "https://www.necanet.org/education/publications/neca-manual-of-labor-units-(mlu)",
+      "period": "2023–2024 edition described",
+      "scope": "Electrical installation labour units; normal allowances included; supervision excluded."
+    },
+    {
+      "id": "MCAA",
+      "url": "https://www.mcaa.org/resources/weblem/",
+      "period": "Undated public product guidance",
+      "scope": "Mechanical component/activity hours; unit-level data needs authorized access."
+    },
+    {
+      "id": "RSM",
+      "url": "https://www.rsmeans.com/resources/what-is-construction-estimating",
+      "period": "Undated public estimating example",
+      "scope": "Six-person crew, 30 equipment pads/day, 1.6 paid crew-hours/pad; assembly-specific."
+    },
+    {
+      "id": "CII",
+      "url": "https://www.construction-institute.org/effects-of-scheduled-overtime-on-labor-productivity-a-quantitative-analysis",
+      "period": "1994-08-01",
+      "scope": "SD-98; 121 weeks across four industrial projects; historical overtime study."
+    },
+    {
+      "id": "CII_REVIEW",
+      "url": "https://www.construction-institute.org/effects-of-scheduled-overtime-on-labor-productivity-a-literature-review-and-analysis",
+      "period": "1990-11-01",
+      "scope": "SD-60; limitations of historical overtime datasets."
+    },
+    {
+      "id": "AB_BUDGET",
+      "url": "https://open.alberta.ca/dataset/3393a7b5-07bf-4b9f-8aaf-a6d89273297b/resource/58a8d024-398f-482e-b1c2-81a754a97253/download/budget-2026-fiscal-plan-2026-29.pdf",
+      "period": "Budget 2026; FY2026–27 through FY2028–29",
+      "scope": "Fully consolidated capital plan; broad infrastructure, not exclusively ICI or labour."
+    },
+    {
+      "id": "AB_Q1",
+      "url": "https://open.alberta.ca/dataset/9c81a5a7-cdf1-49ad-a923-d1ecb42944e4/resource/eaeb7a75-0c9f-4964-be53-0f1cc889ffab/download/tbf-2026-27-first-quarter-fiscal-update-economic-statement.pdf",
+      "period": "2026–27 first-quarter fiscal update",
+      "scope": "Current-year capital forecast revision; preserve original budget vintage."
+    },
+    {
+      "id": "BUILDFORCE",
+      "url": "https://www.buildforce.ca/en/press-release/construction-activity-rises-in-alberta-to-2035-as-non-residential-growth-offsets-moderating-residential-demands/",
+      "period": "2026-07-20; 2025 base to 2035",
+      "scope": "Alberta construction trades and forecast; not spare headcount."
+    },
+    {
+      "id": "JOBBANK",
+      "url": "https://www.jobbank.gc.ca/trend-analysis/job-market-reports/alberta/sectoral-profile-construction",
+      "period": "Modified 2025-12-01; 2024 annual and March 2025 observations",
+      "scope": "All construction-industry occupations, not the same universe as BuildForce trades."
+    },
+    {
+      "id": "SOURCEBLUE",
+      "url": "https://sourceblue.com/equipment-cost-index/q2-2026-cost-index-report",
+      "document_url": "https://sourceblue.blob.core.windows.net/qa-sourceblue/uploads/media/1786376580684-59991e4c8f932e82.pdf",
+      "period": "Q2 2026; landing page 2026-08-05",
+      "scope": "US national equipment procurement ranges; not Alberta vendor commitments."
+    },
+    {
+      "id": "WOODMAC",
+      "url": "https://www.woodmac.com/news/opinion/mind-the-gap-tackling-supply-chain-challenges-in-the-electric-td-sector/",
+      "period": "2025-10-15; Q2 2025 observations",
+      "scope": "US electrical T&D equipment; distinguish GSU from other transformers."
+    },
+    {
+      "id": "ISED",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2025/09/government-of-canada-expands-investment-in-critical-clean-technology-manufacturing-and-clean-energy.html",
+      "period": "2025-09-29",
+      "scope": "Canadian transformer manufacturing expansion announcement; no annual available-unit capacity."
+    },
+    {
+      "id": "STATCAN_CAPACITY",
+      "url": "https://www.statcan.gc.ca/o1/en/plus/6596-construction-sector-not-operating-full-capacity-here-are-some-data-could-explain-why",
+      "period": "2024-07-04; Q1–Q2 2024",
+      "scope": "National construction capacity/obstacles context; not Alberta trade availability."
+    }
+  ],
+  "parameters": [
+    {
+      "id": "public_capital_budget_fy2026_27",
+      "value": 9969,
+      "unit": "CAD million nominal",
+      "status": "observed_published_plan",
+      "source_ids": [
+        "AB_BUDGET"
+      ],
+      "notes": "Superseded for current-year forecast by AB_Q1; retain vintage."
+    },
+    {
+      "id": "public_capital_budget_fy2027_28",
+      "value": 9998,
+      "unit": "CAD million nominal",
+      "status": "observed_published_plan",
+      "source_ids": [
+        "AB_BUDGET"
+      ],
+      "notes": "Published target, not realized spend."
+    },
+    {
+      "id": "public_capital_budget_fy2028_29",
+      "value": 8349,
+      "unit": "CAD million nominal",
+      "status": "observed_published_plan",
+      "source_ids": [
+        "AB_BUDGET"
+      ],
+      "notes": "Published target, not realized spend."
+    },
+    {
+      "id": "public_capital_budget_three_year_total",
+      "value": 28316,
+      "unit": "CAD million nominal",
+      "status": "observed_published_plan",
+      "source_ids": [
+        "AB_BUDGET"
+      ],
+      "notes": "Sum of the three budget years; broad consolidated capital plan."
+    },
+    {
+      "id": "public_capital_q1_fy2026_27",
+      "value": 10687,
+      "unit": "CAD million nominal",
+      "status": "observed_published_forecast",
+      "source_ids": [
+        "AB_Q1"
+      ],
+      "notes": "Use as refreshed current-year anchor. Source reports change 717 million; rounded endpoints differ by 718 million. Preserve source rounding."
+    },
+    {
+      "id": "construction_trades_base",
+      "value": 196700,
+      "unit": "persons",
+      "status": "observed_reported",
+      "source_ids": [
+        "BUILDFORCE"
+      ],
+      "notes": "2025 Alberta trades base; not idle workers."
+    },
+    {
+      "id": "nonresidential_employment_growth_to2035",
+      "value": 0.15,
+      "unit": "fraction",
+      "status": "published_forecast",
+      "source_ids": [
+        "BUILDFORCE"
+      ],
+      "notes": "Relative to 2025; check data-centre inclusion before increment."
+    },
+    {
+      "id": "retirements_to2035",
+      "value": 43700,
+      "unit": "persons cumulative",
+      "status": "published_forecast",
+      "source_ids": [
+        "BUILDFORCE"
+      ],
+      "notes": "Do not subtract again from a net workforce forecast."
+    },
+    {
+      "id": "recruitment_requirement_to2035",
+      "value": 48800,
+      "unit": "persons cumulative",
+      "status": "published_forecast",
+      "source_ids": [
+        "BUILDFORCE"
+      ],
+      "notes": "Forecast recruitment, not current vacancies."
+    },
+    {
+      "id": "first_time_local_entrants_to2035",
+      "value": 43500,
+      "unit": "persons cumulative",
+      "status": "published_forecast",
+      "source_ids": [
+        "BUILDFORCE"
+      ],
+      "notes": "Forecast local entrants."
+    },
+    {
+      "id": "potential_recruitment_shortfall_to2035",
+      "value": 5300,
+      "unit": "persons cumulative",
+      "status": "published_forecast",
+      "source_ids": [
+        "BUILDFORCE"
+      ],
+      "notes": "Not annual unmet demand or a data-centre attribution."
+    },
+    {
+      "id": "construction_industry_employment_2024",
+      "value": 246500,
+      "unit": "persons",
+      "status": "observed_reported",
+      "source_ids": [
+        "JOBBANK"
+      ],
+      "notes": "All occupations in Alberta construction industry."
+    },
+    {
+      "id": "rsm_example_pad_labour",
+      "value": 1.6,
+      "unit": "paid crew-hours per pad",
+      "status": "assembly_example",
+      "source_ids": [
+        "RSM"
+      ],
+      "notes": "Only 4 ft × 4 ft × 6 in equipment-pad assembly; 48 crew-hours / 30 pads. Not a generic concrete foundation rate."
+    },
+    {
+      "id": "cii_overtime_efficiency_loss_five_day",
+      "value": 0.12,
+      "unit": "fraction",
+      "status": "historical_transfer_benchmark",
+      "source_ids": [
+        "CII"
+      ],
+      "notes": "Study-specific overtime result; hours multiplier 1/(1-loss), disabled by default; not ordinary five-day working penalty."
+    },
+    {
+      "id": "cii_overtime_efficiency_loss_six_day",
+      "value": 0.14,
+      "unit": "fraction",
+      "status": "historical_transfer_benchmark",
+      "source_ids": [
+        "CII"
+      ],
+      "notes": "Study-specific; historical industrial projects, not calibrated Alberta DC coefficient."
+    },
+    {
+      "id": "procurement_cooling_tower",
+      "value": [
+        6,
+        19
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "procurement_air_cooled_chiller",
+      "value": [
+        3,
+        49
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "procurement_water_cooled_chiller",
+      "value": [
+        12,
+        60
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "procurement_ahu",
+      "value": [
+        8,
+        78
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "procurement_generator",
+      "value": [
+        28,
+        66
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "procurement_lv_switchgear",
+      "value": [
+        26,
+        58
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "procurement_mv_switchgear",
+      "value": [
+        28,
+        48
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "procurement_ups",
+      "value": [
+        16,
+        42
+      ],
+      "unit": "weeks, reported min/max",
+      "status": "transfer_benchmark",
+      "source_ids": [
+        "SOURCEBLUE"
+      ],
+      "notes": "Q2 2026 US national; endpoints are scenario anchors, not probability quantiles. Confirm vendor scope and start-of-clock."
+    },
+    {
+      "id": "gsu_transformer_lead_time",
+      "value": 143,
+      "unit": "weeks average",
+      "status": "historical_transfer_benchmark",
+      "source_ids": [
+        "WOODMAC"
+      ],
+      "notes": "Q2 2025 US; no inference of Alberta available supply."
+    },
+    {
+      "id": "power_transformer_lead_time",
+      "value": 128,
+      "unit": "weeks average",
+      "status": "historical_transfer_benchmark",
+      "source_ids": [
+        "WOODMAC"
+      ],
+      "notes": "Q2 2025 US; separate from GSU and distribution units."
+    },
+    {
+      "id": "canadian_transformer_expansion_cost",
+      "value": 410,
+      "unit": "CAD million",
+      "status": "announced_investment",
+      "source_ids": [
+        "ISED"
+      ],
+      "notes": "Hitachi projects; capital investment is not production throughput or Alberta allocation."
+    },
+    {
+      "id": "dc_construction_duration",
+      "value": [
+        18,
+        24,
+        36
+      ],
+      "unit": "months",
+      "status": "analyst_sensitivity",
+      "source_ids": [],
+      "notes": "Fallback only; not empirically validated durations; commissioning included."
+    },
+    {
+      "id": "online_year_midpoint",
+      "value": "07-01",
+      "unit": "month-day",
+      "status": "analyst_convention",
+      "source_ids": [],
+      "notes": "Year-only dates; test ±6 months; retain source year."
+    },
+    {
+      "id": "public_cohort_duration",
+      "value": [
+        4,
+        4.5,
+        5
+      ],
+      "unit": "years",
+      "status": "user_proposed_sensitivity",
+      "source_ids": [],
+      "notes": "Annual starts; sum all active cohorts, initialize pre-horizon work."
+    },
+    {
+      "id": "post_plan_real_growth",
+      "value": [
+        -0.02,
+        0,
+        0.02
+      ],
+      "unit": "annual fraction",
+      "status": "analyst_sensitivity",
+      "source_ids": [],
+      "notes": "Continuation in constant prices; not approved future budgets."
+    },
+    {
+      "id": "annual_paid_deployable_hours",
+      "value": [
+        1760,
+        1840,
+        2000
+      ],
+      "unit": "hours per FTE-year",
+      "status": "analyst_sensitivity",
+      "source_ids": [],
+      "notes": "40 hours × 44/46/50 available weeks. Do not apply a second tool-time deduction to paid unit-hours."
+    },
+    {
+      "id": "incremental_hours_factor",
+      "value": [
+        1,
+        1.1,
+        1.25
+      ],
+      "unit": "multiplier",
+      "status": "analyst_sensitivity",
+      "source_ids": [],
+      "notes": "Combined conditions stress test, not a measured Alberta factor; don't stack with overlapping overtime/congestion penalties."
+    },
+    {
+      "id": "regional_spare_trade_capacity",
+      "value": null,
+      "unit": "paid hours per quarter",
+      "status": "missing_local_input",
+      "source_ids": [],
+      "notes": "Use explicit supply scenario if absent; never treat null as zero or province headcount as free capacity."
+    },
+    {
+      "id": "supplier_uncommitted_throughput",
+      "value": null,
+      "unit": "units or physical quantity per quarter",
+      "status": "missing_local_input",
+      "source_ids": [],
+      "notes": "Requires output, order book, technical eligibility, logistics and Alberta allocation."
+    },
+    {
+      "id": "electrical_mechanical_item_hours",
+      "value": null,
+      "unit": "paid hours per physical unit",
+      "status": "authorized_rate_input_required",
+      "source_ids": [
+        "NECA",
+        "MCAA"
+      ],
+      "notes": "Public methodology verified; no licensed item-rate extraction or purchase performed."
+    },
+    {
+      "id": "alberta_scarcity_price_elasticity",
+      "value": null,
+      "unit": "price response per pressure unit",
+      "status": "uncalibrated",
+      "source_ids": [],
+      "notes": "No causal point estimate. Use separately labelled sensitivity if needed."
+    }
+  ]
+}

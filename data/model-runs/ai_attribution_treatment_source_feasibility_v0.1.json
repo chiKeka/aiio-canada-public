@@ -1,0 +1,240 @@
+{
+  "feasibility_id": "AIIO_E2_TREATMENT_SOURCE_FEASIBILITY_0_1",
+  "schema_version": "1.0.0",
+  "evidence_status": "observed_source_capability_with_inferred_eligibility",
+  "input_manifest": {
+    "contract_path": "data/model/ai_attribution_treatment_source_feasibility_contract_v0.1.json",
+    "contract_sha256": "8a1fb433b2a76d1c0582bb6bae811ce1af323532b4a363e3a5dcdf67263e736b",
+    "registry_path": "data/registry/sources.json",
+    "registry_sha256": "4bea23fa75e7311e5a2b59f2c1b81432c3902f2e0cd72d55759c98ad6f03edcf"
+  },
+  "required_authorizing_gates": [
+    "ai_or_data_centre_specific",
+    "construction_activity_specific",
+    "realized_not_intended",
+    "region_or_project_linkable",
+    "quarterly_or_finer",
+    "publicly_retrievable",
+    "revision_provenance_available"
+  ],
+  "candidate_count": 8,
+  "analytical_role_counts": {
+    "activity_proxy": 5,
+    "labour_context": 1,
+    "operating_stock_context": 2
+  },
+  "authorizing_candidate_count": 0,
+  "candidates": [
+    {
+      "candidate_id": "ALBERTA_MAJOR_PROJECTS_INVENTORY",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "analytical_role": "activity_proxy",
+      "published_measure": "Project-stage, location, schedule and publisher-estimated capital cost records",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": true,
+        "construction_activity_specific": true,
+        "realized_not_intended": false,
+        "region_or_project_linkable": true,
+        "quarterly_or_finer": false,
+        "publicly_retrievable": true,
+        "revision_provenance_available": false
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "Publisher stages and estimated costs do not disclose realized region-period spend or labour input, and reproducible historical revisions are unavailable.",
+      "source_title": "Alberta Major Projects inventory",
+      "failed_gates": [
+        "realized_not_intended",
+        "quarterly_or_finer",
+        "revision_provenance_available"
+      ],
+      "passed_gate_count": 4,
+      "required_gate_count": 7
+    },
+    {
+      "candidate_id": "EDMONTON_BUILDING_PERMIT_PROXY",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "analytical_role": "activity_proxy",
+      "published_measure": "Issued permits with location, job description and reported construction value",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": false,
+        "construction_activity_specific": true,
+        "realized_not_intended": false,
+        "region_or_project_linkable": true,
+        "quarterly_or_finer": true,
+        "publicly_retrievable": true,
+        "revision_provenance_available": true
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "Keyword classification is inferred and permits record authorized intent and reported value, not realized AI-construction activity.",
+      "source_title": "General Building Permits",
+      "failed_gates": [
+        "ai_or_data_centre_specific",
+        "realized_not_intended"
+      ],
+      "passed_gate_count": 5,
+      "required_gate_count": 7
+    },
+    {
+      "candidate_id": "STATCAN_INFORMATION_SECTOR_CAPEX",
+      "source_id": "STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035",
+      "analytical_role": "activity_proxy",
+      "published_measure": "Annual provincial construction capital expenditure for broad industries and estimate vintages",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": false,
+        "construction_activity_specific": true,
+        "realized_not_intended": true,
+        "region_or_project_linkable": false,
+        "quarterly_or_finer": false,
+        "publicly_retrievable": true,
+        "revision_provenance_available": true
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "NAICS 51 is broader than data centres, the geography is provincial and the frequency is annual.",
+      "source_title": "Capital and repair expenditures, non-residential tangible assets, by industry and geography",
+      "failed_gates": [
+        "ai_or_data_centre_specific",
+        "region_or_project_linkable",
+        "quarterly_or_finer"
+      ],
+      "passed_gate_count": 4,
+      "required_gate_count": 7
+    },
+    {
+      "candidate_id": "STATCAN_BUILDING_INVESTMENT",
+      "source_id": "STATCAN_IBC_34100293",
+      "analytical_role": "activity_proxy",
+      "published_measure": "Monthly non-residential investment by province and selected metropolitan areas",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": false,
+        "construction_activity_specific": true,
+        "realized_not_intended": true,
+        "region_or_project_linkable": true,
+        "quarterly_or_finer": true,
+        "publicly_retrievable": true,
+        "revision_provenance_available": true
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "The series aggregates building types and cannot isolate AI or data-centre construction.",
+      "source_title": "Investment in Building Construction",
+      "failed_gates": [
+        "ai_or_data_centre_specific"
+      ],
+      "passed_gate_count": 6,
+      "required_gate_count": 7
+    },
+    {
+      "candidate_id": "STATCAN_BUILDING_PERMITS",
+      "source_id": "STATCAN_BUILDING_PERMITS_34100285",
+      "analytical_role": "activity_proxy",
+      "published_measure": "Monthly permit value by geography and building type",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": false,
+        "construction_activity_specific": true,
+        "realized_not_intended": false,
+        "region_or_project_linkable": false,
+        "quarterly_or_finer": true,
+        "publicly_retrievable": true,
+        "revision_provenance_available": true
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "Aggregated permit values are leading indicators of intended construction and do not isolate realized data-centre work.",
+      "source_title": "Building permits, by type of structure and type of work",
+      "failed_gates": [
+        "ai_or_data_centre_specific",
+        "realized_not_intended",
+        "region_or_project_linkable"
+      ],
+      "passed_gate_count": 4,
+      "required_gate_count": 7
+    },
+    {
+      "candidate_id": "STATCAN_SCIEU_DATA_CENTRE_INSTRUMENT",
+      "source_id": "STATCAN_SCIEU_5034_2024",
+      "analytical_role": "operating_stock_context",
+      "published_measure": "Survey instrument collects data-centre type, floor area, critical IT load, design load and annual energy use",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": true,
+        "construction_activity_specific": false,
+        "realized_not_intended": true,
+        "region_or_project_linkable": false,
+        "quarterly_or_finer": false,
+        "publicly_retrievable": false,
+        "revision_provenance_available": true
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "The public instrument proves data-centre variables are collected, but published results are annual aggregates and do not expose building-level construction activity.",
+      "source_title": "Survey of Commercial and Institutional Energy Use, 2024 questionnaire",
+      "failed_gates": [
+        "construction_activity_specific",
+        "region_or_project_linkable",
+        "quarterly_or_finer",
+        "publicly_retrievable"
+      ],
+      "passed_gate_count": 3,
+      "required_gate_count": 7
+    },
+    {
+      "candidate_id": "STATCAN_SCIEU_2024_RELEASE",
+      "source_id": "STATCAN_SCIEU_5034_2024_RELEASE",
+      "analytical_role": "operating_stock_context",
+      "published_measure": "Regional commercial and institutional building floor area, energy use and intensity for 2024",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": false,
+        "construction_activity_specific": false,
+        "realized_not_intended": true,
+        "region_or_project_linkable": false,
+        "quarterly_or_finer": false,
+        "publicly_retrievable": true,
+        "revision_provenance_available": true
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "The released tables aggregate operating building energy and do not publish data-centre-specific construction dose by region-quarter.",
+      "source_title": "Survey of Commercial and Institutional Energy Use: Commercial and institutional buildings, 2024",
+      "failed_gates": [
+        "ai_or_data_centre_specific",
+        "construction_activity_specific",
+        "region_or_project_linkable",
+        "quarterly_or_finer"
+      ],
+      "passed_gate_count": 3,
+      "required_gate_count": 7
+    },
+    {
+      "candidate_id": "STATCAN_CMA_INDUSTRY_EMPLOYMENT",
+      "source_id": "STATCAN_CMA_INDUSTRY_EMPLOYMENT_14100468",
+      "analytical_role": "labour_context",
+      "published_measure": "Annual employment by industry and census metropolitan area",
+      "gate_assessment": {
+        "ai_or_data_centre_specific": false,
+        "construction_activity_specific": false,
+        "realized_not_intended": true,
+        "region_or_project_linkable": true,
+        "quarterly_or_finer": false,
+        "publicly_retrievable": true,
+        "revision_provenance_available": true
+      },
+      "authorizing_status": "excluded_non_authorizing",
+      "exclusion_reason": "Broad annual industry employment cannot identify data-centre construction labour hours or treatment onset.",
+      "source_title": "Employment by industry and census metropolitan area, annual",
+      "failed_gates": [
+        "ai_or_data_centre_specific",
+        "construction_activity_specific",
+        "quarterly_or_finer"
+      ],
+      "passed_gate_count": 4,
+      "required_gate_count": 7
+    }
+  ],
+  "acquisition_decision": {
+    "status": "no_authorizing_public_source_identified",
+    "next_evidence_needed": "A public or disclosure-authorized source that identifies AI or data-centre construction, records realized spend or labour hours, links the measure to a project or region, and supports quarterly vintages with revision provenance.",
+    "search_boundary": "Publicly available Canadian federal, provincial, municipal, regulator, utility, audit and issuer disclosures; no confidential respondent microdata or inferred allocation of announced capex."
+  },
+  "publication_boundary": {
+    "current_authorizing_source_count": 0,
+    "treatment_authorized": false,
+    "authorizing_treatment_measure": null,
+    "ai_attributable_cost_effect": null,
+    "ai_attributable_schedule_effect": null
+  }
+}

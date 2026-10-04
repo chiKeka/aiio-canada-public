@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.1.0",
+  "digest_id": "AIIO_DIGEST_2026_09_21",
+  "edition_date": "2026-09-21",
+  "status": "review",
+  "review_scope": "Partial review: Alberta, Quebec and CanadaBuys landing pages checked without record-level revisions verified. Ontario catalogue retrieval failed and BC returned no usable dataset content. BCPI still lists July 24, 2026 as its release date. No independent review verdict obtained. No additions or retractions of projects established.",
+  "items": [
+    {
+      "item_id": "STATCAN_JVWS_RELEASE_2026_09_15",
+      "headline": "New quarterly vacancy and offered-wage release available for review",
+      "sources": [{"source_id": "STATCAN_JVWS_14100444", "source_url": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044401"}],
+      "geography_ids": ["CA", "PR_48", "PR_59", "PR_35", "PR_24"],
+      "evidence_status": "observed",
+      "observed_change": "The official table page lists a September 15, 2026 release and links to second-quarter 2026 job-vacancy analysis. This confirms release availability only; province-trade values and historical revisions have not been reconciled in this review.",
+      "model_implication": "Review the new vintage with existing occupation mappings, units and suppression flags before updating labour indicators. Offered wages and vacancies are labour-market context, not realized data-centre construction labour hours. Ontario and BC inventory retrieval gaps remain; this edition is a partial review.",
+      "model_action": "review_candidate",
+      "automatic_model_change": false,
+      "retrieval_evidence": {
+        "current_path": "data/raw/statcan_jvws_14100444/2026-09-21_bb50ed47b2b5.zip",
+        "current_sha256": "sha256:bb50ed47b2b5149c481e11f7be3289f137867df7457f17d7e58e37c5ea6a0080",
+        "archive_storage": "Local raw archive; retrieval manifest committed. No normalization or model promotion."
+      }
+    },
+    {
+      "item_id": "AESO_DASHBOARD_LINK_2026_09_21",
+      "headline": "AESO changes its connection-dashboard link",
+      "sources": [{"source_id": "AESO_LARGE_LOAD_PROJECTS", "source_url": "https://www.aeso.ca/grid/connecting-to-the-grid/large-load-projects/"}],
+      "geography_ids": ["PR_48"],
+      "evidence_status": "observed",
+      "observed_change": "The September 21 archived page replaces the Connection Project List Dashboard portal link with a Power BI viewer link relative to September 14. Phase 1 quantities remain 1,200 MW, comprising 970 MW GLDC and 230 MW Keephills. No additional realized capacity or construction activity is inferred from the link change.",
+      "model_implication": "Check compatibility of future dashboard retrievals. Keep power quantities and acquisition-queue eligibility unchanged; a connection-dashboard link does not satisfy treatment or outcome gates.",
+      "model_action": "review_candidate",
+      "automatic_model_change": false,
+      "retrieval_evidence": {
+        "current_path": "data/raw/aeso_large_load_projects/2026-09-21_acb1127441bb.html",
+        "current_sha256": "sha256:acb1127441bbd4bd90f39970043809e705931e312a3fe3223ae0c1e86f6d0502",
+        "previous_path": "data/raw/aeso_large_load_projects/2026-09-14_61d2eda646ac.html"
+      }
+    }
+  ]
+}

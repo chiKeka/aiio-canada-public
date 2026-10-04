@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_CANADABUYS_TENDER_NOTICES_FY2026_2027_ff24a9b645c77ec7",
+  "source_id": "CANADABUYS_TENDER_NOTICES_FY2026_2027",
+  "retrieved_at": "2026-10-03T23:39:43+00:00",
+  "effective_url": "https://canadabuys.canada.ca/opendata/pub/2026-2027-TenderNotice-AvisAppelOffres.csv",
+  "content_hash": "sha256:ff24a9b645c77ec719e849a2962a2a675ba6eef71744f1bfff13d64b9029c3f0",
+  "content_type": "application/octet-stream",
+  "byte_length": 19570280,
+  "archive_path": "data/raw/canadabuys_tender_notices_fy2026_2027/2026-10-03_ff24a9b645c7.csv",
+  "result": "success"
+}

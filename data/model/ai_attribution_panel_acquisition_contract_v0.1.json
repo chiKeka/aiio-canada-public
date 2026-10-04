@@ -1,0 +1,410 @@
+{
+  "schema_version": "1.0.0",
+  "contract_id": "AIIO_E2_PANEL_ACQUISITION_CONTRACT_0_1",
+  "attribution_contract_id": "AIIO_E2_ATTRIBUTION_PANEL_CONTRACT_0_1",
+  "candidate_regions": [
+    {
+      "geography_id": "CMA_825",
+      "geography_label": "Calgary CMA",
+      "province_id": "PR_48",
+      "cohort_role": "potential_treated"
+    },
+    {
+      "geography_id": "CMA_835",
+      "geography_label": "Edmonton CMA",
+      "province_id": "PR_48",
+      "cohort_role": "potential_treated"
+    },
+    {
+      "geography_id": "CMA_933",
+      "geography_label": "Vancouver CMA",
+      "province_id": "PR_59",
+      "cohort_role": "potential_control"
+    },
+    {
+      "geography_id": "CMA_535",
+      "geography_label": "Toronto CMA",
+      "province_id": "PR_35",
+      "cohort_role": "potential_control"
+    },
+    {
+      "geography_id": "CMA_462",
+      "geography_label": "Montréal CMA",
+      "province_id": "PR_24",
+      "cohort_role": "potential_control"
+    }
+  ],
+  "target_asset_classes": [
+    "health_facilities",
+    "schools_and_postsecondary",
+    "government_and_civic_facilities"
+  ],
+  "evidence_receipts": [
+    {
+      "receipt_id": "AB_AI_ANNOUNCEMENT_LEDGER",
+      "domain_id": "REALIZED_AI_CONSTRUCTION_TREATMENT",
+      "geography_ids": ["PR_48"],
+      "source_ids": ["ALBERTA_MAJOR_PROJECTS"],
+      "artifact_path": "data/model-runs/alberta_ai_capex_announcement_ledger_v0.1.json",
+      "evidence_status": "candidate_proxy",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "announced_capex_cad",
+        "publisher_project_stage",
+        "reported_schedule_years"
+      ],
+      "assertions": [
+        {"json_path": "record_count", "equals": 22},
+        {"json_path": "coverage_summary.authorizing_treatment_onset_count", "equals": 0},
+        {"json_path": "coverage_summary.authorizing_treatment_dose_count", "equals": 0},
+        {"json_path": "publication_boundary.realized_construction_treatment_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "EDMONTON_PERMIT_PROXY",
+      "domain_id": "REALIZED_AI_CONSTRUCTION_TREATMENT",
+      "geography_ids": ["CMA_835"],
+      "source_ids": ["EDMONTON_GENERAL_BUILDING_PERMITS"],
+      "artifact_path": "data/model-runs/edmonton_data_centre_permit_proxy_v0.1.json",
+      "evidence_status": "candidate_proxy",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "permitted_construction_value_cad",
+        "issued_building_permit_date",
+        "inferred_data_centre_keyword_candidate"
+      ],
+      "assertions": [
+        {"json_path": "data_centre_candidate_count", "equals": 17},
+        {"json_path": "explicit_ai_reference_count", "equals": 0},
+        {"json_path": "publication_boundary.realized_ai_construction_treatment_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "INFORMATION_SECTOR_CAPEX_PROXY",
+      "domain_id": "REALIZED_AI_CONSTRUCTION_TREATMENT",
+      "geography_ids": ["PR_10", "PR_11", "PR_12", "PR_13", "PR_24", "PR_35", "PR_46", "PR_47", "PR_48", "PR_59", "PR_60", "PR_61", "PR_62"],
+      "source_ids": ["STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035"],
+      "artifact_path": "data/model-runs/information_sector_construction_capex_screen_v0.1.json",
+      "evidence_status": "candidate_proxy",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "annual_provincial_naics_51_construction_capex_cad_proxy"
+      ],
+      "assertions": [
+        {"json_path": "observation_count", "equals": 294},
+        {"json_path": "publication_boundary.ai_construction_treatment_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "PUBLIC_TREATMENT_SOURCE_FEASIBILITY",
+      "domain_id": "REALIZED_AI_CONSTRUCTION_TREATMENT",
+      "geography_ids": ["CA", "PR_48", "CMA_825", "CMA_835"],
+      "source_ids": [
+        "ALBERTA_MAJOR_PROJECTS",
+        "EDMONTON_GENERAL_BUILDING_PERMITS",
+        "STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035",
+        "STATCAN_IBC_34100293",
+        "STATCAN_BUILDING_PERMITS_34100285",
+        "STATCAN_SCIEU_5034_2024",
+        "STATCAN_SCIEU_5034_2024_RELEASE",
+        "STATCAN_CMA_INDUSTRY_EMPLOYMENT_14100468"
+      ],
+      "artifact_path": "data/model-runs/ai_attribution_treatment_source_feasibility_v0.1.json",
+      "evidence_status": "candidate_proxy",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "source_level_gate_assessment",
+        "source_exclusion_reason",
+        "required_authorizing_treatment_characteristics"
+      ],
+      "assertions": [
+        {"json_path": "candidate_count", "equals": 8},
+        {"json_path": "authorizing_candidate_count", "equals": 0},
+        {"json_path": "publication_boundary.treatment_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "CANADABUYS_OUTCOME_FEASIBILITY",
+      "domain_id": "PUBLIC_PROJECT_COST_OUTCOMES",
+      "geography_ids": ["CA"],
+      "source_ids": [
+        "CANADABUYS_PROCUREMENT_DATA",
+        "CANADABUYS_TENDER_NOTICES_FY2026_2027",
+        "CANADABUYS_AWARD_NOTICES_FY2026_2027",
+        "CANADABUYS_CONTRACT_HISTORY_FY2026_2027",
+        "GC_PROACTIVE_CONTRACTS"
+      ],
+      "artifact_path": "data/model-runs/canadabuys_construction_outcome_feasibility_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "tender_publication_and_close_dates",
+        "award_date",
+        "reported_award_and_contract_values_cad",
+        "contract_amendment_rows_for_selected_pspc_linkages"
+      ],
+      "assertions": [
+        {"json_path": "construction_linkage_count", "equals": 358},
+        {"json_path": "publication_boundary.public_project_cost_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "PSPC_REAL_PROPERTY_OUTCOME_CONTEXT",
+      "domain_id": "PUBLIC_PROJECT_COST_OUTCOMES",
+      "geography_ids": ["CA"],
+      "source_ids": ["PSPC_REAL_PROPERTY_PROJECT_PERFORMANCE_2024_2025"],
+      "artifact_path": "data/model-runs/pspc_real_property_outcome_feasibility_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": ["anonymous_project_on_budget_status", "anonymous_project_overall_health_status"],
+      "assertions": [
+        {"json_path": "record_count", "equals": 691},
+        {"json_path": "publication_boundary.project_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "PSPC_REAL_PROPERTY_SCHEDULE_CONTEXT",
+      "domain_id": "PUBLIC_PROJECT_SCHEDULE_OUTCOMES",
+      "geography_ids": ["CA"],
+      "source_ids": ["PSPC_REAL_PROPERTY_PROJECT_PERFORMANCE_2024_2025"],
+      "artifact_path": "data/model-runs/pspc_real_property_outcome_feasibility_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": ["anonymous_project_on_time_status", "anonymous_project_on_scope_status"],
+      "assertions": [
+        {"json_path": "record_count", "equals": 691},
+        {"json_path": "publication_boundary.project_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "CANADABUYS_PROCUREMENT_COMPETITION",
+      "domain_id": "PROCUREMENT_COMPETITION",
+      "geography_ids": ["CA"],
+      "source_ids": [
+        "CANADABUYS_PROCUREMENT_DATA",
+        "CANADABUYS_TENDER_NOTICES_FY2026_2027",
+        "CANADABUYS_AWARD_NOTICES_FY2026_2027"
+      ],
+      "artifact_path": "data/model-runs/canadabuys_construction_outcome_feasibility_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "tender_publication_date",
+        "tender_close_date",
+        "award_date_for_selected_records"
+      ],
+      "assertions": [
+        {"json_path": "construction_linkage_count", "equals": 358},
+        {"json_path": "publication_boundary.procurement_competition_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "ONTARIO_AUDITED_OUTCOME_REFERENCES",
+      "domain_id": "PUBLIC_PROJECT_COST_OUTCOMES",
+      "geography_ids": ["PR_35"],
+      "source_ids": ["OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024"],
+      "artifact_path": "data/model-runs/oago_audited_project_outcomes_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "audited_named_project_baseline_cost_cad",
+        "audited_named_project_latest_or_completed_total_cost_cad",
+        "source_reported_cost_variance_percent"
+      ],
+      "assertions": [
+        {"json_path": "coverage_summary.named_completed_project_count", "equals": 2},
+        {"json_path": "coverage_summary.price_basis_date_case_count", "equals": 0},
+        {"json_path": "publication_boundary.public_project_cost_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "ONTARIO_AUDITED_SCHEDULE_REFERENCES",
+      "domain_id": "PUBLIC_PROJECT_SCHEDULE_OUTCOMES",
+      "geography_ids": ["PR_35"],
+      "source_ids": ["OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024"],
+      "artifact_path": "data/model-runs/oago_audited_project_outcomes_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "audited_named_project_baseline_substantial_completion_date",
+        "audited_named_project_actual_substantial_completion_date"
+      ],
+      "assertions": [
+        {"json_path": "coverage_summary.exact_day_substantial_completion_pair_count", "equals": 1},
+        {"json_path": "publication_boundary.public_project_schedule_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "QUEBEC_AUTHORIZED_REVISION_CANDIDATES",
+      "domain_id": "PUBLIC_PROJECT_COST_OUTCOMES",
+      "geography_ids": ["PR_24"],
+      "source_ids": [
+        "QUEBEC_PQI_PROJECT_DASHBOARD",
+        "QUEBEC_PQI_DATA_DICTIONARY"
+      ],
+      "artifact_path": "data/model-runs/quebec_pqi_authorized_project_revisions_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "publisher_stable_lifecycle_project_id",
+        "authorized_cost_revision_effective_month",
+        "baseline_and_current_authorized_cost_cad_for_reconciled_chains"
+      ],
+      "assertions": [
+        {"json_path": "coverage_summary.cost_revision_chain_reconciled_project_count", "equals": 141},
+        {"json_path": "publication_boundary.public_project_cost_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "QUEBEC_AUTHORIZED_SCHEDULE_CANDIDATES",
+      "domain_id": "PUBLIC_PROJECT_SCHEDULE_OUTCOMES",
+      "geography_ids": ["PR_24"],
+      "source_ids": [
+        "QUEBEC_PQI_PROJECT_DASHBOARD",
+        "QUEBEC_PQI_DATA_DICTIONARY",
+        "QUEBEC_PQI_ARCHIVE_CATALOG"
+      ],
+      "artifact_path": "data/model-runs/quebec_pqi_full_archive_longitudinal_v0.1.json",
+      "evidence_status": "candidate_outcome",
+      "authorizing_status": "non_authorizing",
+      "available_variables": [
+        "complete_69_snapshot_presence_pattern",
+        "adjacent_snapshot_disappearance_and_reentry_diagnostics",
+        "publisher_declared_complete_service_and_retirement_marker"
+      ],
+      "assertions": [
+        {"json_path": "snapshot_date_count", "equals": 69},
+        {"json_path": "publication_boundary.public_project_schedule_outcome_authorized", "equals": false}
+      ]
+    },
+    {
+      "receipt_id": "CANADA_BUILDING_INVESTMENT_CONTROLS",
+      "domain_id": "REGIONAL_CONSTRUCTION_ACTIVITY_CONTROLS",
+      "geography_ids": ["CA"],
+      "source_ids": ["STATCAN_IBC_34100293"],
+      "artifact_path": "data/model-runs/building_investment_controls_canada_v0.1.json",
+      "evidence_status": "available_control",
+      "authorizing_status": "control_only",
+      "available_variables": [
+        "monthly_building_investment_cad"
+      ],
+      "assertions": [
+        {"json_path": "observation_count", "equals": 14896},
+        {"json_path": "quarter_count", "equals": 38},
+        {"json_path": "publication_boundary.ai_treatment_authorized", "equals": false}
+      ]
+    }
+  ],
+  "acquisition_tasks": [
+    {
+      "task_id": "E2_TREATMENT_REALIZED_DOSE",
+      "priority": "P0",
+      "domain_id": "REALIZED_AI_CONSTRUCTION_TREATMENT",
+      "required_fields": [
+        "realized_construction_spend_cad",
+        "data_centre_construction_labour_hours"
+      ],
+      "minimum_geography_count": 2,
+      "minimum_frequency": "quarterly",
+      "candidate_source_ids": [
+        "ALBERTA_MAJOR_PROJECTS",
+        "EDMONTON_GENERAL_BUILDING_PERMITS",
+        "AESO_LARGE_LOAD_PROJECTS",
+        "STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035",
+        "STATCAN_IBC_34100293",
+        "STATCAN_BUILDING_PERMITS_34100285",
+        "STATCAN_SCIEU_5034_2024",
+        "STATCAN_SCIEU_5034_2024_RELEASE",
+        "STATCAN_CMA_INDUSTRY_EMPLOYMENT_14100468"
+      ],
+      "current_status": "source_gap",
+      "completion_rule": "At least two reconciled regions publish a positive realized-spend or construction-labour measure with project, quarter and revision provenance."
+    },
+    {
+      "task_id": "E2_OUTCOME_COST_OUTTURN",
+      "priority": "P0",
+      "domain_id": "PUBLIC_PROJECT_COST_OUTCOMES",
+      "required_fields": [
+        "project_id",
+        "asset_class",
+        "geography_id",
+        "estimate_value_cad",
+        "estimate_price_basis_date",
+        "tender_or_award_value_cad",
+        "award_date",
+        "approved_change_value_cad",
+        "outcome_source_id"
+      ],
+      "minimum_geography_count": 5,
+      "minimum_frequency": "project_event_to_quarter",
+      "candidate_source_ids": [
+        "CANADABUYS_PROCUREMENT_DATA",
+        "GC_PROACTIVE_CONTRACTS",
+        "PSPC_REAL_PROPERTY_PROJECT_PERFORMANCE_2024_2025",
+        "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024",
+        "QUEBEC_PQI_PROJECT_DASHBOARD"
+      ],
+      "current_status": "field_and_geography_gap",
+      "completion_rule": "Comparable estimate-to-outturn records preserve price basis, changes, stable project IDs, asset class and region for at least two asset classes across treated and control regions."
+    },
+    {
+      "task_id": "E2_OUTCOME_SCHEDULE_ACTUAL",
+      "priority": "P0",
+      "domain_id": "PUBLIC_PROJECT_SCHEDULE_OUTCOMES",
+      "required_fields": [
+        "project_id",
+        "asset_class",
+        "geography_id",
+        "baseline_start_date",
+        "baseline_completion_date",
+        "actual_start_date",
+        "actual_completion_date",
+        "schedule_baseline_vintage",
+        "outcome_source_id"
+      ],
+      "minimum_geography_count": 5,
+      "minimum_frequency": "project_event_to_quarter",
+      "candidate_source_ids": [
+        "CANADABUYS_PROCUREMENT_DATA",
+        "PSPC_REAL_PROPERTY_PROJECT_PERFORMANCE_2024_2025",
+        "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024",
+        "QUEBEC_PQI_PROJECT_DASHBOARD",
+        "QUEBEC_PQI_ARCHIVE_CATALOG"
+      ],
+      "current_status": "field_and_geography_gap",
+      "completion_rule": "Versioned baseline and actual physical dates exist at consistent precision for at least two asset classes across treated and control regions."
+    },
+    {
+      "task_id": "E2_OUTCOME_PROCUREMENT_COMPETITION",
+      "priority": "P1",
+      "domain_id": "PROCUREMENT_COMPETITION",
+      "required_fields": [
+        "project_id",
+        "geography_id",
+        "tender_open_date",
+        "tender_close_date",
+        "award_date",
+        "compliant_bidder_count",
+        "outcome_source_id"
+      ],
+      "minimum_geography_count": 5,
+      "minimum_frequency": "project_event_to_quarter",
+      "candidate_source_ids": [
+        "CANADABUYS_PROCUREMENT_DATA",
+        "CANADABUYS_TENDER_NOTICES_FY2026_2027",
+        "CANADABUYS_AWARD_NOTICES_FY2026_2027"
+      ],
+      "current_status": "bidder_count_and_linkage_gap",
+      "completion_rule": "Tender, award, stable project linkage, CMA geography and compliant bidder count coexist for treated and control regions."
+    }
+  ],
+  "prohibited_shortcuts": [
+    "Treat announced capex as realized construction spend.",
+    "Treat requested or contracted MW as construction labour or spend.",
+    "Treat permit value as realized spend in the primary design.",
+    "Treat authorized budget revisions as final cost outturn without a price basis and complete change history.",
+    "Treat catalog disappearance as actual completion without a source-declared and independently reviewed outcome.",
+    "Run an effect estimator before treatment, outcome, geography and minimum-history gates pass.",
+    "Use the PSPE graph score as treatment, outcome, probability, cost increment or schedule delay."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "scenario_id": "AB_50B_2027_2036_STAGGERED",
+  "name": "Alberta $50B staggered AI infrastructure pathway",
+  "description": "A counterfactual research scenario, not a forecast or aggregation of announced projects.",
+  "geography_id": "PR_48",
+  "evidence_status": "scenario",
+  "currency": "CAD",
+  "currency_year": 2026,
+  "investment_total_cad": 50000000000,
+  "start_year": 2027,
+  "end_year": 2036,
+  "local_capture_share": 0.72,
+  "components": {
+    "site_development": 0.03,
+    "building_and_civil": 0.14,
+    "electrical_and_mechanical": 0.21,
+    "grid_and_generation": 0.08,
+    "computing_and_networking": 0.46,
+    "professional_and_other": 0.08
+  },
+  "annual_profile": [0.04, 0.07, 0.10, 0.12, 0.14, 0.14, 0.13, 0.11, 0.09, 0.06],
+  "normalization_denominators_cad": {
+    "civil": 3000000000,
+    "electrical_mechanical": 2000000000,
+    "power_connection": 1500000000
+  },
+  "normalization_note": "Assumed annual Alberta absorption denominators used only to create dimensionless pressure shocks. They require calibration and sensitivity analysis.",
+  "power_cases": {
+    "low": {
+      "it_load_mw": 2000,
+      "pue": 1.20,
+      "load_factor": 0.88,
+      "grid_supply_share": 0.20,
+      "peak_coincidence": 0.85,
+      "planning_margin": 0.15
+    },
+    "central": {
+      "it_load_mw": 4000,
+      "pue": 1.25,
+      "load_factor": 0.94,
+      "grid_supply_share": 0.40,
+      "peak_coincidence": 0.90,
+      "planning_margin": 0.15
+    },
+    "high": {
+      "it_load_mw": 6000,
+      "pue": 1.35,
+      "load_factor": 0.96,
+      "grid_supply_share": 0.70,
+      "peak_coincidence": 0.95,
+      "planning_margin": 0.20
+    }
+  },
+  "power_case_note": "Load, efficiency, grid share, coincidence and margin are explicit scenario assumptions independent of capex. The transfer proxy is not an AESO needs assessment.",
+  "author": "AIIO Canada research build",
+  "status": "prototype"
+}

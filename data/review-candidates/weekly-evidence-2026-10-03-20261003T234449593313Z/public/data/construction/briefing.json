@@ -1,0 +1,554 @@
+{
+  "version": "alberta-briefing-1",
+  "guidance": {
+    "packages": {
+      "headers": [
+        "Package",
+        "Labour demand",
+        "Materials and equipment"
+      ],
+      "rows": [
+        [
+          "Civil / structural",
+          "Operators, labourers, formwork crews, finishers, ironworkers",
+          "Concrete, aggregate, reinforcing and structural steel"
+        ],
+        [
+          "Electrical",
+          "Electricians, cable installers, controls and testing specialists",
+          "Transformers, switchgear, cable, UPS and generators"
+        ],
+        [
+          "Mechanical / cooling",
+          "HVAC and sheet-metal workers, pipefitters, plumbers, insulators",
+          "Chillers, air handlers, pumps, pipework and ducts"
+        ],
+        [
+          "Utility connections",
+          "Line crews, utility engineers and enabling civil crews",
+          "Substations, connection equipment and utility corridors"
+        ]
+      ]
+    },
+    "pathways": {
+      "headers": [
+        "Pressure point",
+        "Schedule consequence",
+        "Cost exposure"
+      ],
+      "rows": [
+        [
+          "Late electrical equipment",
+          "Power-on or integrated testing can move",
+          "Site overhead and later procurement of uncommitted work"
+        ],
+        [
+          "Unavailable specialist crews",
+          "Installation or commissioning can move",
+          "Overtime, remobilization and changed work sequences"
+        ],
+        [
+          "Late design or specification changes",
+          "Submittals and manufacturing release can restart",
+          "Rework, change orders and lost supplier slots"
+        ],
+        [
+          "Shared contractor or supplier demand",
+          "Tender and mobilization dates can become harder to secure",
+          "Bid validity, reduced competition and contract allocation of risk"
+        ]
+      ]
+    },
+    "mitigations": {
+      "headers": [
+        "Delivery risk",
+        "Potential mitigation",
+        "Condition or trade-off"
+      ],
+      "rows": [
+        [
+          "Long-lead equipment",
+          "Engage suppliers early and confirm production slots",
+          "Requires stable specifications and clear cancellation terms"
+        ],
+        [
+          "Limited technical alternatives",
+          "Prequalify equivalent equipment and suppliers",
+          "Retain utility compatibility, warranty and performance"
+        ],
+        [
+          "Concentrated site labour",
+          "Evaluate prefabrication and planned package sequencing",
+          "Earlier coordination, transport and installation interfaces"
+        ],
+        [
+          "Specialist recruitment pressure",
+          "Engage trade contractors and training partners early",
+          "Allow time for qualifications and supervisory capacity"
+        ],
+        [
+          "Competing capital schedules",
+          "Coordinate procurement and commissioning windows",
+          "Protect critical milestones across affected projects"
+        ]
+      ]
+    },
+    "priorities": [
+      [
+        "Before committing dates",
+        "Confirm financing, utility milestones and the construction scope for each phase."
+      ],
+      [
+        "Before placing orders",
+        "Confirm equipment specifications, manufacturing slots and release requirements."
+      ],
+      [
+        "Before mobilizing crews",
+        "Secure specialist contractor commitments and verify installation readiness."
+      ],
+      [
+        "During delivery",
+        "Track supplier milestones, crew availability and changes to the critical path."
+      ]
+    ],
+    "procurementConsiderations": {
+      "Cooling towers": "Cooling configuration and installation window",
+      "Air-cooled chillers": "Duty, redundancy and manufacturer selection",
+      "Water-cooled chillers": "Cooling-system design and commissioning",
+      "Air handling units": "Custom specification and controls integration",
+      "Generators": "Rating, approvals and site installation",
+      "Low-voltage switchgear": "Electrical design and approved submittals",
+      "Medium-voltage switchgear": "Utility interface and technical specification",
+      "UPS": "Power architecture and testing requirements"
+    }
+  },
+  "labour": [
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72200",
+      "occupation_label": "Electricians (except industrial and power system)",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 390.0,
+      "vacancies_per_1_000_2021_employed": 29.16,
+      "vacancy_period_end": "2026-06-30",
+      "vacancy_quality_flags": [
+        "status:D"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 13375.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72201",
+      "occupation_label": "Industrial electricians",
+      "trade_node_id": "trade_electricians",
+      "vacancies": 35.0,
+      "vacancies_per_1_000_2021_employed": 8.38,
+      "vacancy_period_end": "2026-06-30",
+      "vacancy_quality_flags": [
+        "status:D"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 4175.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72202",
+      "occupation_label": "Power system electricians",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-06-30",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 770.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72203",
+      "occupation_label": "Electrical power line and cable workers",
+      "trade_node_id": "trade_power_line",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-06-30",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1725.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "available",
+      "evidence_status": "inferred",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "72402",
+      "occupation_label": "Heating, refrigeration and air conditioning mechanics",
+      "trade_node_id": "trade_hvac",
+      "vacancies": 290.0,
+      "vacancies_per_1_000_2021_employed": 93.7,
+      "vacancy_period_end": "2026-06-30",
+      "vacancy_quality_flags": [
+        "status:E"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 3095.0,
+      "workforce_unit": "Persons"
+    },
+    {
+      "availability": "vacancy_not_published",
+      "evidence_status": "observed",
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "noc_code": "73100",
+      "occupation_label": "Concrete finishers",
+      "trade_node_id": "trade_concrete",
+      "vacancies": null,
+      "vacancies_per_1_000_2021_employed": null,
+      "vacancy_period_end": "2026-06-30",
+      "vacancy_quality_flags": [
+        "status:F",
+        "value_missing_or_suppressed"
+      ],
+      "vacancy_unit": "Number",
+      "workforce_period_end": "2021-05-08",
+      "workforce_period_start": "2021-05-02",
+      "workforce_quality_flags": [
+        "census_long_form_25pct_sample",
+        "random_rounding"
+      ],
+      "workforce_stock": 1105.0,
+      "workforce_unit": "Persons"
+    }
+  ],
+  "prices": [
+    {
+      "geography_id": "CMA_825",
+      "archetype": "industrial_factory_proxy",
+      "component": "concrete",
+      "indicator_id": "BCPI_FACTORY_CONCRETE",
+      "period_end": "2026-06-30",
+      "index_value": 114.0,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 14.0,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 111.4,
+      "quarter_over_quarter_percent_change": 2.334,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 109.5,
+      "year_over_year_percent_change": 4.11,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    },
+    {
+      "geography_id": "CMA_825",
+      "archetype": "industrial_factory_proxy",
+      "component": "electrical_systems",
+      "indicator_id": "BCPI_FACTORY_ELECTRICAL",
+      "period_end": "2026-06-30",
+      "index_value": 109.2,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 9.2,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 108.8,
+      "quarter_over_quarter_percent_change": 0.368,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 108.3,
+      "year_over_year_percent_change": 0.831,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    },
+    {
+      "geography_id": "CMA_825",
+      "archetype": "industrial_factory_proxy",
+      "component": "hvac",
+      "indicator_id": "BCPI_FACTORY_HEATING_VENTILATION_AND_AIR_CONDITIONING",
+      "period_end": "2026-06-30",
+      "index_value": 119.3,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 19.3,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 118.7,
+      "quarter_over_quarter_percent_change": 0.505,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 108.4,
+      "year_over_year_percent_change": 10.055,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    },
+    {
+      "geography_id": "CMA_825",
+      "archetype": "industrial_factory_proxy",
+      "component": "structural_steel_framing",
+      "indicator_id": "BCPI_FACTORY_STRUCTURAL_STEEL_FRAMING",
+      "period_end": "2026-06-30",
+      "index_value": 108.8,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 8.8,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 106.6,
+      "quarter_over_quarter_percent_change": 2.064,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 101.4,
+      "year_over_year_percent_change": 7.298,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    },
+    {
+      "geography_id": "CMA_835",
+      "archetype": "industrial_factory_proxy",
+      "component": "concrete",
+      "indicator_id": "BCPI_FACTORY_CONCRETE",
+      "period_end": "2026-06-30",
+      "index_value": 118.4,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 18.4,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 116.1,
+      "quarter_over_quarter_percent_change": 1.981,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 112.5,
+      "year_over_year_percent_change": 5.244,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    },
+    {
+      "geography_id": "CMA_835",
+      "archetype": "industrial_factory_proxy",
+      "component": "electrical_systems",
+      "indicator_id": "BCPI_FACTORY_ELECTRICAL",
+      "period_end": "2026-06-30",
+      "index_value": 109.7,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 9.7,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 109.2,
+      "quarter_over_quarter_percent_change": 0.458,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 108.6,
+      "year_over_year_percent_change": 1.013,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    },
+    {
+      "geography_id": "CMA_835",
+      "archetype": "industrial_factory_proxy",
+      "component": "hvac",
+      "indicator_id": "BCPI_FACTORY_HEATING_VENTILATION_AND_AIR_CONDITIONING",
+      "period_end": "2026-06-30",
+      "index_value": 119.4,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 19.4,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 118.7,
+      "quarter_over_quarter_percent_change": 0.59,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 108.5,
+      "year_over_year_percent_change": 10.046,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    },
+    {
+      "geography_id": "CMA_835",
+      "archetype": "industrial_factory_proxy",
+      "component": "structural_steel_framing",
+      "indicator_id": "BCPI_FACTORY_STRUCTURAL_STEEL_FRAMING",
+      "period_end": "2026-06-30",
+      "index_value": 121.7,
+      "unit": "Index, 2023=100",
+      "index_points_above_2023_annual_base": 21.7,
+      "previous_quarter_period_end": "2026-03-31",
+      "previous_quarter_index": 118.3,
+      "quarter_over_quarter_percent_change": 2.874,
+      "year_ago_period_end": "2025-06-30",
+      "year_ago_index": 110.2,
+      "year_over_year_percent_change": 10.436,
+      "source_id": "STATCAN_BCPI_18100289",
+      "source_evidence_status": "observed",
+      "change_evidence_status": "inferred",
+      "quality_flags": []
+    }
+  ],
+  "capital": {
+    "window": {
+      "start_year": 2027,
+      "end_year": 2036
+    },
+    "as_of_date": "2026-10-03",
+    "screened_project_count": 543,
+    "asset_class_summaries": [
+      {
+        "asset_class": "government_and_civic_facilities",
+        "project_count": 36,
+        "stage_counts": {
+          "Proposed": 16,
+          "Under Construction": 20
+        },
+        "government_or_public_institution_signal_count": 20,
+        "municipal_or_public_utility_signal_count": 0,
+        "unresolved_sponsor_signal_count": 16,
+        "reported_cost_project_count": 30,
+        "reported_cost_cad": 3016030000.0,
+        "complete_schedule_project_count": 24,
+        "overlap_project_count": 16,
+        "overlap_with_cost_and_complete_schedule_count": 16,
+        "indicative_cost_allocated_to_window_cad": 1754232142.857143
+      },
+      {
+        "asset_class": "health_facilities",
+        "project_count": 97,
+        "stage_counts": {
+          "Proposed": 57,
+          "Under Construction": 40
+        },
+        "government_or_public_institution_signal_count": 80,
+        "municipal_or_public_utility_signal_count": 0,
+        "unresolved_sponsor_signal_count": 17,
+        "reported_cost_project_count": 22,
+        "reported_cost_cad": 3722600000.0,
+        "complete_schedule_project_count": 40,
+        "overlap_project_count": 31,
+        "overlap_with_cost_and_complete_schedule_count": 13,
+        "indicative_cost_allocated_to_window_cad": 1559928571.4285715
+      },
+      {
+        "asset_class": "municipal_water_and_resilience",
+        "project_count": 46,
+        "stage_counts": {
+          "Proposed": 23,
+          "Under Construction": 23
+        },
+        "government_or_public_institution_signal_count": 30,
+        "municipal_or_public_utility_signal_count": 1,
+        "unresolved_sponsor_signal_count": 15,
+        "reported_cost_project_count": 37,
+        "reported_cost_cad": 17216800000.0,
+        "complete_schedule_project_count": 28,
+        "overlap_project_count": 19,
+        "overlap_with_cost_and_complete_schedule_count": 13,
+        "indicative_cost_allocated_to_window_cad": 1027965476.1904762
+      },
+      {
+        "asset_class": "power_sector_infrastructure",
+        "project_count": 72,
+        "stage_counts": {
+          "Proposed": 68,
+          "Under Construction": 4
+        },
+        "government_or_public_institution_signal_count": 5,
+        "municipal_or_public_utility_signal_count": 2,
+        "unresolved_sponsor_signal_count": 65,
+        "reported_cost_project_count": 18,
+        "reported_cost_cad": 54775700000.0,
+        "complete_schedule_project_count": 8,
+        "overlap_project_count": 6,
+        "overlap_with_cost_and_complete_schedule_count": 2,
+        "indicative_cost_allocated_to_window_cad": 1350000000.0
+      },
+      {
+        "asset_class": "roads_transit_and_airports",
+        "project_count": 115,
+        "stage_counts": {
+          "Proposed": 42,
+          "Under Construction": 73
+        },
+        "government_or_public_institution_signal_count": 105,
+        "municipal_or_public_utility_signal_count": 0,
+        "unresolved_sponsor_signal_count": 10,
+        "reported_cost_project_count": 40,
+        "reported_cost_cad": 14966200000.0,
+        "complete_schedule_project_count": 88,
+        "overlap_project_count": 63,
+        "overlap_with_cost_and_complete_schedule_count": 17,
+        "indicative_cost_allocated_to_window_cad": 6837043968.253968
+      },
+      {
+        "asset_class": "schools_and_postsecondary",
+        "project_count": 177,
+        "stage_counts": {
+          "Proposed": 130,
+          "Under Construction": 47
+        },
+        "government_or_public_institution_signal_count": 174,
+        "municipal_or_public_utility_signal_count": 0,
+        "unresolved_sponsor_signal_count": 3,
+        "reported_cost_project_count": 110,
+        "reported_cost_cad": 6851100000.0,
+        "complete_schedule_project_count": 41,
+        "overlap_project_count": 37,
+        "overlap_with_cost_and_complete_schedule_count": 35,
+        "indicative_cost_allocated_to_window_cad": 1919306666.6666667
+      }
+    ]
+  },
+  "sourceHashes": {
+    "data/model-runs/labour_recruitment_pressure_canada_v0.1.json": "7f775873709c5e2c8d39cb3529da2fc5ed71398f23a079e68bc4573fa31ab644",
+    "data/model-runs/bcpi_material_cost_screen_alberta_v0.1.json": "2caee03bc79d3221b20b9393153f25e3f07c90de9215fb16d7e58bc1c51bb798",
+    "data/model-runs/public_project_exposure_alberta_v0.1.json": "042e35a3421ec332b3cccb90ec74998b0cda4645d6737731035a76af1e0bba38",
+    "docs/research/alberta-delivery-guidance.json": "2ebe4c6e98ed3997c30b26f53cda92fa1ab155d8bdfd11bedbc9a27f9538912e"
+  }
+}

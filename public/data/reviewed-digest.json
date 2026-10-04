@@ -1,0 +1,42 @@
+{
+  "digest_id": "AIIO_DIGEST_2026_10_03",
+  "edition_date": "2026-10-03",
+  "items": [
+    {
+      "automatic_model_change": false,
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "CMA_835",
+        "CMA_933",
+        "CMA_535",
+        "CMA_462"
+      ],
+      "headline": "Four municipal permit feeds verified; screened counts unchanged",
+      "item_id": "MUNICIPAL_DATA_CENTRE_PERMIT_REFRESH_2026_10_03",
+      "model_action": "no_change",
+      "model_implication": "Keep the frozen model release and its inputs unchanged. Permit classifications remain inferred; counts and declared values do not establish realized AI expenditure, trade hours, project completion or attributable public-project cost escalation. This approval covers evidence-digest publication only; independent model review remains pending.",
+      "observed_change": "Official municipal APIs were retrieved on 2026-10-03. Existing adapters reproduce 17 Edmonton, 13 Vancouver, 53 Toronto and 14 Montr\u00e9al screened candidate records, unchanged counts from September 3. These are historical administrative records with inferred keyword classifications, not 97 distinct projects or new October observations. Edmonton adds one excluded server-context row; Vancouver includes administrative issue-date revisions; Montr\u00e9al is unchanged. Toronto collapses permit types sharing a permit-number/revision key: a changed retained record and missing declared value cannot establish a cost decrease. Toronto identity collisions require reconciliation before quantitative use. Retrieval verification does not advance permit issue dates or establish AI use.",
+      "sources": [
+        {
+          "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+          "source_url": "https://data.edmonton.ca/Urban-Planning-Economy/General-Building-Permits/24uj-dj8v"
+        },
+        {
+          "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS",
+          "source_url": "https://opendata.vancouver.ca/explore/dataset/issued-building-permits/"
+        },
+        {
+          "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+          "source_url": "https://open.toronto.ca/dataset/building-permits-cleared-permits/"
+        },
+        {
+          "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+          "source_url": "https://donnees.montreal.ca/dataset/permis-construction"
+        }
+      ]
+    }
+  ],
+  "review_scope": "Internal Codex editorial review of the four municipal permit retrievals and controlled classifications; no independent model-validation verdict or baseline promotion.",
+  "schema_version": "1.1.0",
+  "status": "approved"
+}

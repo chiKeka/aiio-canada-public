@@ -1,0 +1,15 @@
+# Reviewed improvements — 3 October 2026
+
+This draft implements the seven reviewed areas and retains the existing fail-closed publication boundary. It incorporates the reviewed local construction, delivery and historical benchmark work required by the changes; the original checkout was left untouched. AIIO has not been merged or deployed.
+
+1. Availability: `/api/availability` supplies liveness; health reports readiness reasons and current-clock evidence freshness. Production monitoring records each route/status and diagnostic body. The October 3 run had four503 responses without route identification. September28 refresh job had no recorded steps: its source-level cause cannot be inferred. Diagnostic receipts are retained for future runs.
+2. Freshness: successful receipts, observation vintage, last attempt, last success and review due are separate. Repeated verification does not advance observations. Static artifacts remain frozen; status/health evaluate them against runtime UTC.
+3. Longitudinal projects: immutable normalized snapshots, stable IDs, conservative cost/stage/schedule reconciliation and duplicate-content detection. October3 official Alberta capture produced971 normalized projects and77 review-pending target inventory events. Published Alberta inputs remain unchanged. Quebec archive is the comparator; inventory changes do not establish outturn, scope continuity or causality.
+4. Enabling infrastructure: phase-linked asset ledger distinguishes baseline, incremental, included CAPEX and unknown membership. Payer shares and ranges reconcile; missing scope/cost/funding prevents a combined total. Alberta transmission/substation/road/water records are diligence placeholders, not observed commitments. UI and JSON retain this boundary.
+5. Scheduling: paired baseline/DC regional trade-capacity allocation, competing private demand, precedence, backlog, horizon tails and cost exposure. Capacity remains assumed; missing exposure cannot become a dollar estimate. The UI default omits private demand until entered. Generic scheduler supports explicit package exposures; the aggregate workspace has none.
+6. Validation: frozen hashes, thresholds, rolling-origin leakage tests, baseline comparisons, overlap resolver and milestone checks. Existing unfavorable baseline comparison and unresolved permit overlap remain visible. Individual-project/source generalization and independent review remain pending. No reviewer contacted or verdict invented.
+7. CI: construction numerics, health, revision failure/recovery, portable browser configuration and desktop/mobile accessibility are wired. Failure/malformed refresh retains last-good UI/export values. Browser startup probes availability rather than freshness.
+
+## Evidence still required
+
+Official project-specific milestone dates, scope and price-basis reconciliation, realized completion/cost outturn, measured contractor capacity, enabling-asset incremental costs and payer commitments. Review-pending data cannot enter publication automatically. Independent review must assess the frozen packet and supported-use domain; it cannot be substituted by passing software tests.

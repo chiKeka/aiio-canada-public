@@ -1,0 +1,13 @@
+project_id,geography_id,quarter,allocation_cad,window_position,evidence_status
+ABMP_11416,CMA_825,2024-Q1,43429264.91,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2024-Q2,53831484.05,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2024-Q3,62153259.36,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2024-Q4,68394590.85,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2025-Q1,72555478.50,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2025-Q2,74635922.33,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2025-Q3,74635922.33,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2025-Q4,72555478.50,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2026-Q1,68394590.85,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2026-Q2,62153259.36,inside,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2026-Q3,53831484.05,after,assumed_schedule_allocation_not_observed_spend
+ABMP_11416,CMA_825,2026-Q4,43429264.91,after,assumed_schedule_allocation_not_observed_spend

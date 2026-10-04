@@ -1,0 +1,39 @@
+{
+  "availability_basis": "capture_time_only",
+  "available_at": "2026-08-31T13:06:36+00:00",
+  "capture": {
+    "archive_path": "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip",
+    "byte_length": 3808739,
+    "content_hash": "sha256:d0d11fda82bf37c3720d159c1d441bc1f15abd73ba9b7d9e750f4b1929b26612",
+    "content_type": "application/zip",
+    "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/18100289-eng.zip",
+    "result": "success",
+    "retrieval_id": "RET_STATCAN_BCPI_18100289_d0d11fda82bf37c3",
+    "retrieved_at": "2026-08-31T13:06:36+00:00",
+    "source_id": "STATCAN_BCPI_18100289"
+  },
+  "capture_manifest": {
+    "path": "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip.manifest.json",
+    "sha256": "sha256:1ca88d0ccbbdc2be7d10a91ea4f3f373c9bd342841e3e201104a5e5d97b1f639"
+  },
+  "intake_validation": "raw and normalized bytes hashed; source IDs, uniqueness and CSV shape checked",
+  "limitation": "Hashes verify file identity, not normalization correctness or independent reviewer identity. Dataset availability is not model-ready coverage.",
+  "normalized_artifact": {
+    "path": "data/vintages/artifacts/BCPI_CAPTURE_20260831.csv",
+    "sha256": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1"
+  },
+  "normalized_from": {
+    "path": "data/processed/bcpi_alberta.csv",
+    "sha256": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1"
+  },
+  "publication": null,
+  "publication_boundary": {
+    "causal_attribution_authorized": false,
+    "model_replay_authorized": false,
+    "validated_estimate_authorized": false
+  },
+  "record_count": 29424,
+  "schema_version": "AIIO_SOURCE_SNAPSHOT_1.0",
+  "snapshot_id": "BCPI_CAPTURE_20260831",
+  "source_id": "STATCAN_BCPI_18100289"
+}

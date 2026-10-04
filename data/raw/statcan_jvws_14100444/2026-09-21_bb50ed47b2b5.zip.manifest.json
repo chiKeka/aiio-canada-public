@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_JVWS_14100444_bb50ed47b2b5149c",
+  "source_id": "STATCAN_JVWS_14100444",
+  "retrieved_at": "2026-09-21T14:02:04+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/14100444-eng.zip",
+  "content_hash": "sha256:bb50ed47b2b5149c481e11f7be3289f137867df7457f17d7e58e37c5ea6a0080",
+  "content_type": "application/zip",
+  "byte_length": 99676598,
+  "archive_path": "data/raw/statcan_jvws_14100444/2026-09-21_bb50ed47b2b5.zip",
+  "result": "success"
+}

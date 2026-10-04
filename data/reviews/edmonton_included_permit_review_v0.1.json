@@ -1,0 +1,74 @@
+{
+  "purpose": "Classify work scope and propose facility candidates; no confirmed record linkage or AI specificity.",
+  "records": [
+    {
+      "description_sha256": "sha256:70b46e80dda8029cf10dff4c731b471bdd90288b4582fe54b2997047d9f46758",
+      "facility_candidate_id": "FACILITY_CANDIDATE_ROGERS_ARMSTRONG",
+      "facility_match_status": "candidate_unconfirmed",
+      "independent_review_status": "pending",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_0_292502657",
+      "source_row_id": "0-292502657",
+      "work_class": "maintenance",
+      "work_scope": "fire_alarm_alteration"
+    },
+    {
+      "description_sha256": "sha256:73c52472d1bd2db60cf90bc3e0e849384fb83db68308c4ec37943fb22da9184a",
+      "facility_candidate_id": "FACILITY_CANDIDATE_POWERHOUSE",
+      "facility_match_status": "candidate_unconfirmed",
+      "independent_review_status": "pending",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_0_309784686",
+      "source_row_id": "0-309784686",
+      "work_class": "fitout",
+      "work_scope": "data_room_fitout"
+    },
+    {
+      "description_sha256": "sha256:338efc0dcba9ce081c0c38058407b15b90584eee0224e35a4d67295e6398bafa",
+      "facility_candidate_id": "FACILITY_CANDIDATE_ROGERS_ARMSTRONG",
+      "facility_match_status": "candidate_unconfirmed",
+      "independent_review_status": "pending",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_356648187",
+      "source_row_id": "1-356648187",
+      "work_class": "expansion",
+      "work_scope": "data_centre_expansion"
+    },
+    {
+      "description_sha256": "sha256:a8af8247510e313c4b7f1235a41d7dcf0df54110147c7519fa66950b9843b1fd",
+      "facility_candidate_id": "FACILITY_CANDIDATE_WOLFPAW",
+      "facility_match_status": "candidate_unconfirmed",
+      "independent_review_status": "pending",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_461055944",
+      "source_row_id": "1-461055944",
+      "work_class": "fitout",
+      "work_scope": "server_room_expansion"
+    },
+    {
+      "description_sha256": "sha256:5a515446bbd96fb7348af67a8bd01c921145c51cdf2057fa8c0b9d5cc2ee3599",
+      "facility_candidate_id": "FACILITY_CANDIDATE_HEALTH_INSTITUTION",
+      "facility_match_status": "candidate_unconfirmed",
+      "independent_review_status": "pending",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_429959179",
+      "source_row_id": "1-429959179",
+      "work_class": "maintenance",
+      "work_scope": "hospital_cooling_replacement"
+    },
+    {
+      "description_sha256": "sha256:93138e168aa1022df47f2df0d9fc1ca97f277e1cca83bd64d4315b28c7aaedc8",
+      "facility_candidate_id": "FACILITY_CANDIDATE_ENBRIDGE",
+      "facility_match_status": "candidate_unconfirmed",
+      "independent_review_status": "pending",
+      "model_action": "retain_frozen_v0_1_no_automatic_change",
+      "permit_proxy_id": "EDMBP_1_634601931",
+      "source_row_id": "1-634601931",
+      "work_class": "maintenance",
+      "work_scope": "fire_suppression_panel_replacement"
+    }
+  ],
+  "review_id": "AIIO_EDMONTON_INCLUDED_PERMIT_REVIEW_0_1",
+  "reviewer": "Codex source-text inspection",
+  "status": "analyst_draft_independent_review_pending"
+}

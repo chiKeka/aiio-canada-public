@@ -1,0 +1,14 @@
+{
+  "capture_manifest": {
+    "path": "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json.manifest.json",
+    "sha256": "sha256:c03f68ec541cc43f8e7b4870f147cd8912f05fe720fe439f352bd11a654b581c"
+  },
+  "normalized_artifact": {
+    "path": "data/processed/edmonton_data_centre_permit_proxy.csv",
+    "sha256": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2"
+  },
+  "publication": null,
+  "schema_version": "AIIO_SNAPSHOT_INTAKE_1.0",
+  "snapshot_id": "EDM_PERMITS_CAPTURE_20260901",
+  "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS"
+}

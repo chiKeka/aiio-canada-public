@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_QUEBEC_PQI_ARCHIVE_CATALOG_c3a16c24dbe0d19d",
+  "source_id": "QUEBEC_PQI_ARCHIVE_CATALOG",
+  "retrieved_at": "2026-09-01T05:43:45+00:00",
+  "effective_url": "https://www.donneesquebec.ca/recherche/api/3/action/package_show?id=67d85a7a-10af-4af0-b4da-abc64cfd735a",
+  "content_hash": "sha256:c3a16c24dbe0d19dbce495fd7a6966e6417d2f96be95b93d55552731e72800c1",
+  "content_type": "application/json",
+  "byte_length": 216953,
+  "archive_path": "data/raw/quebec_pqi_archive_catalog/2026-09-01_c3a16c24dbe0.json",
+  "result": "success"
+}

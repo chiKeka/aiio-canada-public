@@ -1,0 +1,24 @@
+{
+  "source_id": "capacity-calgary-electrician-jobbank",
+  "requested_url": "https://www.jobbank.gc.ca/marketreport/outlook-occupation/20684/geo25411",
+  "retrieved_at": "2026-10-03T23:00:59.867353+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "raw_redistribution": "pending_review",
+  "effective_url": "https://www.jobbank.gc.ca/marketreport/outlook-occupation/20684/geo25411",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "result": "success",
+  "byte_length": 79283,
+  "sha256": "1a7ffc77949dbb472c573863a5567566a1063b95b0bf6ebe4524baee8fd93bca",
+  "archive_path": "sources/capacity-calgary-electrician-jobbank/page.html",
+  "content_verification": {
+    "expected_terms_present": {
+      "6,290": true,
+      "88%": true,
+      "2025-2027": true,
+      "2023-2025": true
+    },
+    "status": "relevant_source_content_verified"
+  }
+}

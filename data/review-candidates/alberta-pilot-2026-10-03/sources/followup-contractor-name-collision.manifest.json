@@ -1,0 +1,12 @@
+{
+  "source_id": "FOLLOWUP_CONTRACTOR_NAME_COLLISION",
+  "source_url": "https://www.westernelectrical.com/projects/",
+  "effective_url": "https://www.westernelectrical.com/projects/",
+  "retrieved_at": "2026-10-03T22:59:58.258816+00:00",
+  "content_hash": "sha256:7639f26d5b74739060b742f340668f92608877d159414943b0fd64d7ac3aab47",
+  "byte_length": 34112,
+  "content_type": "text/html",
+  "result": "success",
+  "local_raw_file": "followup-contractor-name-collision.raw",
+  "redistribution": "receipt_only_pending_review"
+}

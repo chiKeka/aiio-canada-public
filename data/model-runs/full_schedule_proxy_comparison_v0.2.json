@@ -1,0 +1,3202 @@
+{
+  "arms": {
+    "baseline_only": {
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": 0.0,
+        "proxy": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        }
+      },
+      "point_error_checks": {
+        "improvement_over_baseline": false,
+        "minimum_test_quarters": true,
+        "primary_mae": true,
+        "subgroup_noninferiority": true
+      },
+      "predictions": [
+        {
+          "actual_yoy_pp": 4.814443,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2691675745,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.2691675745,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.427136,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2993436614,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.2993436614,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.550635309,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.550635309,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.865938,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.5484788334,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5484788334,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.26839,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.125619687,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 5.125619687,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5758455392,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5758455392,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 3.849951,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.6732832794,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.6732832794,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.930966,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.3456932691,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.3456932691,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.1649307377,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.1649307377,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 3.401361,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.7265704911,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 4.7265704911,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 4.479809033,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 4.479809033,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.760849,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.2425599611,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.2425599611,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.0141252854,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.0141252854,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.062201,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.9535077391,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 3.9535077391,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.2575237242,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.2575237242,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.908484,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.9954841709,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.9954841709,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.9890873648,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.9890873648,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 2.367424,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.5826177761,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.5826177761,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.6318805488,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.6318805488,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.871577,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.1439181747,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.1439181747,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.8987323671,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.8987323671,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.422053,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.3110889466,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.3110889466,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.502035676,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.502035676,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.853383,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2078665702,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.2078665702,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.0850117845,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.0850117845,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.383459,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 2.7741117787,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 2.7741117787,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 3.2735996659,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 3.2735996659,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 3.903346,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.174119111,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.174119111,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.1917086991,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.1917086991,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        }
+      ],
+      "role": "reference",
+      "subgroups": [
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.7297610191,
+            "rmse_pp": 0.8281683497
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.7297610191,
+            "rmse_pp": 0.8281683497
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          }
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.6439498636,
+            "rmse_pp": 0.7995686937
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.6439498636,
+            "rmse_pp": 0.7995686937
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          }
+        }
+      ]
+    },
+    "combined": {
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0234653372,
+        "proxy": {
+          "mae_pp": 0.8384256295,
+          "rmse_pp": 1.0215220184
+        }
+      },
+      "point_error_checks": {
+        "improvement_over_baseline": false,
+        "minimum_test_quarters": true,
+        "primary_mae": true,
+        "subgroup_noninferiority": false
+      },
+      "predictions": [
+        {
+          "actual_yoy_pp": 4.814443,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2691675745,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.2691675745,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.427136,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2993436614,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.4515899979,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.7071968716,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.7071968716,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.865938,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.5484788334,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5484788334,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.26839,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.125619687,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 5.2394156129,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.6878929374,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.6878929374,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 3.849951,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.6732832794,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.6732832794,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.930966,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.3456932691,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.4481452878,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.2535624708,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.2535624708,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 3.401361,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.7265704911,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1078063685,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1521001828,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1521001828,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.760849,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.2425599611,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.344924884,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1058912136,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1058912136,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.062201,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.9535077391,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 3.5370236204,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.5005782663,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.5005782663,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.908484,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.9954841709,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 5.1031341069,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 5.0778326098,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 5.0778326098,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 2.367424,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.5826177761,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 2.7308769123,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.324427917,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.324427917,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.871577,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.1439181747,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.280045549,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.0264097138,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.0264097138,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.422053,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.3110889466,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 2.4482159679,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.0023150962,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.0023150962,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.853383,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2078665702,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.3338467695,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.1980224052,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.1980224052,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.383459,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 2.7741117787,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 1.8438555189,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 2.7702193889,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 2.7702193889,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 3.903346,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.174119111,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.295669716,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.2960132412,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.2960132412,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        }
+      ],
+      "role": "primary",
+      "subgroups": [
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.7297610191,
+            "rmse_pp": 0.8281683497
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": -0.1552117936,
+          "proxy": {
+            "mae_pp": 0.8430285357,
+            "rmse_pp": 0.9787893948
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.064297907,
+          "proxy": {
+            "mae_pp": 0.7189129085,
+            "rmse_pp": 0.8942511035
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.064297907,
+          "proxy": {
+            "mae_pp": 0.7189129085,
+            "rmse_pp": 0.8942511035
+          }
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.6439498636,
+            "rmse_pp": 0.7995686937
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": -0.0834853026,
+          "proxy": {
+            "mae_pp": 0.6977102128,
+            "rmse_pp": 0.8446966249
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": -0.0234983372,
+          "proxy": {
+            "mae_pp": 1.0259946057,
+            "rmse_pp": 1.2227289692
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": -0.0234983372,
+          "proxy": {
+            "mae_pp": 1.0259946057,
+            "rmse_pp": 1.2227289692
+          }
+        }
+      ]
+    },
+    "permit_only": {
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0205223199,
+        "proxy": {
+          "mae_pp": 0.8360147016,
+          "rmse_pp": 0.9857677933
+        }
+      },
+      "point_error_checks": {
+        "improvement_over_baseline": false,
+        "minimum_test_quarters": true,
+        "primary_mae": true,
+        "subgroup_noninferiority": true
+      },
+      "predictions": [
+        {
+          "actual_yoy_pp": 4.814443,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2691675745,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.2691675745,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.427136,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2993436614,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.4515899979,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.7071968716,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.7071968716,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.865938,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.5484788334,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5484788334,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.26839,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.125619687,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 5.2394156129,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.6878929374,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.6878929374,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 3.849951,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.6732832794,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.6732832794,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.930966,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.3456932691,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.4481452878,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.2535624708,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.2535624708,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 3.401361,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.7265704911,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 4.7265704911,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 4.479809033,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 4.479809033,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.760849,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.2425599611,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.344924884,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1058912136,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1058912136,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.062201,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.9535077391,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 3.9535077391,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.2575237242,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.2575237242,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.908484,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.9954841709,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 5.1031341069,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 5.0778326098,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 5.0778326098,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 2.367424,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.5826177761,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.5826177761,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.6318805488,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.6318805488,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.871577,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.1439181747,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.280045549,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.0264097138,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.0264097138,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.422053,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.3110889466,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.3110889466,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.502035676,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.502035676,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.853383,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2078665702,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.3338467695,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.1980224052,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.1980224052,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.383459,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 2.7741117787,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 2.7741117787,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 3.2735996659,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 3.2735996659,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 3.903346,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.174119111,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.295669716,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.2960132412,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.2960132412,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        }
+      ],
+      "role": "diagnostic",
+      "subgroups": [
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.7297610191,
+            "rmse_pp": 0.8281683497
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.7297610191,
+            "rmse_pp": 0.8281683497
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          }
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.6439498636,
+            "rmse_pp": 0.7995686937
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": -0.0834853026,
+          "proxy": {
+            "mae_pp": 0.6977102128,
+            "rmse_pp": 0.8446966249
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": -0.0234983372,
+          "proxy": {
+            "mae_pp": 1.0259946057,
+            "rmse_pp": 1.2227289692
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": -0.0234983372,
+          "proxy": {
+            "mae_pp": 1.0259946057,
+            "rmse_pp": 1.2227289692
+          }
+        }
+      ]
+    },
+    "project_only": {
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0029430173,
+        "proxy": {
+          "mae_pp": 0.8216136884,
+          "rmse_pp": 1.0044671112
+        }
+      },
+      "point_error_checks": {
+        "improvement_over_baseline": false,
+        "minimum_test_quarters": true,
+        "primary_mae": true,
+        "subgroup_noninferiority": false
+      },
+      "predictions": [
+        {
+          "actual_yoy_pp": 4.814443,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2691675745,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.2691675745,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.609218,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.4146399956,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.4146399956,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.427136,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2993436614,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 4.2993436614,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.550635309,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 5.331992,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.550635309,
+          "forecast_origin": "2024-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2023-Q4",
+          "proxy_yoy_pp": 3.550635309,
+          "target_quarter": "2024-Q2",
+          "training_end": "2023-Q4",
+          "training_quarter_count": 22
+        },
+        {
+          "actual_yoy_pp": 4.865938,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.5484788334,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5484788334,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 4.676617,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1153522191,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.1153522191,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.26839,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.125619687,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 5.125619687,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5758455392,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 5.074627,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.5758455392,
+          "forecast_origin": "2024-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q1",
+          "proxy_yoy_pp": 4.5758455392,
+          "target_quarter": "2024-Q3",
+          "training_end": "2024-Q1",
+          "training_quarter_count": 23
+        },
+        {
+          "actual_yoy_pp": 3.849951,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.6732832794,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.6732832794,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.356436,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.4071406317,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 4.4071406317,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 4.930966,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.3456932691,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.3456932691,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.1649307377,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 5.04451,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.1649307377,
+          "forecast_origin": "2024-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q2",
+          "proxy_yoy_pp": 5.1649307377,
+          "target_quarter": "2024-Q4",
+          "training_end": "2024-Q2",
+          "training_quarter_count": 24
+        },
+        {
+          "actual_yoy_pp": 3.401361,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.7265704911,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1078063685,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1521001828,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.498542,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.479809033,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.1521001828,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.760849,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 5.2425599611,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.2425599611,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.0141252854,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.478261,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 5.0141252854,
+          "forecast_origin": "2024-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q3",
+          "proxy_yoy_pp": 5.0141252854,
+          "target_quarter": "2025-Q1",
+          "training_end": "2024-Q3",
+          "training_quarter_count": 25
+        },
+        {
+          "actual_yoy_pp": 3.062201,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.9535077391,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 3.5370236204,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.5005782663,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.35249,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.2575237242,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.5005782663,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.908484,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.9954841709,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.9954841709,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.9890873648,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 3.820439,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.9890873648,
+          "forecast_origin": "2025-Q1",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2024-Q4",
+          "proxy_yoy_pp": 4.9890873648,
+          "target_quarter": "2025-Q2",
+          "training_end": "2024-Q4",
+          "training_quarter_count": 26
+        },
+        {
+          "actual_yoy_pp": 2.367424,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.5826177761,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 2.7308769123,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.324427917,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.041825,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.6318805488,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.324427917,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.871577,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.1439181747,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 4.1439181747,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.8987323671,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.977273,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.8987323671,
+          "forecast_origin": "2025-Q2",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q1",
+          "proxy_yoy_pp": 3.8987323671,
+          "target_quarter": "2025-Q3",
+          "training_end": "2025-Q1",
+          "training_quarter_count": 27
+        },
+        {
+          "actual_yoy_pp": 3.422053,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 3.3110889466,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 2.4482159679,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.0023150962,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 2.8463,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.502035676,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 3.0023150962,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.853383,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.2078665702,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.2078665702,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.0850117845,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.013183,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.0850117845,
+          "forecast_origin": "2025-Q3",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q2",
+          "proxy_yoy_pp": 4.0850117845,
+          "target_quarter": "2025-Q4",
+          "training_end": "2025-Q2",
+          "training_quarter_count": 28
+        },
+        {
+          "actual_yoy_pp": 3.383459,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 2.7741117787,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 1.8438555189,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 2.7702193889,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.065728,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 3.2735996659,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_825",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 2.7702193889,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 3.903346,
+          "asset_class": "government_and_civic_facilities",
+          "baseline_yoy_pp": 4.174119111,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.174119111,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "health_facilities",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.1917086991,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        },
+        {
+          "actual_yoy_pp": 2.427638,
+          "asset_class": "schools_and_postsecondary",
+          "baseline_yoy_pp": 4.1917086991,
+          "forecast_origin": "2025-Q4",
+          "geography_id": "CMA_835",
+          "information_cutoff": "2025-Q3",
+          "proxy_yoy_pp": 4.1917086991,
+          "target_quarter": "2026-Q1",
+          "training_end": "2025-Q3",
+          "training_quarter_count": 29
+        }
+      ],
+      "role": "diagnostic",
+      "subgroups": [
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.7297610191,
+            "rmse_pp": 0.8281683497
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": -0.1552117936,
+          "proxy": {
+            "mae_pp": 0.8430285357,
+            "rmse_pp": 0.9787893948
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.064297907,
+          "proxy": {
+            "mae_pp": 0.7189129085,
+            "rmse_pp": 0.8942511035
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 0.7683138831,
+            "rmse_pp": 0.8487995599
+          },
+          "geography_id": "CMA_825",
+          "mae_improvement_fraction": 0.064297907,
+          "proxy": {
+            "mae_pp": 0.7189129085,
+            "rmse_pp": 0.8942511035
+          }
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "baseline": {
+            "mae_pp": 0.6439498636,
+            "rmse_pp": 0.7995686937
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 0.6439498636,
+            "rmse_pp": 0.7995686937
+          }
+        },
+        {
+          "asset_class": "health_facilities",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          }
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "baseline": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          },
+          "geography_id": "CMA_835",
+          "mae_improvement_fraction": 0.0,
+          "proxy": {
+            "mae_pp": 1.002438957,
+            "rmse_pp": 1.1952021204
+          }
+        }
+      ]
+    }
+  },
+  "contract_sha256": "sha256:271cb404bbaf4bea02f6d4bd6c49ecf98dd10a2fd492b64ea927818135c16c59",
+  "coverage": {
+    "asset_rows": 48,
+    "costed_project_records": 1,
+    "distinct_outcome_series": 4,
+    "held_out_quarters": 8,
+    "independently_linked_events": null,
+    "market_quarter_cells": 16,
+    "note": "Neither repeated asset rows, market-quarter cells nor source-record counts establish independent events.",
+    "permit_candidate_records": 6
+  },
+  "design": {
+    "augmented": "same baseline plus log1p(reconstructed proxy CAD / 1e9)",
+    "baseline": "ridge AR with intercept and lagged BCPI YoY",
+    "feature_scaling": "training-only mean and population standard deviation; intercept unpenalized",
+    "first_test_quarter": "2024-Q2",
+    "fold_unit": "all markets and assets in a target quarter stay together",
+    "information_lag_quarters": 2,
+    "information_set": "training outcomes end at target minus information lag; all predictors use their target minus information lag",
+    "last_test_quarter": "2026-Q1",
+    "minimum_training_quarters": 20,
+    "primary_proxy_case": "central",
+    "ridge_penalty": 1.0,
+    "sensitivity_information_lags": [
+      2,
+      3,
+      4
+    ],
+    "sensitivity_proxy_cases": [
+      "low",
+      "central",
+      "high"
+    ],
+    "vintage_boundary": "latest-vintage retrospective pseudo-out-of-sample; publication-time vintages unavailable; not a real-time forecast test"
+  },
+  "historical_comparison": {
+    "frozen_v0_1_combined_mae_pp": 0.8394354626,
+    "interpretation": "Reconstruction/model difference on reused test quarters, not an AI effect or independent validation.",
+    "mae_change_pp": -0.0010098331,
+    "mae_improvement_fraction": 0.0012029908,
+    "v0_2_combined_mae_pp": 0.8384256295
+  },
+  "implementation_manifest": {
+    "research/src/aiio/full_schedule_comparison.py": "sha256:eb9c8b8236dd75d8f9f9e976744badee75e53ce1975593cf5b47d59e9b96c0cd",
+    "research/src/aiio/full_schedule_proxy.py": "sha256:4e6e18eb5c8cd3700a1273a95aa8cd60b1b6dcc4c8c3813d0850ff36373162e9",
+    "research/src/aiio/planning_benchmark.py": "sha256:5d5782df46d11f4d90d8cf92cecfd118ac9b67d2018fef57d74544b51bbcc323"
+  },
+  "input_manifest": {
+    "data/model-runs/ai_attribution_empirical_covariate_panel_v0.1.json": "sha256:66e141922ae503b4fc85c7f5c7200b075beb13c424bafb2a562ad7c743b2f68c",
+    "data/model-runs/ai_construction_proxy_alberta_v0.1.json": "sha256:63053c4316fb2d634020588602fd8f6fdf9ad8f6f4c2fa0b389fcee292fb5fb6",
+    "data/model-runs/ai_construction_proxy_alberta_v0.2.json": "sha256:d977c4e8acddf69adc96777dd23310202b5f1e0761f8155bdcbf73e8042da4ca",
+    "data/model-runs/alberta_quarterly_planning_benchmark_v0.1.json": "sha256:5e78a8d4bedfa83cd3baf968dd5333d0d00b09ce6b45dfcea3187e735d70b91e",
+    "data/model/alberta_quarterly_planning_benchmark_contract_v0.1.json": "sha256:09d0d980688ac39d33380007d2e7b8541b805c6564216834bbb6d01016f7f15e",
+    "data/processed/ai_attribution_empirical_covariate_panel_v0.1.csv": "sha256:399d320e4be4057eee482ac0e3d7838dc17f1e19efde258c5345c4ad3d788620",
+    "data/processed/ai_construction_project_allocations_alberta_v0.2.csv": "sha256:c84aabee748490f81ee344c08f8d374711b1e453c8103356646dc8e7a60f64df",
+    "data/processed/ai_construction_proxy_alberta_v0.1.csv": "sha256:774eb46d94af9356a776c6a6ef9f979b777a72b84336c61d18a2307bac77f0ef",
+    "data/processed/ai_construction_proxy_alberta_v0.2.csv": "sha256:b0ee791aada6fa14a588a61e88a7c49da5da3da940c905d6a98634b25769583b",
+    "data/processed/alberta_ai_projects.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "data/processed/edmonton_data_centre_permit_proxy.csv": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2",
+    "research/src/aiio/planning_benchmark.py": "sha256:5d5782df46d11f4d90d8cf92cecfd118ac9b67d2018fef57d74544b51bbcc323",
+    "research/src/aiio/proxy_treatment.py": "sha256:337d878733859a3ab07f460fc0bc2ea98ef575014b2884f680df56d8fb3d558f"
+  },
+  "limitations": [
+    "All arms reuse the same observed outcomes and fold definitions. Prior v0.1 results were known before this follow-up protocol.",
+    "Source ablation is a diagnostic comparison, not a measured contribution to construction costs.",
+    "Current dollar components occupy different markets. Project-only and permit-only results must not be added as independent effects.",
+    "Existing annual schedule and realization assumptions remain unvalidated. Full-schedule arithmetic does not establish actual timing.",
+    "No arm is automatically selected or promoted, even if point-error thresholds pass."
+  ],
+  "project_reconciliation": [
+    {
+      "after_window_cad": "97260748.96",
+      "before_window_cad": "0.00",
+      "full_schedule_quarters": 12,
+      "inside_window_cad": "652739251.04",
+      "project_id": "ABMP_11416",
+      "reconciles_to_reported_cost": true,
+      "reported_cost_cad": "750000000.00"
+    }
+  ],
+  "protocol_boundary": "Follow-up to the unsuccessful v0.1 benchmark; same test quarters reused, so this is not a fresh confirmatory holdout. No settings selected after v0.2 results.",
+  "publication_boundary": {
+    "automatic_promotion_allowed": false,
+    "causal_attribution_allowed": false,
+    "monthly_project_cost_translation_allowed": false,
+    "schedule_delay_prediction_allowed": false,
+    "validated_proxy_estimate_allowed": false
+  },
+  "run_id": "AIIO_FULL_SCHEDULE_PROXY_COMPARISON_0_2",
+  "scope": {
+    "assets": [
+      "government_and_civic_facilities",
+      "health_facilities",
+      "schools_and_postsecondary"
+    ],
+    "frequency": "quarterly",
+    "geographies": [
+      "CMA_825",
+      "CMA_835"
+    ],
+    "horizon_quarters": 1,
+    "outcome": "market_price_yoy_percent",
+    "price_basis": "dimensionless change in the source BCPI index; no CAD translation",
+    "unit": "BCPI year-over-year percentage points"
+  },
+  "selection_policy": "report every predeclared arm and subgroup; no automatic winner selection or model promotion",
+  "sensitivity": [
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0028615217,
+        "proxy": {
+          "mae_pp": 0.8215469269,
+          "rmse_pp": 1.0045922737
+        }
+      },
+      "proxy_case": "low",
+      "status": "evaluated"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0048135144,
+        "proxy": {
+          "mae_pp": 0.9602151078,
+          "rmse_pp": 1.0322087653
+        }
+      },
+      "proxy_case": "low",
+      "status": "evaluated"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 4,
+      "proxy_case": "low",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0029430173,
+        "proxy": {
+          "mae_pp": 0.8216136884,
+          "rmse_pp": 1.0044671112
+        }
+      },
+      "proxy_case": "central",
+      "status": "evaluated"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0047971188,
+        "proxy": {
+          "mae_pp": 0.9601994398,
+          "rmse_pp": 1.0321267324
+        }
+      },
+      "proxy_case": "central",
+      "status": "evaluated"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 4,
+      "proxy_case": "central",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0030029857,
+        "proxy": {
+          "mae_pp": 0.8216628147,
+          "rmse_pp": 1.004375055
+        }
+      },
+      "proxy_case": "high",
+      "status": "evaluated"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0047850643,
+        "proxy": {
+          "mae_pp": 0.9601879205,
+          "rmse_pp": 1.0320666974
+        }
+      },
+      "proxy_case": "high",
+      "status": "evaluated"
+    },
+    {
+      "arm": "project_only",
+      "information_lag_quarters": 4,
+      "proxy_case": "high",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0205180352,
+        "proxy": {
+          "mae_pp": 0.8360111916,
+          "rmse_pp": 0.9857643594
+        }
+      },
+      "proxy_case": "low",
+      "status": "evaluated"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.018416709,
+        "proxy": {
+          "mae_pp": 0.9732145278,
+          "rmse_pp": 1.0643556861
+        }
+      },
+      "proxy_case": "low",
+      "status": "evaluated"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 4,
+      "proxy_case": "low",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0205223199,
+        "proxy": {
+          "mae_pp": 0.8360147016,
+          "rmse_pp": 0.9857677933
+        }
+      },
+      "proxy_case": "central",
+      "status": "evaluated"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0184200639,
+        "proxy": {
+          "mae_pp": 0.9732177338,
+          "rmse_pp": 1.0643600796
+        }
+      },
+      "proxy_case": "central",
+      "status": "evaluated"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 4,
+      "proxy_case": "central",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0205266024,
+        "proxy": {
+          "mae_pp": 0.8360182098,
+          "rmse_pp": 0.9857712256
+        }
+      },
+      "proxy_case": "high",
+      "status": "evaluated"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0184234169,
+        "proxy": {
+          "mae_pp": 0.973220938,
+          "rmse_pp": 1.0643644707
+        }
+      },
+      "proxy_case": "high",
+      "status": "evaluated"
+    },
+    {
+      "arm": "permit_only",
+      "information_lag_quarters": 4,
+      "proxy_case": "high",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0233795569,
+        "proxy": {
+          "mae_pp": 0.838355358,
+          "rmse_pp": 1.0216417782
+        }
+      },
+      "proxy_case": "low",
+      "status": "evaluated"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0232302234,
+        "proxy": {
+          "mae_pp": 0.9778143956,
+          "rmse_pp": 1.0572785052
+        }
+      },
+      "proxy_case": "low",
+      "status": "evaluated"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 4,
+      "proxy_case": "low",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0234653372,
+        "proxy": {
+          "mae_pp": 0.8384256295,
+          "rmse_pp": 1.0215220184
+        }
+      },
+      "proxy_case": "central",
+      "status": "evaluated"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0232171826,
+        "proxy": {
+          "mae_pp": 0.9778019336,
+          "rmse_pp": 1.0572028409
+        }
+      },
+      "proxy_case": "central",
+      "status": "evaluated"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 4,
+      "proxy_case": "central",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 2,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.8192027605,
+          "rmse_pp": 0.9680832019
+        },
+        "mae_improvement_fraction": -0.0235295881,
+        "proxy": {
+          "mae_pp": 0.838478264,
+          "rmse_pp": 1.0214348117
+        }
+      },
+      "proxy_case": "high",
+      "status": "evaluated"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 3,
+      "metrics": {
+        "baseline": {
+          "mae_pp": 0.95561524,
+          "rmse_pp": 1.0394566484
+        },
+        "mae_improvement_fraction": -0.0232084812,
+        "proxy": {
+          "mae_pp": 0.9777936184,
+          "rmse_pp": 1.0571486511
+        }
+      },
+      "proxy_case": "high",
+      "status": "evaluated"
+    },
+    {
+      "arm": "combined",
+      "information_lag_quarters": 4,
+      "proxy_case": "high",
+      "reason": "insufficient training quarters for frozen benchmark",
+      "status": "insufficient_data"
+    }
+  ],
+  "status": "comparison_complete_validation_withheld",
+  "unassessed_requirements": [
+    "historical publication vintages",
+    "independent scope and facility linkage review",
+    "individual permit/work-package sensitivity",
+    "predictive intervals",
+    "independent planning review",
+    "fresh prospective validation"
+  ]
+}

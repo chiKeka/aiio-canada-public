@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_CANADABUYS_AWARD_NOTICES_FY2026_2027_b32e82266709e199",
+  "source_id": "CANADABUYS_AWARD_NOTICES_FY2026_2027",
+  "retrieved_at": "2026-10-03T23:44:51+00:00",
+  "effective_url": "https://canadabuys.canada.ca/opendata/pub/2026-2027-awardNotice-avisAttribution.csv",
+  "content_hash": "sha256:b32e82266709e1996e74add0efb50073597433cdebe807f65287382f8da54a22",
+  "content_type": "application/octet-stream",
+  "byte_length": 15371345,
+  "archive_path": "data/raw/canadabuys_award_notices_fy2026_2027/2026-10-03_b32e82266709.csv",
+  "result": "success"
+}

@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_PSPC_REAL_PROPERTY_PROJECT_PERFORMANCE_2024_2025_7d4aa37ee6b2b65e",
+  "source_id": "PSPC_REAL_PROPERTY_PROJECT_PERFORMANCE_2024_2025",
+  "retrieved_at": "2026-09-02T10:57:51+00:00",
+  "effective_url": "https://donnees-data.tpsgc-pwgsc.gc.ca/br1/projimmobiliersbudget-realpropertyprojbudget/projimmobiliersbudget-realpropertyprojbudget-2024-2025.csv",
+  "content_hash": "sha256:7d4aa37ee6b2b65eae213e839f7cf1e2a9a9190b57a68b9c0f60976289fc8cfd",
+  "content_type": "text/csv",
+  "byte_length": 24361,
+  "archive_path": "data/raw/pspc_real_property_project_performance_2024_2025/2026-09-02_7d4aa37ee6b2.csv",
+  "result": "success"
+}

@@ -1,0 +1,39 @@
+{
+  "sources": {
+    "CANADABUYS_AWARD_NOTICES_FY2026_2027": {
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "status": "checked"
+    },
+    "CANADABUYS_CONTRACT_HISTORY_FY2026_2027": {
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "status": "checked"
+    },
+    "CANADABUYS_TENDER_NOTICES_FY2026_2027": {
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "status": "checked"
+    },
+    "EDMONTON_GENERAL_BUILDING_PERMITS": {
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "status": "checked"
+    },
+    "MONTREAL_CONSTRUCTION_PERMITS": {
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "status": "checked"
+    },
+    "TORONTO_CLEARED_BUILDING_PERMITS": {
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "status": "checked"
+    },
+    "VANCOUVER_ISSUED_BUILDING_PERMITS": {
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "status": "checked"
+    }
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "acquisition_queue": [
+    {
+      "needed_by": "2024-03-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2024-Q2"
+    },
+    {
+      "needed_by": "2024-03-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2024-Q2"
+    },
+    {
+      "needed_by": "2024-03-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2024-Q2"
+    },
+    {
+      "needed_by": "2024-06-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2024-Q3"
+    },
+    {
+      "needed_by": "2024-06-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2024-Q3"
+    },
+    {
+      "needed_by": "2024-06-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2024-Q3"
+    },
+    {
+      "needed_by": "2024-09-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2024-Q4"
+    },
+    {
+      "needed_by": "2024-09-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2024-Q4"
+    },
+    {
+      "needed_by": "2024-09-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2024-Q4"
+    },
+    {
+      "needed_by": "2024-12-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2025-Q1"
+    },
+    {
+      "needed_by": "2024-12-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2025-Q1"
+    },
+    {
+      "needed_by": "2024-12-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2025-Q1"
+    },
+    {
+      "needed_by": "2025-03-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2025-Q2"
+    },
+    {
+      "needed_by": "2025-03-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2025-Q2"
+    },
+    {
+      "needed_by": "2025-03-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2025-Q2"
+    },
+    {
+      "needed_by": "2025-06-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2025-Q3"
+    },
+    {
+      "needed_by": "2025-06-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2025-Q3"
+    },
+    {
+      "needed_by": "2025-06-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2025-Q3"
+    },
+    {
+      "needed_by": "2025-09-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2025-Q4"
+    },
+    {
+      "needed_by": "2025-09-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2025-Q4"
+    },
+    {
+      "needed_by": "2025-09-30T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2025-Q4"
+    },
+    {
+      "needed_by": "2025-12-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "target_quarter": "2026-Q1"
+    },
+    {
+      "needed_by": "2025-12-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "target_quarter": "2026-Q1"
+    },
+    {
+      "needed_by": "2025-12-31T23:59:59+00:00",
+      "requirement": "Acquire a dated full source snapshot; hash raw and normalized files. An earlier publication date requires evidence bound to these raw bytes and a matching review receipt.",
+      "source_id": "STATCAN_BCPI_18100289",
+      "target_quarter": "2026-Q1"
+    }
+  ],
+  "complete_source_snapshot_origins": 0,
+  "implementation_manifest": {
+    "research/src/aiio/historical_intake.py": "sha256:bf7942321888108ee7ec845255d29064189ca1b523882bfeb027ba334d257e65"
+  },
+  "input_manifest": {
+    "data/model/alberta_quarterly_planning_benchmark_contract_v0.1.json": "sha256:09d0d980688ac39d33380007d2e7b8541b805c6564216834bbb6d01016f7f15e",
+    "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json": "sha256:2c4b91f7d4ffcc1d8a6e9930867f6e265b65140abb3c97f0551c6b5b73279df3",
+    "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json.manifest.json": "sha256:c03f68ec541cc43f8e7b4870f147cd8912f05fe720fe439f352bd11a654b581c",
+    "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip.manifest.json": "sha256:1ca88d0ccbbdc2be7d10a91ea4f3f373c9bd342841e3e201104a5e5d97b1f639",
+    "data/vintages/artifacts/AB_PROJECTS_CAPTURE_20260831.csv": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199",
+    "data/vintages/artifacts/BCPI_CAPTURE_20260831.csv": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1",
+    "data/vintages/artifacts/EDM_PERMITS_CAPTURE_20260901.csv": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2",
+    "data/vintages/catalog.json": "sha256:a63e1b398374934a14574e0314fd30e5f9f4087fff906a0be05a10e227f707fe",
+    "data/vintages/snapshots/AB_PROJECTS_CAPTURE_20260831.json": "sha256:0cbc2a7802135455b40ef6b4f54dbe13206a7d3ef09e52bd88cbefd1a399ac4c",
+    "data/vintages/snapshots/BCPI_CAPTURE_20260831.json": "sha256:5856f368ffe03107b0acf330af1f029b9626849186a350333cf9f8a889823e53",
+    "data/vintages/snapshots/EDM_PERMITS_CAPTURE_20260901.json": "sha256:774c9c0b380d453fb49695dc24de357d46ca486acbeab5aced099a6f3e26bee8"
+  },
+  "limitations": [
+    "Whole snapshots are selected atomically; rows from later captures are never merged backward.",
+    "Missing source selections remain null, never zero-valued observations.",
+    "Snapshot existence does not establish the required markets, assets, fields, training coverage or predictive validity.",
+    "A publication-date receipt is a recorded reviewer assertion, not cryptographic authentication of the reviewer or source."
+  ],
+  "missing_source_origin_pairs": 24,
+  "origins": [
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2024-03-31T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2024-Q2"
+    },
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2024-06-30T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2024-Q3"
+    },
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2024-09-30T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2024-Q4"
+    },
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2024-12-31T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2025-Q1"
+    },
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2025-03-31T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2025-Q2"
+    },
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2025-06-30T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2025-Q3"
+    },
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2025-09-30T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2025-Q4"
+    },
+    {
+      "all_source_snapshots_available": false,
+      "forecast_origin_end_utc": "2025-12-31T23:59:59+00:00",
+      "row_level_coverage_verified": false,
+      "source_selections": {
+        "ALBERTA_MAJOR_PROJECTS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "EDMONTON_GENERAL_BUILDING_PERMITS": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        },
+        "STATCAN_BCPI_18100289": {
+          "normalized_artifact": null,
+          "record_count": null,
+          "snapshot_id": null,
+          "status": "missing"
+        }
+      },
+      "target_quarter": "2026-Q1"
+    }
+  ],
+  "publication_boundary": {
+    "causal_attribution_authorized": false,
+    "model_replay_authorized": false,
+    "validated_estimate_authorized": false
+  },
+  "report_id": "AIIO_HISTORICAL_SNAPSHOT_READINESS_1_0",
+  "required_source_origin_pairs": 24,
+  "snapshot_count": 3,
+  "status": "source_selection_complete_model_replay_withheld"
+}

@@ -1,0 +1,115 @@
+{
+  "version": "construction-0.2",
+  "asOf": "2026-10-03",
+  "sha256": {
+    "projects.json": "d134f23233078f5e8f22ab8228cf5b345169010e6fd644a449e6e8bcd03bb631",
+    "benchmarks.json": "e0ce2d11c393b4ad6683ce23303c7a0ebaac686d5a842f14941799b296248b0b",
+    "requirements.md": "7b2b5df2999eba77433797fa82e7ca9550dcb793ef15f43613f5f1678f983a97",
+    "briefing.json": "cf5dd113ec564cf1d1afad5ac3c469eb21defce862ef71475e85924aeb19a34a",
+    "lib/construction-model.ts": "86b36337e5c869b09e5c507eeca4ba7dc2b2a5cce082818a17d0871aa9027406"
+  },
+  "refresh": {
+    "scheduler": "Existing weekly evidence refresh",
+    "sources": [
+      {
+        "id": "ALBERTA_MAJOR_PROJECTS",
+        "label": "Alberta project inventory & capital overlap",
+        "publicationCadence": "Continuous inventory / monthly update feed",
+        "checkEveryDays": 7,
+        "mode": "structured_feed",
+        "observationPeriod": "2026-10-03",
+        "lastChecked": "2026-10-03",
+        "checkBasis": "Refresh receipt",
+        "lastAttempt": "2026-10-03",
+        "lastCheckFailed": false,
+        "nextCheckDue": "2026-10-10",
+        "sourceUrl": "https://www.majorprojects.alberta.ca/"
+      },
+      {
+        "id": "STATCAN_JVWS_14100444",
+        "label": "Trade vacancies",
+        "publicationCadence": "Quarterly",
+        "checkEveryDays": 7,
+        "mode": "structured_feed",
+        "observationPeriod": "2026-06-30",
+        "lastChecked": "2026-10-03",
+        "checkBasis": "Refresh receipt",
+        "lastAttempt": "2026-10-03",
+        "lastCheckFailed": false,
+        "nextCheckDue": "2026-10-10",
+        "sourceUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410044401"
+      },
+      {
+        "id": "STATCAN_BCPI_18100289",
+        "label": "Construction component prices",
+        "publicationCadence": "Quarterly",
+        "checkEveryDays": 7,
+        "mode": "structured_feed",
+        "observationPeriod": "2026-06-30",
+        "lastChecked": "2026-10-03",
+        "checkBasis": "Refresh receipt",
+        "lastAttempt": "2026-10-03",
+        "lastCheckFailed": false,
+        "nextCheckDue": "2026-10-10",
+        "sourceUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810028901"
+      },
+      {
+        "id": "STATCAN_CENSUS_OCCUPATION_98100449",
+        "label": "Census workforce stock",
+        "publicationCadence": "Five-year census cycle",
+        "checkEveryDays": 365,
+        "mode": "review_required",
+        "observationPeriod": "2021-05-08",
+        "lastChecked": "2026-08-31",
+        "checkBasis": "Source verification record",
+        "lastAttempt": null,
+        "lastCheckFailed": false,
+        "nextCheckDue": "2027-08-31",
+        "sourceUrl": "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810044901"
+      },
+      {
+        "id": "BUILDFORCE",
+        "label": "Construction recruitment outlook",
+        "publicationCadence": "Annual outlook / revisions",
+        "checkEveryDays": 30,
+        "mode": "review_required",
+        "observationPeriod": "2026-07-20; 2025 base to 2035",
+        "lastChecked": "2026-09-05",
+        "checkBasis": "Source verification record",
+        "lastAttempt": null,
+        "lastCheckFailed": false,
+        "nextCheckDue": "2026-10-05",
+        "sourceUrl": "https://www.buildforce.ca/en/press-release/construction-activity-rises-in-alberta-to-2035-as-non-residential-growth-offsets-moderating-residential-demands/"
+      },
+      {
+        "id": "AB_Q1",
+        "label": "Alberta capital plan",
+        "publicationCadence": "Budget and fiscal updates",
+        "checkEveryDays": 30,
+        "mode": "review_required",
+        "observationPeriod": "2026\u201327 first-quarter fiscal update",
+        "lastChecked": "2026-09-05",
+        "checkBasis": "Source verification record",
+        "lastAttempt": null,
+        "lastCheckFailed": false,
+        "nextCheckDue": "2026-10-05",
+        "sourceUrl": "https://open.alberta.ca/dataset/9c81a5a7-cdf1-49ad-a923-d1ecb42944e4/resource/eaeb7a75-0c9f-4964-be53-0f1cc889ffab/download/tbf-2026-27-first-quarter-fiscal-update-economic-statement.pdf"
+      },
+      {
+        "id": "SOURCEBLUE",
+        "label": "Equipment procurement ranges",
+        "publicationCadence": "Quarterly",
+        "checkEveryDays": 30,
+        "mode": "review_required",
+        "observationPeriod": "Q2 2026; landing page 2026-08-05",
+        "lastChecked": "2026-09-05",
+        "checkBasis": "Source verification record",
+        "lastAttempt": null,
+        "lastCheckFailed": false,
+        "nextCheckDue": "2026-10-05",
+        "sourceUrl": "https://sourceblue.com/equipment-cost-index/q2-2026-cost-index-report"
+      }
+    ],
+    "publication": "Structured changes enter the existing review PR; merging publishes through the Vercel integration."
+  }
+}

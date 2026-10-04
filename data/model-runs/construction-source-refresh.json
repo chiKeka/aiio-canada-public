@@ -1,0 +1,34 @@
+{
+  "failed_source_ids": [],
+  "sources": {
+    "ALBERTA_MAJOR_PROJECTS": {
+      "changed": true,
+      "content_hash": "sha256:effcef27c3b14d87697627b62ce136ef10faf80ca070e1387001c7f91de404da",
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "retrieved_at": "2026-10-03T23:44:59+00:00",
+      "review_due": "2026-10-10",
+      "status": "checked"
+    },
+    "STATCAN_BCPI_18100289": {
+      "changed": true,
+      "content_hash": "sha256:d0d11fda82bf37c3720d159c1d441bc1f15abd73ba9b7d9e750f4b1929b26612",
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "retrieved_at": "2026-10-03T23:47:29+00:00",
+      "review_due": "2026-10-10",
+      "status": "checked"
+    },
+    "STATCAN_JVWS_14100444": {
+      "changed": true,
+      "content_hash": "sha256:bb50ed47b2b5149c481e11f7be3289f137867df7457f17d7e58e37c5ea6a0080",
+      "last_attempt": "2026-10-03",
+      "last_success": "2026-10-03",
+      "retrieved_at": "2026-10-03T23:45:13+00:00",
+      "review_due": "2026-10-10",
+      "status": "checked"
+    }
+  },
+  "status": "checks_completed",
+  "version": "construction-refresh-1"
+}

@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_AESO_DATA_CENTRE_UPDATE_2025_09_d997820b3ed23432",
+  "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+  "retrieved_at": "2026-08-31T23:41:44+00:00",
+  "effective_url": "https://www.aeso.ca/assets/Uploads/grid/Data-Centre/AESO-Data-Centre-Update-September-2025.pdf",
+  "content_hash": "sha256:d997820b3ed234324f1f7bbca5b8b75fdc1bf5f64859816f4dc6cc084b229428",
+  "content_type": "application/pdf",
+  "byte_length": 326906,
+  "archive_path": "data/raw/aeso_data_centre_update_2025_09/2026-08-31_d997820b3ed2.pdf",
+  "result": "success"
+}

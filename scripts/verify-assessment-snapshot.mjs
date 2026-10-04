@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { readFile } from 'node:fs/promises';
+import { runInNewContext } from 'node:vm';
+import ts from 'typescript';
+
+const path = process.argv[2];
+if (!path) throw new Error('Usage: npm run snapshot:verify -- path/to/aiio-assessment-snapshot.json');
+const envelope = JSON.parse(await readFile(path, 'utf8'));
+assert.equal(envelope.format, 'AIIO_SNAPSHOT_ENVELOPE_1.0');
+assert.equal(typeof envelope.payload, 'string');
+assert.equal(createHash('sha256').update(envelope.payload).digest('hex'), envelope.sha256, 'Snapshot integrity mismatch');
+const record = JSON.parse(envelope.payload);
+assert.equal(record.schema_version, 'AIIO_EXECUTIVE_RECORD_1.0');
+assert.equal(record.model.calculation_contract, 'AIIO_PRICE_BASIS_CASHFLOW_1.0');
+const source = await readFile(new URL('../lib/project-cashflow.ts', import.meta.url), 'utf8');
+const cashflowModule = { exports: {} };
+runInNewContext(ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText, { module: cashflowModule, exports: cashflowModule.exports });
+const rebuilt = cashflowModule.exports.buildCashflowOutlook(record.monthly_prices, record.project.inputs.budgetMillions, record.project.inputs.spendingProfile);
+assert.ok(rebuilt, 'Missing or invalid monthly prices');
+assert.deepEqual(JSON.parse(JSON.stringify(rebuilt)), record.result, 'Recorded cashflow does not reproduce');
+assert.equal(record.boundary.causal_ai_effect_authorized, false);
+assert.equal(record.boundary.mitigation_savings_authorized, false);
+console.log('Integrity verified; cashflow reproduced from stored prices and spending inputs. This is not source authentication, model validation, or a replay of the historical engine.');

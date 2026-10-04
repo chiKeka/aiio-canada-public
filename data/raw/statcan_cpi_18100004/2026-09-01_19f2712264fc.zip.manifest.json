@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_CPI_18100004_19f2712264fcfda9",
+  "source_id": "STATCAN_CPI_18100004",
+  "retrieved_at": "2026-09-01T08:13:13+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/18100004-eng.zip",
+  "content_hash": "sha256:19f2712264fcfda9a2aacb019f6907582e73f40b7780ca88db7c986e5c95aa26",
+  "content_type": "application/zip",
+  "byte_length": 15279348,
+  "archive_path": "data/raw/statcan_cpi_18100004/2026-09-01_19f2712264fc.zip",
+  "result": "success"
+}

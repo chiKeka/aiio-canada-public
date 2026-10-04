@@ -1,0 +1,14 @@
+{
+  "capture_manifest": {
+    "path": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json",
+    "sha256": "sha256:2c4b91f7d4ffcc1d8a6e9930867f6e265b65140abb3c97f0551c6b5b73279df3"
+  },
+  "normalized_artifact": {
+    "path": "data/processed/alberta_ai_projects.csv",
+    "sha256": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199"
+  },
+  "publication": null,
+  "schema_version": "AIIO_SNAPSHOT_INTAKE_1.0",
+  "snapshot_id": "AB_PROJECTS_CAPTURE_20260831",
+  "source_id": "ALBERTA_MAJOR_PROJECTS"
+}

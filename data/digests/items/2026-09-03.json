@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.1.0",
+  "digest_id": "AIIO_DIGEST_2026_09_03",
+  "edition_date": "2026-09-03",
+  "status": "review",
+  "items": [
+    {
+      "item_id": "MUNICIPAL_DATA_CENTRE_PERMIT_REFRESH_2026_09_03",
+      "headline": "Four municipal permit feeds refresh the data-centre activity proxy",
+      "sources": [
+        {
+          "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+          "source_url": "https://data.edmonton.ca/Urban-Planning-Economy/General-Building-Permits/24uj-dj8v"
+        },
+        {
+          "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS",
+          "source_url": "https://opendata.vancouver.ca/explore/dataset/issued-building-permits/"
+        },
+        {
+          "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+          "source_url": "https://open.toronto.ca/dataset/building-permits-cleared-permits/"
+        },
+        {
+          "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+          "source_url": "https://donnees.montreal.ca/dataset/permis-construction"
+        }
+      ],
+      "observed_change": "Official municipal APIs were retrieved on 2026-09-03. The controlled screens retain 17 Edmonton, 13 Vancouver, 53 Toronto and 14 Montréal candidate permit records. The aligned comparison panel contains 456 market-quarter-asset rows; the descriptive association uses 444 rows.",
+      "model_implication": "Retain the refreshed records as administrative activity proxies and review record-level changes. Do not treat permit counts, declared values or completion milestones as realized AI construction spending, labour hours, public-project outcomes or an attributable escalation coefficient.",
+      "evidence_status": "inferred",
+      "geography_ids": [
+        "CMA_835",
+        "CMA_933",
+        "CMA_535",
+        "CMA_462"
+      ],
+      "model_action": "review_candidate",
+      "automatic_model_change": false
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "as_of_date": "2026-08-31",
+  "cma_geography_count": 0,
+  "construction_linkage_count": 358,
+  "evidence_status": "observed_procurement_fields_with_inferred_linkage_and_geography",
+  "field_availability": {
+    "actual_physical_completion_date": 0,
+    "award_date": 146,
+    "cma_geography": 0,
+    "complete_approved_change_history": 0,
+    "compliant_bidder_count": 0,
+    "independent_estimate_with_price_basis": 0,
+    "physical_project_identifier": 0,
+    "reported_award_value_cad": 52,
+    "reported_contract_end_date": 146,
+    "reported_contract_start_date": 146,
+    "tender_close_date": 301,
+    "tender_open_date": 301
+  },
+  "input_sha256": {
+    "CANADABUYS_AWARD_NOTICES_FY2026_2027": "sha256:8b4ec53917a87e987f3cb707cf6e9843e6344937a4bb210a60cc18524b9ad47a",
+    "CANADABUYS_CONTRACT_HISTORY_FY2026_2027": "sha256:2a298379fd9807e4bf78c47d0c3377c4d8f0e5780bee19fce9dff01f8785db99",
+    "CANADABUYS_TENDER_NOTICES_FY2026_2027": "sha256:ca772f0fa4713f1a8178108852bbaf7cbcf4ba9ff862b44c2e34aeb1e6a08909"
+  },
+  "limitations": [
+    "The intake covers federal CanadaBuys files for fiscal year 2026-2027, not a national census of provincial, municipal or broader-public-sector construction.",
+    "Solicitation-number joins are inferred record linkages and are not stable physical-project identifiers.",
+    "Reported contract start and end dates describe procurement instruments and cannot be interpreted as physical construction start or completion.",
+    "Delivery regions are publisher labels; the source does not provide a consistent CMA project location.",
+    "No contact names, emails, phone numbers, supplier addresses or free-text descriptions are carried into the processed output."
+  ],
+  "linked_tender_award_count": 89,
+  "linked_tender_contract_count": 47,
+  "model_id": "AIIO_CANADABUYS_PROCUREMENT_OUTCOME_FEASIBILITY_0_1",
+  "output_sha256": "sha256:9414587341995435f4eb71c466d0db1d1d2c2221dc2e00a1b768b5435da15435",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "procurement_competition_outcome_authorized": false,
+    "public_project_cost_outcome_authorized": false,
+    "public_project_schedule_outcome_authorized": false,
+    "reason": "The current-fiscal-year CanadaBuys files expose useful tender, award and contract fields, but do not identify a stable physical project, independent estimate with price basis, complete approved-change history, actual physical completion, compliant bidder count or CMA geography.",
+    "status": "procurement_feasibility_only"
+  },
+  "retrieval_manifest_sha256": {
+    "CANADABUYS_AWARD_NOTICES_FY2026_2027": "sha256:20c65541104bdb0df26b561f3aff0412ef3509eae4416c4af9c966e8c09825b3",
+    "CANADABUYS_CONTRACT_HISTORY_FY2026_2027": "sha256:ce2b8708c4cbb20d9993364a847a96b87bbd5c378e6806208898e77d946f3a6d",
+    "CANADABUYS_TENDER_NOTICES_FY2026_2027": "sha256:f7c60bbf9744090003f7cf4c1ca0571474d0b137be8a21710d1c4d6d1beeaf24"
+  },
+  "schema_version": "0.1.0",
+  "single_province_geography_count": 145,
+  "source_ids": [
+    "CANADABUYS_TENDER_NOTICES_FY2026_2027",
+    "CANADABUYS_AWARD_NOTICES_FY2026_2027",
+    "CANADABUYS_CONTRACT_HISTORY_FY2026_2027"
+  ],
+  "source_row_counts": {
+    "CANADABUYS_AWARD_NOTICES_FY2026_2027": 3121,
+    "CANADABUYS_CONTRACT_HISTORY_FY2026_2027": 1350,
+    "CANADABUYS_TENDER_NOTICES_FY2026_2027": 2391
+  },
+  "transformation_id": "TR_CANADABUYS_PROCUREMENT_OUTCOME_FEASIBILITY_0_1"
+}

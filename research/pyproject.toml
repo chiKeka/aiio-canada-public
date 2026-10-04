@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiio-research"
+version = "0.2.0"
+description = "Reproducible evidence and graph pipeline for AIIO Canada"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+aiio = "aiio.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.unittest]
+start-directory = "tests"

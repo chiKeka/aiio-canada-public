@@ -1,0 +1,60 @@
+{
+  "as_of_date": "2026-09-03",
+  "broad_screen_row_count": 85,
+  "classification_counts": {
+    "broad_query_substring_false_positive": 6,
+    "explicit_data_centre_reference": 17,
+    "server_reference_only": 62
+  },
+  "data_centre_candidate_count": 17,
+  "data_centre_candidate_count_since_2018": 7,
+  "data_centre_candidate_demolition_count": 1,
+  "data_centre_candidate_non_demolition_reported_value_total_cad_proxy": 13211654.0,
+  "data_centre_candidate_occupancy_date_available_count": 0,
+  "data_centre_candidate_reported_value_available_count": 17,
+  "data_centre_candidate_reported_value_total_cad_proxy": 13339654.0,
+  "evidence_status": "observed_permit_fields_with_inferred_keyword_classification",
+  "explicit_ai_reference_count": 0,
+  "field_minimization": {
+    "description_trace": "sha256 hash plus controlled matched-term labels",
+    "processed_output_excludes": [
+      "address",
+      "legal_description",
+      "latitude",
+      "longitude",
+      "location",
+      "geometry_point",
+      "neighbourhood",
+      "job_description"
+    ]
+  },
+  "input_sha256": "sha256:f4da956ae985c7eb9abb9cd993407c57bfdf23a8191bba77605e20482d9b6f17",
+  "limitations": [
+    "The API is a current City of Edmonton snapshot covering issued permits from 2009 onward; it is not a versioned census of Alberta construction.",
+    "The server-side query is a broad keyword screen. Controlled word-boundary classification is inferred and requires human review before model use.",
+    "A data-centre phrase does not establish that a permit is AI-related; explicit AI specificity is reported separately and is not imputed.",
+    "Construction value is the publisher's estimated value of permitted work. Aggregates can include fit-outs, maintenance, expansions and demolition and are not realized capital expenditure.",
+    "The City describes occupancy-granted dates as trend fields with limited historical coverage and not legal confirmation of occupancy.",
+    "Exact addresses, legal descriptions, coordinates, neighbourhoods and free-text descriptions are excluded from the processed artifact."
+  ],
+  "model_id": "AIIO_EDMONTON_DATA_CENTRE_PERMIT_PROXY_0_1",
+  "occupancy_date_available_count": 2,
+  "output_sha256": "sha256:c76ff46006f6425be98824f09645d817f602b572b444cfe4e1c1e07bda3569b2",
+  "period_end": "2026-08-12",
+  "period_start": "2009-06-19",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "construction_completion_outcome_authorized": false,
+    "realized_ai_construction_treatment_authorized": false,
+    "realized_construction_spend_authorized": false,
+    "reason": "Issued permits and publisher-estimated construction values are activity proxies. Text matches do not identify AI use, and occupancy-granted dates are incomplete trend fields rather than realized spend, labour hours, legal occupancy confirmation or a causal treatment measure.",
+    "status": "municipal_permit_activity_proxy_only"
+  },
+  "reported_estimated_value_available_count": 85,
+  "retrieval_manifest_sha256": "sha256:c6b5f92c3e7e965719a19d7b9629d72bd20ce5519d1298ab0eda6073d0987bb3",
+  "schema_version": "0.1.0",
+  "source_ids": [
+    "EDMONTON_GENERAL_BUILDING_PERMITS"
+  ],
+  "transformation_id": "TR_EDMONTON_DATA_CENTRE_PERMIT_PROXY_0_1"
+}

@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0.0",
+  "transformation_id": "AIIO_PROVINCIAL_PUBLIC_PROJECTS_0_1",
+  "as_of_date": "2026-08-20",
+  "evidence_status": "observed_with_inferred_cross_source_classification",
+  "record_count": 7231,
+  "geography_count": 3,
+  "source_count": 3,
+  "input_hashes": {
+    "BC_MAJOR_PROJECTS_INVENTORY": "sha256:8ff579493b29400183e5664a3fad55e8eb40792549f2722efdf91d7b05fb4f5e",
+    "ONTARIO_BUILDS_PROJECTS": "sha256:acd5e57a1989517aaae269b5836f7d1e56b22b2f948d0254500b8c3b54b5bae4",
+    "QUEBEC_PQI_PROJECT_DASHBOARD": "sha256:a437f7ba9a749f33b130ec5a1a724821134b1b91bc7a2970bcf2597e8ff5877b"
+  },
+  "output_schema": [
+    "project_id",
+    "source_record_id",
+    "name",
+    "description",
+    "geography_id",
+    "province",
+    "municipality",
+    "region",
+    "asset_class",
+    "asset_class_evidence_status",
+    "source_category",
+    "source_type",
+    "source_subtype",
+    "stage",
+    "stage_source_text",
+    "start_period",
+    "completion_period",
+    "start_year",
+    "end_year",
+    "estimated_cost_cad",
+    "cost_status",
+    "public_funding_signal",
+    "public_funding_evidence_status",
+    "lead_organization",
+    "supporting_ministry",
+    "latitude",
+    "longitude",
+    "project_url",
+    "source_id",
+    "source_scope",
+    "source_evidence_status",
+    "as_of_date",
+    "quality_flags"
+  ],
+  "source_diagnostics": [
+    {
+      "source_id": "BC_MAJOR_PROJECTS_INVENTORY",
+      "geography_id": "PR_59",
+      "source_scope": "Historical official major-project feature layer; current inventory discontinued after Q3 2025. Feature attributes report a common 2024-12-01 update date.",
+      "raw_record_count": 648,
+      "normalized_record_count": 648,
+      "reported_cost_record_count": 604,
+      "complete_schedule_record_count": 280,
+      "end_year_record_count": 308,
+      "coordinate_record_count": 648,
+      "asset_class_counts": {
+        "government_and_civic_facilities": 20,
+        "health_facilities": 24,
+        "municipal_water_and_resilience": 19,
+        "power_sector_infrastructure": 29,
+        "roads_transit_and_airports": 16,
+        "schools_and_postsecondary": 19,
+        "social_and_affordable_housing": 36,
+        "unclassified": 485
+      },
+      "stage_counts": {
+        "complete_or_in_service": 18,
+        "on_hold": 48,
+        "planning_or_proposed": 341,
+        "under_construction_or_delivery": 241
+      },
+      "public_funding_signal_counts": {
+        "public_funding_not_reported": 542,
+        "reported_public_funding": 106
+      }
+    },
+    {
+      "source_id": "ONTARIO_BUILDS_PROJECTS",
+      "geography_id": "PR_35",
+      "source_scope": "Publisher-described sample of key infrastructure projects updated on an ongoing basis; not a complete Ontario capital plan.",
+      "raw_record_count": 5935,
+      "normalized_record_count": 5934,
+      "reported_cost_record_count": 3929,
+      "complete_schedule_record_count": 0,
+      "end_year_record_count": 5704,
+      "coordinate_record_count": 5499,
+      "asset_class_counts": {
+        "government_and_civic_facilities": 2121,
+        "health_facilities": 216,
+        "municipal_water_and_resilience": 809,
+        "power_sector_infrastructure": 2,
+        "roads_transit_and_airports": 1651,
+        "schools_and_postsecondary": 882,
+        "social_and_affordable_housing": 253
+      },
+      "stage_counts": {
+        "complete_or_in_service": 4263,
+        "planning_or_proposed": 861,
+        "unclassified_stage": 22,
+        "under_construction_or_delivery": 788
+      },
+      "public_funding_signal_counts": {
+        "reported_public_funding": 5629,
+        "source_scope_public_project": 305
+      },
+      "collapsed_exact_duplicate_row_count": 1
+    },
+    {
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "geography_id": "PR_24",
+      "source_scope": "Plan québécois des infrastructures projects of at least $20 million; data before November 2020 used a $50 million threshold.",
+      "raw_record_count": 649,
+      "normalized_record_count": 649,
+      "reported_cost_record_count": 351,
+      "complete_schedule_record_count": 0,
+      "end_year_record_count": 343,
+      "coordinate_record_count": 0,
+      "asset_class_counts": {
+        "government_and_civic_facilities": 87,
+        "health_facilities": 91,
+        "municipal_water_and_resilience": 8,
+        "other_public_infrastructure": 28,
+        "roads_transit_and_airports": 168,
+        "schools_and_postsecondary": 201,
+        "social_and_affordable_housing": 66
+      },
+      "stage_counts": {
+        "complete_or_in_service": 87,
+        "planning_or_proposed": 298,
+        "under_construction_or_delivery": 264
+      },
+      "public_funding_signal_counts": {
+        "source_scope_public_project": 649
+      }
+    }
+  ],
+  "asset_class_counts": {
+    "government_and_civic_facilities": 2228,
+    "health_facilities": 331,
+    "municipal_water_and_resilience": 836,
+    "other_public_infrastructure": 28,
+    "power_sector_infrastructure": 31,
+    "roads_transit_and_airports": 1835,
+    "schools_and_postsecondary": 1102,
+    "social_and_affordable_housing": 355,
+    "unclassified": 485
+  },
+  "quality_flag_counts": {
+    "asset_class_unclassified": 485,
+    "completion_period_unparsed": 1,
+    "derived_record_id_no_publisher_identifier": 5934,
+    "incomplete_schedule": 6951,
+    "missing_completion_period": 875,
+    "missing_coordinates": 1084,
+    "missing_estimated_cost": 2347,
+    "missing_start_period": 6925,
+    "non_https_project_url_omitted": 248,
+    "public_funding_not_reported": 542,
+    "source_feature_vintage_2024_12_01": 648,
+    "source_inventory_discontinued": 648,
+    "source_is_sample_not_complete_inventory": 5934,
+    "source_threshold_20m": 649,
+    "zero_budget_treated_as_missing": 2005
+  },
+  "publication_boundary": {
+    "status": "research_evidence_only",
+    "public_project_exposure_authorized": false,
+    "reason": "Source inventories have different scopes, thresholds, vintages and schedule completeness. Normalized records support comparison and source audit; they do not yet authorize pooled project counts, cost totals, causal exposure estimates or AI-attributable escalation claims."
+  },
+  "limitations": [
+    "The three sources are not a uniform national capital-project census and must not be pooled without source-scope controls.",
+    "Asset classes are controlled-vocabulary inferences from publisher fields and project text; original categories are retained.",
+    "Missing, suppressed and zero-placeholder costs remain null and are never treated as zero investment.",
+    "Most Ontario and Quebec records do not publish a construction start period, so schedule overlap is not yet comparable with Alberta.",
+    "British Columbia feature-layer records carry a 2024-12-01 feature vintage and the inventory was subsequently discontinued; the source is historical, not current market coverage.",
+    "Ontario describes its dataset as a sample of key infrastructure projects, not a complete plan.",
+    "Quebec coverage is limited to projects of at least $20 million in the Plan québécois des infrastructures."
+  ]
+}

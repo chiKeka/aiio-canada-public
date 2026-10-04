@@ -1,0 +1,78 @@
+{
+  "diagnostic_plan": [
+    {
+      "diagnostic_id": "cohort_common_support",
+      "status": "not_run_estimator_withheld"
+    },
+    {
+      "diagnostic_id": "pretrend_equivalence",
+      "status": "not_run_estimator_withheld"
+    },
+    {
+      "diagnostic_id": "placebo_event_dates",
+      "status": "not_run_estimator_withheld"
+    },
+    {
+      "diagnostic_id": "negative_control_outcome",
+      "status": "not_run_estimator_withheld"
+    },
+    {
+      "diagnostic_id": "leave_one_region_out",
+      "status": "not_run_estimator_withheld"
+    },
+    {
+      "diagnostic_id": "leave_one_event_out",
+      "status": "not_run_estimator_withheld"
+    },
+    {
+      "diagnostic_id": "independent_modelling_review",
+      "status": "not_run_estimator_withheld"
+    }
+  ],
+  "estimand_id": "E2_AI_ATTRIBUTABLE_INCREMENT",
+  "estimates": {
+    "cost_escalation_cad": null,
+    "cost_escalation_percent": null,
+    "schedule_delay_days": null
+  },
+  "estimator": "staggered_group_time_average_treatment_effect",
+  "gate_checks": [
+    {
+      "gate_id": "authorizing_treatment",
+      "observed": 0,
+      "passed": false,
+      "required": 2
+    },
+    {
+      "gate_id": "authorizing_outcomes",
+      "observed": 0,
+      "passed": false,
+      "required": 2
+    },
+    {
+      "gate_id": "eligible_panel_rows",
+      "observed": 0,
+      "passed": false,
+      "required": 1
+    }
+  ],
+  "input_manifest": {
+    "data/model-runs/ai_attribution_empirical_covariate_panel_v0.1.json": "sha256:66e141922ae503b4fc85c7f5c7200b075beb13c424bafb2a562ad7c743b2f68c",
+    "data/model/ai_attribution_panel_contract_v0.1.json": "sha256:1c53deb5653265bddc5f38fd62c7b3ca99c396f2f13b6d246fd220dcd079d77b",
+    "data/processed/ai_attribution_empirical_covariate_panel_v0.1.csv": "sha256:399d320e4be4057eee482ac0e3d7838dc17f1e19efde258c5345c4ad3d788620"
+  },
+  "panel_summary": {
+    "authorizing_outcome_asset_class_count": 0,
+    "authorizing_treated_region_count": 0,
+    "estimation_eligible_row_count": 0,
+    "row_count": 555
+  },
+  "publication_boundary": {
+    "effect_publication_authorized": false,
+    "estimator_run_authorized": false,
+    "reason": "No row contains both an authorizing realized AI-construction treatment and an authorizing public-project outcome."
+  },
+  "run_id": "AIIO_E2_EMPIRICAL_ESTIMATION_GATE_0_1",
+  "schema_version": "1.0.0",
+  "status": "withheld_ineligible_panel"
+}

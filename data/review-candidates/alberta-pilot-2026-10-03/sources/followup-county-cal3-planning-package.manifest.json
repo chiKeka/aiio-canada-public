@@ -1,0 +1,12 @@
+{
+  "source_id": "FOLLOWUP_COUNTY_CAL3_PLANNING_PACKAGE",
+  "source_url": "https://gis.rockyview.ca/planning/PRDP/PRDP20251314_Online_Package.pdf",
+  "effective_url": "https://gis.rockyview.ca/planning/PRDP/PRDP20251314_Online_Package.pdf",
+  "retrieved_at": "2026-10-03T23:04:55.957337+00:00",
+  "content_hash": "sha256:ae7965236a50083e05e13cb5b1ba029a0d231514588f0245093d55b33343f4d7",
+  "byte_length": 1230795,
+  "content_type": "application/pdf",
+  "result": "success",
+  "local_raw_file": "followup-county-cal3-planning-package.raw",
+  "redistribution": "receipt_only_pending_review"
+}

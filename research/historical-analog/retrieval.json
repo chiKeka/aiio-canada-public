@@ -1,0 +1,15 @@
+{
+  "retrieved_at": "2026-09-06",
+  "files": [
+    {
+      "file": "statcan-2007-q2.html",
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/070810/dq070810b-eng.htm",
+      "sha256": "a1722ed32f06d24f4941b1bbe8dd10d0f8b01458e4d6124926bc159f0579f32c"
+    },
+    {
+      "file": "edmonton-2008-table.html",
+      "url": "https://www150.statcan.gc.ca/n1/pub/62-007-x/2008002/6000199-eng.htm",
+      "sha256": "2e3ac2403a1da510665de362db584a2306c0f8314d1cf6e84377284f6b3fad9a"
+    }
+  ]
+}

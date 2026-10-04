@@ -1,0 +1,152 @@
+{
+  "workforce:fetch": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch-census-workforce",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "projects:normalize:provinces": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-provincial-projects data/raw/bc_major_projects_inventory/2026-09-01_8ff579493b29.geojson data/raw/ontario_builds_projects/2026-09-01_acd5e57a1989.csv data/raw/quebec_pqi_project_dashboard/2026-09-01_a437f7ba9a74.csv",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "power:evidence": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . run-power-evidence data/manual/aeso_data_centre_update_2025_09_page1.json data/raw/aeso_data_centre_update_2025_09/2026-08-31_d997820b3ed2.pdf data/raw/aeso_large_load_projects/2026-08-31_43d55ccde558.html data/raw/aeso_interim_large_load_2025_06/2026-08-31_86ea3ce051e0.html data/model-runs/power_evidence_alberta_v0.1.json data/processed/power_evidence_alberta.csv",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "power:planning:provinces": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . run-provincial-power-planning data/manual/provincial_power_planning_extract_2026_09.json data/model-runs/provincial_power_planning_contract_v0.1.json data/processed/provincial_power_planning_metrics.csv",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "evidence:refresh-weekly": {
+    "command": "python3 research/scripts/review_evidence_refresh.py --root .",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "fetch:canadabuys:tenders": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch CANADABUYS_TENDER_NOTICES_FY2026_2027",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "fetch:canadabuys:awards": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch CANADABUYS_AWARD_NOTICES_FY2026_2027",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "fetch:canadabuys:contracts": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch CANADABUYS_CONTRACT_HISTORY_FY2026_2027",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "permits:fetch": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch-edmonton-permits",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "permits:vancouver-fetch": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch-vancouver-permits",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "permits:toronto-fetch": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch-toronto-permits",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "permits:montreal-fetch": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch-montreal-permits",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "outcomes:audit:normalize": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-audited-project-outcomes data/manual/oago_selected_infrastructure_outcomes_2024.json data/raw/oago_selected_infrastructure_projects_2024/2026-09-01_88cdf8a0966d.pdf",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "outcomes:quebec:vintages:fetch": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch-quebec-milestone-vintages data/raw/quebec_pqi_archive_catalog/2026-09-01_c3a16c24dbe0.json",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "outcomes:quebec:archive:fetch": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . fetch-quebec-full-archive data/raw/quebec_pqi_archive_catalog/2026-09-01_c3a16c24dbe0.json",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "construction:refresh": {
+    "command": "python3 research/scripts/refresh_construction_evidence.py",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Original source bytes are omitted or acquisition requires source-specific terms/privacy review."
+  },
+  "labour:normalize": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-jvws data/raw/statcan_jvws_14100444/2026-08-31_38a420036ad5.zip",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "bcpi:normalize:provinces": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-bcpi-provinces data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "bcpi:normalize:reference-provinces": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-bcpi-reference-provinces data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "bcpi:normalize:reference-cmas": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-bcpi-reference-cmas data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "labour:normalize:canada": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-jvws-canada data/raw/statcan_jvws_14100444/2026-08-31_38a420036ad5.zip",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "investment:normalize:canada": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-investment-controls data/raw/statcan_ibc_34100293/2026-09-01_08b6ce635560.zip",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "macro:controls": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . run-regional-macro-controls data/raw/statcan_cpi_18100004/2026-09-01_19f2712264fc.zip data/raw/statcan_population_17100009/2026-09-01_4c99d5f13722.zip data/raw/statcan_seph_earnings_14100223/2026-09-01_06c7a79f80a0.zip data/raw/statcan_cmhc_housing_starts_34100156/2026-09-01_b022bf41c44d.zip",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "treatment:capex-screen": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-capex-treatment-screen data/raw/statcan_capex_industry_geography_34100035/2026-09-01_a65541e3a9ad.zip data/processed/information_sector_construction_capex_canada.csv data/model-runs/information_sector_construction_capex_screen_v0.1.json",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "workforce:normalize": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-census-workforce data/raw/statcan_census_occupation_98100449/2026-08-31_47d7833ff136.json",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "outcomes:pspc": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-pspc-outcomes data/raw/pspc_real_property_project_performance_2024_2025/2026-09-02_7d4aa37ee6b2.csv data/processed/pspc_real_property_outcome_context_2024_2025.csv data/model-runs/pspc_real_property_outcome_feasibility_v0.1.json",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "procurement:normalize": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-canadabuys-outcomes data/raw/canadabuys_tender_notices_fy2026_2027/2026-09-01_ca772f0fa471.csv data/raw/canadabuys_award_notices_fy2026_2027/2026-09-01_8b4ec53917a8.csv data/raw/canadabuys_contract_history_fy2026_2027/2026-09-01_2a298379fd98.csv",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "permits:normalize": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-edmonton-permits data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "outcomes:quebec:normalize": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . normalize-quebec-authorized-revisions data/raw/quebec_pqi_project_dashboard/2026-09-01_a437f7ba9a74.csv data/raw/quebec_pqi_data_dictionary/2026-09-01_86c6c1ab940b.pdf",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  },
+  "outcomes:quebec:review": {
+    "command": "PYTHONPATH=research/src python3 -m aiio.cli --root . build-quebec-parser-review data/raw/quebec_pqi_project_dashboard/2026-09-01_a437f7ba9a74.csv",
+    "requires_local_source_acknowledgment": true,
+    "reason": "Raw-source normalization requires original vintage bytes and applicable source terms; use public:check for actual availability."
+  }
+}

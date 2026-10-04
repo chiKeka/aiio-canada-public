@@ -1,0 +1,25 @@
+{
+  "packageName": "@aiio/braces-depth-guard",
+  "version": "1.0.0",
+  "advisory": "GHSA-vfj7-8cjw-p6xm",
+  "maxNesting": 64,
+  "maxAstVisits": 131072,
+  "upstreamProvenanceSha256": "44a39b0ec5e62af041cf830c8eea5d866f20d9172f90f9171f78210fc1221f1f",
+  "forkFiles": {
+    "LICENSE": "35bdd8a44339719441900fb50fbefc5e2dca1ca662cbaed7a687de842c8b70f2",
+    "README.md": "4e5a8b8f546de85764fdd167888e6f17fd12f5699da59a92d5cd7d52128a0bf3",
+    "UPSTREAM-README.md": "947b0fc3cc12eaaa070207126213fbdf9ab2bf8cd13dcc6e4007b36b79309866",
+    "index.js": "332ea07c7b006361aad12aa994ca75dc1db8e8382b884909e2f38f10b85c88a4",
+    "lib/compile.js": "cbe77f10e66a8d84553b95be19c63a1ef78d5e341110ade2b56a7fc338a9a1af",
+    "lib/constants.js": "c18ac5adb57308f1ce42a28552da3a31f5d83709743ebd9a636336813a744d4b",
+    "lib/depth-guard.js": "3c11189ae97786a59fdfabe8c8cccdb0fe299f916206639b2f4f5ed2051f65cf",
+    "lib/expand.js": "09e861f20794312e68045f8f36249dea7c46dc4ae86911d6ba0bd4d10e2d45de",
+    "lib/parse.js": "aa35b38d08b85707ea2a3b34c9f4d7b3ed6220ae9a2822184df18e47a6174d2f",
+    "lib/stringify.js": "18d136875c7329467466392c582e66f89ef8ebfe14bc29c1992802f9da1e7fcb",
+    "lib/utils.js": "b5a7596aa67730412b3c029ef09e84e6b67b8e445cffd35d1d295549c89066c7",
+    "package.json": "24f41e74c88293175a1da9d5633b13aa2d7dcb0e6f51bc60ac410a09d18514d1",
+    "upstream-fixtures.json": "a2f5f48b47138178cded76e5c02ecf443fb417df4fa56858dea89dd969ce8a42",
+    "upstream-provenance.json": "44a39b0ec5e62af041cf830c8eea5d866f20d9172f90f9171f78210fc1221f1f",
+    "upstream.patch": "6f861240576c0f59d4f9624216ebe64b1e4c01fad2175f9054e0a5311424b204"
+  }
+}

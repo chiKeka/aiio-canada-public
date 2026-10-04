@@ -1,0 +1,470 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-workspace: var(--aiio-paper);
+  --color-surface: var(--aiio-white);
+  --color-ink: var(--aiio-ink);
+  --color-subtle: var(--aiio-body);
+  --color-line: var(--aiio-hairline);
+  --color-brand: var(--aiio-teal);
+  --color-brand-soft: var(--aiio-teal-wash);
+  --color-caution: var(--aiio-amber);
+  --color-caution-soft: var(--aiio-amber-wash);
+  --color-rail: var(--aiio-midnight);
+  --color-rail-active: var(--aiio-midnight-raised);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --aiio-paper: #f4f6f8;
+  --aiio-paper-raised: #ffffff;
+  --aiio-white: #ffffff;
+  --aiio-hairline: #dde4e9;
+  --aiio-ink: #142c3c;
+  --aiio-body: #586b78;
+  --aiio-teal: #086d64;
+  --aiio-teal-wash: #e9f4f0;
+  --aiio-cyan: #57c6c0;
+  --aiio-steel: #446c99;
+  --aiio-amber: #8b5916;
+  --aiio-amber-wash: #fbf2e3;
+  --aiio-midnight: #112c3b;
+  --aiio-midnight-raised: #234453;
+  --aiio-panel-shadow: 0 1px 2px rgba(13, 43, 54, 0.04),
+    0 12px 32px rgba(13, 43, 54, 0.035);
+  --background: var(--aiio-paper);
+  --foreground: var(--aiio-ink);
+  --card: var(--aiio-white);
+  --card-foreground: var(--aiio-ink);
+  --popover: var(--aiio-white);
+  --popover-foreground: var(--aiio-ink);
+  --primary: var(--aiio-teal);
+  --primary-foreground: #ffffff;
+  --secondary: var(--aiio-teal-wash);
+  --secondary-foreground: var(--aiio-teal);
+  --muted: var(--aiio-paper);
+  --muted-foreground: var(--aiio-body);
+  --accent: var(--aiio-teal-wash);
+  --accent-foreground: var(--aiio-teal);
+  --destructive: oklch(0.58 0.19 32);
+  --border: var(--aiio-hairline);
+  --input: #b4c1ca;
+  --ring: var(--aiio-teal);
+  --chart-1: oklch(0.55 0.1 186);
+  --chart-2: oklch(0.64 0.15 51);
+  --chart-3: oklch(0.52 0.07 224);
+  --chart-4: oklch(0.72 0.12 85);
+  --chart-5: oklch(0.6 0.07 260);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+@layer components {
+  .aiio-panel {
+    border: 1px solid var(--aiio-hairline);
+    border-radius: 1rem;
+    background: var(--aiio-white);
+  }
+
+  .aiio-panel-elevated {
+    border: 1px solid var(--aiio-hairline);
+    border-radius: 1rem;
+    background: var(--aiio-white);
+    box-shadow: var(--aiio-panel-shadow);
+  }
+
+  .aiio-eyebrow {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .aiio-control {
+    border-color: #d8dcd7;
+    background: #f8f8f4;
+  }
+
+  .aiio-control:hover {
+    border-color: #aebdb7;
+    background: #ffffff;
+  }
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family:
+      var(--font-geist-sans),
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      sans-serif;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  ::selection {
+    background: #a8d7ce;
+    color: #0a2934;
+  }
+  :focus-visible {
+    outline: 2px solid #28766d;
+    outline-offset: 3px;
+  }
+}
+
+.editorial-highlight {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  border-radius: 0.22em;
+  background: #dceee8;
+  color: #145e57;
+  padding: 0 0.12em 0.04em;
+}
+
+.research-signal-highlight {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  border-radius: 0.12em;
+  background: #73ffb9;
+  color: #06130f;
+  padding: 0 0.1em 0.035em;
+}
+
+.observatory-grid {
+  isolation: isolate;
+  position: relative;
+}
+
+.observatory-grid::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  background-image:
+    linear-gradient(rgba(33, 88, 84, 0.065) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 88, 84, 0.065) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+
+.research-observatory-grid {
+  isolation: isolate;
+  position: relative;
+}
+
+.research-observatory-grid::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  background-image:
+    linear-gradient(rgba(33, 88, 84, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 88, 84, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 92%);
+}
+
+.aiio-command-grid {
+  isolation: isolate;
+  position: relative;
+  background-color: var(--aiio-midnight);
+}
+
+.aiio-command-grid::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  background-image:
+    linear-gradient(rgba(87, 198, 192, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(87, 198, 192, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.cockpit-aurora {
+  background:
+    radial-gradient(circle at 72% 18%, rgba(57, 164, 157, 0.18), transparent 32%),
+    radial-gradient(circle at 15% 88%, rgba(214, 107, 53, 0.12), transparent 34%),
+    linear-gradient(145deg, #071c25 0%, #092630 48%, #071b24 100%);
+}
+
+.cockpit-aurora::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(121, 207, 196, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(121, 207, 196, 0.12) 1px, transparent 1px);
+  background-size: 46px 46px;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+
+.cockpit-orbit {
+  box-shadow: 0 0 80px rgba(79, 197, 182, 0.06) inset;
+}
+
+.scenario-range {
+  appearance: none;
+  height: 5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #25776e, #76b9ad);
+  accent-color: #17665f;
+}
+
+.scenario-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #f8f7f1;
+  border-radius: 999px;
+  background: #155f5a;
+  box-shadow:
+    0 0 0 1px #155f5a,
+    0 3px 10px rgba(17, 70, 68, 0.22);
+  cursor: grab;
+}
+
+.scenario-range::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 3px solid #f8f7f1;
+  border-radius: 999px;
+  background: #155f5a;
+  box-shadow: 0 0 0 1px #155f5a;
+  cursor: grab;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 12mm;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  body:has(#executive-decision-brief) * {
+    visibility: hidden !important;
+  }
+
+  .workspace #executive-decision-brief,
+  .workspace #executive-decision-brief * {
+    visibility: visible !important;
+  }
+
+  #executive-decision-brief {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  #executive-decision-brief .print-hide {
+    display: none !important;
+  }
+
+  #executive-decision-brief section,
+  #executive-decision-brief dl,
+  #executive-decision-brief li {
+    break-inside: avoid;
+  }
+}
+
+.executive-print-record {
+  display: none;
+}
+
+@media print {
+  .executive-print-record {
+    display: block;
+    color: #102f35;
+    font-family: Arial, sans-serif;
+  }
+
+  .executive-print-record header {
+    border-bottom: 3px solid #155f5a;
+    padding-bottom: 18px;
+  }
+
+  .executive-print-record header p,
+  .executive-print-record dt {
+    color: #527078;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .executive-print-record h1 { font-size: 28pt; margin: 8px 0; }
+  .executive-print-record h2 { font-size: 15pt; margin: 20px 0 10px; }
+  .executive-print-record p { font-size: 10pt; line-height: 1.5; }
+  .executive-print-record dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .executive-print-record dl > div { border: 1px solid #d6e1e3; padding: 10px; }
+  .executive-print-record dd { font-size: 11pt; margin: 4px 0 0; }
+  .executive-print-record .print-decision { color: #155f5a; font-size: 20pt; font-weight: 700; }
+
+  /* The visible brief is nested in the dashboard: remove constrained ancestors. */
+  main, .executive-screen, .executive-screen div { height: auto !important; min-height: 0 !important; overflow: visible !important; }
+  #executive-decision-brief { display: block !important; color: #102f35 !important; background: white !important; padding: 0 !important; font-family: Arial, sans-serif; }
+  #executive-decision-brief h1 { font-size: 20pt; }
+  #executive-decision-brief h2, #executive-decision-brief summary { font-size: 12pt; }
+  #executive-decision-brief p, #executive-decision-brief li, #executive-decision-brief dt { font-size: 9pt; line-height: 1.35; }
+  #executive-decision-brief dd { font-size: 14pt; }
+  #executive-decision-brief a { overflow-wrap: anywhere; }
+  #executive-decision-brief details > * { display: block !important; }
+}
+
+/* Shared executive workspace; research pages adopt these tokens incrementally. */
+.workspace { font-size: 14px; line-height: 1.5; }
+.workspace :where(button, a, input, select, summary):focus-visible {
+  outline: 2px solid var(--aiio-teal); outline-offset: 3px;
+}
+.workspace-rail :where(button, a):focus-visible { outline-color: white; }
+.workspace :where(h1, h2, h3) { letter-spacing: -0.025em; }
+.workspace :where(input[type=number], dd) { font-variant-numeric: tabular-nums; }
+.workspace-rail { scrollbar-width: thin; }
+@media print {
+  .workspace-rail, .workspace-toolbar, .workspace-heading { display: none !important; }
+  .workspace-layout { display: block !important; }
+}
+
+/* Research routes share the executive workspace's scale and interaction rules. */
+.research-content { overflow-wrap: anywhere; }
+.research-content :where(section[id]) { scroll-margin-top: 24px; }
+.research-content :where(table) { font-variant-numeric: tabular-nums; }
+.research-content :where(thead) { background: var(--aiio-paper); }
+.research-content :where(tbody tr:hover) { background: var(--aiio-paper); }
+.research-content :where(input:not([type="range"]), select) { min-height: 40px; }
+.research-content :where(button, a) { text-underline-offset: 3px; }
+@media print {
+  .research-content { color: var(--aiio-ink); }
+}
+
+.research-content :where(.grid) > * { min-width: 0; }
+.research-content :where([id]) { scroll-margin-top: 24px; }
+
+.research-content :where(th, td) { overflow-wrap: normal; }
+
+@media print {
+  #executive-decision-brief button { visibility: hidden !important; }
+}
+
+@media print {
+  .executive-export-controls, .executive-export-controls * { visibility: hidden !important; }
+}
+
+@media print {
+  [data-testid="project-assessment-workspace"] > details { display: none !important; }
+  #project-assessment-print-record pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 8pt; }
+}

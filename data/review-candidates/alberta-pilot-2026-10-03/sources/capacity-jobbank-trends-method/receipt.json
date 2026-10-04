@@ -1,0 +1,21 @@
+{
+  "source_id": "capacity-jobbank-trends-method",
+  "requested_url": "https://www.jobbank.gc.ca/trend-analysis/job-market-reports/recent-trends-methodology",
+  "retrieved_at": "2026-10-03T23:00:59.867921+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "raw_redistribution": "pending_review",
+  "effective_url": "https://www.jobbank.gc.ca/trend-analysis/job-market-reports/recent-trends-methodology",
+  "http_status": 200,
+  "content_type": "text/html;charset=UTF-8",
+  "result": "success",
+  "byte_length": 51048,
+  "sha256": "3bc18ea20aa9aa21fd101e13dbf7160c23d16395f30c41f1f8b76383635f121c",
+  "archive_path": "sources/capacity-jobbank-trends-method/page.html",
+  "content_verification": {
+    "expected_terms_present": {
+      "shortage": true
+    },
+    "status": "relevant_source_content_verified"
+  }
+}

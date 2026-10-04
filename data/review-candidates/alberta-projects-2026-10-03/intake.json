@@ -1,0 +1,1211 @@
+{
+  "ai_screen_project_count": 22,
+  "baseline_content_hash": "sha256:748550be78361f31562bd64f494f3f9ff51be398c5877ae65e1404434d8f707d",
+  "baseline_observation": {
+    "archive_content_hash": "sha256:20d1589a771e2fbf611f5cb73e149760637838c4923c934e4c230d47991830d6",
+    "archive_file": "8d9ba1e90a9c7468b44e80ce48eea154a394723593f3042575f661641534e543.json",
+    "disappearance_implies_completion": false,
+    "observation_dates": [
+      "2026-08-31"
+    ],
+    "observation_hash": "sha256:8d9ba1e90a9c7468b44e80ce48eea154a394723593f3042575f661641534e543",
+    "repeated_fetch_is_new_observation": false
+  },
+  "candidate_observation": {
+    "archive_content_hash": "sha256:b929bc9073be6d0440fca7935faaf4e2cb0eb108b6ec1ce7592c1d44f8b123ca",
+    "archive_file": "fe8dd5ea38845e1bb867cc2c44dcc4343abde04a99a7954478f059281ff1bbc4.json",
+    "disappearance_implies_completion": false,
+    "observation_dates": [
+      "2026-10-03"
+    ],
+    "observation_hash": "sha256:fe8dd5ea38845e1bb867cc2c44dcc4343abde04a99a7954478f059281ff1bbc4",
+    "repeated_fetch_is_new_observation": false
+  },
+  "events": [
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "10531"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "51400000.0",
+          "before": "55100000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "10676"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "completion_period": {
+          "after": "2028",
+          "before": "2027"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "10937"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "24300000.0",
+          "before": "23600000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "10941"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "stage": {
+          "after": "Under Construction",
+          "before": "Proposed"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "10951"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "28000000.0",
+          "before": "13000000.0"
+        },
+        "name": {
+          "after": "Lake Louise Fire Hall and Multi-Unit Residential Development",
+          "before": "Lake Louise Fire Hall"
+        },
+        "start_period": {
+          "after": "2026",
+          "before": "2025"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11024"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11041"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11053"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11055"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11164"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "completion_period": {
+          "after": "2030",
+          "before": "2029"
+        },
+        "estimated_cost_cad": {
+          "after": "779000000.0",
+          "before": ""
+        },
+        "stage": {
+          "after": "Under Construction",
+          "before": "Proposed"
+        },
+        "start_period": {
+          "after": "2026",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11204"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "stage": {
+          "after": "Under Construction",
+          "before": "Proposed"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11383"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11386"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "completion_period": {
+          "after": "2029",
+          "before": "2028"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11435"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "57700000.0",
+          "before": "49900000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11450"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "58700000.0",
+          "before": "49900000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11452"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "St. Patrick Catholic Elementary Junior High School",
+          "before": "New K-9 School in River's Edge"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11455"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "5200000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11461"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "completion_period": {
+          "after": "2029",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11462"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "37300000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11463"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "stage": {
+          "after": "Proposed",
+          "before": "Under Construction"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11530"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "stage": {
+          "after": "Proposed",
+          "before": "Under Construction"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11594"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "21800000.0",
+          "before": "7800000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11596"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11600"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11629"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11648"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "22800000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11667"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "51600000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11668"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "77200000.0",
+          "before": "5400000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11669"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "7100000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11670"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "40800000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11671"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11681"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "5900000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11682"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "43600000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11683"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "71800000.0",
+          "before": "5400000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11684"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "68300000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11690"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "82300000.0",
+          "before": "6700000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11694"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "81700000.0",
+          "before": "6700000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11699"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "51400000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11702"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "40600000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11703"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "68000000.0",
+          "before": "5400000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11704"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "57500000.0",
+          "before": "5500000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11706"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "5800000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11708"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "5500000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11709"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "6000000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11713"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "61700000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11715"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11719"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "stage": {
+          "after": "Proposed",
+          "before": "Under Construction"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11760"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "Coalhurst 5-12 School Modernization",
+          "before": "Coalhurst 7-12 School Modernization"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11771"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "125200000.0",
+          "before": "10000000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11775"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "133800000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11777"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11788"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "43000000.0",
+          "before": "40800000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11803"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11847"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "5900000.0",
+          "before": ""
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11872"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "start_period": {
+          "after": "2027",
+          "before": "2026"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "11933"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12032"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New Lacombe Fire Station",
+          "before": "Fire Station (Lacombe)"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12114"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New 10-12 High School (Sylvan Lake)",
+          "before": "10-12 High School (Sylvan Lake)"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12135"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New K-8 School in Buffalo Lake Metis Settlement",
+          "before": "K-8 School in Buffalo Lake Metis Settlement"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12141"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New K-12 Light of Christ School\ufffd(Lac La Biche)",
+          "before": "K-12 Light of Christ School\ufffd(Lac La Biche)"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12142"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New K-5 School in Walden (Calgary)",
+          "before": "K-5 School in Walden (Calgary)"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12144"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New 9-12 Catholic School (Sylvan Lake)",
+          "before": "9-12 Catholic School (Sylvan Lake)"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12145"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New 10-12 Catholic School in Windermere-Glenridding Heights (Edmonton)",
+          "before": "10-12 Catholic School in Windermere-Glenridding Heights (Edmonton)"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12148"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "name": {
+          "after": "New K-9 Catholic School in Kirkness (Edmonton)",
+          "before": "K-9 Catholic School in Kirkness (Edmonton)"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12157"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "completion_period": {
+          "after": "2030",
+          "before": ""
+        },
+        "name": {
+          "after": "Contemporary Calgary Centennial Planetarium Transformation Project (Phase 3)",
+          "before": "Contemporary Calgary Centennial Planetarium Transformation Project"
+        },
+        "start_period": {
+          "after": "2027",
+          "before": "2026"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "not_applicable",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12185"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12188"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12204"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12223"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12224"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12225"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12226"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12227"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "first_observed",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "12236"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "40300000.0",
+          "before": "46300000.0"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "4396"
+    },
+    {
+      "causal_claim": false,
+      "completion_inferred": false,
+      "event_type": "not_in_later_inventory",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "7529"
+    },
+    {
+      "after_observation_date": "2026-10-03",
+      "before_observation_date": "2026-08-31",
+      "causal_claim": false,
+      "changes": {
+        "estimated_cost_cad": {
+          "after": "65000000.0",
+          "before": "37700000.0"
+        },
+        "name": {
+          "after": "Mount Royal University G Wing Renovation Project (Sam Taylor Student Commons)",
+          "before": "Mount Royal University G Wing Renovation Project"
+        }
+      },
+      "completion_inferred": false,
+      "eligible_dated_revision": true,
+      "event_type": "inventory_field_revision",
+      "final_cost_outturn": false,
+      "scope_price_basis_reconciliation": "pending",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "source_record_id": "8547"
+    }
+  ],
+  "normalized_project_count": 971,
+  "observation_date_basis": "inventory_observed_at_capture_not_publisher_revision_effective_date",
+  "publication_boundary": {
+    "causal_claim_authorized": false,
+    "observed_field_changes_are_final_outcomes": false,
+    "published_inputs_replaced": false
+  },
+  "publisher_revision_effective_dates_available": false,
+  "raw_content_hash": "sha256:effcef27c3b14d87697627b62ce136ef10faf80ca070e1387001c7f91de404da",
+  "retrieved_at": "2026-10-03T20:18:09+00:00",
+  "review_requirements": [
+    "Review parser and source-scope continuity",
+    "Reconcile cost price basis and scope",
+    "Confirm milestone dates from project-specific evidence"
+  ],
+  "schema_version": "1.0.0",
+  "source_id": "ALBERTA_MAJOR_PROJECTS",
+  "status": "review_pending",
+  "target_projects_after": 310,
+  "target_projects_before": 309
+}

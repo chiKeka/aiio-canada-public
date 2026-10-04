@@ -1,0 +1,26 @@
+{
+  "release_version": "0.1.0-dev",
+  "input_manifest_hash": "sha256:c4b4534a6982da59d35654b242f0ba002755e76ba28a3d617bc8d8c1e39051ec",
+  "artifacts": [
+    {
+      "path": "public/data/latest.json",
+      "sha256": "8a6a5cd5e0be0629b5ed01ef1342b7d53b194e5b93ea87ffe93e397918a4db3a"
+    },
+    {
+      "path": "public/data/manifest.json",
+      "sha256": "5d7ffc02dad43bfdc364b21c38ba17d5b2276f47beb3800b28fe40c9a246184b"
+    },
+    {
+      "path": "public/downloads/AIIO_Alberta_Pilot_0.1.0-dev.xlsx",
+      "sha256": "34d15f70a8016422a9c6aa82572927dc4241f507f1b416c0378e42b6057e9c3f"
+    },
+    {
+      "path": "public/downloads/alberta_ai_projects.csv",
+      "sha256": "46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199"
+    },
+    {
+      "path": "public/downloads/bcpi_alberta.csv",
+      "sha256": "4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1"
+    }
+  ]
+}

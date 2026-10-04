@@ -1,0 +1,23 @@
+{
+  "archive_path": "data/raw/montreal_construction_permits/2026-09-03_1b94b0fb1045.json",
+  "byte_length": 14070,
+  "content_hash": "sha256:1b94b0fb10454b4eedbaa4d671a1ac097b4b1ab8b0463d0a692dd88a8b853aab",
+  "excluded_fields": [
+    "emplacement",
+    "longitude",
+    "latitude",
+    "loc_x",
+    "loc_y"
+  ],
+  "query_terms": [
+    "centre de donn\u00e9es",
+    "centre donn\u00e9es",
+    "data center"
+  ],
+  "resource_id": "5232a72d-235a-48eb-ae20-bb9d501300ad",
+  "result": "success",
+  "retrieval_id": "RET_MONTREAL_CONSTRUCTION_PERMITS_1b94b0fb10454b4e",
+  "retrieved_at": "2026-09-03T01:30:57+00:00",
+  "row_count": 15,
+  "source_id": "MONTREAL_CONSTRUCTION_PERMITS"
+}

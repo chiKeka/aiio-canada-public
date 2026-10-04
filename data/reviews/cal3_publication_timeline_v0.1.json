@@ -1,0 +1,64 @@
+{
+  "project_id": "ABMP_11416",
+  "review_status": "analyst_review_complete_historical_content_review_pending",
+  "source_capture_manifest": "data/reviews/historical_web_capture_sources_v0.1.json",
+  "events": [
+    {
+      "source_evidence_ids": ["cal3_launch_en", "cal3_launch_fr"],
+      "announcement_dateline": "2024-10-29",
+      "displayed_page_date": "2024-11-15",
+      "date_conflict": true,
+      "candidate_conservative_date": "2024-11-15",
+      "candidate_date_is_accepted_historical_availability": false,
+      "cost": {
+        "currency": "CAD",
+        "amount": 750000000,
+        "qualifier": "French headline/key features state 750 million; body says more than 750 million for full construction. English captured announcement does not state this cost.",
+        "kind": "announced_investment_not_realized_spend"
+      },
+      "schedule_claim": "English: second half of 2026; French: autumn 2026",
+      "capacity_mw": 90,
+      "status_supported": "announced_planned_facility",
+      "construction_start_date_proven": false,
+      "ai_evidence": "marketed for AI and cloud; no exclusive AI spending share or named tenant established by these announcements"
+    },
+    {
+      "source_evidence_ids": ["cal3_2025_blog"],
+      "displayed_page_date": "2025-07-29",
+      "schedule_claim": "Autumn 2026 launch remains planned",
+      "new_quantified_project_cost": null,
+      "status_supported": "upcoming_facility",
+      "realized_construction_spend": null
+    },
+    {
+      "source_evidence_ids": ["cal3_coreweave"],
+      "announcement_dateline": "2026-05-14",
+      "displayed_page_date": "2026-05-14",
+      "schedule_claim": "Second half of 2026",
+      "capacity_mw": 90,
+      "tenant_claim": "CoreWeave signed for a portion of Phase 1 capacity",
+      "investment_claim": "More than CAD 1 billion invested by eStruxture in Alberta; project-versus-regional scope is not sufficiently explicit for replacing the frozen CAL-3 cost.",
+      "ai_evidence": "named AI anchor tenant; share of total construction cost attributable to AI remains unknown",
+      "available_before_any_benchmark_origin": false,
+      "operational_completion_proven": false
+    },
+    {
+      "source_manifest": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json",
+      "capture_date": "2026-08-31",
+      "source_url": "https://majorprojects.alberta.ca/details/eStruxture-CAL-3-Data-Centre/11416",
+      "cost_estimate_cad": 750000000,
+      "schedule_claim": "2024–2026",
+      "status_supported": "Under Construction at capture",
+      "historical_start_or_status_publication_proven": false
+    }
+  ],
+  "decisions": [
+    "Preserve the frozen project cost and schedule; these findings are a separate evidence timeline.",
+    "Do not backdate the current Alberta register to 2024 or use CAL-3 announcements as a complete project-register snapshot.",
+    "The earliest located announcement is in 2024 Q4; absence of an earlier located source is not evidence of zero earlier spending.",
+    "Do not infer realized expenditure from announced investment, construction schedules, capacity, tenant commitments or opening targets.",
+    "The 2026 tenant announcement follows every forecast origin in the frozen benchmark and cannot supply an earlier predictor."
+  ],
+  "model_replay_authorized": false,
+  "causal_attribution_authorized": false
+}

@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_CMHC_HOUSING_STARTS_34100156_b022bf41c44ddf18",
+  "source_id": "STATCAN_CMHC_HOUSING_STARTS_34100156",
+  "retrieved_at": "2026-09-01T08:13:19+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/n1/en/tbl/csv/34100156-eng.zip",
+  "content_hash": "sha256:b022bf41c44ddf18a56f1f496e6944c37cbcd14f4732092c7f0e871c15407310",
+  "content_type": "application/zip",
+  "byte_length": 389385,
+  "archive_path": "data/raw/statcan_cmhc_housing_starts_34100156/2026-09-01_b022bf41c44d.zip",
+  "result": "success"
+}

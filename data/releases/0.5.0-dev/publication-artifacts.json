@@ -1,0 +1,41 @@
+{
+  "artifacts": [
+    {
+      "path": "public/data/latest.json",
+      "sha256": "78e4623d7d9e6945751994b17cdf36964dd088aef14307796b30ca8846ec750a"
+    },
+    {
+      "path": "public/data/manifest.json",
+      "sha256": "5af101e28bfb82099cc113e2a54463ae60e4329bab45894f9cd6a6772e5e1b37"
+    },
+    {
+      "path": "public/downloads/AIIO_Alberta_Pilot_0.5.0-dev.xlsx",
+      "sha256": "37b63499e49474a0e0ba1e27750cc2b022492d342d2c906e4e91dd5facf8533e"
+    },
+    {
+      "path": "public/downloads/alberta_ai_projects.csv",
+      "sha256": "46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199"
+    },
+    {
+      "path": "public/downloads/bcpi_alberta.csv",
+      "sha256": "4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1"
+    },
+    {
+      "path": "public/downloads/labour_availability_alberta.csv",
+      "sha256": "9454b563aafd4f2919fb996ba84950c55e4e635f1b67ef8b1bcf80f741ac5c24"
+    },
+    {
+      "path": "public/downloads/labour_availability_canada.csv",
+      "sha256": "47652b4a8b2dd9ab6eb77b1b16a44b5bbc62a018dd33272fdbefda710ea56f79"
+    },
+    {
+      "path": "public/downloads/labour_workforce_stock_canada.csv",
+      "sha256": "ddaeab6d7eff569738d3e3dac3576dbdd57890f0e0a06d3cc1c98bb202557a89"
+    }
+  ],
+  "code_commit": "c4749145575ff5c95ddd508b22c8be48384cddb9",
+  "input_manifest_hash": "sha256:d308d8d18e9bc10e2a93ea498ec10b049f34eb4098034ea4ba9ffe9704da9365",
+  "release_id": "AIIO_RELEASE_0_5_0_DEV",
+  "release_version": "0.5.0-dev",
+  "schema_version": "1.2.0"
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.1.0",
+  "extract_id": "AIIO_PROVINCIAL_POWER_PLANNING_EXTRACT_2026_09",
+  "as_of_date": "2026-09-01",
+  "review_status": "pending_independent_review",
+  "review_note": "Source pages and workbook ranges were visually checked by the primary build agent. Independent machine review remains pending because Grok is not authenticated and Claude is paused.",
+  "source_files": [
+    {
+      "source_id": "IESO_APO_2026_DATA_TABLES",
+      "archive_path": "data/raw/ieso_apo_2026_data_tables/2026-09-01_987448021f1d.xlsx",
+      "content_hash": "sha256:987448021f1db08bf7c815f453fa9f73057a2507f25992e110aca0abc3666526"
+    },
+    {
+      "source_id": "IESO_APO_2026_DEMAND_MODULE",
+      "archive_path": "data/raw/ieso_apo_2026_demand_module/2026-09-01_dce737fb9061.pdf",
+      "content_hash": "sha256:dce737fb9061fafed2c0d2371681f2de0860c8511aec47cb95e19196e912f597"
+    },
+    {
+      "source_id": "BC_HYDRO_IRP_2025_SUMMARY",
+      "archive_path": "data/raw/bc_hydro_irp_2025_summary/2026-09-01_48943e3c8681.html",
+      "content_hash": "sha256:48943e3c868100ee8da1676f94a20400f8070ee7302a9b5945e0908d3a8073ab"
+    },
+    {
+      "source_id": "QUEBEC_SUPPLY_PLAN_PROGRESS_2025",
+      "archive_path": "data/raw/quebec_supply_plan_progress_2025/2026-09-01_88d382a1b9f8.pdf",
+      "content_hash": "sha256:88d382a1b9f8cca86d7cebacdac3ee3bc13077f3c34f631d11ddbc7758a2f7f1"
+    },
+    {
+      "source_id": "HYDRO_QUEBEC_DATA_CENTRE_RATE_2026",
+      "archive_path": "data/raw/hydro_quebec_data_centre_rate_2026/2026-09-01_2f5beed48b1b.html",
+      "content_hash": "sha256:2f5beed48b1be4ad62e20729c6f4ef36eada08e28a4903ad9595e3cd64e7a921"
+    }
+  ],
+  "metrics": [
+    {"metric_id":"ON_SYSTEM_ENERGY_REF_2026","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"reference","period":"2026","value":152.46,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!B7"},
+    {"metric_id":"ON_SYSTEM_ENERGY_REF_2035","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"reference","period":"2035","value":195.33,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!K7"},
+    {"metric_id":"ON_SYSTEM_ENERGY_REF_2040","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"reference","period":"2040","value":219.67,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!P7"},
+    {"metric_id":"ON_SYSTEM_ENERGY_REF_2050","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"reference","period":"2050","value":250.62,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!Z7"},
+    {"metric_id":"ON_SYSTEM_ENERGY_HIGH_2035","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"high","period":"2035","value":218.22,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!K8"},
+    {"metric_id":"ON_SYSTEM_ENERGY_HIGH_2050","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"high","period":"2050","value":297.13,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!Z8"},
+    {"metric_id":"ON_SYSTEM_ENERGY_LOW_2035","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"low","period":"2035","value":177.25,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!K9"},
+    {"metric_id":"ON_SYSTEM_ENERGY_LOW_2050","geography_id":"PR_35","quantity_type":"system_net_annual_energy","quantity_status":"published_forecast","scenario":"low","period":"2050","value":206.51,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 1!Z9"},
+
+    {"metric_id":"ON_SUMMER_PEAK_REF_2035","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"reference_summer","period":"2035","value":28.31,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!K7"},
+    {"metric_id":"ON_SUMMER_PEAK_REF_2050","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"reference_summer","period":"2050","value":35.07,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!Z7"},
+    {"metric_id":"ON_WINTER_PEAK_REF_2035","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"reference_winter","period":"2035","value":27.81,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!K10"},
+    {"metric_id":"ON_WINTER_PEAK_REF_2050","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"reference_winter","period":"2050","value":35.09,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!Z10"},
+    {"metric_id":"ON_SUMMER_PEAK_HIGH_2035","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"high_summer","period":"2035","value":30.66,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!K8"},
+    {"metric_id":"ON_SUMMER_PEAK_HIGH_2050","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"high_summer","period":"2050","value":40.92,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!Z8"},
+    {"metric_id":"ON_WINTER_PEAK_HIGH_2035","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"high_winter","period":"2035","value":31.03,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!K11"},
+    {"metric_id":"ON_WINTER_PEAK_HIGH_2050","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"high_winter","period":"2050","value":41.84,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!Z11"},
+    {"metric_id":"ON_SUMMER_PEAK_LOW_2035","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"low_summer","period":"2035","value":26.5,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!K9"},
+    {"metric_id":"ON_SUMMER_PEAK_LOW_2050","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"low_summer","period":"2050","value":29.5,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!Z9"},
+    {"metric_id":"ON_WINTER_PEAK_LOW_2035","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"low_winter","period":"2035","value":25.42,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!K12"},
+    {"metric_id":"ON_WINTER_PEAK_LOW_2050","geography_id":"PR_35","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"low_winter","period":"2050","value":29.32,"unit":"GW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 2!Z12"},
+
+    {"metric_id":"ON_REMAINING_CAPACITY_2031","geography_id":"PR_35","quantity_type":"remaining_capacity_need_after_in_flight","quantity_status":"published_forecast","scenario":"reference","period":"2031","value":323,"unit":"MW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 29!F8"},
+    {"metric_id":"ON_REMAINING_CAPACITY_2035","geography_id":"PR_35","quantity_type":"remaining_capacity_need_after_in_flight","quantity_status":"published_forecast","scenario":"reference","period":"2035","value":7164,"unit":"MW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 29!J8"},
+    {"metric_id":"ON_REMAINING_CAPACITY_2040","geography_id":"PR_35","quantity_type":"remaining_capacity_need_after_in_flight","quantity_status":"published_forecast","scenario":"reference","period":"2040","value":11594,"unit":"MW","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 29!O8"},
+    {"metric_id":"ON_REMAINING_ENERGY_2031","geography_id":"PR_35","quantity_type":"remaining_energy_need_after_in_flight","quantity_status":"published_forecast","scenario":"reference","period":"2031","value":3.0,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 30!F8"},
+    {"metric_id":"ON_REMAINING_ENERGY_2035","geography_id":"PR_35","quantity_type":"remaining_energy_need_after_in_flight","quantity_status":"published_forecast","scenario":"reference","period":"2035","value":21.5,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 30!J8"},
+    {"metric_id":"ON_REMAINING_ENERGY_2040","geography_id":"PR_35","quantity_type":"remaining_energy_need_after_in_flight","quantity_status":"published_forecast","scenario":"reference","period":"2040","value":65.2,"unit":"TWh","is_approximate":false,"source_id":"IESO_APO_2026_DATA_TABLES","source_locator":"Figure 30!O8"},
+
+    {"metric_id":"ON_DC_ENERGY_REF_2027","geography_id":"PR_35","quantity_type":"data_centre_net_annual_energy","quantity_status":"published_forecast","scenario":"reference","period":"2027","value":4.5,"unit":"TWh","is_approximate":true,"source_id":"IESO_APO_2026_DEMAND_MODULE","source_locator":"page 8, section 2.1.2.1"},
+    {"metric_id":"ON_DC_ENERGY_REF_2050","geography_id":"PR_35","quantity_type":"data_centre_net_annual_energy","quantity_status":"published_forecast","scenario":"reference","period":"2050","value":22.6,"unit":"TWh","is_approximate":true,"source_id":"IESO_APO_2026_DEMAND_MODULE","source_locator":"page 8, section 2.1.2.1"},
+    {"metric_id":"ON_DC_ENERGY_HIGH_2027","geography_id":"PR_35","quantity_type":"data_centre_net_annual_energy","quantity_status":"published_forecast","scenario":"high","period":"2027","value":4.5,"unit":"TWh","is_approximate":true,"source_id":"IESO_APO_2026_DEMAND_MODULE","source_locator":"page 18, section 2.2.2.1"},
+    {"metric_id":"ON_DC_ENERGY_HIGH_2050","geography_id":"PR_35","quantity_type":"data_centre_net_annual_energy","quantity_status":"published_forecast","scenario":"high","period":"2050","value":28.4,"unit":"TWh","is_approximate":true,"source_id":"IESO_APO_2026_DEMAND_MODULE","source_locator":"page 18, section 2.2.2.1"},
+    {"metric_id":"ON_DC_ENERGY_LOW_2027","geography_id":"PR_35","quantity_type":"data_centre_net_annual_energy","quantity_status":"published_forecast","scenario":"low","period":"2027","value":3.0,"unit":"TWh","is_approximate":true,"source_id":"IESO_APO_2026_DEMAND_MODULE","source_locator":"page 22, section 2.3.2.1"},
+    {"metric_id":"ON_DC_ENERGY_LOW_2050","geography_id":"PR_35","quantity_type":"data_centre_net_annual_energy","quantity_status":"published_forecast","scenario":"low","period":"2050","value":14.0,"unit":"TWh","is_approximate":true,"source_id":"IESO_APO_2026_DEMAND_MODULE","source_locator":"page 22, section 2.3.2.1"},
+
+    {"metric_id":"QC_REGULAR_SALES_2025","geography_id":"PR_24","quantity_type":"system_regular_electricity_sales","quantity_status":"published_forecast","scenario":"plan_reference","period":"2025","value":182.4,"unit":"TWh","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 10, Table 2.1"},
+    {"metric_id":"QC_REGULAR_SALES_2030","geography_id":"PR_24","quantity_type":"system_regular_electricity_sales","quantity_status":"published_forecast","scenario":"plan_reference","period":"2030","value":204.7,"unit":"TWh","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 10, Table 2.1"},
+    {"metric_id":"QC_REGULAR_SALES_2035","geography_id":"PR_24","quantity_type":"system_regular_electricity_sales","quantity_status":"published_forecast","scenario":"plan_reference","period":"2035","value":227.5,"unit":"TWh","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 10, Table 2.1"},
+    {"metric_id":"QC_SYSTEM_WINTER_PEAK_2025_26","geography_id":"PR_24","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"plan_reference_winter","period":"2025-2026","value":40599,"unit":"MW","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 12, Table 2.3"},
+    {"metric_id":"QC_SYSTEM_WINTER_PEAK_2030_31","geography_id":"PR_24","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"plan_reference_winter","period":"2030-2031","value":44344,"unit":"MW","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 12, Table 2.3"},
+    {"metric_id":"QC_SYSTEM_WINTER_PEAK_2034_35","geography_id":"PR_24","quantity_type":"seasonal_peak_demand","quantity_status":"published_forecast","scenario":"plan_reference_winter","period":"2034-2035","value":47528,"unit":"MW","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 12, Table 2.3"},
+    {"metric_id":"QC_DC_WINTER_PEAK_2025_26","geography_id":"PR_24","quantity_type":"data_centre_winter_peak","quantity_status":"published_forecast","scenario":"plan_reference","period":"2025-2026","value":297,"unit":"MW","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 12, Table 2.3, Centres de données"},
+    {"metric_id":"QC_DC_WINTER_PEAK_2030_31","geography_id":"PR_24","quantity_type":"data_centre_winter_peak","quantity_status":"published_forecast","scenario":"plan_reference","period":"2030-2031","value":835,"unit":"MW","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 12, Table 2.3, Centres de données"},
+    {"metric_id":"QC_DC_WINTER_PEAK_2034_35","geography_id":"PR_24","quantity_type":"data_centre_winter_peak","quantity_status":"published_forecast","scenario":"plan_reference","period":"2034-2035","value":1102,"unit":"MW","is_approximate":false,"source_id":"QUEBEC_SUPPLY_PLAN_PROGRESS_2025","source_locator":"page 12, Table 2.3, Centres de données"},
+    {"metric_id":"QC_DC_CURRENT_PEAK_2026_ANNOUNCEMENT","geography_id":"PR_24","quantity_type":"data_centre_peak_announcement","quantity_status":"observed_or_announced","scenario":"current","period":"2026-02-19","value":200,"unit":"MW","is_approximate":true,"source_id":"HYDRO_QUEBEC_DATA_CENTRE_RATE_2026","source_locator":"At a glance, data centres operating in Quebec"},
+    {"metric_id":"QC_DC_2035_PEAK_2026_ANNOUNCEMENT","geography_id":"PR_24","quantity_type":"data_centre_peak_announcement","quantity_status":"published_outlook","scenario":"approximately_2035","period":"2035","value":1000,"unit":"MW","is_approximate":true,"source_id":"HYDRO_QUEBEC_DATA_CENTRE_RATE_2026","source_locator":"At a glance, across the sector"},
+
+    {"metric_id":"BC_2024_CALL_FOR_POWER_ENERGY","geography_id":"PR_59","quantity_type":"planned_energy_acquisition","quantity_status":"contracted_plan_action","scenario":"awarded","period":"annual","value":5000,"unit":"GWh_per_year","is_approximate":true,"source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 2, 2024 Call for Power"},
+    {"metric_id":"BC_2025_CALL_FOR_POWER_ENERGY","geography_id":"PR_59","quantity_type":"planned_energy_acquisition","quantity_status":"proposed_plan_action","scenario":"up_to_by_2034","period":"2034","value":5000,"unit":"GWh_per_year","is_approximate":false,"source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 2, 2025 Call for Power"},
+    {"metric_id":"BC_REVELSTOKE_UNIT_6_CAPACITY","geography_id":"PR_59","quantity_type":"planned_generation_capacity_addition","quantity_status":"proposed_plan_action","scenario":"earliest_in_service","period":"unspecified","value":500,"unit":"MW","is_approximate":false,"source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 3, Revelstoke unit 6"},
+    {"metric_id":"BC_GM_SHRUM_UPGRADE_CAPACITY","geography_id":"PR_59","quantity_type":"planned_generation_capacity_addition","quantity_status":"conditional_plan_action","scenario":"later_horizon_if_needed","period":"unspecified","value":100,"unit":"MW","is_approximate":false,"source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 3, GM Shrum units 1-5"}
+  ],
+  "transmission_actions": [
+    {"action_id":"BC_NORTH_COAST_SECOND_500KV","geography_id":"PR_59","status":"advancing","action":"Second transmission line parallel to the existing 500 kV line from Prince George to Terrace.","source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 4"},
+    {"action_id":"BC_NORTHWEST_EXISTING_LINE_UPGRADES","geography_id":"PR_59","status":"advancing","action":"Upgrades to the existing northwest B.C. line to enable industrial and related development.","source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 4"},
+    {"action_id":"BC_LOWER_MAINLAND_VANCOUVER_ISLAND_NEXT_STAGE","geography_id":"PR_59","status":"conditional_preparation","action":"Prepare the next reinforcement stage from the Lower Mainland to Vancouver Island if demand is higher or earlier than expected.","source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 4"},
+    {"action_id":"BC_SOUTH_COAST_SECOND_STEP","geography_id":"PR_59","status":"conditional_preparation","action":"Prepare the second step of South Coast transmission upgrades if demand is higher or earlier than expected.","source_id":"BC_HYDRO_IRP_2025_SUMMARY","source_locator":"Key aspect 4"}
+  ]
+}

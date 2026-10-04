@@ -1,0 +1,290 @@
+{
+  "asset_class_coverage": [
+    {
+      "asset_class": "government_and_civic_facilities",
+      "cost_reconciled_count": 19,
+      "project_count": 87,
+      "schedule_reconciled_count": 28
+    },
+    {
+      "asset_class": "health_facilities",
+      "cost_reconciled_count": 27,
+      "project_count": 91,
+      "schedule_reconciled_count": 26
+    },
+    {
+      "asset_class": "municipal_water_and_resilience",
+      "cost_reconciled_count": 0,
+      "project_count": 8,
+      "schedule_reconciled_count": 1
+    },
+    {
+      "asset_class": "other_public_infrastructure",
+      "cost_reconciled_count": 7,
+      "project_count": 28,
+      "schedule_reconciled_count": 8
+    },
+    {
+      "asset_class": "roads_transit_and_airports",
+      "cost_reconciled_count": 44,
+      "project_count": 168,
+      "schedule_reconciled_count": 41
+    },
+    {
+      "asset_class": "schools_and_postsecondary",
+      "cost_reconciled_count": 26,
+      "project_count": 201,
+      "schedule_reconciled_count": 33
+    },
+    {
+      "asset_class": "social_and_affordable_housing",
+      "cost_reconciled_count": 18,
+      "project_count": 66,
+      "schedule_reconciled_count": 31
+    }
+  ],
+  "coverage_summary": {
+    "actual_completion_fiscal_year_count": 87,
+    "authorized_cost_revision_event_count": 228,
+    "authorized_schedule_revision_event_count": 276,
+    "cost_revision_chain_reconciled_project_count": 141,
+    "cost_revision_project_count": 142,
+    "history_published_count": 649,
+    "joint_reconciled_revision_project_count": 111,
+    "schedule_revision_chain_reconciled_project_count": 168,
+    "schedule_revision_project_count": 176,
+    "source_project_count": 649,
+    "stable_lifecycle_project_id_count": 649
+  },
+  "descriptive_statistics": {
+    "authorized_cost_variance_fraction": {
+      "count": 141,
+      "maximum": 2.871578947368421,
+      "mean": 0.26740594975111487,
+      "median": 0.19069767441860466,
+      "minimum": -0.28703703703703703,
+      "p25": 0.0,
+      "p75": 0.44096728307254623,
+      "p90": 0.71875
+    },
+    "authorized_schedule_change_months": {
+      "count": 168,
+      "maximum": 120.0,
+      "mean": 18.517857142857142,
+      "median": 12.0,
+      "minimum": -36.0,
+      "p25": 3.0,
+      "p75": 30.25,
+      "p90": 52.900000000000034
+    },
+    "by_asset_class": [
+      {
+        "asset_class": "government_and_civic_facilities",
+        "authorized_cost_variance_fraction": {
+          "count": 19,
+          "maximum": 1.6744186046511629,
+          "mean": 0.5543015697679636,
+          "median": 0.5204918032786885,
+          "minimum": -0.047619047619047616,
+          "p25": 0.2038144456749108,
+          "p75": 0.8753884971239448,
+          "p90": 1.112461273666093
+        },
+        "authorized_schedule_change_months": {
+          "count": 28,
+          "maximum": 93.0,
+          "mean": 25.607142857142858,
+          "median": 19.0,
+          "minimum": -3.0,
+          "p25": 4.5,
+          "p75": 39.5,
+          "p90": 63.30000000000001
+        }
+      },
+      {
+        "asset_class": "health_facilities",
+        "authorized_cost_variance_fraction": {
+          "count": 27,
+          "maximum": 2.871578947368421,
+          "mean": 0.4616625876101889,
+          "median": 0.378,
+          "minimum": -0.20283533260632497,
+          "p25": 0.1613597246127366,
+          "p75": 0.5767133956386292,
+          "p90": 0.8581538461538463
+        },
+        "authorized_schedule_change_months": {
+          "count": 26,
+          "maximum": 72.0,
+          "mean": 30.307692307692307,
+          "median": 23.5,
+          "minimum": 3.0,
+          "p25": 16.25,
+          "p75": 42.25,
+          "p90": 72.0
+        }
+      },
+      {
+        "asset_class": "municipal_water_and_resilience",
+        "authorized_cost_variance_fraction": {
+          "count": 0,
+          "maximum": null,
+          "mean": null,
+          "median": null,
+          "minimum": null,
+          "p25": null,
+          "p75": null,
+          "p90": null
+        },
+        "authorized_schedule_change_months": {
+          "count": 1,
+          "maximum": 4.0,
+          "mean": 4.0,
+          "median": 4.0,
+          "minimum": 4.0,
+          "p25": 4.0,
+          "p75": 4.0,
+          "p90": 4.0
+        }
+      },
+      {
+        "asset_class": "other_public_infrastructure",
+        "authorized_cost_variance_fraction": {
+          "count": 7,
+          "maximum": 0.7670886075949367,
+          "mean": 0.3842095399896208,
+          "median": 0.3532219570405728,
+          "minimum": -0.09711684370257977,
+          "p25": 0.3160590605717164,
+          "p75": 0.5170774689254916,
+          "p90": 0.6703472736730929
+        },
+        "authorized_schedule_change_months": {
+          "count": 8,
+          "maximum": 60.0,
+          "mean": 26.625,
+          "median": 25.0,
+          "minimum": 7.0,
+          "p25": 12.0,
+          "p75": 36.0,
+          "p90": 43.199999999999996
+        }
+      },
+      {
+        "asset_class": "roads_transit_and_airports",
+        "authorized_cost_variance_fraction": {
+          "count": 44,
+          "maximum": 1.2293892521129006,
+          "mean": 0.2168206500184109,
+          "median": 0.16005705366273748,
+          "minimum": -0.09771573604060914,
+          "p25": 0.013489208633093525,
+          "p75": 0.33222058617849537,
+          "p90": 0.5491091140398944
+        },
+        "authorized_schedule_change_months": {
+          "count": 41,
+          "maximum": 120.0,
+          "mean": 22.097560975609756,
+          "median": 17.0,
+          "minimum": -36.0,
+          "p25": 3.0,
+          "p75": 34.0,
+          "p90": 60.0
+        }
+      },
+      {
+        "asset_class": "schools_and_postsecondary",
+        "authorized_cost_variance_fraction": {
+          "count": 26,
+          "maximum": 0.8384279475982532,
+          "mean": 0.07747208316759792,
+          "median": -0.018808777429467086,
+          "minimum": -0.28703703703703703,
+          "p25": -0.08044150524649553,
+          "p75": 0.25065969277165195,
+          "p90": 0.3795285916658484
+        },
+        "authorized_schedule_change_months": {
+          "count": 33,
+          "maximum": 108.0,
+          "mean": 14.454545454545455,
+          "median": 5.0,
+          "minimum": -6.0,
+          "p25": 0.0,
+          "p75": 23.0,
+          "p90": 36.400000000000006
+        }
+      },
+      {
+        "asset_class": "social_and_affordable_housing",
+        "authorized_cost_variance_fraction": {
+          "count": 18,
+          "maximum": 0.3954154727793696,
+          "mean": 0.02576498226365623,
+          "median": 0.007464084581250219,
+          "minimum": -0.17427385892116182,
+          "p25": -0.03963901759832006,
+          "p75": 0.07856393283823054,
+          "p90": 0.141473559120618
+        },
+        "authorized_schedule_change_months": {
+          "count": 31,
+          "maximum": 18.0,
+          "mean": 0.1935483870967742,
+          "median": 3.0,
+          "minimum": -22.0,
+          "p25": -6.0,
+          "p75": 6.0,
+          "p90": 10.0
+        }
+      }
+    ]
+  },
+  "evidence_status": "observed_authorized_change_text_with_inferred_parser",
+  "geography_scope": [
+    "PR_24"
+  ],
+  "limitations": [
+    "The current dashboard omits projects already retired from prior vintages, so survivor and threshold selection remain unresolved.",
+    "Authorized cost revisions are not final audited outturns and do not include estimate price-basis dates.",
+    "Authorized completion revisions are month-precision plans; fiscal-year completion statements do not supply exact actual dates.",
+    "Ambiguous events containing both partial and complete service dates are excluded from schedule-pair parsing.",
+    "No AI treatment is present, so no AI-attributable effect is estimated."
+  ],
+  "model_id": "AIIO_QUEBEC_AUTHORIZED_PROJECT_REVISIONS_0_1",
+  "outputs": {
+    "event_csv": "data/processed/quebec_pqi_authorized_revision_events.csv",
+    "event_csv_sha256": "sha256:79393b0c6e1a9cbfc3071a0f21b8fbbcd9d51179ca3165a43979afef571323d6",
+    "summary_csv": "data/processed/quebec_pqi_authorized_project_revisions.csv",
+    "summary_csv_sha256": "sha256:29bb8d9c7f443e05a2dc8ea93830e2f28a718a8759cc2571aa78965ae0705c8f"
+  },
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "authorized_revision_reference_panel_authorized": false,
+    "public_project_cost_outcome_authorized": false,
+    "public_project_schedule_outcome_authorized": false,
+    "reason": "The source supplies stable lifecycle IDs and authorized revision histories, but the current dashboard is a single-province survivor snapshot; costs are authorized parameters rather than final outturns, completion is usually planned or fiscal-year precision, estimate price-basis dates are absent, and independent parser review is pending.",
+    "status": "research_candidate_pending_independent_parser_review"
+  },
+  "schema_version": "1.0.0",
+  "source_as_of_date": "2026-08-20",
+  "source_contract": {
+    "current_cost": "cout_total is publisher-defined as total authorized cost",
+    "dictionary_anchor_count": 3,
+    "history": "suivi_modifications is publisher-defined as authorized changes during the project lifecycle and their effective dates",
+    "stable_project_id": "no_projet is publisher-defined as unique across the project lifecycle"
+  },
+  "source_files": {
+    "QUEBEC_PQI_DATA_DICTIONARY": {
+      "content_hash": "sha256:86c6c1ab940bbfed0df5b44b4259fa7b7999f1e425ad723fc4e6dfdb2e304d09",
+      "path": "2026-09-01_86c6c1ab940b.pdf",
+      "retrieved_at": "2026-09-01T05:20:13+00:00"
+    },
+    "QUEBEC_PQI_PROJECT_DASHBOARD": {
+      "content_hash": "sha256:a437f7ba9a749f33b130ec5a1a724821134b1b91bc7a2970bcf2597e8ff5877b",
+      "path": "2026-09-01_a437f7ba9a74.csv",
+      "retrieved_at": "2026-09-01T02:29:03+00:00"
+    }
+  }
+}

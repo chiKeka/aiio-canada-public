@@ -1,0 +1,16 @@
+{
+  "archive_catalog_source_id": "QUEBEC_PQI_ARCHIVE_CATALOG",
+  "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-08-26_c0f51d59bbb3.csv",
+  "byte_length": 718133,
+  "content_hash": "sha256:c0f51d59bbb3d9098161f7931e475899f0fa5eb5977ca6983bf15104103279b1",
+  "content_type": "text/csv",
+  "effective_url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/dcdec0c5-c3c9-4825-b30d-726b5103a176/download/tableau_bord_infrastructures_2022-08-26.csv",
+  "format": "CSV",
+  "resource_id": "dcdec0c5-c3c9-4825-b30d-726b5103a176",
+  "resource_name": "Tableau de bord en date du 26 ao\u00fbt 2022",
+  "result": "success",
+  "retrieval_id": "RET_QUEBEC_PQI_PROJECT_DASHBOARD_dcdec0c5c3c9",
+  "retrieved_at": "2026-09-01T06:13:39+00:00",
+  "snapshot_date": "2022-08-26",
+  "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD"
+}

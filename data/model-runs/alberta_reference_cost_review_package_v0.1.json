@@ -1,0 +1,243 @@
+{
+  "artifact_as_of_date": "2026-06-30",
+  "facts_to_reconcile": {
+    "gate_passing_horizons": [
+      {
+        "asset_class": "government_and_civic_facilities",
+        "geography_id": "CMA_835",
+        "horizon_years": 1,
+        "projected_cumulative_change_percent": 5.176,
+        "selected_method": "median_recent_yoy_drift"
+      }
+    ],
+    "horizon_result_count": 40,
+    "horizon_status_counts": {
+      "gate_failed": 29,
+      "gate_passed": 1,
+      "not_assessed": 10
+    },
+    "reference_series_count": 8
+  },
+  "input_manifest": [
+    {
+      "path": "data/processed/bcpi_alberta.csv",
+      "role": "normalized_input",
+      "sha256": "sha256:4ea07e72d839df3e66b81f5e9b213932c153e39020af7bc96cc0ce6cdb2f36c1"
+    },
+    {
+      "path": "data/model-runs/alberta_bcpi_reference_baseline_v0.1.json",
+      "role": "model_artifact",
+      "sha256": "sha256:9909c2d10a6c67f9699d98cd16dead6e619635b3a16b535c389ae9efa518bd40"
+    },
+    {
+      "path": "research/src/aiio/calibration.py",
+      "role": "implementation",
+      "sha256": "sha256:e1f727c620c556ae40150824cab11afae49cd26cafe5e568d5438265185c413d"
+    },
+    {
+      "path": "research/src/aiio/model_review.py",
+      "role": "review_packager",
+      "sha256": "sha256:3e340792421d3799ffc289c3b787626e48be43e3714b690c0b962bd10e50f7d6"
+    },
+    {
+      "path": "research/tests/test_calibration.py",
+      "role": "unit_tests",
+      "sha256": "sha256:4a692c14a2c17e7abb2ffaac883714ee07ef06fd2ab1dcebac24e87b5fa9af64"
+    },
+    {
+      "path": "research/tests/test_calibration_artifact.py",
+      "role": "artifact_tests",
+      "sha256": "sha256:6d9763e886b80e9c64ab560ea1f404e0ef85f9269bcab128eadaf8e5063310c2"
+    },
+    {
+      "path": "docs/methodology/calibration-protocol.md",
+      "role": "method_protocol",
+      "sha256": "sha256:5fe2e7fc1f00b8c1010d288213db1cceeaadf50848ed15f5e2578956ae6c44be"
+    },
+    {
+      "path": "docs/methodology/reference-cost-independent-review.md",
+      "role": "review_protocol",
+      "sha256": "sha256:1b4931e58c332473062c27b444d4019121db8797af5063032d94142277f203fc"
+    },
+    {
+      "path": "docs/methodology/pspe-integration-audit.md",
+      "role": "pspe_boundary_audit",
+      "sha256": "sha256:6a6a32647d53982ccc7745eead29b067823410cf9cb94d59c25e2740b78cca03"
+    },
+    {
+      "path": "docs/product/decision-mode.md",
+      "role": "product_contract",
+      "sha256": "sha256:44c1a177a67249c229a4f76d6d65bf4e9a3e2b0a063061f5965453caffb68a8d"
+    }
+  ],
+  "model_artifact_sha256": "sha256:9909c2d10a6c67f9699d98cd16dead6e619635b3a16b535c389ae9efa518bd40",
+  "model_id": "AIIO_AB_BCPI_REFERENCE_BASELINE_0_1",
+  "package_id": "AIIO_AB_REFERENCE_COST_REVIEW_PACKAGE_0_1",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "independent_review_complete": false,
+    "project_cost_translation_authorized": false,
+    "public_projection_authorized": false,
+    "reason": "This deterministic packet is a review instrument, not a completed independent verdict."
+  },
+  "required_criteria": [
+    {
+      "criterion_id": "estimand_boundary",
+      "question": "Does the artifact consistently describe a BCPI model-building reference-index path rather than a project-cost or AI-effect forecast?",
+      "required": true
+    },
+    {
+      "criterion_id": "temporal_integrity",
+      "question": "Are every candidate selection, error-band estimate and validation decision based only on information available at each rolling origin?",
+      "required": true
+    },
+    {
+      "criterion_id": "predeclared_model_selection",
+      "question": "Are candidates, lookback, tie rule, horizons, partitioning and gates fixed in code without post-outcome tuning?",
+      "required": true
+    },
+    {
+      "criterion_id": "validation_adequacy",
+      "question": "Are the locked origin counts, error gates and flat-benchmark comparison appropriate for the narrow baseline-only claim?",
+      "required": true
+    },
+    {
+      "criterion_id": "interval_semantics",
+      "question": "Are the p10/p90 bands correctly constructed and described as empirical historical error ranges, not confidence or probability intervals?",
+      "required": true
+    },
+    {
+      "criterion_id": "fail_closed_outputs",
+      "question": "Do failed or unassessed horizons remain null everywhere downstream, including project-cost translation and the public surface?",
+      "required": true
+    },
+    {
+      "criterion_id": "reference_class_mapping",
+      "question": "Are the four building reference mappings and Calgary/Edmonton geographic limits defensible and sufficiently disclosed?",
+      "required": true
+    },
+    {
+      "criterion_id": "graph_unit_separation",
+      "question": "Is the dimensionless PSPE-informed graph kept separate from BCPI percentages and project dollars?",
+      "required": true
+    },
+    {
+      "criterion_id": "reproducibility",
+      "question": "Do locked inputs, implementation hash, deterministic artifact and tests provide enough evidence to reproduce the exact run?",
+      "required": true
+    },
+    {
+      "criterion_id": "public_claim_boundary",
+      "question": "Would authorization remain limited to individual gate-passing E1 horizons, with no E2, province-wide, long-horizon health/school or project-budget claim?",
+      "required": true
+    }
+  ],
+  "review_scope": "Alberta BCPI reference-class baseline E1 only",
+  "review_status": "pending_independent_review",
+  "reviewer_instructions": [
+    "Perform a read-only review of every input-manifest file and verify each hash before forming a verdict.",
+    "Run the declared research tests or explain why they could not be run; green tests do not substitute for methodological judgment.",
+    "Record a criterion-level status and evidence-backed note for every required criterion.",
+    "Use findings for defects or limitations; unresolved critical or high findings prohibit a pass verdict.",
+    "A pass can recommend authorization only for the individually gate-passing E1 horizon listed in facts_to_reconcile.",
+    "Do not authorize E2, long-horizon health or school projections, project-budget translation, province-wide claims or graph-score monetization.",
+    "Return a separate JSON verdict conforming to verdict_contract; do not edit the model artifact or package."
+  ],
+  "schema_version": "1.0.0",
+  "test_commands": [
+    "PYTHONPATH=research/src python3 -m unittest research/tests/test_calibration.py research/tests/test_calibration_artifact.py -v",
+    "PYTHONPATH=research/src python3 -m aiio.cli --root . audit-program-readiness"
+  ],
+  "verdict_contract": {
+    "claim_boundary_acknowledged": true,
+    "criteria": [
+      {
+        "criterion_id": "estimand_boundary",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "temporal_integrity",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "predeclared_model_selection",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "validation_adequacy",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "interval_semantics",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "fail_closed_outputs",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "reference_class_mapping",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "graph_unit_separation",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "reproducibility",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      },
+      {
+        "criterion_id": "public_claim_boundary",
+        "notes": "<evidence-backed notes>",
+        "status": "pass|conditional|fail"
+      }
+    ],
+    "findings": [
+      {
+        "criterion_id": "<required criterion ID>",
+        "evidence": "<file/line or test evidence>",
+        "finding_id": "<unique>",
+        "severity": "critical|high|medium|low|observation",
+        "status": "open|resolved|accepted_limitation",
+        "summary": "<nonblank>"
+      }
+    ],
+    "overall_verdict": "pass|hold",
+    "package_id": "AIIO_AB_REFERENCE_COST_REVIEW_PACKAGE_0_1",
+    "package_sha256": "sha256:<hash of this package file>",
+    "publication_recommendation": "authorize_baseline_only|withhold",
+    "reviewed_at": "YYYY-MM-DD",
+    "reviewer": {
+      "conflicts_of_interest": "<none or disclosure>",
+      "independence_declaration": "<nonblank>",
+      "name": "<nonblank>",
+      "organization": "<nonblank or independent>",
+      "reviewer_is_not_model_author": true,
+      "reviewer_type": [
+        "claude_cli",
+        "grok_cli",
+        "human_subject_matter_expert"
+      ],
+      "tool_version": "<version or not_applicable>"
+    },
+    "schema_version": "1.0.0",
+    "summary": "<nonblank>",
+    "tests_run": [
+      {
+        "command": "<command>",
+        "notes": "<nonblank>",
+        "status": "pass|fail|not_run"
+      }
+    ]
+  }
+}

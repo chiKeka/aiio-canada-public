@@ -1,0 +1,33 @@
+{
+  "as_of_date": "2026-10-03",
+  "broad_screen_row_count": 59,
+  "candidate_reported_value_total_cad_proxy": 46565000.0,
+  "completion_duration_available_count": 53,
+  "data_centre_candidate_count": 53,
+  "evidence_status": "observed_permit_fields_with_inferred_keyword_classification",
+  "explicit_ai_reference_count": 0,
+  "input_sha256": "sha256:7c2c48c48c1426b78900f1113bc744ff4d5ed3be09d462e65a6464364b1e61db",
+  "limitations": [
+    "Keyword classification requires review and does not establish AI use.",
+    "Permit records may include multiple permit types or revisions for one underlying project.",
+    "Declared construction cost, where present, is not realized expenditure.",
+    "Precise location and named-party fields are excluded from the processed artifact."
+  ],
+  "model_id": "AIIO_TORONTO_DATA_CENTRE_PERMIT_PROXY_0_1",
+  "output_sha256": "sha256:b1d13f93e54d829e98efb12ed15aa4940ed3d0ec13a9e44a81dfa32b521ceee7",
+  "publication_boundary": {
+    "causal_effect_authorized": false,
+    "permit_completion_duration_authorized": true,
+    "proxy_exposure_authorized": true,
+    "realized_ai_construction_treatment_authorized": false,
+    "realized_construction_spend_authorized": false,
+    "reason": "Permit milestones and declared cost are administrative proxies, not quarterly realized expenditure or labour hours; text does not establish AI use.",
+    "status": "municipal_permit_activity_proxy_only"
+  },
+  "reported_value_available_count": 16,
+  "retrieval_manifest_sha256": "sha256:1dc7c53cc49226ec3f2951d1442b4e4d582fa726cb17f8c4960d59d441e428ec",
+  "schema_version": "0.1.0",
+  "source_ids": [
+    "TORONTO_CLEARED_BUILDING_PERMITS"
+  ]
+}

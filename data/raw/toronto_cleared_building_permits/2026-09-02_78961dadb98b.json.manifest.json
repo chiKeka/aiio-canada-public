@@ -1,0 +1,21 @@
+{
+  "archive_path": "data/raw/toronto_cleared_building_permits/2026-09-02_78961dadb98b.json",
+  "byte_length": 80370,
+  "content_hash": "sha256:78961dadb98bc87e1831b27f8799f01b5ba01cfd04c6eefd1d6b1213ce0275f3",
+  "excluded_fields": [
+    "STREET_NUM",
+    "STREET_NAME",
+    "POSTAL",
+    "GEO_ID",
+    "BUILDER_NAME"
+  ],
+  "query_terms": [
+    "data center"
+  ],
+  "resource_id": "a96c0ba4-3026-402b-b09d-5b1268b8f810",
+  "result": "success",
+  "retrieval_id": "RET_TORONTO_CLEARED_BUILDING_PERMITS_78961dadb98bc87e",
+  "retrieved_at": "2026-09-02T12:13:49+00:00",
+  "row_count": 59,
+  "source_id": "TORONTO_CLEARED_BUILDING_PERMITS"
+}

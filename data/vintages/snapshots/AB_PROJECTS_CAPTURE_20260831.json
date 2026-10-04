@@ -1,0 +1,39 @@
+{
+  "availability_basis": "capture_time_only",
+  "available_at": "2026-08-31T13:10:54+00:00",
+  "capture": {
+    "archive_path": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv",
+    "byte_length": 986294,
+    "content_hash": "sha256:450d7bfc94650944cbd5f0b4639752d876bd6f3b3e2f3ff5d1527381251bd032",
+    "content_type": "text/csv",
+    "effective_url": "https://www.majorprojects.alberta.ca/BulkAction",
+    "result": "success",
+    "retrieval_id": "RET_ALBERTA_MAJOR_PROJECTS_450d7bfc94650944",
+    "retrieved_at": "2026-08-31T13:10:54+00:00",
+    "source_id": "ALBERTA_MAJOR_PROJECTS"
+  },
+  "capture_manifest": {
+    "path": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json",
+    "sha256": "sha256:2c4b91f7d4ffcc1d8a6e9930867f6e265b65140abb3c97f0551c6b5b73279df3"
+  },
+  "intake_validation": "raw and normalized bytes hashed; source IDs, uniqueness and CSV shape checked",
+  "limitation": "Hashes verify file identity, not normalization correctness or independent reviewer identity. Dataset availability is not model-ready coverage.",
+  "normalized_artifact": {
+    "path": "data/vintages/artifacts/AB_PROJECTS_CAPTURE_20260831.csv",
+    "sha256": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199"
+  },
+  "normalized_from": {
+    "path": "data/processed/alberta_ai_projects.csv",
+    "sha256": "sha256:46724bd528df98fb9ccc301f8fa7b11e11fab9561a877a822f89cfb8be498199"
+  },
+  "publication": null,
+  "publication_boundary": {
+    "causal_attribution_authorized": false,
+    "model_replay_authorized": false,
+    "validated_estimate_authorized": false
+  },
+  "record_count": 22,
+  "schema_version": "AIIO_SOURCE_SNAPSHOT_1.0",
+  "snapshot_id": "AB_PROJECTS_CAPTURE_20260831",
+  "source_id": "ALBERTA_MAJOR_PROJECTS"
+}

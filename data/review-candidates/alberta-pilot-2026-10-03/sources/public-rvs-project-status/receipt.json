@@ -1,0 +1,15 @@
+{
+  "source_id": "public-rvs-project-status",
+  "requested_url": "https://www.rockyview.ab.ca/about-rvs/building-our-student-spaces",
+  "retrieved_at": "2026-10-03T21:30:30.895745+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://www.rockyview.ab.ca/about-rvs/building-our-student-spaces",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 169715,
+  "sha256": "a81b5829d70668e3bee9ecff13de50b1ce4c1826dc504a2e61a4ed0ea2b3915f",
+  "archive_path": "sources/public-rvs-project-status/page.html",
+  "content_verification": "relevant_source_content_verified"
+}

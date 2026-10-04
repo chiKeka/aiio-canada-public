@@ -1,0 +1,80 @@
+# dependencies
+**/node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# next.js
+/.next/
+/.vinext/
+/out/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local environment
+.env*
+
+# deployment and generated files
+.vercel
+next-env.d.ts
+AGENTS.md
+CLAUDE.md
+/dist/
+/.wrangler/
+/outputs/
+/work/
+/tmp/
+/.firecrawl/
+/workbook-work/*
+!/workbook-work/build_aiio_workbook.mjs
+
+# Finder/iCloud conflict copies are local recovery artifacts, never source.
+* 2.*
+
+# Large reproducible public-source caches (manifests remain versioned)
+/data/raw/statcan_jvws_14100444/*.zip
+/data/raw/statcan_lfs_occupation_14100416/*.zip
+/data/raw/statcan_ibc_34100293/*.zip
+/data/raw/statcan_census_occupation_98100449/*.json
+!/data/raw/statcan_census_occupation_98100449/*.json.manifest.json
+/data/raw/canadabuys_tender_notices_fy2026_2027/*.csv
+/data/raw/canadabuys_award_notices_fy2026_2027/*.csv
+/data/raw/canadabuys_contract_history_fy2026_2027/*.csv
+/data/raw/edmonton_general_building_permits/*.json
+!/data/raw/edmonton_general_building_permits/*.json.manifest.json
+
+# Redistribution terms are not yet confirmed; retain only the hash receipt.
+/data/raw/alberta_major_projects/*.csv
+
+# Historical evidence captures are local; version provenance and derived reviews.
+/data/raw/historical_evidence_20260905/
+
+# Weekly review candidates retain source bytes locally; commit hash receipts only.
+/data/review-candidates/weekly-evidence-*/data/raw/**/*
+!/data/review-candidates/weekly-evidence-*/data/raw/**/
+!/data/review-candidates/weekly-evidence-*/data/raw/**/*.manifest.json
+
+# Review-only public export: raw acquisitions stay local; publication is a separate review.
+/data/raw/**/*
+!/data/raw/**/
+!/data/raw/**/*.manifest.json
+# Existing reviewed open-licensed blobs may be intentionally included by the publication manifest.
+/publication/local-source-permission.json

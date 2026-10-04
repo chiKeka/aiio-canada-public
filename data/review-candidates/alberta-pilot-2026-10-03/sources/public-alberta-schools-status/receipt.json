@@ -1,0 +1,15 @@
+{
+  "source_id": "public-alberta-schools-status",
+  "requested_url": "https://www.alberta.ca/active-school-projects",
+  "retrieved_at": "2026-10-03T21:30:37.357761+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://www.alberta.ca/active-school-projects",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 92216,
+  "sha256": "b1f00b619fc99ce46497565089fc58d2ff626b9eef3dddb1bddd00cdd6177fae",
+  "archive_path": "sources/public-alberta-schools-status/page.html",
+  "content_verification": "relevant_source_content_verified"
+}

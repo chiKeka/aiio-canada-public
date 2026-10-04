@@ -1,0 +1,177 @@
+{
+  "as_of_date": "2026-02-25",
+  "code_sha256": "sha256:bc855b92b03cf68457213086268516439474cc9de0149c4a68ebbdfba53f8eb3",
+  "first_reference_year": 2006,
+  "geography_count": 14,
+  "geography_summaries": [
+    {
+      "geography_id": "CA",
+      "geography_label": "Canada",
+      "latest_actual_or_revised_value_cad": 8598600000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 21,
+      "withheld_or_unavailable_count": 0
+    },
+    {
+      "geography_id": "PR_10",
+      "geography_label": "Newfoundland and Labrador",
+      "latest_actual_or_revised_value_cad": 120600000,
+      "latest_actual_or_revised_year": 2022,
+      "published_value_count": 8,
+      "withheld_or_unavailable_count": 13
+    },
+    {
+      "geography_id": "PR_11",
+      "geography_label": "Prince Edward Island",
+      "latest_actual_or_revised_value_cad": 45100000,
+      "latest_actual_or_revised_year": 2022,
+      "published_value_count": 5,
+      "withheld_or_unavailable_count": 16
+    },
+    {
+      "geography_id": "PR_12",
+      "geography_label": "Nova Scotia",
+      "latest_actual_or_revised_value_cad": 145100000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 16,
+      "withheld_or_unavailable_count": 5
+    },
+    {
+      "geography_id": "PR_13",
+      "geography_label": "New Brunswick",
+      "latest_actual_or_revised_value_cad": 324400000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 20,
+      "withheld_or_unavailable_count": 1
+    },
+    {
+      "geography_id": "PR_24",
+      "geography_label": "Quebec",
+      "latest_actual_or_revised_value_cad": 1900000000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 21,
+      "withheld_or_unavailable_count": 0
+    },
+    {
+      "geography_id": "PR_35",
+      "geography_label": "Ontario",
+      "latest_actual_or_revised_value_cad": 4377800000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 21,
+      "withheld_or_unavailable_count": 0
+    },
+    {
+      "geography_id": "PR_46",
+      "geography_label": "Manitoba",
+      "latest_actual_or_revised_value_cad": 293700000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 20,
+      "withheld_or_unavailable_count": 1
+    },
+    {
+      "geography_id": "PR_47",
+      "geography_label": "Saskatchewan",
+      "latest_actual_or_revised_value_cad": 191300000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 16,
+      "withheld_or_unavailable_count": 5
+    },
+    {
+      "geography_id": "PR_48",
+      "geography_label": "Alberta",
+      "latest_actual_or_revised_value_cad": 458600000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 19,
+      "withheld_or_unavailable_count": 2
+    },
+    {
+      "geography_id": "PR_59",
+      "geography_label": "British Columbia",
+      "latest_actual_or_revised_value_cad": 745200000,
+      "latest_actual_or_revised_year": 2024,
+      "published_value_count": 20,
+      "withheld_or_unavailable_count": 1
+    },
+    {
+      "geography_id": "PR_60",
+      "geography_label": "Yukon",
+      "latest_actual_or_revised_value_cad": 22600000,
+      "latest_actual_or_revised_year": 2022,
+      "published_value_count": 2,
+      "withheld_or_unavailable_count": 19
+    },
+    {
+      "geography_id": "PR_61",
+      "geography_label": "Northwest Territories",
+      "latest_actual_or_revised_value_cad": 15000000,
+      "latest_actual_or_revised_year": 2022,
+      "published_value_count": 3,
+      "withheld_or_unavailable_count": 18
+    },
+    {
+      "geography_id": "PR_62",
+      "geography_label": "Nunavut",
+      "latest_actual_or_revised_value_cad": 700000,
+      "latest_actual_or_revised_year": 2022,
+      "published_value_count": 3,
+      "withheld_or_unavailable_count": 18
+    }
+  ],
+  "input_sha256": "sha256:a65541e3a9ad9026f90e9ff302157babff7e5845bb0c4c1d026d8e94c7b72120",
+  "latest_reference_year": 2026,
+  "limitations": [
+    "NAICS 51 is substantially broader than computing infrastructure providers and cannot isolate data-centre construction.",
+    "The source is annual and provincial/territorial, not quarterly at CMA or electricity-planning-region resolution.",
+    "2025 is preliminary actual and 2026 is intentions; only years through 2024 are actual or revised in this vintage.",
+    "Suppressed cells remain missing and are never converted to zero.",
+    "Capital construction expenditure is not construction labour hours and does not identify public-project outcomes."
+  ],
+  "model_id": "AIIO_INFORMATION_SECTOR_CONSTRUCTION_CAPEX_SCREEN_0_1",
+  "observation_count": 294,
+  "output_sha256": "sha256:f052c75db8b2771aa841d54477a53de415acaccbb3a8622392fd3eba4ebe8465",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "ai_construction_treatment_authorized": false,
+    "cost_escalation_percent": null,
+    "descriptive_broad_sector_capex_authorized": true,
+    "permitted_use": "regional information-sector construction activity context or sensitivity control",
+    "prohibited_use": "AI treatment onset, AI treatment dose, project-cost escalation or schedule-delay attribution",
+    "schedule_delay_days": null
+  },
+  "quality_flag_counts": {
+    "acceptable": 2,
+    "excellent": 80,
+    "good": 11,
+    "not_flagged": 72,
+    "suppressed_confidentiality": 99,
+    "use_with_caution": 8,
+    "very_good": 22
+  },
+  "reference_year_count": 21,
+  "release_measure_status_counts": {
+    "actual_or_revised": 266,
+    "intentions": 14,
+    "preliminary_actual": 14
+  },
+  "retrieval_manifest_sha256": "sha256:6e15c2aa49f5f4b2c3c65e02b99d3d8ef37555fe9b910b77fef860a2c7c86bf8",
+  "schema_version": "1.0.0",
+  "source_id": "STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035",
+  "source_release_date": "2026-02-25",
+  "transformation_id": "TR_STATCAN_INFORMATION_SECTOR_CONSTRUCTION_CAPEX_0_1",
+  "treatment_requirement_assessment": {
+    "actual_or_revised_data_available_through": 2024,
+    "authorizing_treatment_present": false,
+    "construction_capital_separable": true,
+    "data_centre_construction_labour_hours_present": false,
+    "exact_naics_518210_present": false,
+    "finest_available_relevant_naics_code": "51",
+    "published_frequency": "annual",
+    "published_geography": "province_or_territory",
+    "realized_ai_construction_spend_cad_present": false,
+    "reason": "The table separates construction capital and includes historical actual/revised values, but its finest relevant provincial industry is NAICS 51. That sector includes telecommunications, publishing, broadcasting and other information activities and cannot identify AI or data-centre construction. Annual province cells also do not satisfy the locked quarterly regional treatment contract.",
+    "required_frequency": "quarterly",
+    "required_geography": "CMA_or_reconciled_electricity_planning_region",
+    "required_industry_specificity": "NAICS 518210 or project-level data-centre construction",
+    "status": "proxy_only_not_authorizing"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "archive_catalog_source_id": "QUEBEC_PQI_ARCHIVE_CATALOG",
+  "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-10-26_4c8952eff4f0.csv",
+  "byte_length": 290936,
+  "content_hash": "sha256:4c8952eff4f0726681fa975b9cf8a9e0cde52e99b61e32ec2ad822a2e76bff36",
+  "content_type": "text/csv",
+  "effective_url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/10ad1260-2779-40eb-83d9-f12372c5485f/download/tableaubordinfrastructures2020-10-26.csv",
+  "resource_id": "10ad1260-2779-40eb-83d9-f12372c5485f",
+  "resource_name": "Tableau de bord en date du 26 octobre 2020",
+  "result": "success",
+  "retrieval_id": "RET_QUEBEC_PQI_PROJECT_DASHBOARD_10ad12602779",
+  "retrieved_at": "2026-09-01T05:46:11+00:00",
+  "row_count": 280,
+  "snapshot_date": "2020-10-26",
+  "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+  "threshold_regime": "cad_50m_and_over"
+}

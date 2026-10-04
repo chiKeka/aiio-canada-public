@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_BC_HYDRO_IRP_2025_SUMMARY_48943e3c868100ee",
+  "source_id": "BC_HYDRO_IRP_2025_SUMMARY",
+  "retrieved_at": "2026-09-01T02:38:11+00:00",
+  "effective_url": "https://www.bchydro.com/toolbar/about/strategies-plans-regulatory/supply-operations/long-term-electricity-planning/integrated-resource-plan.html",
+  "content_hash": "sha256:48943e3c868100ee8da1676f94a20400f8070ee7302a9b5945e0908d3a8073ab",
+  "content_type": "text/html",
+  "byte_length": 469924,
+  "archive_path": "data/raw/bc_hydro_irp_2025_summary/2026-09-01_48943e3c8681.html",
+  "result": "success"
+}

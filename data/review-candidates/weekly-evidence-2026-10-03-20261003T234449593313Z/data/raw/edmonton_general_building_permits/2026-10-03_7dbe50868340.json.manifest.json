@@ -1,0 +1,32 @@
+{
+  "archive_path": "data/raw/edmonton_general_building_permits/2026-10-03_7dbe50868340.json",
+  "byte_length": 39980,
+  "content_hash": "sha256:7dbe50868340e79cc1ea1f62dc23b043381309558e95df35ad897bc842f43aea",
+  "content_type": "application/json",
+  "dataset_id": "24uj-dj8v",
+  "effective_url": "https://data.edmonton.ca/resource/24uj-dj8v.json?%24select=row_id%2Cissue_date%2Cyear%2Cmonth_number%2Cjob_category%2Cjob_description%2Cbuilding_type%2Cwork_type%2Cconstruction_value%2Cfloor_area%2Cneighbourhood%2Coccupancy_granted_date&%24where=upper%28job_description%29+like+%27%25DATA+CENT%25%27+OR+upper%28building_type%29+like+%27%25DATA+CENT%25%27+OR+upper%28job_category%29+like+%27%25DATA+CENT%25%27+OR+upper%28work_type%29+like+%27%25DATA+CENT%25%27+OR+upper%28job_description%29+like+%27%25SERVER%25%27+OR+upper%28building_type%29+like+%27%25SERVER%25%27+OR+upper%28job_description%29+like+%27%25COLOCATION%25%27+OR+upper%28job_description%29+like+%27%25CO-LOCATION%25%27+OR+upper%28job_description%29+like+%27%25HYPERSCALE%25%27&%24order=issue_date%2Crow_id&%24limit=50000",
+  "excluded_fields": [
+    "address",
+    "legal_description",
+    "latitude",
+    "longitude",
+    "location",
+    "geometry_point"
+  ],
+  "metadata_archive_path": "data/raw/edmonton_general_building_permits/2026-10-03_7dbe50868340.metadata.json",
+  "metadata_byte_length": 55769,
+  "metadata_content_hash": "sha256:4230deaa0afbd152ecc973a01f665d3b80669bed4a99481b6cdd2f7f01eb9f7b",
+  "metadata_content_type": "application/json",
+  "metadata_effective_url": "https://data.edmonton.ca/api/views/24uj-dj8v",
+  "query_parameters": {
+    "$limit": "50000",
+    "$order": "issue_date,row_id",
+    "$select": "row_id,issue_date,year,month_number,job_category,job_description,building_type,work_type,construction_value,floor_area,neighbourhood,occupancy_granted_date",
+    "$where": "upper(job_description) like '%DATA CENT%' OR upper(building_type) like '%DATA CENT%' OR upper(job_category) like '%DATA CENT%' OR upper(work_type) like '%DATA CENT%' OR upper(job_description) like '%SERVER%' OR upper(building_type) like '%SERVER%' OR upper(job_description) like '%COLOCATION%' OR upper(job_description) like '%CO-LOCATION%' OR upper(job_description) like '%HYPERSCALE%'"
+  },
+  "result": "success",
+  "retrieval_id": "RET_EDMONTON_GENERAL_BUILDING_PERMITS_7dbe50868340e79c",
+  "retrieved_at": "2026-10-03T23:47:32+00:00",
+  "row_count": 86,
+  "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS"
+}

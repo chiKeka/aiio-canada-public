@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.1.0",
+  "scenario_id": "AB_50B_2027_2036_COUNTERFACTUAL",
+  "parameter_set_id": "AB_50B_PARAMETERS_0_2",
+  "name": "Counterfactual Alberta $50B (uncalibrated diagnostic)",
+  "description": "A counterfactual structural test of how a ten-year AI infrastructure capital program could propagate through selected Alberta construction resources and public-delivery pressures. It is not a forecast or an aggregation of announced projects.",
+  "geography_id": "PR_48",
+  "evidence_status": "scenario",
+  "currency": "CAD",
+  "currency_year": 2026,
+  "investment_total_cad": 50000000000,
+  "start_year": 2027,
+  "end_year": 2036,
+  "local_capture_share": 0.72,
+  "components": {
+    "site_development": 0.03,
+    "building_and_civil": 0.14,
+    "electrical_and_mechanical": 0.21,
+    "grid_and_generation": 0.08,
+    "computing_and_networking": 0.46,
+    "professional_and_other": 0.08
+  },
+  "annual_profile": [0.04, 0.07, 0.10, 0.12, 0.14, 0.14, 0.13, 0.11, 0.09, 0.06],
+  "normalization_denominators_cad": {
+    "civil": 3000000000,
+    "electrical_mechanical": 2000000000,
+    "grid_construction": 1500000000
+  },
+  "normalization_note": "Assumed annual Alberta absorption denominators used only to create dimensionless pressure shocks. They are uncalibrated and are varied by 0.5x and 2.0x in sensitivity testing.",
+  "capture_note": "A uniform local-capture assumption is used for transparency and is varied at 0.40, 0.72 and 0.90. Component-specific capture is a future calibration requirement.",
+  "exclusion_note": "Computing and networking plus professional and other costs total 54% of scenario capex and are not propagated through the construction graph.",
+  "author": "AIIO Canada research build",
+  "status": "uncalibrated_structural_diagnostic"
+}

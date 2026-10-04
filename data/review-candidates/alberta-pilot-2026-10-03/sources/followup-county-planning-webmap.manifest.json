@@ -1,0 +1,12 @@
+{
+  "source_id": "FOLLOWUP_COUNTY_PLANNING_WEBMAP",
+  "source_url": "https://www.arcgis.com/sharing/rest/content/items/a2dae402da1c407da73fd2aa3fdf1884/data?f=json",
+  "effective_url": "https://www.arcgis.com/sharing/rest/content/items/a2dae402da1c407da73fd2aa3fdf1884/data?f=json",
+  "retrieved_at": "2026-10-03T23:03:55.561275+00:00",
+  "content_hash": "sha256:2c510bb73760f95221b2af8aafc55139f2b3dec30cbde35e259d5f39b0bd6c2a",
+  "byte_length": 45152,
+  "content_type": "application/json",
+  "result": "success",
+  "local_raw_file": "followup-county-planning-webmap.raw",
+  "redistribution": "receipt_only_pending_review"
+}

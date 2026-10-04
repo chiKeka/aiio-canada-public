@@ -1,0 +1,989 @@
+{
+  "schema_version": "public-snapshot-1",
+  "receipts": [
+    {
+      "receipt_path": "data/raw/aeso_large_load_projects/2026-09-14_61d2eda646ac.html.manifest.json",
+      "source_id": "AESO_LARGE_LOAD_PROJECTS",
+      "original_content_hash": "sha256:61d2eda646ac8551505b78ac1c8981cff48f16d52bc278dddc6057b24afa7809",
+      "archive_path": "data/raw/aeso_large_load_projects/2026-09-14_61d2eda646ac.html",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/aeso_large_load_projects/2026-09-21_acb1127441bb.html.manifest.json",
+      "source_id": "AESO_LARGE_LOAD_PROJECTS",
+      "original_content_hash": "sha256:acb1127441bbd4bd90f39970043809e705931e312a3fe3223ae0c1e86f6d0502",
+      "archive_path": "data/raw/aeso_large_load_projects/2026-09-21_acb1127441bb.html",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/aeso_large_load_projects/2026-08-31_43d55ccde558.html.manifest.json",
+      "source_id": "AESO_LARGE_LOAD_PROJECTS",
+      "original_content_hash": "sha256:43d55ccde5588a8c3754861a37fbd4274e605035a0dba32f72ad97cd98e86a56",
+      "archive_path": "data/raw/aeso_large_load_projects/2026-08-31_43d55ccde558.html",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/toronto_cleared_building_permits/2026-10-03_7c2c48c48c14.json.manifest.json",
+      "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+      "original_content_hash": "sha256:7c2c48c48c1426b78900f1113bc744ff4d5ed3be09d462e65a6464364b1e61db",
+      "archive_path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/toronto_cleared_building_permits/2026-10-03_7c2c48c48c14.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/toronto_cleared_building_permits/2026-09-02_7fe36fa06931.json.manifest.json",
+      "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+      "original_content_hash": "sha256:7fe36fa06931a7d4ff374d76b9058a9d46055b041497897fa0b0a02edcfe5f16",
+      "archive_path": "data/raw/toronto_cleared_building_permits/2026-09-02_7fe36fa06931.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/toronto_cleared_building_permits/2026-09-02_78961dadb98b.json.manifest.json",
+      "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+      "original_content_hash": "sha256:78961dadb98bc87e1831b27f8799f01b5ba01cfd04c6eefd1d6b1213ce0275f3",
+      "archive_path": "data/raw/toronto_cleared_building_permits/2026-09-02_78961dadb98b.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/toronto_cleared_building_permits/2026-09-03_7dc1fcb1ac91.json.manifest.json",
+      "source_id": "TORONTO_CLEARED_BUILDING_PERMITS",
+      "original_content_hash": "sha256:7dc1fcb1ac91325a5813b5435bb8565fc50f27a3ff8d3aac951fd7ab7699b732",
+      "archive_path": "data/raw/toronto_cleared_building_permits/2026-09-03_7dc1fcb1ac91.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_census_occupation_98100449/2026-08-31_47d7833ff136.json.manifest.json",
+      "source_id": "STATCAN_CENSUS_OCCUPATION_98100449",
+      "original_content_hash": "sha256:47d7833ff136473a6f24e4d99706a8065fabf8085a41b5d5b50f80a6987e5a83",
+      "archive_path": "data/raw/statcan_census_occupation_98100449/2026-08-31_47d7833ff136.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_population_17100009/2026-09-01_4c99d5f13722.zip.manifest.json",
+      "source_id": "STATCAN_POPULATION_17100009",
+      "original_content_hash": "sha256:4c99d5f137222ca7bcbb3c2c0e23b422c374e2712b68412965d06411bb0f31f5",
+      "archive_path": "data/raw/statcan_population_17100009/2026-09-01_4c99d5f13722.zip",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/ontario_builds_projects/2026-09-01_acd5e57a1989.csv.manifest.json",
+      "source_id": "ONTARIO_BUILDS_PROJECTS",
+      "original_content_hash": "sha256:acd5e57a1989517aaae269b5836f7d1e56b22b2f948d0254500b8c3b54b5bae4",
+      "archive_path": "data/raw/ontario_builds_projects/2026-09-01_acd5e57a1989.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard/2026-09-01_a437f7ba9a74.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:a437f7ba9a749f33b130ec5a1a724821134b1b91bc7a2970bcf2597e8ff5877b",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard/2026-09-01_a437f7ba9a74.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/edmonton_general_building_permits/2026-10-03_7dbe50868340.json.manifest.json",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "original_content_hash": "sha256:7dbe50868340e79cc1ea1f62dc23b043381309558e95df35ad897bc842f43aea",
+      "archive_path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/edmonton_general_building_permits/2026-10-03_7dbe50868340.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/edmonton_general_building_permits/2026-09-03_f4da956ae985.json.manifest.json",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "original_content_hash": "sha256:f4da956ae985c7eb9abb9cd993407c57bfdf23a8191bba77605e20482d9b6f17",
+      "archive_path": "data/raw/edmonton_general_building_permits/2026-09-03_f4da956ae985.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/edmonton_general_building_permits/2026-09-02_f4da956ae985.json.manifest.json",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "original_content_hash": "sha256:f4da956ae985c7eb9abb9cd993407c57bfdf23a8191bba77605e20482d9b6f17",
+      "archive_path": "data/raw/edmonton_general_building_permits/2026-09-02_f4da956ae985.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json.manifest.json",
+      "source_id": "EDMONTON_GENERAL_BUILDING_PERMITS",
+      "original_content_hash": "sha256:f4da956ae985c7eb9abb9cd993407c57bfdf23a8191bba77605e20482d9b6f17",
+      "archive_path": "data/raw/edmonton_general_building_permits/2026-09-01_f4da956ae985.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/canadabuys_contract_history_fy2026_2027/2026-09-01_2a298379fd98.csv.manifest.json",
+      "source_id": "CANADABUYS_CONTRACT_HISTORY_FY2026_2027",
+      "original_content_hash": "sha256:2a298379fd9807e4bf78c47d0c3377c4d8f0e5780bee19fce9dff01f8785db99",
+      "archive_path": "data/raw/canadabuys_contract_history_fy2026_2027/2026-09-01_2a298379fd98.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/canadabuys_contract_history_fy2026_2027/2026-10-03_cff65f47b71b.csv.manifest.json",
+      "source_id": "CANADABUYS_CONTRACT_HISTORY_FY2026_2027",
+      "original_content_hash": "sha256:cff65f47b71b7c5e4ccbd7b96b0a1de9f15ab71d63ba0150fb18fe6a264eba27",
+      "archive_path": "data/raw/canadabuys_contract_history_fy2026_2027/2026-10-03_cff65f47b71b.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/vancouver_issued_building_permits/2026-09-02_e59dfebb0e70.json.manifest.json",
+      "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS",
+      "original_content_hash": "sha256:e59dfebb0e70968785eb49c72cafce6dc9ad31ca9bae37617b0dbf5d8e69db15",
+      "archive_path": "data/raw/vancouver_issued_building_permits/2026-09-02_e59dfebb0e70.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/vancouver_issued_building_permits/2026-09-03_7a9fd95f05b2.json.manifest.json",
+      "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS",
+      "original_content_hash": "sha256:7a9fd95f05b2f757b139d60b1d7eb81cac25ca420c9059e2028f92a1973a7a5b",
+      "archive_path": "data/raw/vancouver_issued_building_permits/2026-09-03_7a9fd95f05b2.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/vancouver_issued_building_permits/2026-10-03_1cba64a020f2.json.manifest.json",
+      "source_id": "VANCOUVER_ISSUED_BUILDING_PERMITS",
+      "original_content_hash": "sha256:1cba64a020f24bc0c11cbca79af5c1f8a4bc10424977269a32a9ac85f607a85e",
+      "archive_path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/vancouver_issued_building_permits/2026-10-03_1cba64a020f2.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/hydro_quebec_data_centre_rate_2026/2026-09-01_2f5beed48b1b.html.manifest.json",
+      "source_id": "HYDRO_QUEBEC_DATA_CENTRE_RATE_2026",
+      "original_content_hash": "sha256:2f5beed48b1be4ad62e20729c6f4ef36eada08e28a4903ad9595e3cd64e7a921",
+      "archive_path": "data/raw/hydro_quebec_data_centre_rate_2026/2026-09-01_2f5beed48b1b.html",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/oago_selected_infrastructure_projects_2024/2026-09-01_88cdf8a0966d.pdf.manifest.json",
+      "source_id": "OAGO_SELECTED_INFRASTRUCTURE_PROJECTS_2024",
+      "original_content_hash": "sha256:88cdf8a0966dff31f5c186ec786a0d276088b8b78243d8bf1fb6aba01d42aa1d",
+      "archive_path": "data/raw/oago_selected_infrastructure_projects_2024/2026-09-01_88cdf8a0966d.pdf",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/bc_hydro_irp_2025_summary/2026-09-01_48943e3c8681.html.manifest.json",
+      "source_id": "BC_HYDRO_IRP_2025_SUMMARY",
+      "original_content_hash": "sha256:48943e3c868100ee8da1676f94a20400f8070ee7302a9b5945e0908d3a8073ab",
+      "archive_path": "data/raw/bc_hydro_irp_2025_summary/2026-09-01_48943e3c8681.html",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/aeso_interim_large_load_2025_06/2026-08-31_86ea3ce051e0.html.manifest.json",
+      "source_id": "AESO_INTERIM_LARGE_LOAD_2025_06",
+      "original_content_hash": "sha256:86ea3ce051e0faf81d5356c141b4a45b27c2b43ef85520cfe1eb871bc55a9009",
+      "archive_path": "data/raw/aeso_interim_large_load_2025_06/2026-08-31_86ea3ce051e0.html",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/ieso_apo_2026_data_tables/2026-09-01_987448021f1d.xlsx.manifest.json",
+      "source_id": "IESO_APO_2026_DATA_TABLES",
+      "original_content_hash": "sha256:987448021f1db08bf7c815f453fa9f73057a2507f25992e110aca0abc3666526",
+      "archive_path": "data/raw/ieso_apo_2026_data_tables/2026-09-01_987448021f1d.xlsx",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_jvws_14100444/2026-10-03_bb50ed47b2b5.zip.manifest.json",
+      "source_id": "STATCAN_JVWS_14100444",
+      "original_content_hash": "sha256:bb50ed47b2b5149c481e11f7be3289f137867df7457f17d7e58e37c5ea6a0080",
+      "archive_path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/statcan_jvws_14100444/2026-10-03_bb50ed47b2b5.zip",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_jvws_14100444/2026-08-31_38a420036ad5.zip.manifest.json",
+      "source_id": "STATCAN_JVWS_14100444",
+      "original_content_hash": "sha256:38a420036ad592d75b66bdfbd7b4540cd9c7639df1ed08dc4659c96287538138",
+      "archive_path": "data/raw/statcan_jvws_14100444/2026-08-31_38a420036ad5.zip",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_jvws_14100444/2026-09-21_bb50ed47b2b5.zip.manifest.json",
+      "source_id": "STATCAN_JVWS_14100444",
+      "original_content_hash": "sha256:bb50ed47b2b5149c481e11f7be3289f137867df7457f17d7e58e37c5ea6a0080",
+      "archive_path": "data/raw/statcan_jvws_14100444/2026-09-21_bb50ed47b2b5.zip",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2024-10-09_0cb66745c2cc.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:0cb66745c2ccfec4575e4185f925565ecdcd803b1e3e8994334474db99261f7b",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2024-10-09_0cb66745c2cc.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-10-26_4c8952eff4f0.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:4c8952eff4f0726681fa975b9cf8a9e0cde52e99b61e32ec2ad822a2e76bff36",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-10-26_4c8952eff4f0.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2025-12-19_698d8f701956.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:698d8f701956474c217fc6132750ad1c6be57dd97af6ac1b2ef2df656a5e0d9c",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2025-12-19_698d8f701956.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2026-08-20_a437f7ba9a74.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:a437f7ba9a749f33b130ec5a1a724821134b1b91bc7a2970bcf2597e8ff5877b",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2026-08-20_a437f7ba9a74.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2023-12-08_8187ad50e6d5.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:8187ad50e6d58b300f8063cd46125dc9e6947b4501b07e52e4fc5cec03547697",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2023-12-08_8187ad50e6d5.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-12-03_ec45f635dc8d.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:ec45f635dc8d2f15b25d9f2cdc551d5504310110e6ae1f88309ec3faae240c82",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-12-03_ec45f635dc8d.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-05-19_cac42720e5bf.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:cac42720e5bfb07a7d6a20dfa0849e067e3004450406d8592f36bc617591f1fd",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-05-19_cac42720e5bf.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-11-16_418368c9ba76.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:418368c9ba76f001ad2b500a1ea5303a2b54a871aeec032e00a8089ba23cd32e",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2020-11-16_418368c9ba76.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2021-12-06_902401198e51.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:902401198e51a5dcd4c87cd2f66a09b4bdddd73baffc00d7bee057c05b4d9e1a",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2021-12-06_902401198e51.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_vintages/2022-12-08_50c404d3573a.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:50c404d3573abf5c0cb5cedb28117f234da81449f06375f34bb62122782f8d74",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_vintages/2022-12-08_50c404d3573a.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_archive_catalog/2026-09-01_c3a16c24dbe0.json.manifest.json",
+      "source_id": "QUEBEC_PQI_ARCHIVE_CATALOG",
+      "original_content_hash": "sha256:c3a16c24dbe0d19dbce495fd7a6966e6417d2f96be95b93d55552731e72800c1",
+      "archive_path": "data/raw/quebec_pqi_archive_catalog/2026-09-01_c3a16c24dbe0.json",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/canadabuys_award_notices_fy2026_2027/2026-10-03_b32e82266709.csv.manifest.json",
+      "source_id": "CANADABUYS_AWARD_NOTICES_FY2026_2027",
+      "original_content_hash": "sha256:b32e82266709e1996e74add0efb50073597433cdebe807f65287382f8da54a22",
+      "archive_path": "data/raw/canadabuys_award_notices_fy2026_2027/2026-10-03_b32e82266709.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/canadabuys_award_notices_fy2026_2027/2026-09-01_8b4ec53917a8.csv.manifest.json",
+      "source_id": "CANADABUYS_AWARD_NOTICES_FY2026_2027",
+      "original_content_hash": "sha256:8b4ec53917a87e987f3cb707cf6e9843e6344937a4bb210a60cc18524b9ad47a",
+      "archive_path": "data/raw/canadabuys_award_notices_fy2026_2027/2026-09-01_8b4ec53917a8.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/aeso_data_centre_update_2025_09/2026-08-31_d997820b3ed2.pdf.manifest.json",
+      "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+      "original_content_hash": "sha256:d997820b3ed234324f1f7bbca5b8b75fdc1bf5f64859816f4dc6cc084b229428",
+      "archive_path": "data/raw/aeso_data_centre_update_2025_09/2026-08-31_d997820b3ed2.pdf",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_lfs_occupation_14100416/2026-08-31_d8cb954e0ffe.zip.manifest.json",
+      "source_id": "STATCAN_LFS_OCCUPATION_14100416",
+      "original_content_hash": "sha256:d8cb954e0ffe8f14c9a1481cff9b2a0185450a54d59f912aff937453df3fe616",
+      "archive_path": "data/raw/statcan_lfs_occupation_14100416/2026-08-31_d8cb954e0ffe.zip",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv.manifest.json",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "original_content_hash": "sha256:450d7bfc94650944cbd5f0b4639752d876bd6f3b3e2f3ff5d1527381251bd032",
+      "archive_path": "data/raw/alberta_major_projects/2026-08-31_450d7bfc9465.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/alberta_major_projects/2026-10-03_effcef27c3b1.csv.manifest.json",
+      "source_id": "ALBERTA_MAJOR_PROJECTS",
+      "original_content_hash": "sha256:effcef27c3b14d87697627b62ce136ef10faf80ca070e1387001c7f91de404da",
+      "archive_path": "data/raw/alberta_major_projects/2026-10-03_effcef27c3b1.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_ibc_34100293/2026-09-01_08b6ce635560.zip.manifest.json",
+      "source_id": "STATCAN_IBC_34100293",
+      "original_content_hash": "sha256:08b6ce635560ed1686194ffb057457ec8ffad2a8606abe51d3278cb74a64b6a4",
+      "archive_path": "data/raw/statcan_ibc_34100293/2026-09-01_08b6ce635560.zip",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/pspc_real_property_project_performance_2024_2025/2026-09-02_7d4aa37ee6b2.csv.manifest.json",
+      "source_id": "PSPC_REAL_PROPERTY_PROJECT_PERFORMANCE_2024_2025",
+      "original_content_hash": "sha256:7d4aa37ee6b2b65eae213e839f7cf1e2a9a9190b57a68b9c0f60976289fc8cfd",
+      "archive_path": "data/raw/pspc_real_property_project_performance_2024_2025/2026-09-02_7d4aa37ee6b2.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/statcan_capex_industry_geography_34100035/2026-09-01_a65541e3a9ad.zip.manifest.json",
+      "source_id": "STATCAN_CAPEX_INDUSTRY_GEOGRAPHY_34100035",
+      "original_content_hash": "sha256:a65541e3a9ad9026f90e9ff302157babff7e5845bb0c4c1d026d8e94c7b72120",
+      "archive_path": "data/raw/statcan_capex_industry_geography_34100035/2026-09-01_a65541e3a9ad.zip",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_data_dictionary/2026-09-01_86c6c1ab940b.pdf.manifest.json",
+      "source_id": "QUEBEC_PQI_DATA_DICTIONARY",
+      "original_content_hash": "sha256:86c6c1ab940bbfed0df5b44b4259fa7b7999f1e425ad723fc4e6dfdb2e304d09",
+      "archive_path": "data/raw/quebec_pqi_data_dictionary/2026-09-01_86c6c1ab940b.pdf",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/statcan_cmhc_housing_starts_34100156/2026-09-01_b022bf41c44d.zip.manifest.json",
+      "source_id": "STATCAN_CMHC_HOUSING_STARTS_34100156",
+      "original_content_hash": "sha256:b022bf41c44ddf18a56f1f496e6944c37cbcd14f4732092c7f0e871c15407310",
+      "archive_path": "data/raw/statcan_cmhc_housing_starts_34100156/2026-09-01_b022bf41c44d.zip",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/montreal_construction_permits/2026-10-03_873c39acca43.json.manifest.json",
+      "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+      "original_content_hash": "sha256:873c39acca4358ef20566a8445a275c4e8ed915fa10c09a449c0198df9b24bf8",
+      "archive_path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/montreal_construction_permits/2026-10-03_873c39acca43.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/montreal_construction_permits/2026-09-03_1b94b0fb1045.json.manifest.json",
+      "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+      "original_content_hash": "sha256:1b94b0fb10454b4eedbaa4d671a1ac097b4b1ab8b0463d0a692dd88a8b853aab",
+      "archive_path": "data/raw/montreal_construction_permits/2026-09-03_1b94b0fb1045.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/montreal_construction_permits/2026-09-02_32537a69318f.json.manifest.json",
+      "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+      "original_content_hash": "sha256:32537a69318f52e199a7173dd0e120a4d807072a897ee7acf3ef3e5b7c79d5e1",
+      "archive_path": "data/raw/montreal_construction_permits/2026-09-02_32537a69318f.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/montreal_construction_permits/2026-09-02_4c3aa7b9b259.json.manifest.json",
+      "source_id": "MONTREAL_CONSTRUCTION_PERMITS",
+      "original_content_hash": "sha256:4c3aa7b9b259553db843cd24355e93d21a9899ec29dac543369e48a2e30dabae",
+      "archive_path": "data/raw/montreal_construction_permits/2026-09-02_4c3aa7b9b259.json",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/canadabuys_tender_notices_fy2026_2027/2026-09-01_ca772f0fa471.csv.manifest.json",
+      "source_id": "CANADABUYS_TENDER_NOTICES_FY2026_2027",
+      "original_content_hash": "sha256:ca772f0fa4713f1a8178108852bbaf7cbcf4ba9ff862b44c2e34aeb1e6a08909",
+      "archive_path": "data/raw/canadabuys_tender_notices_fy2026_2027/2026-09-01_ca772f0fa471.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/canadabuys_tender_notices_fy2026_2027/2026-10-03_ff24a9b645c7.csv.manifest.json",
+      "source_id": "CANADABUYS_TENDER_NOTICES_FY2026_2027",
+      "original_content_hash": "sha256:ff24a9b645c77ec719e849a2962a2a675ba6eef71744f1bfff13d64b9029c3f0",
+      "archive_path": "data/raw/canadabuys_tender_notices_fy2026_2027/2026-10-03_ff24a9b645c7.csv",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/ieso_apo_2026_demand_module/2026-09-01_dce737fb9061.pdf.manifest.json",
+      "source_id": "IESO_APO_2026_DEMAND_MODULE",
+      "original_content_hash": "sha256:dce737fb9061fafed2c0d2371681f2de0860c8511aec47cb95e19196e912f597",
+      "archive_path": "data/raw/ieso_apo_2026_demand_module/2026-09-01_dce737fb9061.pdf",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/quebec_supply_plan_progress_2025/2026-09-01_88d382a1b9f8.pdf.manifest.json",
+      "source_id": "QUEBEC_SUPPLY_PLAN_PROGRESS_2025",
+      "original_content_hash": "sha256:88d382a1b9f8cca86d7cebacdac3ee3bc13077f3c34f631d11ddbc7758a2f7f1",
+      "archive_path": "data/raw/quebec_supply_plan_progress_2025/2026-09-01_88d382a1b9f8.pdf",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_cpi_18100004/2026-09-01_19f2712264fc.zip.manifest.json",
+      "source_id": "STATCAN_CPI_18100004",
+      "original_content_hash": "sha256:19f2712264fcfda9a2aacb019f6907582e73f40b7780ca88db7c986e5c95aa26",
+      "archive_path": "data/raw/statcan_cpi_18100004/2026-09-01_19f2712264fc.zip",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/bc_major_projects_inventory/2026-09-01_8ff579493b29.geojson.manifest.json",
+      "source_id": "BC_MAJOR_PROJECTS_INVENTORY",
+      "original_content_hash": "sha256:8ff579493b29400183e5664a3fad55e8eb40792549f2722efdf91d7b05fb4f5e",
+      "archive_path": "data/raw/bc_major_projects_inventory/2026-09-01_8ff579493b29.geojson",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-03-21_c87f8713c80b.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:c87f8713c80b343e6f54f77197c6f471a6edccc61af6a25a330a87dfc7033d72",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-03-21_c87f8713c80b.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-09-27_4172714b5e29.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:4172714b5e29035710a7d08e4c93d8b5d54f5e7de17e9a4bea5120bc3ed6d025",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-09-27_4172714b5e29.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-01-24_b07a03c3931f.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:b07a03c3931f90a54d42f6ff3cf1589f639d32eb39355a165c462c3aca0f5ce9",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-01-24_b07a03c3931f.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-03-20_7aa972e47d1a.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:7aa972e47d1ac03976774d6b56584aef5e502fe1c1c04b6d837f875478f5817c",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-03-20_7aa972e47d1a.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-08-06_1c9ef7d68801.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:1c9ef7d68801933a3534a4aaabfda86e9dc2961e49d3a940778dd2d12ffa29da",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-08-06_1c9ef7d68801.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-12-05_3bacb387a4de.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:3bacb387a4de8177ebae0923c320482fba49062e8faab1883b700b267a15f255",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-12-05_3bacb387a4de.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-05-12_11dc21491d09.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:11dc21491d09063280cfe1569dacefaca12a184174563ba9094fc0537fd87954",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-05-12_11dc21491d09.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-06-10_e6f4a6652975.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:e6f4a6652975ceeaf543a15946b8948d6a899854bc6d590b70e825ce55938ad3",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-06-10_e6f4a6652975.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-01-18_4e9314a352f8.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:4e9314a352f8c10324b2f1a8a4770574d4e46da777ba244d708f74b577266624",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-01-18_4e9314a352f8.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-05-24_5ac2566253c9.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:5ac2566253c9aaf4671769b60dd65786952a4dee20bb3f81b6f7e374d75bc602",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-05-24_5ac2566253c9.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-12-04_9bcafc72fba3.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:9bcafc72fba34f8755a2cfb52e2ea83179e945e46b3d4a3e0cb4f859bc168079",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-12-04_9bcafc72fba3.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-07-26_487f421940b4.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:487f421940b463ab10a0b91a089e593c7af51afd7d8c71e53eed7d5764d539e3",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-07-26_487f421940b4.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-06-13_5e6e1e411151.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:5e6e1e411151c549691ed628ed83030d7c35af128143520de64a22d5823a700a",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-06-13_5e6e1e411151.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-02-15_4afe4696f43d.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:4afe4696f43d935434267e2b5b3624fdb07099e843170ab4f60bfeafc23fc275",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-02-15_4afe4696f43d.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-05-08_68fdf262da01.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:68fdf262da01d004994ed55aaece67e17a659da7631d642bb006ea75edaaf483",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-05-08_68fdf262da01.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-04-11_8961fbc04847.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:8961fbc04847220346568bb4da408c2f00ec97ee4aec8c12cdde4de8bffb2b1e",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-04-11_8961fbc04847.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-05-25_57824a92a4bc.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:57824a92a4bcda2ac21a7b78baac6c70f61eda5724d5795f22fd1bb4afe703e9",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-05-25_57824a92a4bc.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-05-27_7f122b052473.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:7f122b052473a589cba644575933f41bf13f5b3dbea474be6ef20eca9bef85ae",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-05-27_7f122b052473.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-11-12_05e98355ac59.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:05e98355ac59de4d8d18cb98ad0ac050a18634ded86abab8631b485eb000320b",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-11-12_05e98355ac59.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-08-17_02b227196515.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:02b2271965151cbdd2e4b18501886b4d1ec9161f7ff9953141ecec6527422220",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-08-17_02b227196515.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-06-23_a1202be37927.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:a1202be37927f6b7472619d3d9f247f5c58c2cbae5af461663b8fb7adb4f360a",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-06-23_a1202be37927.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-01-29_2b5bfa8f879d.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:2b5bfa8f879dd08b871f9ef31ef12081a0cdbb590475d78636f230fda0427d93",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-01-29_2b5bfa8f879d.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-09-01_285076d8d774.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:285076d8d774f22864b8a2e72667efb117c36ba51d6ad5da5584880b55b448ea",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-09-01_285076d8d774.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-01-20_e61eecb21e8a.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:e61eecb21e8aa69fecbc08a9ab8716c7b711d78d615c2e54b6bb0ad07a73fe6d",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-01-20_e61eecb21e8a.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-09-04_361c439c10a0.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:361c439c10a0e1d7718625a515d7108367df15ee0f2aeb72e7a70689cb930bfe",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-09-04_361c439c10a0.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-02-18_21fa689241f0.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:21fa689241f0cf9c70b92a5932bedf87a6db8993b4f379699da6e6b52a669396",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-02-18_21fa689241f0.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-04-21_a88c2b9c921f.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:a88c2b9c921f237ea2acbe6574afc32b02302e82ff4ef244db4235c9468e406c",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-04-21_a88c2b9c921f.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-03-26_9ab8a5afbaca.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:9ab8a5afbacac6558ab09ed34efbbb85286a7878c21b7fa4bce67353225146cf",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-03-26_9ab8a5afbaca.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-08-09_5973755d13d1.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:5973755d13d1b0a9bf9c3db5e9602a80b51f515d7de2be31e237550d113f6182",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-08-09_5973755d13d1.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-03-12_f36970a147c6.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:f36970a147c69c531d2144e6debb9717a785f374993d17c34914e560c4f5562e",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-03-12_f36970a147c6.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-07-22_becac4c6d96b.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:becac4c6d96b61ddb0fc0c66e0d602324d8499ac059c6e8a58ac53406e1aa332",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-07-22_becac4c6d96b.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-11-01_3b93dc956b01.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:3b93dc956b0169937d59795781eeec08ccbff7719a45f164e9dc7fa807db24a0",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-11-01_3b93dc956b01.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-09-23_72497fe1300c.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:72497fe1300cfc7f17c63cec1e7cc76409fb4802e6b732975c1f46a18239e7a3",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-09-23_72497fe1300c.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-03-18_ff77fe310221.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:ff77fe310221fc28207bcffdb5284a45adcf289087a500f1cfd28e9876a96857",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-03-18_ff77fe310221.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-12-04_218868db869f.xlsx.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:218868db869f41930ef4f3d867007f5028dd41931d92196fd6b6abb8a2ae03fc",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-12-04_218868db869f.xlsx",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-06-05_164453d23512.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:164453d2351256724ae858e062a38547f020d2fccf3a77cfa98e6e1ace393c1d",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-06-05_164453d23512.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-06-07_708590083ebd.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:708590083ebd4d4edc0ab9b1f491123e29ff69e2b88b9fc507a8399bb3bce6d5",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-06-07_708590083ebd.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-02-01_75c208065c53.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:75c208065c53fc7d7cbfeddc40702424a612848eb86301d096d754e3b3b80867",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-02-01_75c208065c53.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-11-27_739d5c7f4521.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:739d5c7f4521173353a486b2f3207ebcf3c5401a7f9e526cd30edf9550f59d6e",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-11-27_739d5c7f4521.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-08-26_c0f51d59bbb3.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:c0f51d59bbb3d9098161f7931e475899f0fa5eb5977ca6983bf15104103279b1",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-08-26_c0f51d59bbb3.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-09-28_79478bd2a2a8.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:79478bd2a2a8634bb66facfc2573cbe61b0b71365b9b258692ca213b0e6ff781",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-09-28_79478bd2a2a8.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-04-29_807b20241dd3.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:807b20241dd354f11d02770888b2d178e87ca4583d25d26b5776df4d0e93c6d9",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-04-29_807b20241dd3.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-04-09_33f41b081651.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:33f41b081651f8ab35fdd747b8be8e62dd032a7e799a016d8c02f2d53395c1a0",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-04-09_33f41b081651.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-10-20_a57ffe31495e.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:a57ffe31495e45d328607a475dbf905c2eb305f7866356c79ee7ddcece0a5603",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-10-20_a57ffe31495e.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2020-06-04_40f0b9ea9452.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:40f0b9ea9452c55ae6211aa0024f3b8c065b8cfc09b89bb1c53370553d71c1a8",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2020-06-04_40f0b9ea9452.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-05-06_2d1936c20a62.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:2d1936c20a62db238ba728c2bf68d4417809837746b1ce974dbac8c231557e69",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-05-06_2d1936c20a62.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-05-14_ff8f4b1844e5.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:ff8f4b1844e561f67ecd061f4f03292d812d3003b0e785ece54dc1827c4eb545",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-05-14_ff8f4b1844e5.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-03-22_6e3ddbb47f3c.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:6e3ddbb47f3c2f1090fe7c2962f8d3f6c699ae5e51c752162883422e1f2294a2",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-03-22_6e3ddbb47f3c.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-07-08_c7b8bdb1e18f.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:c7b8bdb1e18f75c53d466ab69ef5e37bc2721daa2e3a7d2b18bb9bdae03380e4",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-07-08_c7b8bdb1e18f.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-01-30_79044f0e0abe.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:79044f0e0abead559015ebf33e9a7b0a32ea69634333f559c32d5b7069b918d5",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-01-30_79044f0e0abe.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-07-08_cb0963b03c46.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:cb0963b03c469d7fda367668764b9046e9341d7dfdf7204c8cbc37515703bcca",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2026-07-08_cb0963b03c46.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-10-22_924281afc232.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:924281afc232437ec488db916d5ecd50b076ae65b8267326e2ef7cbd7012c35c",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-10-22_924281afc232.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-07-31_b28bdca1ee11.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:b28bdca1ee11cc41729a7418784ec97dfa18226d842e3b2ceda52a1472da1fce",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-07-31_b28bdca1ee11.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-06-02_8dc4f361d21b.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:8dc4f361d21b15cf353a25539e0d29ed7fdfbff8a1b0b359468f9ab9fe7f2287",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2022-06-02_8dc4f361d21b.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-09-16_617b6fc280c6.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:617b6fc280c629c993a793c1ae4d6e3d20b2ac3d4068a69ddbc6fb3f1e458b39",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-09-16_617b6fc280c6.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-03-25_bb67434bf78f.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:bb67434bf78fae1705f6431caa3ad51e23aaa26231dc1624688cceaef82a42f6",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2025-03-25_bb67434bf78f.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2020-09-09_759a8a79acb0.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:759a8a79acb03064933f2e7628e5047bc9a373140ad04cfb327bfe3a27c7e2c0",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2020-09-09_759a8a79acb0.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-12-07_081620edec0e.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:081620edec0eb313ea1050f2d126245829f172c99c03f2303182c83bf8f29b64",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2023-12-07_081620edec0e.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-10-05_be404d9b20ad.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:be404d9b20adf5e6c678c716e30867b7521a761c0020204d1f504377be891b39",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2021-10-05_be404d9b20ad.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-05-30_5a6a2b5fcf5d.csv.manifest.json",
+      "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+      "original_content_hash": "sha256:5a6a2b5fcf5dfdb1d03a6083bd2b7623e53c34e32d42aa9c5eed91ac40a7ad73",
+      "archive_path": "data/raw/quebec_pqi_project_dashboard_full_archive/2024-05-30_5a6a2b5fcf5d.csv",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/statcan_seph_earnings_14100223/2026-09-01_06c7a79f80a0.zip.manifest.json",
+      "source_id": "STATCAN_SEPH_EARNINGS_14100223",
+      "original_content_hash": "sha256:06c7a79f80a0f86cd304ece688f517e036af6e86465bba271d7f5df771058bde",
+      "archive_path": "data/raw/statcan_seph_earnings_14100223/2026-09-01_06c7a79f80a0.zip",
+      "bundled": true,
+      "status": "bundled_original"
+    },
+    {
+      "receipt_path": "data/raw/statcan_bcpi_18100289/2026-10-03_d0d11fda82bf.zip.manifest.json",
+      "source_id": "STATCAN_BCPI_18100289",
+      "original_content_hash": "sha256:d0d11fda82bf37c3720d159c1d441bc1f15abd73ba9b7d9e750f4b1929b26612",
+      "archive_path": "data/review-candidates/weekly-evidence-2026-10-03-20261003T234449593313Z/data/raw/statcan_bcpi_18100289/2026-10-03_d0d11fda82bf.zip",
+      "bundled": false,
+      "status": "original_bytes_not_bundled"
+    },
+    {
+      "receipt_path": "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip.manifest.json",
+      "source_id": "STATCAN_BCPI_18100289",
+      "original_content_hash": "sha256:d0d11fda82bf37c3720d159c1d441bc1f15abd73ba9b7d9e750f4b1929b26612",
+      "archive_path": "data/raw/statcan_bcpi_18100289/2026-08-31_d0d11fda82bf.zip",
+      "bundled": true,
+      "status": "bundled_original"
+    }
+  ]
+}

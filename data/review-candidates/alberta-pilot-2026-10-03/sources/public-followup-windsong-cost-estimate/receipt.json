@@ -1,0 +1,15 @@
+{
+  "source_id": "public-followup-windsong-cost-estimate",
+  "requested_url": "https://majorprojects.alberta.ca/details/New-K-8-School-in-Windsong-SW-Airdrie/11248",
+  "retrieved_at": "2026-10-03T23:01:18.492119+00:00",
+  "review_status": "candidate_only",
+  "automatic_model_change": false,
+  "effective_url": "https://majorprojects.alberta.ca/details/New-K-8-School-in-Windsong-SW-Airdrie/11248",
+  "http_status": 200,
+  "content_type": "text/html",
+  "result": "success",
+  "byte_length": 299481,
+  "sha256": "d2e748df8c53196f2481ba239443f43672bc8974d2b35988b77b7dcc3677da85",
+  "archive_path": "sources/public-followup-windsong-cost-estimate/page.html",
+  "content_verification": "relevant_source_content_verified"
+}

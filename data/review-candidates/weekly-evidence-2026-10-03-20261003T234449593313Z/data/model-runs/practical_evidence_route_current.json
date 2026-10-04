@@ -1,0 +1,771 @@
+{
+  "as_of_date": "2026-10-03",
+  "gate_evaluation": {
+    "multi_region_revision_outcome_available": false,
+    "narrow_revision_estimand_authorized": false,
+    "original_authorizing_evidence_gate_satisfied": false,
+    "prospective_baseline_implemented": true,
+    "proxy_route_implemented": true,
+    "remaining_p0": [
+      "Acquire a second region with stable-ID authorized cost or completion revisions.",
+      "Accumulate at least eight pre-event and four post-event quarters in treated and control regions.",
+      "Reconcile price basis and approved changes where the outcome is expressed in CAD.",
+      "Complete independent parser and modelling review before publishing an attributable result."
+    ]
+  },
+  "input_manifest": {
+    "data/processed/ai_construction_proxy_alberta_v0.1.csv": "sha256:7c9e72ef2dafe60706ad6c1d138e727be53aee3e4cb9a7579ff67305dfac54de",
+    "data/processed/public_project_exposure_alberta.csv": "sha256:70a50c8ed75530e13b5e8062a8dc6f845ce23a0cd1a5f2b439a8c55ef0fb2eda",
+    "data/processed/public_projects_bc_on_qc.csv": "sha256:aecba64233970132e94950067dc0ada365a324393a0cf3adb3165539bc7d5f8a",
+    "data/processed/quebec_pqi_authorized_revision_events.csv": "sha256:79393b0c6e1a9cbfc3071a0f21b8fbbcd9d51179ca3165a43979afef571323d6"
+  },
+  "output_manifest": {
+    "data/processed/public_project_prospective_snapshot_current.csv": "sha256:cdd41d516c709814858754e0b08223595d673d0f327f0de06e3a8a706f4e950d"
+  },
+  "proxy_planning_validation": {
+    "assessment_id": "AIIO_PROXY_PLANNING_VALIDATION_0_1",
+    "check_count": 7,
+    "checks": [
+      {
+        "finding": "Reconstruction input hashes and quarterly output reconcile.",
+        "id": "lineage",
+        "next_step": null,
+        "status": "pass"
+      },
+      {
+        "finding": "Ordered exposure sensitivity cases are checked; these are not predictive intervals.",
+        "id": "uncertainty_cases",
+        "next_step": "Validate interval coverage on held-out observations.",
+        "status": "pass"
+      },
+      {
+        "finding": "2 costed project, 6 permit candidates; 2 markets. No validated project/horizon domain.",
+        "id": "scope_coverage",
+        "next_step": "Lock the target market, asset, outcome, horizon and minimum independent-event coverage before fitting.",
+        "status": "not_assessed"
+      },
+      {
+        "finding": "Quarterly allocation uses an assumed construction profile; permit issue is not expenditure timing.",
+        "id": "timing_validation",
+        "next_step": "Compare timing alternatives against dated construction milestones; disclose monthly interpolation.",
+        "status": "not_assessed"
+      },
+      {
+        "finding": "Existing association fit is in-sample; repeated asset rows are not independent events.",
+        "id": "out_of_sample_performance",
+        "next_step": "Run time-blocked rolling-origin backtests against a baseline-only benchmark, with locked error and interval-coverage tolerances.",
+        "status": "not_assessed"
+      },
+      {
+        "finding": "Permit/project linkage is unresolved; separate components do not establish non-overlap.",
+        "id": "overlap_and_double_counting",
+        "next_step": "Link records or bound overlap, test leave-one-project/source-out sensitivity, and reconcile baseline versus incremental pressure.",
+        "status": "not_assessed"
+      },
+      {
+        "finding": "No scope-specific proxy-planning validation receipt has been accepted.",
+        "id": "independent_planning_review",
+        "next_step": "Review the frozen model, validation metrics, source coverage and claim language; bind the verdict to input/model hashes.",
+        "status": "not_assessed"
+      }
+    ],
+    "input_manifest": {
+      "data/model-runs/ai_attribution_proxy_association_v0.1.json": "sha256:42131ce5c39f59470b48d8be027af08c98324836c9c9979e3e0f8b6e4bb35e86",
+      "data/model-runs/ai_construction_proxy_alberta_v0.1.json": "sha256:3c7eeaf59930a5494dcdb3f72baf127c22847a0f325cb6c47d3c373d724614b2",
+      "data/processed/ai_construction_proxy_alberta_v0.1.csv": "sha256:7c9e72ef2dafe60706ad6c1d138e727be53aee3e4cb9a7579ff67305dfac54de"
+    },
+    "levels": {
+      "assumption_scenarios": "available_not_validated_estimates",
+      "causal_attribution": "separate_identification_gate",
+      "observed_evidence": "display_with_source_scope_and_date",
+      "proxy_planning": "validation_incomplete"
+    },
+    "passed_check_count": 2,
+    "publication_boundary": {
+      "ai_attributable_effect": null,
+      "causal_attribution_allowed": false,
+      "requires_private_realized_spending_or_labour_hours": false,
+      "scenario_sensitivity_allowed": true,
+      "validated_proxy_estimate_allowed": false
+    },
+    "schema_version": "1.0.0",
+    "status": "validation_incomplete"
+  },
+  "publication_boundary": {
+    "authorized_revisions_may_be_described": true,
+    "authorized_revisions_must_not_be_labelled_final_outturn": true,
+    "causal_or_ai_attributable_claim": false,
+    "decision_grade_ready": false,
+    "proxy_results_may_be_displayed": true
+  },
+  "run_id": "AIIO_PRACTICAL_EVIDENCE_ROUTE_0_1",
+  "schema_version": "1.0.0",
+  "status": "pipeline_operational_evidence_accumulating",
+  "tracks": {
+    "authorized_revision_estimand": {
+      "ai_attributable_effect_authorized": false,
+      "cells": [
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 12.0,
+          "net_authorized_change": 12.0,
+          "quarter": "2021-Q1",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 16800000.0,
+          "net_authorized_change": 16800000.0,
+          "quarter": "2021-Q1",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 5.0,
+          "net_authorized_change": 10.0,
+          "quarter": "2022-Q1",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 7100000.0,
+          "net_authorized_change": 14200000.0,
+          "quarter": "2022-Q1",
+          "revision_event_count": 2,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 12.0,
+          "net_authorized_change": 147.0,
+          "quarter": "2023-Q1",
+          "revision_event_count": 7,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 800000.0,
+          "net_authorized_change": 1900000.0,
+          "quarter": "2023-Q1",
+          "revision_event_count": 3,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 28.0,
+          "net_authorized_change": 56.0,
+          "quarter": "2023-Q2",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 34150000.0,
+          "net_authorized_change": 68300000.0,
+          "quarter": "2023-Q2",
+          "revision_event_count": 2,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 31.0,
+          "net_authorized_change": 31.0,
+          "quarter": "2023-Q3",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 63500000.0,
+          "net_authorized_change": 63500000.0,
+          "quarter": "2023-Q3",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 15.0,
+          "net_authorized_change": 102.0,
+          "quarter": "2024-Q1",
+          "revision_event_count": 7,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 6300000.0,
+          "net_authorized_change": 172200000.0,
+          "quarter": "2024-Q1",
+          "revision_event_count": 5,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 22400000.0,
+          "net_authorized_change": 22400000.0,
+          "quarter": "2024-Q3",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 12.0,
+          "net_authorized_change": 156.0,
+          "quarter": "2025-Q1",
+          "revision_event_count": 8,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 3800000.0,
+          "net_authorized_change": 45800000.0,
+          "quarter": "2025-Q1",
+          "revision_event_count": 5,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 23.5,
+          "net_authorized_change": 47.0,
+          "quarter": "2025-Q2",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 14900000.0,
+          "net_authorized_change": 14900000.0,
+          "quarter": "2025-Q2",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 55200000.0,
+          "net_authorized_change": 55200000.0,
+          "quarter": "2025-Q3",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 4.0,
+          "net_authorized_change": 161.0,
+          "quarter": "2026-Q1",
+          "revision_event_count": 20,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "government_and_civic_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 8200000.0,
+          "net_authorized_change": 86100000.0,
+          "quarter": "2026-Q1",
+          "revision_event_count": 7,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 36.0,
+          "net_authorized_change": 36.0,
+          "quarter": "2020-Q3",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 131100000.0,
+          "net_authorized_change": 131100000.0,
+          "quarter": "2020-Q3",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 15000000.0,
+          "net_authorized_change": 45500000.0,
+          "quarter": "2021-Q1",
+          "revision_event_count": 3,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 47.0,
+          "net_authorized_change": 47.0,
+          "quarter": "2022-Q1",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 199550000.0,
+          "net_authorized_change": 399100000.0,
+          "quarter": "2022-Q1",
+          "revision_event_count": 2,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 7.0,
+          "net_authorized_change": 14.0,
+          "quarter": "2022-Q2",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 14300000.0,
+          "net_authorized_change": 46300000.0,
+          "quarter": "2022-Q2",
+          "revision_event_count": 3,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 12.0,
+          "net_authorized_change": 24.0,
+          "quarter": "2022-Q3",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 26500000.0,
+          "net_authorized_change": 145800000.0,
+          "quarter": "2022-Q3",
+          "revision_event_count": 5,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 15.0,
+          "net_authorized_change": 106.0,
+          "quarter": "2023-Q1",
+          "revision_event_count": 7,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 19850000.0,
+          "net_authorized_change": 39700000.0,
+          "quarter": "2023-Q1",
+          "revision_event_count": 2,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 4.0,
+          "net_authorized_change": 8.0,
+          "quarter": "2023-Q2",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 12600000.0,
+          "net_authorized_change": 25200000.0,
+          "quarter": "2023-Q2",
+          "revision_event_count": 2,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 14.0,
+          "net_authorized_change": 14.0,
+          "quarter": "2023-Q4",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": -32000000.0,
+          "net_authorized_change": -48600000.0,
+          "quarter": "2023-Q4",
+          "revision_event_count": 3,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 23.0,
+          "net_authorized_change": 59.0,
+          "quarter": "2024-Q1",
+          "revision_event_count": 3,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 18900000.0,
+          "net_authorized_change": 18900000.0,
+          "quarter": "2024-Q1",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 30.0,
+          "net_authorized_change": 30.0,
+          "quarter": "2024-Q2",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 30850000.0,
+          "net_authorized_change": 61700000.0,
+          "quarter": "2024-Q2",
+          "revision_event_count": 2,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 5.0,
+          "net_authorized_change": 5.0,
+          "quarter": "2024-Q4",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": -55800000.0,
+          "net_authorized_change": -55800000.0,
+          "quarter": "2024-Q4",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 30.0,
+          "net_authorized_change": 250.0,
+          "quarter": "2025-Q1",
+          "revision_event_count": 9,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 88200000.0,
+          "net_authorized_change": 216200000.0,
+          "quarter": "2025-Q1",
+          "revision_event_count": 3,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 9.0,
+          "net_authorized_change": 9.0,
+          "quarter": "2025-Q2",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 13.5,
+          "net_authorized_change": 27.0,
+          "quarter": "2025-Q3",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 215050000.0,
+          "net_authorized_change": 430100000.0,
+          "quarter": "2025-Q3",
+          "revision_event_count": 2,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 8.0,
+          "net_authorized_change": 267.0,
+          "quarter": "2026-Q1",
+          "revision_event_count": 19,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 10400000.0,
+          "net_authorized_change": 269200000.0,
+          "quarter": "2026-Q1",
+          "revision_event_count": 7,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "health_facilities",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 7200000.0,
+          "net_authorized_change": 7200000.0,
+          "quarter": "2026-Q3",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 12.0,
+          "net_authorized_change": 24.0,
+          "quarter": "2022-Q1",
+          "revision_event_count": 2,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 18900000.0,
+          "net_authorized_change": 50000000.0,
+          "quarter": "2022-Q1",
+          "revision_event_count": 3,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 12.0,
+          "net_authorized_change": 12.0,
+          "quarter": "2023-Q1",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 3400000.0,
+          "net_authorized_change": 6800000.0,
+          "quarter": "2023-Q1",
+          "revision_event_count": 3,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 13.0,
+          "net_authorized_change": 117.0,
+          "quarter": "2024-Q1",
+          "revision_event_count": 8,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 2300000.0,
+          "net_authorized_change": 5100000.0,
+          "quarter": "2024-Q1",
+          "revision_event_count": 6,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 15.0,
+          "net_authorized_change": 15.0,
+          "quarter": "2024-Q3",
+          "revision_event_count": 1,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 96800000.0,
+          "net_authorized_change": 96800000.0,
+          "quarter": "2024-Q3",
+          "revision_event_count": 1,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 24.0,
+          "net_authorized_change": 214.0,
+          "quarter": "2025-Q1",
+          "revision_event_count": 9,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": -150000.0,
+          "net_authorized_change": 23300000.0,
+          "quarter": "2025-Q1",
+          "revision_event_count": 14,
+          "unit": "CAD"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_completion_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 4.0,
+          "net_authorized_change": 95.0,
+          "quarter": "2026-Q1",
+          "revision_event_count": 26,
+          "unit": "calendar_months"
+        },
+        {
+          "asset_class": "schools_and_postsecondary",
+          "event_type": "authorized_cost_revision",
+          "geography_id": "PR_24",
+          "median_authorized_change": 800000.0,
+          "net_authorized_change": -74200000.0,
+          "quarter": "2026-Q1",
+          "revision_event_count": 18,
+          "unit": "CAD"
+        }
+      ],
+      "estimand": "quarterly change in publisher-authorized project cost or completion plan",
+      "final_cost_outturn": false,
+      "geographies": [
+        "PR_24"
+      ],
+      "geography_count": 1,
+      "quarter_asset_cell_count": 61,
+      "status": "single_region_descriptive_reference"
+    },
+    "prospective_public_project_tracking": {
+      "asset_classes": [
+        "government_and_civic_facilities",
+        "health_facilities",
+        "schools_and_postsecondary"
+      ],
+      "immutable_observation": {
+        "archive_content_hash": "sha256:24c1c0acd78c93c3413898ff64b6e2d843302e712927c725e3232957d801b451",
+        "archive_file": "4937aeeb38dbba96ef1247d577e6bbb8e0b1f3c77ed038bd2a347ae28b180bd6.json",
+        "disappearance_implies_completion": false,
+        "observation_dates": [
+          "2024-12-01",
+          "2026-06-12",
+          "2026-08-20",
+          "2026-10-03"
+        ],
+        "observation_hash": "sha256:4937aeeb38dbba96ef1247d577e6bbb8e0b1f3c77ed038bd2a347ae28b180bd6",
+        "repeated_fetch_is_new_observation": false
+      },
+      "longitudinal_report_path": "data/model-runs/public_project_longitudinal_current.json",
+      "next_observation_required": "A later official snapshot with the same stable project IDs, followed by reconciled estimate, stage and schedule changes.",
+      "project_count": 3971,
+      "province_count": 4,
+      "provinces": [
+        "Alberta",
+        "British Columbia",
+        "Ontario",
+        "Quebec"
+      ],
+      "snapshot_path": "data/processed/public_project_prospective_snapshot_current.csv",
+      "status": "baseline_snapshot_ready"
+    },
+    "reconstructed_quarterly_treatment": {
+      "authorizing_treatment": false,
+      "geography_count": 2,
+      "geography_quarter_coverage": {
+        "CMA_825": 10,
+        "CMA_835": 8
+      },
+      "positive_geography_quarter_count": 18,
+      "status": "implemented_non_authorizing_proxy"
+    }
+  }
+}

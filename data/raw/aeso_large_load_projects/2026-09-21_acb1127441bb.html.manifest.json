@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_AESO_LARGE_LOAD_PROJECTS_acb1127441bbd4bd",
+  "source_id": "AESO_LARGE_LOAD_PROJECTS",
+  "retrieved_at": "2026-09-21T14:01:27+00:00",
+  "effective_url": "https://www.aeso.ca/grid/connecting-to-the-grid/large-load-projects/",
+  "content_hash": "sha256:acb1127441bbd4bd90f39970043809e705931e312a3fe3223ae0c1e86f6d0502",
+  "content_type": "text/html",
+  "byte_length": 73438,
+  "archive_path": "data/raw/aeso_large_load_projects/2026-09-21_acb1127441bb.html",
+  "result": "success"
+}

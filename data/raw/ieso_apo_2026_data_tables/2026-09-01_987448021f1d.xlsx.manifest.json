@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_IESO_APO_2026_DATA_TABLES_987448021f1db08b",
+  "source_id": "IESO_APO_2026_DATA_TABLES",
+  "retrieved_at": "2026-09-01T02:38:01+00:00",
+  "effective_url": "https://ieso.ca/-/media/Files/IESO/Document-Library/planning-forecasts/apo/2026/2026-Annual-Planning-Outlook-Data-Tables.xlsx",
+  "content_hash": "sha256:987448021f1db08bf7c815f453fa9f73057a2507f25992e110aca0abc3666526",
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "byte_length": 593455,
+  "archive_path": "data/raw/ieso_apo_2026_data_tables/2026-09-01_987448021f1d.xlsx",
+  "result": "success"
+}

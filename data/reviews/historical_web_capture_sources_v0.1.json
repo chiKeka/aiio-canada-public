@@ -1,0 +1,72 @@
+[
+  {
+    "evidence_id": "cal3_launch_en",
+    "url": "https://www.estruxture.com/press-releases/estruxture-announces-albertas-largest-data-center-introducing-the-groundbreaking-cal-3-facility",
+    "path": "data/raw/historical_evidence_20260905/cal3_launch_en.md",
+    "format": "Firecrawl extracted markdown; not original HTML bytes",
+    "status": 200,
+    "sha256": "sha256:bc41fda1df21bb1eb85edf465a606ac0ca2231bc24647e09cbcd5a22055e1228",
+    "recorded_at": "2026-09-05T21:10:14.246720+00:00",
+    "historical_content_publication_verified": false
+  },
+  {
+    "evidence_id": "cal3_coreweave",
+    "url": "https://www.estruxture.com/press-releases/estruxture-announces-coreweave-as-anchor-tenant-for-cal-3-its-landmark-ai-ready-facility-in-alberta",
+    "path": "data/raw/historical_evidence_20260905/cal3_coreweave.md",
+    "format": "Firecrawl extracted markdown; not original HTML bytes",
+    "status": 200,
+    "sha256": "sha256:fdd961d63463e0fe2602f4755e35ea273d2084de2bb494d65f11dfabbf16a07c",
+    "recorded_at": "2026-09-05T21:10:14.246827+00:00",
+    "historical_content_publication_verified": false
+  },
+  {
+    "evidence_id": "cal3_launch_fr",
+    "url": "https://www.estruxture.com/fr/communiques-de-presse/estruxture-annonce-un-investissement-de-750-millions-de-dollars-dans-le-plus-grand-centre-de-donn%C3%A9es-de-lalberta-cal-3",
+    "path": "data/raw/historical_evidence_20260905/cal3_launch_fr.md",
+    "format": "Firecrawl extracted markdown; not original HTML bytes",
+    "status": 200,
+    "sha256": "sha256:7848517059905c075ad770f536969ee142e0476ad3ab05de0cb9e2b0c98a97c9",
+    "recorded_at": "2026-09-05T21:10:14.246881+00:00",
+    "historical_content_publication_verified": false
+  },
+  {
+    "evidence_id": "cal3_2025_blog",
+    "url": "https://www.estruxture.com/blog/why-alberta-estruxtures-vision-for-powering-canadas-digital-future-from-calgary",
+    "path": "data/raw/historical_evidence_20260905/cal3_2025_blog.md",
+    "format": "Firecrawl extracted markdown; not original HTML bytes",
+    "status": 200,
+    "sha256": "sha256:48f1c3e23c4ea17cdd85cee9ae9ba6b1eb464e2f873c7f1a3eee53c050305b89",
+    "recorded_at": "2026-09-05T21:10:14.246907+00:00",
+    "historical_content_publication_verified": false
+  },
+  {
+    "evidence_id": "rogers_successor",
+    "url": "https://qudatacentres.com/locations/edmonton-data-centre",
+    "path": "data/raw/historical_evidence_20260905/rogers_successor.md",
+    "format": "Firecrawl extracted markdown; not original HTML bytes",
+    "status": 200,
+    "sha256": "sha256:8724a4d34987cebf7ce9358ca10deb562fbe14595b00aa3f7ff5638d72f1ce3c",
+    "recorded_at": "2026-09-05T21:10:14.246932+00:00",
+    "historical_content_publication_verified": false
+  },
+  {
+    "evidence_id": "wolfpaw_fibre",
+    "url": "https://www.wolfpaw.com/wolfpaw-data-centres-inc/fibre-ring/",
+    "path": "data/raw/historical_evidence_20260905/wolfpaw_fibre.md",
+    "format": "Firecrawl extracted markdown; not original HTML bytes",
+    "status": 200,
+    "sha256": "sha256:d49ab9e5478eacf39303b0a64675b921521caea8f71c6ded67712f22c32db13e",
+    "recorded_at": "2026-09-05T21:10:14.246951+00:00",
+    "historical_content_publication_verified": false
+  },
+  {
+    "evidence_id": "powerhouse",
+    "url": "https://www.powerhousegroup.com/home",
+    "path": "data/raw/historical_evidence_20260905/powerhouse.md",
+    "format": "Firecrawl extracted markdown; not original HTML bytes",
+    "status": 200,
+    "sha256": "sha256:b3a2a1735200763e6f73845d126640411bd04611a144102cd8d3aab89e8ed921",
+    "recorded_at": "2026-09-05T21:10:14.246972+00:00",
+    "historical_content_publication_verified": false
+  }
+]

@@ -1,0 +1,112 @@
+{
+  "contract_id": "AIIO_PSPE_METHOD_LINEAGE_CONTRACT_0_1",
+  "mappings": [
+    {
+      "adaptation_status": "independent_implementation",
+      "aiio_contract": "data/model/alberta_graph_v0.2.json",
+      "aiio_implementation": "research/src/aiio/graph.py",
+      "mapping_id": "PSPE_MAP_TYPED_DIRECTED_GRAPH",
+      "source_concept": "Layer 1 typed weighted directed graph",
+      "validation_tests": [
+        "research/tests/test_graph.py"
+      ]
+    },
+    {
+      "adaptation_status": "independent_implementation",
+      "aiio_contract": "data/model/alberta_graph_v0.2.json",
+      "aiio_implementation": "research/src/aiio/graph.py",
+      "mapping_id": "PSPE_MAP_DAMPED_PROPAGATION",
+      "source_concept": "Layer 2 impact propagation with damping or absorption",
+      "validation_tests": [
+        "research/tests/test_graph.py"
+      ]
+    },
+    {
+      "adaptation_status": "bounded_discrete_time_subset",
+      "aiio_contract": "data/scenarios/alberta_50b_counterfactual_v0.2.json",
+      "aiio_implementation": "research/src/aiio/graph.py",
+      "mapping_id": "PSPE_MAP_TEMPORAL_PATHS",
+      "source_concept": "Temporal stocks, flows and propagation over time",
+      "validation_tests": [
+        "research/tests/test_graph.py"
+      ]
+    },
+    {
+      "adaptation_status": "scenario_sensitivity_adaptation",
+      "aiio_contract": "data/model/alberta_50b_scenario_suite_contract_v0.1.json",
+      "aiio_implementation": "research/src/aiio/scenario_suite.py",
+      "mapping_id": "PSPE_MAP_S3_STRESS_TEST",
+      "source_concept": "S3 interpretation through scoping, scaffolding and sensing",
+      "validation_tests": [
+        "research/tests/test_scenario_suite.py"
+      ]
+    },
+    {
+      "adaptation_status": "independent_fail_closed_implementation",
+      "aiio_contract": "data/model-runs/alberta_bcpi_reference_baseline_v0.1.json",
+      "aiio_implementation": "research/src/aiio/calibration.py",
+      "mapping_id": "PSPE_MAP_REFERENCE_CLASS",
+      "source_concept": "Layer 5 reference-class calibration",
+      "validation_tests": [
+        "research/tests/test_calibration.py",
+        "research/tests/test_calibration_artifact.py"
+      ]
+    }
+  ],
+  "non_claims": [
+    "AIIO does not claim to reproduce or fork unavailable PSPE source code.",
+    "AIIO does not use conserved-mass origin ranking or centrality as a causal estimator.",
+    "AIIO does not claim the curriculum's Bayesian, ODE, curvature or probability layers are implemented.",
+    "AIIO graph scores remain dimensionless and are not project cost, schedule delay, probability or observed effect."
+  ],
+  "schema_version": "1.0.0",
+  "source_material": {
+    "byte_size": 29482,
+    "distribution_status": "local_only_not_redistributed",
+    "local_locator": "withheld-source/PSPE_Math_Curriculum.md",
+    "sha256": "sha256:f997ebaaab70d14c74f9595b82b804a3f647084db10f34c91d8e60cd944d57e4",
+    "title": "PSPE Math Curriculum \u2014 From High-School Maths to Building the Engine"
+  },
+  "source_repository_availability": {
+    "commit": "3e63c7aaca03ec96d148f77e55aea40f2b64e40d",
+    "commit_date": "2026-05-26T22:56:22-06:00",
+    "interpretation": "Hash receipts document the historical methodological source. The upstream implementation was unavailable for code-level comparison. Source materials are not bundled; no code equivalence or redistribution permission is claimed.",
+    "local_locator": "withheld-source/method-notes",
+    "method_artifacts": [
+      {
+        "byte_size": 3489,
+        "path": "README.md",
+        "sha256": "sha256:91c6d87aa9d08b2c46dc0786dc9b3c411a71e09ab1f5d724c4ca3bc0910fce0e"
+      },
+      {
+        "byte_size": 29482,
+        "path": "CURRICULUM.md",
+        "sha256": "sha256:f997ebaaab70d14c74f9595b82b804a3f647084db10f34c91d8e60cd944d57e4"
+      },
+      {
+        "byte_size": 12071,
+        "path": "notebooks/00_foundations.ipynb",
+        "sha256": "sha256:0ce3c96615162c8e3ccd3158d4137198a8d45b90bae249f03d42ff9dbe961d3e"
+      },
+      {
+        "byte_size": 532,
+        "path": "concepts/01-what-is-a-matrix.md",
+        "sha256": "sha256:87fa880dbcc27532c2ec8e3a130939b8f09df8658a836959b25f91a64a08d37c"
+      },
+      {
+        "byte_size": 793,
+        "path": "concepts/02-eigenvector-centrality.md",
+        "sha256": "sha256:bec601a8e16d4458e107a358223227f0632c0f77874d9d21b3be221dbef5df84"
+      }
+    ],
+    "repository_type": "git_backed_pspe_mathematics_learning_repository",
+    "searched_engine_filenames": [
+      "graph_schema.py",
+      "propagation.py",
+      "s3_metrics.py",
+      "sd_bridge.py"
+    ],
+    "status": "method_repository_located_engine_source_not_located",
+    "worktree_status_at_receipt": "clean"
+  }
+}

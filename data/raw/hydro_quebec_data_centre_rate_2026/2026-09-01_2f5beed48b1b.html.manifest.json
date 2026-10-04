@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_HYDRO_QUEBEC_DATA_CENTRE_RATE_2026_2f5beed48b1be4ad",
+  "source_id": "HYDRO_QUEBEC_DATA_CENTRE_RATE_2026",
+  "retrieved_at": "2026-09-01T02:38:13+00:00",
+  "effective_url": "https://news.hydroquebec.com/news/press-releases/all-quebec/hydro-quebec-proposing-regie-energie-new-rate-large-data-centres-adjustment-rate-cryptographic-use-applied-blockchains.html",
+  "content_hash": "sha256:2f5beed48b1be4ad62e20729c6f4ef36eada08e28a4903ad9595e3cd64e7a921",
+  "content_type": "text/html",
+  "byte_length": 38542,
+  "archive_path": "data/raw/hydro_quebec_data_centre_rate_2026/2026-09-01_2f5beed48b1b.html",
+  "result": "success"
+}

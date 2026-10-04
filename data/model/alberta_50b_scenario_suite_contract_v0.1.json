@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "suite_id": "AIIO_AB_50B_SCENARIO_SUITE_0_1",
+  "graph_path": "data/model/alberta_graph_v0.2.json",
+  "evidence_status": "scenario",
+  "framing_question": "How does the timing and assumed local capture of a fixed CAD 50 billion Alberta AI-infrastructure program change the graph's structural pressure ordering?",
+  "reference_variant_id": "staggered",
+  "variants": [
+    {
+      "variant_id": "staggered",
+      "label": "Staggered reference",
+      "comparison_role": "reference",
+      "scenario_path": "data/scenarios/alberta_50b_counterfactual_v0.2.json",
+      "model_run_path": "data/model-runs/alberta_50b_counterfactual_v0.2.json",
+      "decision_question": "What does the existing ten-year ramp imply under the locked structural assumptions?",
+      "declared_change": "Reference timing and 72% local capture."
+    },
+    {
+      "variant_id": "front_loaded",
+      "label": "Front-loaded",
+      "comparison_role": "timing_front_loaded",
+      "scenario_path": "data/scenarios/alberta_50b_front_loaded_v0.1.json",
+      "model_run_path": "data/model-runs/alberta_50b_front_loaded_v0.1.json",
+      "decision_question": "Which trades and schedules tighten when 67% of capex is concentrated in 2027-2031?",
+      "declared_change": "Timing only; total, component mix, denominators and 72% local capture are unchanged."
+    },
+    {
+      "variant_id": "constrained_delivery",
+      "label": "Constrained delivery",
+      "comparison_role": "timing_constrained",
+      "scenario_path": "data/scenarios/alberta_50b_constrained_delivery_v0.1.json",
+      "model_run_path": "data/model-runs/alberta_50b_constrained_delivery_v0.1.json",
+      "decision_question": "How does spreading the same program to 2041 change peak structural pressure?",
+      "declared_change": "Timing only; the fifteen-year profile is capped at a 7.5% annual share."
+    },
+    {
+      "variant_id": "high_local_capture",
+      "label": "High local capture",
+      "comparison_role": "local_capture_high",
+      "scenario_path": "data/scenarios/alberta_50b_high_local_capture_v0.1.json",
+      "model_run_path": "data/model-runs/alberta_50b_high_local_capture_v0.1.json",
+      "decision_question": "How much does structural pressure change if 90% of modelled construction activity is retained in Alberta?",
+      "declared_change": "Local capture only; total, component mix, denominators and timing are unchanged."
+    }
+  ],
+  "comparison_node_ids": [
+    "TRADE_ELECTRICIANS",
+    "TRADE_HVAC",
+    "TRADE_POWERLINE",
+    "TRADE_CONCRETE",
+    "NONRES_CONSTRUCTION_COST",
+    "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+    "SCHEDULE_SCHOOLS_DELAY_PRESSURE",
+    "SCHEDULE_GOVERNMENT_DELAY_PRESSURE",
+    "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE",
+    "SCHEDULE_UTILITIES_DELAY_PRESSURE"
+  ],
+  "invariants": {
+    "investment_total_cad": 50000000000,
+    "currency": "CAD",
+    "currency_year": 2026,
+    "geography_id": "PR_48",
+    "modelled_component_share": 0.46,
+    "excluded_component_share": 0.54,
+    "constrained_max_annual_profile_share": 0.075
+  },
+  "publication_boundary": {
+    "status": "uncalibrated_structural_scenario_comparison",
+    "forecast_authorized": false,
+    "ai_attributable_effect_authorized": false,
+    "project_cost_or_delay_translation_authorized": false,
+    "power_requirement_inference_authorized": false,
+    "reason": "The variants deliberately change declared assumptions to stress-test timing and local capture. Their pressure scores are dimensionless graph diagnostics, not probabilities, percentages, forecasts, cost escalation, schedule delay or power requirements."
+  }
+}

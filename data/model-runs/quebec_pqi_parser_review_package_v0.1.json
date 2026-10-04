@@ -1,0 +1,70 @@
+{
+  "limitations": [
+    "The package is a deterministic stratified review sample, not a completed independent review.",
+    "Sampling emphasizes parser edge cases and is not an estimator of population error without design weights.",
+    "The current dashboard remains a survivor snapshot; milestone reentries are included only where the source ID is present in the current snapshot."
+  ],
+  "longitudinal_report_sha256": "sha256:0f20f2e86e516f1f8c13194b6582e5ef1dccb6d829ffd825661b053e5b9a08fd",
+  "package_id": "AIIO_QUEBEC_PQI_PARSER_REVIEW_PACKAGE_0_1",
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "authorized_revision_reference_panel_authorized": false,
+    "independent_parser_review_complete": false,
+    "parser_authorized_for_decision_use": false,
+    "public_project_cost_outcome_authorized": false,
+    "public_project_schedule_outcome_authorized": false,
+    "reason": "The review workbook is populated with source evidence and deterministic selections, but all reviewer fields are blank and no independent review has been completed.",
+    "status": "pending_independent_review"
+  },
+  "review_output": {
+    "content_hash": "sha256:32a853fd7ffdb9fac67c1bf64ed8afba2b21b0693523c5a69d0f822ea5931aff",
+    "path": "data/reviews/quebec_pqi_parser_review_sample_v0.1.csv"
+  },
+  "review_protocol": [
+    "Compare source_history_text against the parsed event JSON and summary fields.",
+    "Record a reviewer identity, review date, status, reviewed counts and notes in the blank review columns.",
+    "Treat disagreements as parser defects or documented exclusions; do not silently overwrite source text.",
+    "Re-run this deterministic package after parser or source-vintage changes."
+  ],
+  "review_status": "pending_independent_review",
+  "revision_report_sha256": "sha256:54f52ac6203ea24aab5798c30af50f1c3ef248abc5740b3e8ddb1dd2cda49160",
+  "sample_project_count": 57,
+  "sampling_fraction": 0.08782742681047766,
+  "schema_version": "1.0.0",
+  "selection_reason_counts": {
+    "actual_completion_fiscal_year_marker": 5,
+    "all_milestone_reentries": 1,
+    "all_unreconciled_cost_chains": 1,
+    "all_unreconciled_schedule_chains": 8,
+    "ambiguous_multi_date_schedule_text": 5,
+    "largest_authorized_cost_decreases": 5,
+    "largest_authorized_cost_increases": 5,
+    "largest_authorized_schedule_advances": 5,
+    "largest_authorized_schedule_delays": 5,
+    "no_parsed_revision_control:government_and_civic_facilities": 1,
+    "no_parsed_revision_control:health_facilities": 1,
+    "no_parsed_revision_control:municipal_water_and_resilience": 1,
+    "no_parsed_revision_control:other_public_infrastructure": 1,
+    "no_parsed_revision_control:roads_transit_and_airports": 1,
+    "no_parsed_revision_control:schools_and_postsecondary": 1,
+    "no_parsed_revision_control:social_and_affordable_housing": 1,
+    "reconciled_cost_asset_class:government_and_civic_facilities": 2,
+    "reconciled_cost_asset_class:health_facilities": 2,
+    "reconciled_cost_asset_class:other_public_infrastructure": 2,
+    "reconciled_cost_asset_class:roads_transit_and_airports": 2,
+    "reconciled_cost_asset_class:schools_and_postsecondary": 2,
+    "reconciled_cost_asset_class:social_and_affordable_housing": 2,
+    "reconciled_schedule_asset_class:government_and_civic_facilities": 2,
+    "reconciled_schedule_asset_class:health_facilities": 2,
+    "reconciled_schedule_asset_class:municipal_water_and_resilience": 1,
+    "reconciled_schedule_asset_class:other_public_infrastructure": 2,
+    "reconciled_schedule_asset_class:roads_transit_and_airports": 2,
+    "reconciled_schedule_asset_class:schools_and_postsecondary": 2,
+    "reconciled_schedule_asset_class:social_and_affordable_housing": 2
+  },
+  "source_file_sha256": "sha256:a437f7ba9a749f33b130ec5a1a724821134b1b91bc7a2970bcf2597e8ff5877b",
+  "source_id": "QUEBEC_PQI_PROJECT_DASHBOARD",
+  "source_manifest_sha256": "sha256:96531aaf67a741b0906b4315845b62d70853b768911dba906413537b7af41d5a",
+  "source_project_count": 649,
+  "source_snapshot_date": "2026-08-20"
+}

@@ -1,0 +1,367 @@
+{
+  "annual_flows": [
+    {
+      "local_civil_cad": 244800000.0,
+      "local_electrical_mechanical_cad": 302400000.0,
+      "local_grid_generation_cad": 115200000.0,
+      "total_capex_cad": 2000000000.0,
+      "year": 2027
+    },
+    {
+      "local_civil_cad": 428400000.00000006,
+      "local_electrical_mechanical_cad": 529200000.00000006,
+      "local_grid_generation_cad": 201600000.00000003,
+      "total_capex_cad": 3500000000.0000005,
+      "year": 2028
+    },
+    {
+      "local_civil_cad": 612000000.0000001,
+      "local_electrical_mechanical_cad": 756000000.0,
+      "local_grid_generation_cad": 288000000.0,
+      "total_capex_cad": 5000000000.0,
+      "year": 2029
+    },
+    {
+      "local_civil_cad": 734400000.0,
+      "local_electrical_mechanical_cad": 907200000.0,
+      "local_grid_generation_cad": 345600000.0,
+      "total_capex_cad": 6000000000.0,
+      "year": 2030
+    },
+    {
+      "local_civil_cad": 856800000.0000001,
+      "local_electrical_mechanical_cad": 1058400000.0000001,
+      "local_grid_generation_cad": 403200000.00000006,
+      "total_capex_cad": 7000000000.000001,
+      "year": 2031
+    },
+    {
+      "local_civil_cad": 856800000.0000001,
+      "local_electrical_mechanical_cad": 1058400000.0000001,
+      "local_grid_generation_cad": 403200000.00000006,
+      "total_capex_cad": 7000000000.000001,
+      "year": 2032
+    },
+    {
+      "local_civil_cad": 795600000.0,
+      "local_electrical_mechanical_cad": 982800000.0,
+      "local_grid_generation_cad": 374400000.0,
+      "total_capex_cad": 6500000000.0,
+      "year": 2033
+    },
+    {
+      "local_civil_cad": 673200000.0000001,
+      "local_electrical_mechanical_cad": 831600000.0,
+      "local_grid_generation_cad": 316800000.0,
+      "total_capex_cad": 5500000000.0,
+      "year": 2034
+    },
+    {
+      "local_civil_cad": 550800000.0,
+      "local_electrical_mechanical_cad": 680400000.0,
+      "local_grid_generation_cad": 259200000.0,
+      "total_capex_cad": 4500000000.0,
+      "year": 2035
+    },
+    {
+      "local_civil_cad": 367200000.0,
+      "local_electrical_mechanical_cad": 453600000.0,
+      "local_grid_generation_cad": 172800000.0,
+      "total_capex_cad": 3000000000.0,
+      "year": 2036
+    }
+  ],
+  "dominant_outcome_paths": [
+    {
+      "contribution": 0.11114289,
+      "edge_path": [
+        "E009",
+        "E027"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "GRID_CONNECTION_QUEUE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 6,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2031:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.11114289,
+      "edge_path": [
+        "E009",
+        "E027"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "GRID_CONNECTION_QUEUE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 7,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2032:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.10320411,
+      "edge_path": [
+        "E009",
+        "E027"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "GRID_CONNECTION_QUEUE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 8,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2033:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.09526533,
+      "edge_path": [
+        "E009",
+        "E027"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "GRID_CONNECTION_QUEUE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 5,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2030:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.08732655,
+      "edge_path": [
+        "E009",
+        "E027"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "GRID_CONNECTION_QUEUE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 9,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2034:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.08534938,
+      "edge_path": [
+        "E001",
+        "E022"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS"
+      ],
+      "period": 6,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2031:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS"
+    },
+    {
+      "contribution": 0.08534938,
+      "edge_path": [
+        "E001",
+        "E022"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS"
+      ],
+      "period": 7,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2032:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS"
+    },
+    {
+      "contribution": 0.08025938,
+      "edge_path": [
+        "E008",
+        "E026"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "TRADE_POWERLINE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 6,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2031:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.08025938,
+      "edge_path": [
+        "E008",
+        "E026"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "TRADE_POWERLINE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 7,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2032:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.07938778,
+      "edge_path": [
+        "E009",
+        "E027"
+      ],
+      "node_path": [
+        "AI_POWER_CONNECTION_DEMAND",
+        "GRID_CONNECTION_QUEUE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 4,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2029:power_connection",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    },
+    {
+      "contribution": 0.07925299,
+      "edge_path": [
+        "E001",
+        "E022"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_ELECTRICIANS",
+        "SCHEDULE_HOSPITALS"
+      ],
+      "period": 8,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2033:electrical_mechanical",
+      "target_node_id": "SCHEDULE_HOSPITALS"
+    },
+    {
+      "contribution": 0.07562903,
+      "edge_path": [
+        "E002",
+        "E026"
+      ],
+      "node_path": [
+        "AI_ELECTRICAL_MECHANICAL_DEMAND",
+        "TRADE_POWERLINE",
+        "SCHEDULE_UTILITIES"
+      ],
+      "period": 6,
+      "shock_label": "AB_50B_2027_2036_STAGGERED:2031:electrical_mechanical",
+      "target_node_id": "SCHEDULE_UTILITIES"
+    }
+  ],
+  "evidence_status": "scenario",
+  "limitations": [
+    "Pressure values are dimensionless diagnostic indices, not predicted workers, dollars or delay days.",
+    "All v0.1 edge weights and capex normalization denominators are declared assumptions pending calibration.",
+    "Power values are independent scenario assumptions and are not derived from capex.",
+    "The planning transfer proxy is not a transmission plan or AESO needs assessment."
+  ],
+  "power_implications": {
+    "central": {
+      "annual_energy_gwh": 41172.0,
+      "facility_peak_mw": 5000.0,
+      "grid_coincident_mw": 1800.0,
+      "it_load_mw": 4000.0,
+      "planning_transfer_proxy_mw": 2070.0,
+      "status": "scenario engineering proxy; not an AESO needs assessment"
+    },
+    "high": {
+      "annual_energy_gwh": 68117.8,
+      "facility_peak_mw": 8100.0,
+      "grid_coincident_mw": 5386.5,
+      "it_load_mw": 6000.0,
+      "planning_transfer_proxy_mw": 6463.8,
+      "status": "scenario engineering proxy; not an AESO needs assessment"
+    },
+    "low": {
+      "annual_energy_gwh": 18501.1,
+      "facility_peak_mw": 2400.0,
+      "grid_coincident_mw": 408.0,
+      "it_load_mw": 2000.0,
+      "planning_transfer_proxy_mw": 469.2,
+      "status": "scenario engineering proxy; not an AESO needs assessment"
+    }
+  },
+  "public_delivery_pressure_order": [
+    {
+      "central": 0.267031,
+      "high": 0.436593,
+      "label": "Regulated utility schedules",
+      "low": 0.12604,
+      "node_id": "SCHEDULE_UTILITIES",
+      "node_type": "outcome"
+    },
+    {
+      "central": 0.239882,
+      "high": 0.562773,
+      "label": "Hospital delivery schedules",
+      "low": 0.075672,
+      "node_id": "SCHEDULE_HOSPITALS",
+      "node_type": "outcome"
+    },
+    {
+      "central": 0.203343,
+      "high": 0.48607,
+      "label": "School delivery schedules",
+      "low": 0.061385,
+      "node_id": "SCHEDULE_SCHOOLS",
+      "node_type": "outcome"
+    },
+    {
+      "central": 0.170104,
+      "high": 0.403192,
+      "label": "Government facility schedules",
+      "low": 0.052497,
+      "node_id": "SCHEDULE_GOVERNMENT",
+      "node_type": "outcome"
+    },
+    {
+      "central": 0.115719,
+      "high": 0.287757,
+      "label": "Road and municipal schedules",
+      "low": 0.032528,
+      "node_id": "SCHEDULE_ROADS_MUNICIPAL",
+      "node_type": "outcome"
+    }
+  ],
+  "scenario_id": "AB_50B_2027_2036_STAGGERED",
+  "schema_version": "1.0.0",
+  "trade_pressure_order": [
+    {
+      "central": 0.333396,
+      "high": 0.404838,
+      "label": "Electricians",
+      "low": 0.261954,
+      "node_id": "TRADE_ELECTRICIANS",
+      "node_type": "resource"
+    },
+    {
+      "central": 0.305424,
+      "high": 0.405216,
+      "label": "Power-line trades",
+      "low": 0.193536,
+      "node_id": "TRADE_POWERLINE",
+      "node_type": "resource"
+    },
+    {
+      "central": 0.22491,
+      "high": 0.292383,
+      "label": "HVAC mechanics",
+      "low": 0.157437,
+      "node_id": "TRADE_HVAC",
+      "node_type": "resource"
+    },
+    {
+      "central": 0.133518,
+      "high": 0.169932,
+      "label": "Concrete trades",
+      "low": 0.097104,
+      "node_id": "TRADE_CONCRETE",
+      "node_type": "resource"
+    }
+  ]
+}

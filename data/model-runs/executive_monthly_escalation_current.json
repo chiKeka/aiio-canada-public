@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "calibration_id": "AIIO_EXECUTIVE_MONTHLY_ESCALATION_PENDING",
+  "status": "awaiting_calibration",
+  "as_of_date": null,
+  "geography_id": "PR_48",
+  "model_version": null,
+  "monthly_series": [],
+  "drivers": [],
+  "nodes": [],
+  "edges": [],
+  "mitigations": [],
+  "expected_driver_slots": [
+    { "driver_id": "electrical_labour", "label": "Electrical labour", "tier": "primary" },
+    { "driver_id": "power_equipment", "label": "Power equipment", "tier": "primary" },
+    { "driver_id": "hvac_mechanical", "label": "HVAC + mechanical", "tier": "primary" },
+    { "driver_id": "concrete_civil", "label": "Concrete + civil", "tier": "primary" },
+    { "driver_id": "wage_spillover", "label": "Wage spillover", "tier": "secondary" },
+    { "driver_id": "procurement_congestion", "label": "Procurement congestion", "tier": "secondary" },
+    { "driver_id": "schedule_extension", "label": "Schedule extension", "tier": "secondary" }
+  ],
+  "publication_boundary": {
+    "monthly_ai_increment_authorized": false,
+    "combined_project_escalation_authorized": false,
+    "driver_contribution_authorized": false,
+    "note": "The component is wired for a future calibrated payload. Null or absent values must render as pending, never zero."
+  }
+}

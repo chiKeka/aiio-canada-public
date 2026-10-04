@@ -1,0 +1,15 @@
+{
+  "records": [
+    {
+      "Application": "31020-A001",
+      "Description": "eStruxture CAL-3 Emergency Standby Generators",
+      "Registration date": "2026-08-28",
+      "Applicant": "eStruxture Data Centers",
+      "Proceeding": "31020"
+    }
+  ],
+  "source_receipt": "auc-current-applications-data.manifest.json",
+  "status": "application_registered_not_approval",
+  "attachment_access": "eFiling_redirects_to_authentication",
+  "attachment_claims_verified": false
+}

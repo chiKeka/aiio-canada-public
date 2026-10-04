@@ -1,0 +1,316 @@
+{
+  "cases": {
+    "central": {
+      "annual": [
+        {
+          "calendar_year": 2027,
+          "commissioned_share": 0.05,
+          "cumulative_commissioned_share": 0.05,
+          "grid_coincident_mw": 79.2,
+          "it_load_mw": 200.0,
+          "planning_transfer_proxy_mw": 91.1
+        },
+        {
+          "calendar_year": 2028,
+          "commissioned_share": 0.07,
+          "cumulative_commissioned_share": 0.12,
+          "grid_coincident_mw": 190.1,
+          "it_load_mw": 480.0,
+          "planning_transfer_proxy_mw": 218.6
+        },
+        {
+          "calendar_year": 2029,
+          "commissioned_share": 0.1,
+          "cumulative_commissioned_share": 0.22,
+          "grid_coincident_mw": 348.5,
+          "it_load_mw": 880.0,
+          "planning_transfer_proxy_mw": 400.8
+        },
+        {
+          "calendar_year": 2030,
+          "commissioned_share": 0.13,
+          "cumulative_commissioned_share": 0.35,
+          "grid_coincident_mw": 554.4,
+          "it_load_mw": 1400.0,
+          "planning_transfer_proxy_mw": 637.6
+        },
+        {
+          "calendar_year": 2031,
+          "commissioned_share": 0.15,
+          "cumulative_commissioned_share": 0.5,
+          "grid_coincident_mw": 792.0,
+          "it_load_mw": 2000.0,
+          "planning_transfer_proxy_mw": 910.8
+        },
+        {
+          "calendar_year": 2032,
+          "commissioned_share": 0.15,
+          "cumulative_commissioned_share": 0.65,
+          "grid_coincident_mw": 1029.6,
+          "it_load_mw": 2600.0,
+          "planning_transfer_proxy_mw": 1184.0
+        },
+        {
+          "calendar_year": 2033,
+          "commissioned_share": 0.13,
+          "cumulative_commissioned_share": 0.78,
+          "grid_coincident_mw": 1235.5,
+          "it_load_mw": 3120.0,
+          "planning_transfer_proxy_mw": 1420.8
+        },
+        {
+          "calendar_year": 2034,
+          "commissioned_share": 0.1,
+          "cumulative_commissioned_share": 0.88,
+          "grid_coincident_mw": 1393.9,
+          "it_load_mw": 3520.0,
+          "planning_transfer_proxy_mw": 1603.0
+        },
+        {
+          "calendar_year": 2035,
+          "commissioned_share": 0.07,
+          "cumulative_commissioned_share": 0.95,
+          "grid_coincident_mw": 1504.8,
+          "it_load_mw": 3800.0,
+          "planning_transfer_proxy_mw": 1730.5
+        },
+        {
+          "calendar_year": 2036,
+          "commissioned_share": 0.05,
+          "cumulative_commissioned_share": 1.0,
+          "grid_coincident_mw": 1584.0,
+          "it_load_mw": 4000.0,
+          "planning_transfer_proxy_mw": 1821.6
+        }
+      ],
+      "assumptions": {
+        "energy_pue": 1.25,
+        "grid_supply_share": 0.4,
+        "it_load_mw_at_full_buildout": 4000.0,
+        "load_factor": 0.94,
+        "peak_coincidence": 0.9,
+        "peak_to_it_factor": 1.1,
+        "planning_margin": 0.15
+      },
+      "full_buildout": {
+        "annual_energy_gwh": 41172.0,
+        "facility_peak_mw": 4400.0,
+        "grid_coincident_mw": 1584.0,
+        "planning_transfer_proxy_mw": 1821.6
+      }
+    },
+    "high": {
+      "annual": [
+        {
+          "calendar_year": 2027,
+          "commissioned_share": 0.05,
+          "cumulative_commissioned_share": 0.05,
+          "grid_coincident_mw": 229.4,
+          "it_load_mw": 300.0,
+          "planning_transfer_proxy_mw": 275.3
+        },
+        {
+          "calendar_year": 2028,
+          "commissioned_share": 0.07,
+          "cumulative_commissioned_share": 0.12,
+          "grid_coincident_mw": 550.6,
+          "it_load_mw": 720.0,
+          "planning_transfer_proxy_mw": 660.7
+        },
+        {
+          "calendar_year": 2029,
+          "commissioned_share": 0.1,
+          "cumulative_commissioned_share": 0.22,
+          "grid_coincident_mw": 1009.5,
+          "it_load_mw": 1320.0,
+          "planning_transfer_proxy_mw": 1211.4
+        },
+        {
+          "calendar_year": 2030,
+          "commissioned_share": 0.13,
+          "cumulative_commissioned_share": 0.35,
+          "grid_coincident_mw": 1606.0,
+          "it_load_mw": 2100.0,
+          "planning_transfer_proxy_mw": 1927.2
+        },
+        {
+          "calendar_year": 2031,
+          "commissioned_share": 0.15,
+          "cumulative_commissioned_share": 0.5,
+          "grid_coincident_mw": 2294.2,
+          "it_load_mw": 3000.0,
+          "planning_transfer_proxy_mw": 2753.1
+        },
+        {
+          "calendar_year": 2032,
+          "commissioned_share": 0.15,
+          "cumulative_commissioned_share": 0.65,
+          "grid_coincident_mw": 2982.5,
+          "it_load_mw": 3900.0,
+          "planning_transfer_proxy_mw": 3579.0
+        },
+        {
+          "calendar_year": 2033,
+          "commissioned_share": 0.13,
+          "cumulative_commissioned_share": 0.78,
+          "grid_coincident_mw": 3579.0,
+          "it_load_mw": 4680.0,
+          "planning_transfer_proxy_mw": 4294.8
+        },
+        {
+          "calendar_year": 2034,
+          "commissioned_share": 0.1,
+          "cumulative_commissioned_share": 0.88,
+          "grid_coincident_mw": 4037.9,
+          "it_load_mw": 5280.0,
+          "planning_transfer_proxy_mw": 4845.5
+        },
+        {
+          "calendar_year": 2035,
+          "commissioned_share": 0.07,
+          "cumulative_commissioned_share": 0.95,
+          "grid_coincident_mw": 4359.1,
+          "it_load_mw": 5700.0,
+          "planning_transfer_proxy_mw": 5230.9
+        },
+        {
+          "calendar_year": 2036,
+          "commissioned_share": 0.05,
+          "cumulative_commissioned_share": 1.0,
+          "grid_coincident_mw": 4588.5,
+          "it_load_mw": 6000.0,
+          "planning_transfer_proxy_mw": 5506.2
+        }
+      ],
+      "assumptions": {
+        "energy_pue": 1.35,
+        "grid_supply_share": 0.7,
+        "it_load_mw_at_full_buildout": 6000.0,
+        "load_factor": 0.96,
+        "peak_coincidence": 0.95,
+        "peak_to_it_factor": 1.15,
+        "planning_margin": 0.2
+      },
+      "full_buildout": {
+        "annual_energy_gwh": 68117.8,
+        "facility_peak_mw": 6900.0,
+        "grid_coincident_mw": 4588.5,
+        "planning_transfer_proxy_mw": 5506.2
+      }
+    },
+    "low": {
+      "annual": [
+        {
+          "calendar_year": 2027,
+          "commissioned_share": 0.05,
+          "cumulative_commissioned_share": 0.05,
+          "grid_coincident_mw": 17.9,
+          "it_load_mw": 100.0,
+          "planning_transfer_proxy_mw": 20.5
+        },
+        {
+          "calendar_year": 2028,
+          "commissioned_share": 0.07,
+          "cumulative_commissioned_share": 0.12,
+          "grid_coincident_mw": 42.8,
+          "it_load_mw": 240.0,
+          "planning_transfer_proxy_mw": 49.3
+        },
+        {
+          "calendar_year": 2029,
+          "commissioned_share": 0.1,
+          "cumulative_commissioned_share": 0.22,
+          "grid_coincident_mw": 78.5,
+          "it_load_mw": 440.0,
+          "planning_transfer_proxy_mw": 90.3
+        },
+        {
+          "calendar_year": 2030,
+          "commissioned_share": 0.13,
+          "cumulative_commissioned_share": 0.35,
+          "grid_coincident_mw": 125.0,
+          "it_load_mw": 700.0,
+          "planning_transfer_proxy_mw": 143.7
+        },
+        {
+          "calendar_year": 2031,
+          "commissioned_share": 0.15,
+          "cumulative_commissioned_share": 0.5,
+          "grid_coincident_mw": 178.5,
+          "it_load_mw": 1000.0,
+          "planning_transfer_proxy_mw": 205.3
+        },
+        {
+          "calendar_year": 2032,
+          "commissioned_share": 0.15,
+          "cumulative_commissioned_share": 0.65,
+          "grid_coincident_mw": 232.1,
+          "it_load_mw": 1300.0,
+          "planning_transfer_proxy_mw": 266.9
+        },
+        {
+          "calendar_year": 2033,
+          "commissioned_share": 0.13,
+          "cumulative_commissioned_share": 0.78,
+          "grid_coincident_mw": 278.5,
+          "it_load_mw": 1560.0,
+          "planning_transfer_proxy_mw": 320.2
+        },
+        {
+          "calendar_year": 2034,
+          "commissioned_share": 0.1,
+          "cumulative_commissioned_share": 0.88,
+          "grid_coincident_mw": 314.2,
+          "it_load_mw": 1760.0,
+          "planning_transfer_proxy_mw": 361.3
+        },
+        {
+          "calendar_year": 2035,
+          "commissioned_share": 0.07,
+          "cumulative_commissioned_share": 0.95,
+          "grid_coincident_mw": 339.1,
+          "it_load_mw": 1900.0,
+          "planning_transfer_proxy_mw": 390.0
+        },
+        {
+          "calendar_year": 2036,
+          "commissioned_share": 0.05,
+          "cumulative_commissioned_share": 1.0,
+          "grid_coincident_mw": 357.0,
+          "it_load_mw": 2000.0,
+          "planning_transfer_proxy_mw": 410.5
+        }
+      ],
+      "assumptions": {
+        "energy_pue": 1.2,
+        "grid_supply_share": 0.2,
+        "it_load_mw_at_full_buildout": 2000.0,
+        "load_factor": 0.88,
+        "peak_coincidence": 0.85,
+        "peak_to_it_factor": 1.05,
+        "planning_margin": 0.15
+      },
+      "full_buildout": {
+        "annual_energy_gwh": 18501.1,
+        "facility_peak_mw": 2100.0,
+        "grid_coincident_mw": 357.0,
+        "planning_transfer_proxy_mw": 410.5
+      }
+    }
+  },
+  "description": "A transparent MW-based scenario overlay for possible AI data-centre load commissioned between 2027 and 2036. It is independent of the $50B capex scenario.",
+  "end_year": 2036,
+  "evidence_status": "scenario",
+  "limitations": [
+    "The power overlay is independent of the CAD capex propagation model.",
+    "Energy PUE is used only for annual energy; peak demand uses a separate peak-to-IT factor.",
+    "The planning transfer proxy is a transparent arithmetic scenario, not a grid study.",
+    "Actual requirements depend on siting, behind-the-meter supply, interconnection studies, reliability criteria and project realization."
+  ],
+  "name": "Independent Alberta AI load and transmission overlay",
+  "overlay_id": "AB_AI_POWER_OVERLAY_2027_2036",
+  "parameter_set_id": "AB_POWER_PARAMETERS_0_1",
+  "schema_version": "1.0.0",
+  "start_year": 2027,
+  "structural_test_banner": "INDEPENDENT UNCALIBRATED POWER OVERLAY \u2014 not an AESO needs assessment, generation forecast, connection approval, or transmission plan."
+}

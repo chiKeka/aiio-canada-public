@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_STATCAN_CENSUS_OCCUPATION_98100449_47d7833ff136473a",
+  "source_id": "STATCAN_CENSUS_OCCUPATION_98100449",
+  "retrieved_at": "2026-08-31T20:47:16+00:00",
+  "effective_url": "https://www150.statcan.gc.ca/t1/wds/rest/getDataFromCubePidCoordAndLatestNPeriods",
+  "content_hash": "sha256:47d7833ff136473a6f24e4d99706a8065fabf8085a41b5d5b50f80a6987e5a83",
+  "content_type": "application/json",
+  "byte_length": 1650314,
+  "archive_path": "data/raw/statcan_census_occupation_98100449/2026-08-31_47d7833ff136.json",
+  "result": "success"
+}

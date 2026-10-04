@@ -1,0 +1,147 @@
+{
+  "absent_from_latest_project_count": 472,
+  "contract_id": "AIIO_QUEBEC_PQI_MILESTONE_VINTAGES_0_1",
+  "contract_sha256": "sha256:a9a63dbee5b85cf7dfdb68345d33370c142538498c3b4e468df6daf3a89b2a35",
+  "latest_snapshot_project_count": 649,
+  "limitations": [
+    "Ten milestone snapshots do not reproduce every change observable in the complete 69-CSV catalog.",
+    "A project disappearing between milestones may be completed, cancelled, renamed, merged, fall outside publication scope or otherwise leave the dashboard; exit cause is not inferred.",
+    "The November 2020 change from a CAD 50 million to CAD 20 million threshold confounds threshold entry with other project entry.",
+    "Current authorized cost is not final audited outturn and has no common estimate price-basis date.",
+    "No AI treatment is present, so no AI-attributable effect is estimated."
+  ],
+  "linked_change_diagnostics": {
+    "authorized_cost_change_pair_count": 631,
+    "comparable_completion_pair_count": 1719,
+    "comparable_cost_pair_count": 1770,
+    "completion_month_change_pair_count": 500,
+    "consecutive_observation_pair_count": 4239
+  },
+  "model_id": "AIIO_QUEBEC_PQI_MILESTONE_LONGITUDINAL_0_1",
+  "outputs": {
+    "lifecycle_csv": "data/processed/quebec_pqi_milestone_project_lifecycles.csv",
+    "lifecycle_csv_sha256": "sha256:ac51cde9b327b39dc6a1693bddebd9ffdffad3af7def1118480b7dae5360bd0d",
+    "snapshot_csv": "data/processed/quebec_pqi_milestone_project_vintages.csv",
+    "snapshot_csv_sha256": "sha256:5a68dd09c94f860c1382b3c92d5856e15029dfb2a8d8b6be5051a717edf0a25e"
+  },
+  "present_in_latest_project_count": 649,
+  "project_with_interval_disappearance_count": 473,
+  "project_with_milestone_reentry_count": 2,
+  "publication_boundary": {
+    "ai_attributable_effect_authorized": false,
+    "complete_longitudinal_panel_authorized": false,
+    "project_exit_outcome_authorized": false,
+    "public_project_cost_outcome_authorized": false,
+    "public_project_schedule_outcome_authorized": false,
+    "reason": "The milestone panel reveals stable-ID presence and authorized-field changes across ten official snapshots, but it is not the full monthly catalog, exit causes are unknown, the publication threshold changed, and authorized parameters are not final outturns.",
+    "status": "milestone_longitudinal_research_candidate"
+  },
+  "schema_version": "1.0.0",
+  "snapshot_end_date": "2026-08-20",
+  "snapshot_observation_count": 5362,
+  "snapshot_start_date": "2020-05-19",
+  "threshold_transition": {
+    "continuing_project_count": 278,
+    "first_post_threshold_project_count": 398,
+    "first_post_threshold_snapshot": "2020-11-16",
+    "interpretation": "The newly observed count combines threshold expansion and other entry; it is not a pure treatment cohort.",
+    "last_pre_threshold_project_count": 280,
+    "last_pre_threshold_snapshot": "2020-10-26",
+    "newly_observed_project_count": 120,
+    "no_longer_observed_project_count": 2
+  },
+  "unique_project_count": 1121,
+  "vintage_count": 10,
+  "vintages": [
+    {
+      "content_hash": "sha256:cac42720e5bfb07a7d6a20dfa0849e067e3004450406d8592f36bc617591f1fd",
+      "project_count": 281,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 281,
+      "resource_id": "73f86929-8813-4421-ac32-f2edcde0fdd3",
+      "snapshot_date": "2020-05-19",
+      "threshold_regime": "cad_50m_and_over"
+    },
+    {
+      "content_hash": "sha256:4c8952eff4f0726681fa975b9cf8a9e0cde52e99b61e32ec2ad822a2e76bff36",
+      "project_count": 280,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 280,
+      "resource_id": "10ad1260-2779-40eb-83d9-f12372c5485f",
+      "snapshot_date": "2020-10-26",
+      "threshold_regime": "cad_50m_and_over"
+    },
+    {
+      "content_hash": "sha256:418368c9ba76f001ad2b500a1ea5303a2b54a871aeec032e00a8089ba23cd32e",
+      "project_count": 398,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 398,
+      "resource_id": "175e8546-c062-4f78-a1ed-d4955c53c051",
+      "snapshot_date": "2020-11-16",
+      "threshold_regime": "cad_20m_and_over"
+    },
+    {
+      "content_hash": "sha256:ec45f635dc8d2f15b25d9f2cdc551d5504310110e6ae1f88309ec3faae240c82",
+      "project_count": 398,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 398,
+      "resource_id": "a2cd18cb-1860-41c8-88f6-6070b755e917",
+      "snapshot_date": "2020-12-03",
+      "threshold_regime": "cad_20m_and_over"
+    },
+    {
+      "content_hash": "sha256:902401198e51a5dcd4c87cd2f66a09b4bdddd73baffc00d7bee057c05b4d9e1a",
+      "project_count": 595,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 595,
+      "resource_id": "38add45e-8624-4a6e-983e-689399a004f2",
+      "snapshot_date": "2021-12-06",
+      "threshold_regime": "cad_20m_and_over"
+    },
+    {
+      "content_hash": "sha256:50c404d3573abf5c0cb5cedb28117f234da81449f06375f34bb62122782f8d74",
+      "project_count": 696,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 696,
+      "resource_id": "d2ea392d-85d8-45dd-b070-e5be4ff1edcc",
+      "snapshot_date": "2022-12-08",
+      "threshold_regime": "cad_20m_and_over"
+    },
+    {
+      "content_hash": "sha256:8187ad50e6d58b300f8063cd46125dc9e6947b4501b07e52e4fc5cec03547697",
+      "project_count": 682,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 682,
+      "resource_id": "ac14fb28-2c7f-48e3-b59f-c5ab5688420d",
+      "snapshot_date": "2023-12-08",
+      "threshold_regime": "cad_20m_and_over"
+    },
+    {
+      "content_hash": "sha256:0cb66745c2ccfec4575e4185f925565ecdcd803b1e3e8994334474db99261f7b",
+      "project_count": 701,
+      "publisher_duplicate_rows_collapsed": 1,
+      "raw_row_count": 702,
+      "resource_id": "0ecee9d7-5c5e-4883-a799-9f8e79a796d6",
+      "snapshot_date": "2024-10-09",
+      "threshold_regime": "cad_20m_and_over"
+    },
+    {
+      "content_hash": "sha256:698d8f701956474c217fc6132750ad1c6be57dd97af6ac1b2ef2df656a5e0d9c",
+      "project_count": 682,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 682,
+      "resource_id": "35de39af-84c5-4478-9857-2b4c65564c15",
+      "snapshot_date": "2025-12-19",
+      "threshold_regime": "cad_20m_and_over"
+    },
+    {
+      "content_hash": "sha256:a437f7ba9a749f33b130ec5a1a724821134b1b91bc7a2970bcf2597e8ff5877b",
+      "project_count": 649,
+      "publisher_duplicate_rows_collapsed": 0,
+      "raw_row_count": 649,
+      "resource_id": "1f3ea7fa-d8c6-4054-937d-fcc76be81803",
+      "snapshot_date": "2026-08-20",
+      "threshold_regime": "cad_20m_and_over"
+    }
+  ]
+}

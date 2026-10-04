@@ -1,0 +1,779 @@
+{
+  "schema_version": "1.0.0",
+  "suite_id": "AIIO_AB_50B_SCENARIO_SUITE_0_1",
+  "evidence_status": "scenario",
+  "framing_question": "How does the timing and assumed local capture of a fixed CAD 50 billion Alberta AI-infrastructure program change the graph's structural pressure ordering?",
+  "reference_variant_id": "staggered",
+  "contract_sha256": "sha256:d8774e658ce2b2a2a95cfda47290ff0c19bc88ae30dd56b7cb1076b575176388",
+  "graph_path": "data/model/alberta_graph_v0.2.json",
+  "graph_sha256": "sha256:4ae7347787f0fa53e670f8f03b80c1f7c93f03bc8d75a6b99168e3a3763e1a22",
+  "code_hashes": {
+    "scenario_engine": "sha256:721416319d4d8e3eb8fd9a0d2350eed529e78b86ecfe383cd5a4c5700cd0e6e8",
+    "scenario_suite": "sha256:8f2659b04ced3ae48f7da46b38e070f58281a90a7820c24418d009a225ce216c"
+  },
+  "variant_count": 4,
+  "variant_run_receipts": [
+    {
+      "variant_id": "staggered",
+      "scenario_path": "data/scenarios/alberta_50b_counterfactual_v0.2.json",
+      "scenario_sha256": "sha256:12dcc5146212bc9b812f21bc81fa12313226b4fad665c8435be886a6baf15ca0",
+      "model_run_path": "data/model-runs/alberta_50b_counterfactual_v0.2.json",
+      "model_run_sha256": "sha256:d8f421a41b7c76453b56a26581ede066ff40dbad4c1c21e238eabd28c027c8c9"
+    },
+    {
+      "variant_id": "front_loaded",
+      "scenario_path": "data/scenarios/alberta_50b_front_loaded_v0.1.json",
+      "scenario_sha256": "sha256:c452a6e405759031eb46d086afea3e173a52a4782042ceede267a048184ea50b",
+      "model_run_path": "data/model-runs/alberta_50b_front_loaded_v0.1.json",
+      "model_run_sha256": "sha256:7ee37bab215acab2aff2628141408b38b55df9859d92132dc17d238e9c9b4263"
+    },
+    {
+      "variant_id": "constrained_delivery",
+      "scenario_path": "data/scenarios/alberta_50b_constrained_delivery_v0.1.json",
+      "scenario_sha256": "sha256:280fc365a203f051ea9160ae7f6e69dea849f415b49efb83f01b7f327ad5b5ff",
+      "model_run_path": "data/model-runs/alberta_50b_constrained_delivery_v0.1.json",
+      "model_run_sha256": "sha256:53809d06ac4efed1e13878a634706000327c20410f84e0076dbd58ebab35a354"
+    },
+    {
+      "variant_id": "high_local_capture",
+      "scenario_path": "data/scenarios/alberta_50b_high_local_capture_v0.1.json",
+      "scenario_sha256": "sha256:1bc501310f5ebbb7af330886df547167a18a2782ba44995e38323f08cc787610",
+      "model_run_path": "data/model-runs/alberta_50b_high_local_capture_v0.1.json",
+      "model_run_sha256": "sha256:85da5b26c13240fb3858400b8545b3e94da3b690af7921507f5213eec4661836"
+    }
+  ],
+  "variant_summaries": [
+    {
+      "variant_id": "staggered",
+      "label": "Staggered reference",
+      "comparison_role": "reference",
+      "decision_question": "What does the existing ten-year ramp imply under the locked structural assumptions?",
+      "declared_change": "Reference timing and 72% local capture.",
+      "scenario_id": "AB_50B_2027_2036_COUNTERFACTUAL",
+      "parameter_set_id": "AB_50B_PARAMETERS_0_2",
+      "delivery_start_year": 2027,
+      "delivery_end_year": 2036,
+      "delivery_year_count": 10,
+      "investment_total_cad": 50000000000,
+      "first_five_year_capex_share": 0.47,
+      "peak_annual_capex_cad": 7000000000,
+      "peak_annual_capex_year": 2031,
+      "annual_capex_profile": [
+        {
+          "year": 2027,
+          "total_capex_cad": 2000000000,
+          "local_modelled_capex_cad": 662400000
+        },
+        {
+          "year": 2028,
+          "total_capex_cad": 3500000000,
+          "local_modelled_capex_cad": 1159200000
+        },
+        {
+          "year": 2029,
+          "total_capex_cad": 5000000000,
+          "local_modelled_capex_cad": 1656000000
+        },
+        {
+          "year": 2030,
+          "total_capex_cad": 6000000000,
+          "local_modelled_capex_cad": 1987200000
+        },
+        {
+          "year": 2031,
+          "total_capex_cad": 7000000000,
+          "local_modelled_capex_cad": 2318400000
+        },
+        {
+          "year": 2032,
+          "total_capex_cad": 7000000000,
+          "local_modelled_capex_cad": 2318400000
+        },
+        {
+          "year": 2033,
+          "total_capex_cad": 6500000000,
+          "local_modelled_capex_cad": 2152800000
+        },
+        {
+          "year": 2034,
+          "total_capex_cad": 5500000000,
+          "local_modelled_capex_cad": 1821600000
+        },
+        {
+          "year": 2035,
+          "total_capex_cad": 4500000000,
+          "local_modelled_capex_cad": 1490400000
+        },
+        {
+          "year": 2036,
+          "total_capex_cad": 3000000000,
+          "local_modelled_capex_cad": 993600000
+        }
+      ],
+      "local_capture_share": 0.72,
+      "local_modelled_capex_cad": 16560000000,
+      "peak_annual_local_modelled_capex_cad": 2318400000,
+      "top_trade": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "raw_central_pressure_score": 0.62,
+        "central_peak_year": 2034
+      },
+      "top_material": {
+        "node_id": "MATERIAL_BUILDING_ELECTRICAL",
+        "label": "Building electrical equipment",
+        "raw_central_pressure_score": 0.49,
+        "central_peak_year": 2033
+      },
+      "nonresidential_cost_signal": {
+        "node_id": "NONRES_CONSTRUCTION_COST",
+        "label": "Non-residential construction cost pressure",
+        "raw_central_pressure_score": 0.29,
+        "central_peak_year": 2035
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "raw_central_pressure_score": 0.44,
+        "central_peak_year": 2035
+      }
+    },
+    {
+      "variant_id": "front_loaded",
+      "label": "Front-loaded",
+      "comparison_role": "timing_front_loaded",
+      "decision_question": "Which trades and schedules tighten when 67% of capex is concentrated in 2027-2031?",
+      "declared_change": "Timing only; total, component mix, denominators and 72% local capture are unchanged.",
+      "scenario_id": "AB_50B_2027_2036_FRONT_LOADED",
+      "parameter_set_id": "AB_50B_FRONT_LOADED_PARAMETERS_0_1",
+      "delivery_start_year": 2027,
+      "delivery_end_year": 2036,
+      "delivery_year_count": 10,
+      "investment_total_cad": 50000000000,
+      "first_five_year_capex_share": 0.67,
+      "peak_annual_capex_cad": 8000000000,
+      "peak_annual_capex_year": 2030,
+      "annual_capex_profile": [
+        {
+          "year": 2027,
+          "total_capex_cad": 4500000000,
+          "local_modelled_capex_cad": 1490400000
+        },
+        {
+          "year": 2028,
+          "total_capex_cad": 6000000000,
+          "local_modelled_capex_cad": 1987200000
+        },
+        {
+          "year": 2029,
+          "total_capex_cad": 7500000000,
+          "local_modelled_capex_cad": 2484000000
+        },
+        {
+          "year": 2030,
+          "total_capex_cad": 8000000000,
+          "local_modelled_capex_cad": 2649600000
+        },
+        {
+          "year": 2031,
+          "total_capex_cad": 7500000000,
+          "local_modelled_capex_cad": 2484000000
+        },
+        {
+          "year": 2032,
+          "total_capex_cad": 5500000000,
+          "local_modelled_capex_cad": 1821600000
+        },
+        {
+          "year": 2033,
+          "total_capex_cad": 4000000000,
+          "local_modelled_capex_cad": 1324800000
+        },
+        {
+          "year": 2034,
+          "total_capex_cad": 3000000000,
+          "local_modelled_capex_cad": 993600000
+        },
+        {
+          "year": 2035,
+          "total_capex_cad": 2500000000,
+          "local_modelled_capex_cad": 828000000
+        },
+        {
+          "year": 2036,
+          "total_capex_cad": 1500000000,
+          "local_modelled_capex_cad": 496800000
+        }
+      ],
+      "local_capture_share": 0.72,
+      "local_modelled_capex_cad": 16560000000,
+      "peak_annual_local_modelled_capex_cad": 2649600000,
+      "top_trade": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "raw_central_pressure_score": 0.69,
+        "central_peak_year": 2032
+      },
+      "top_material": {
+        "node_id": "MATERIAL_BUILDING_ELECTRICAL",
+        "label": "Building electrical equipment",
+        "raw_central_pressure_score": 0.55,
+        "central_peak_year": 2032
+      },
+      "nonresidential_cost_signal": {
+        "node_id": "NONRES_CONSTRUCTION_COST",
+        "label": "Non-residential construction cost pressure",
+        "raw_central_pressure_score": 0.32,
+        "central_peak_year": 2033
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "raw_central_pressure_score": 0.47,
+        "central_peak_year": 2033
+      }
+    },
+    {
+      "variant_id": "constrained_delivery",
+      "label": "Constrained delivery",
+      "comparison_role": "timing_constrained",
+      "decision_question": "How does spreading the same program to 2041 change peak structural pressure?",
+      "declared_change": "Timing only; the fifteen-year profile is capped at a 7.5% annual share.",
+      "scenario_id": "AB_50B_2027_2041_CONSTRAINED_DELIVERY",
+      "parameter_set_id": "AB_50B_CONSTRAINED_DELIVERY_PARAMETERS_0_1",
+      "delivery_start_year": 2027,
+      "delivery_end_year": 2041,
+      "delivery_year_count": 15,
+      "investment_total_cad": 50000000000,
+      "first_five_year_capex_share": 0.295,
+      "peak_annual_capex_cad": 3750000000,
+      "peak_annual_capex_year": 2031,
+      "annual_capex_profile": [
+        {
+          "year": 2027,
+          "total_capex_cad": 2000000000,
+          "local_modelled_capex_cad": 662400000
+        },
+        {
+          "year": 2028,
+          "total_capex_cad": 2500000000,
+          "local_modelled_capex_cad": 828000000
+        },
+        {
+          "year": 2029,
+          "total_capex_cad": 3000000000,
+          "local_modelled_capex_cad": 993600000
+        },
+        {
+          "year": 2030,
+          "total_capex_cad": 3500000000,
+          "local_modelled_capex_cad": 1159200000
+        },
+        {
+          "year": 2031,
+          "total_capex_cad": 3750000000,
+          "local_modelled_capex_cad": 1242000000
+        },
+        {
+          "year": 2032,
+          "total_capex_cad": 3750000000,
+          "local_modelled_capex_cad": 1242000000
+        },
+        {
+          "year": 2033,
+          "total_capex_cad": 3750000000,
+          "local_modelled_capex_cad": 1242000000
+        },
+        {
+          "year": 2034,
+          "total_capex_cad": 3750000000,
+          "local_modelled_capex_cad": 1242000000
+        },
+        {
+          "year": 2035,
+          "total_capex_cad": 3750000000,
+          "local_modelled_capex_cad": 1242000000
+        },
+        {
+          "year": 2036,
+          "total_capex_cad": 3750000000,
+          "local_modelled_capex_cad": 1242000000
+        },
+        {
+          "year": 2037,
+          "total_capex_cad": 3750000000,
+          "local_modelled_capex_cad": 1242000000
+        },
+        {
+          "year": 2038,
+          "total_capex_cad": 3500000000,
+          "local_modelled_capex_cad": 1159200000
+        },
+        {
+          "year": 2039,
+          "total_capex_cad": 3250000000,
+          "local_modelled_capex_cad": 1076400000
+        },
+        {
+          "year": 2040,
+          "total_capex_cad": 3000000000,
+          "local_modelled_capex_cad": 993600000
+        },
+        {
+          "year": 2041,
+          "total_capex_cad": 3000000000,
+          "local_modelled_capex_cad": 993600000
+        }
+      ],
+      "local_capture_share": 0.72,
+      "local_modelled_capex_cad": 16560000000,
+      "peak_annual_local_modelled_capex_cad": 1242000000,
+      "top_trade": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "raw_central_pressure_score": 0.36,
+        "central_peak_year": 2038
+      },
+      "top_material": {
+        "node_id": "MATERIAL_BUILDING_ELECTRICAL",
+        "label": "Building electrical equipment",
+        "raw_central_pressure_score": 0.28,
+        "central_peak_year": 2038
+      },
+      "nonresidential_cost_signal": {
+        "node_id": "NONRES_CONSTRUCTION_COST",
+        "label": "Non-residential construction cost pressure",
+        "raw_central_pressure_score": 0.17,
+        "central_peak_year": 2039
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "raw_central_pressure_score": 0.27,
+        "central_peak_year": 2039
+      }
+    },
+    {
+      "variant_id": "high_local_capture",
+      "label": "High local capture",
+      "comparison_role": "local_capture_high",
+      "decision_question": "How much does structural pressure change if 90% of modelled construction activity is retained in Alberta?",
+      "declared_change": "Local capture only; total, component mix, denominators and timing are unchanged.",
+      "scenario_id": "AB_50B_2027_2036_HIGH_LOCAL_CAPTURE",
+      "parameter_set_id": "AB_50B_HIGH_LOCAL_CAPTURE_PARAMETERS_0_1",
+      "delivery_start_year": 2027,
+      "delivery_end_year": 2036,
+      "delivery_year_count": 10,
+      "investment_total_cad": 50000000000,
+      "first_five_year_capex_share": 0.47,
+      "peak_annual_capex_cad": 7000000000,
+      "peak_annual_capex_year": 2031,
+      "annual_capex_profile": [
+        {
+          "year": 2027,
+          "total_capex_cad": 2000000000,
+          "local_modelled_capex_cad": 828000000
+        },
+        {
+          "year": 2028,
+          "total_capex_cad": 3500000000,
+          "local_modelled_capex_cad": 1449000000
+        },
+        {
+          "year": 2029,
+          "total_capex_cad": 5000000000,
+          "local_modelled_capex_cad": 2070000000
+        },
+        {
+          "year": 2030,
+          "total_capex_cad": 6000000000,
+          "local_modelled_capex_cad": 2484000000
+        },
+        {
+          "year": 2031,
+          "total_capex_cad": 7000000000,
+          "local_modelled_capex_cad": 2898000000
+        },
+        {
+          "year": 2032,
+          "total_capex_cad": 7000000000,
+          "local_modelled_capex_cad": 2898000000
+        },
+        {
+          "year": 2033,
+          "total_capex_cad": 6500000000,
+          "local_modelled_capex_cad": 2691000000
+        },
+        {
+          "year": 2034,
+          "total_capex_cad": 5500000000,
+          "local_modelled_capex_cad": 2277000000
+        },
+        {
+          "year": 2035,
+          "total_capex_cad": 4500000000,
+          "local_modelled_capex_cad": 1863000000
+        },
+        {
+          "year": 2036,
+          "total_capex_cad": 3000000000,
+          "local_modelled_capex_cad": 1242000000
+        }
+      ],
+      "local_capture_share": 0.9,
+      "local_modelled_capex_cad": 20700000000,
+      "peak_annual_local_modelled_capex_cad": 2898000000,
+      "top_trade": {
+        "node_id": "TRADE_ELECTRICIANS",
+        "label": "Building electricians",
+        "raw_central_pressure_score": 0.77,
+        "central_peak_year": 2034
+      },
+      "top_material": {
+        "node_id": "MATERIAL_BUILDING_ELECTRICAL",
+        "label": "Building electrical equipment",
+        "raw_central_pressure_score": 0.62,
+        "central_peak_year": 2033
+      },
+      "nonresidential_cost_signal": {
+        "node_id": "NONRES_CONSTRUCTION_COST",
+        "label": "Non-residential construction cost pressure",
+        "raw_central_pressure_score": 0.36,
+        "central_peak_year": 2035
+      },
+      "top_public_delivery_outcome": {
+        "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+        "label": "Hospital delivery delay pressure",
+        "raw_central_pressure_score": 0.55,
+        "central_peak_year": 2035
+      }
+    }
+  ],
+  "comparison_matrix": [
+    {
+      "node_id": "TRADE_ELECTRICIANS",
+      "label": "Building electricians",
+      "node_type": "resource",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.62,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.69,
+          "central_peak_year": 2032,
+          "raw_delta_from_reference": 0.07
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.36,
+          "central_peak_year": 2038,
+          "raw_delta_from_reference": -0.26
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.77,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.15
+        }
+      ]
+    },
+    {
+      "node_id": "TRADE_HVAC",
+      "label": "HVAC mechanics",
+      "node_type": "resource",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.42,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.46,
+          "central_peak_year": 2032,
+          "raw_delta_from_reference": 0.04
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.24,
+          "central_peak_year": 2038,
+          "raw_delta_from_reference": -0.18
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.52,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.1
+        }
+      ]
+    },
+    {
+      "node_id": "TRADE_POWERLINE",
+      "label": "Power-line trades",
+      "node_type": "resource",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.29,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.32,
+          "central_peak_year": 2032,
+          "raw_delta_from_reference": 0.03
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.17,
+          "central_peak_year": 2038,
+          "raw_delta_from_reference": -0.12
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.36,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.07
+        }
+      ]
+    },
+    {
+      "node_id": "TRADE_CONCRETE",
+      "label": "Concrete trades",
+      "node_type": "resource",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.25,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.27,
+          "central_peak_year": 2032,
+          "raw_delta_from_reference": 0.02
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.14,
+          "central_peak_year": 2038,
+          "raw_delta_from_reference": -0.11
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.31,
+          "central_peak_year": 2034,
+          "raw_delta_from_reference": 0.06
+        }
+      ]
+    },
+    {
+      "node_id": "NONRES_CONSTRUCTION_COST",
+      "label": "Non-residential construction cost pressure",
+      "node_type": "signal",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.29,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.32,
+          "central_peak_year": 2033,
+          "raw_delta_from_reference": 0.03
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.17,
+          "central_peak_year": 2039,
+          "raw_delta_from_reference": -0.12
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.36,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.07
+        }
+      ]
+    },
+    {
+      "node_id": "SCHEDULE_HOSPITALS_DELAY_PRESSURE",
+      "label": "Hospital delivery delay pressure",
+      "node_type": "outcome",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.44,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.47,
+          "central_peak_year": 2033,
+          "raw_delta_from_reference": 0.03
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.27,
+          "central_peak_year": 2039,
+          "raw_delta_from_reference": -0.17
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.55,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.11
+        }
+      ]
+    },
+    {
+      "node_id": "SCHEDULE_SCHOOLS_DELAY_PRESSURE",
+      "label": "School delivery delay pressure",
+      "node_type": "outcome",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.29,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.31,
+          "central_peak_year": 2033,
+          "raw_delta_from_reference": 0.02
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.17,
+          "central_peak_year": 2039,
+          "raw_delta_from_reference": -0.12
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.36,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.07
+        }
+      ]
+    },
+    {
+      "node_id": "SCHEDULE_GOVERNMENT_DELAY_PRESSURE",
+      "label": "Government facility delivery delay pressure",
+      "node_type": "outcome",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.22,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.24,
+          "central_peak_year": 2033,
+          "raw_delta_from_reference": 0.02
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.14,
+          "central_peak_year": 2039,
+          "raw_delta_from_reference": -0.08
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.28,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.06
+        }
+      ]
+    },
+    {
+      "node_id": "SCHEDULE_ROADS_MUNICIPAL_DELAY_PRESSURE",
+      "label": "Road and municipal delivery delay pressure",
+      "node_type": "outcome",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.12,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.13,
+          "central_peak_year": 2033,
+          "raw_delta_from_reference": 0.01
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.07,
+          "central_peak_year": 2039,
+          "raw_delta_from_reference": -0.05
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.15,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.03
+        }
+      ]
+    },
+    {
+      "node_id": "SCHEDULE_UTILITIES_DELAY_PRESSURE",
+      "label": "Regulated utility delivery delay pressure",
+      "node_type": "outcome",
+      "values": [
+        {
+          "variant_id": "staggered",
+          "raw_central_pressure_score": 0.3,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.0
+        },
+        {
+          "variant_id": "front_loaded",
+          "raw_central_pressure_score": 0.33,
+          "central_peak_year": 2033,
+          "raw_delta_from_reference": 0.03
+        },
+        {
+          "variant_id": "constrained_delivery",
+          "raw_central_pressure_score": 0.18,
+          "central_peak_year": 2039,
+          "raw_delta_from_reference": -0.12
+        },
+        {
+          "variant_id": "high_local_capture",
+          "raw_central_pressure_score": 0.38,
+          "central_peak_year": 2035,
+          "raw_delta_from_reference": 0.08
+        }
+      ]
+    }
+  ],
+  "publication_boundary": {
+    "status": "uncalibrated_structural_scenario_comparison",
+    "forecast_authorized": false,
+    "ai_attributable_effect_authorized": false,
+    "project_cost_or_delay_translation_authorized": false,
+    "power_requirement_inference_authorized": false,
+    "reason": "The variants deliberately change declared assumptions to stress-test timing and local capture. Their pressure scores are dimensionless graph diagnostics, not probabilities, percentages, forecasts, cost escalation, schedule delay or power requirements."
+  },
+  "limitations": [
+    "Every variant is a declared counterfactual assumption set, not a forecast or observed investment path.",
+    "Raw pressure scores are dimensionless and unbounded; they are not percentages, probabilities, cost escalation or delay duration.",
+    "The constrained-delivery annual cap is a scenario rule, not an estimate of Alberta labour, connection or construction capacity.",
+    "Local capture is uniform across modelled construction components and is not a measured regional retention rate.",
+    "Power-system quantities remain in the independent MW overlay and do not respond to these CAD scenario variants."
+  ]
+}

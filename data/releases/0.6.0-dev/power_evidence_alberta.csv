@@ -1,0 +1,11 @@
+metric_id,period,value,unit,evidence_status,source_id,source_locator
+AESO_DC_REQUESTED_LOAD,2024-Q2,5000.0,MW,observed,AESO_DATA_CENTRE_UPDATE_2025_09,"page 1, Data Centre Cumulative Requested Load bar chart"
+AESO_DC_REQUESTED_LOAD,2024-Q3,6400.0,MW,observed,AESO_DATA_CENTRE_UPDATE_2025_09,"page 1, Data Centre Cumulative Requested Load bar chart"
+AESO_DC_REQUESTED_LOAD,2024-Q4,10900.0,MW,observed,AESO_DATA_CENTRE_UPDATE_2025_09,"page 1, Data Centre Cumulative Requested Load bar chart"
+AESO_DC_REQUESTED_LOAD,2025-Q1,14600.0,MW,observed,AESO_DATA_CENTRE_UPDATE_2025_09,"page 1, Data Centre Cumulative Requested Load bar chart"
+AESO_DC_REQUESTED_LOAD,2025-Q2,19800.0,MW,observed,AESO_DATA_CENTRE_UPDATE_2025_09,"page 1, Data Centre Cumulative Requested Load bar chart"
+AESO_DC_REQUESTED_LOAD,2025-Q3,20700.0,MW,observed,AESO_DATA_CENTRE_UPDATE_2025_09,"page 1, Data Centre Cumulative Requested Load bar chart"
+AESO_PHASE1_INTERIM_LIMIT,2025-06-04,1200.0,MW,observed,AESO_INTERIM_LARGE_LOAD_2025_06,"Managing Demand Responsibly, interim limit"
+AESO_PHASE1_ALLOCATED_LOAD_CONTRACTS,2026-08-31,1200.0,MW,observed,AESO_LARGE_LOAD_PROJECTS,Phase 1: Large Load Integration | Complete
+AESO_P2936_EXECUTED_LOAD_CONTRACT,2026-08-31,970.0,MW,observed,AESO_LARGE_LOAD_PROJECTS,"Phase 1 project list, P2936"
+AESO_P3083_EXECUTED_LOAD_CONTRACT,2026-08-31,230.0,MW,observed,AESO_LARGE_LOAD_PROJECTS,"Phase 1 project list, P3083"

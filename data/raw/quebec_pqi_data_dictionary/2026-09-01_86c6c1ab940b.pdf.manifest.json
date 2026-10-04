@@ -1,0 +1,11 @@
+{
+  "retrieval_id": "RET_QUEBEC_PQI_DATA_DICTIONARY_86c6c1ab940bbfed",
+  "source_id": "QUEBEC_PQI_DATA_DICTIONARY",
+  "retrieved_at": "2026-09-01T05:20:13+00:00",
+  "effective_url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/d94c4be0-7ac6-46e6-86f4-5c40c9a6d47a/download/description-des-champs.pdf",
+  "content_hash": "sha256:86c6c1ab940bbfed0df5b44b4259fa7b7999f1e425ad723fc4e6dfdb2e304d09",
+  "content_type": "application/pdf",
+  "byte_length": 53072,
+  "archive_path": "data/raw/quebec_pqi_data_dictionary/2026-09-01_86c6c1ab940b.pdf",
+  "result": "success"
+}

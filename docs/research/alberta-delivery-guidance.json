@@ -1,0 +1,122 @@
+{
+  "packages": {
+    "headers": [
+      "Package",
+      "Labour demand",
+      "Materials and equipment"
+    ],
+    "rows": [
+      [
+        "Civil / structural",
+        "Operators, labourers, formwork crews, finishers, ironworkers",
+        "Concrete, aggregate, reinforcing and structural steel"
+      ],
+      [
+        "Electrical",
+        "Electricians, cable installers, controls and testing specialists",
+        "Transformers, switchgear, cable, UPS and generators"
+      ],
+      [
+        "Mechanical / cooling",
+        "HVAC and sheet-metal workers, pipefitters, plumbers, insulators",
+        "Chillers, air handlers, pumps, pipework and ducts"
+      ],
+      [
+        "Utility connections",
+        "Line crews, utility engineers and enabling civil crews",
+        "Substations, connection equipment and utility corridors"
+      ]
+    ]
+  },
+  "pathways": {
+    "headers": [
+      "Pressure point",
+      "Schedule consequence",
+      "Cost exposure"
+    ],
+    "rows": [
+      [
+        "Late electrical equipment",
+        "Power-on or integrated testing can move",
+        "Site overhead and later procurement of uncommitted work"
+      ],
+      [
+        "Unavailable specialist crews",
+        "Installation or commissioning can move",
+        "Overtime, remobilization and changed work sequences"
+      ],
+      [
+        "Late design or specification changes",
+        "Submittals and manufacturing release can restart",
+        "Rework, change orders and lost supplier slots"
+      ],
+      [
+        "Shared contractor or supplier demand",
+        "Tender and mobilization dates can become harder to secure",
+        "Bid validity, reduced competition and contract allocation of risk"
+      ]
+    ]
+  },
+  "mitigations": {
+    "headers": [
+      "Delivery risk",
+      "Potential mitigation",
+      "Condition or trade-off"
+    ],
+    "rows": [
+      [
+        "Long-lead equipment",
+        "Engage suppliers early and confirm production slots",
+        "Requires stable specifications and clear cancellation terms"
+      ],
+      [
+        "Limited technical alternatives",
+        "Prequalify equivalent equipment and suppliers",
+        "Retain utility compatibility, warranty and performance"
+      ],
+      [
+        "Concentrated site labour",
+        "Evaluate prefabrication and planned package sequencing",
+        "Earlier coordination, transport and installation interfaces"
+      ],
+      [
+        "Specialist recruitment pressure",
+        "Engage trade contractors and training partners early",
+        "Allow time for qualifications and supervisory capacity"
+      ],
+      [
+        "Competing capital schedules",
+        "Coordinate procurement and commissioning windows",
+        "Protect critical milestones across affected projects"
+      ]
+    ]
+  },
+  "priorities": [
+    [
+      "Before committing dates",
+      "Confirm financing, utility milestones and the construction scope for each phase."
+    ],
+    [
+      "Before placing orders",
+      "Confirm equipment specifications, manufacturing slots and release requirements."
+    ],
+    [
+      "Before mobilizing crews",
+      "Secure specialist contractor commitments and verify installation readiness."
+    ],
+    [
+      "During delivery",
+      "Track supplier milestones, crew availability and changes to the critical path."
+    ]
+  ],
+  "procurementConsiderations": {
+    "Cooling towers": "Cooling configuration and installation window",
+    "Air-cooled chillers": "Duty, redundancy and manufacturer selection",
+    "Water-cooled chillers": "Cooling-system design and commissioning",
+    "Air handling units": "Custom specification and controls integration",
+    "Generators": "Rating, approvals and site installation",
+    "Low-voltage switchgear": "Electrical design and approved submittals",
+    "Medium-voltage switchgear": "Utility interface and technical specification",
+    "UPS": "Power architecture and testing requirements"
+  }
+}

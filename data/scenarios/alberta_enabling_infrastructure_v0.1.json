@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "1.0",
+  "scenarioId": "AB_50B_2027_2036_COUNTERFACTUAL",
+  "aiPhaseIds": [
+    "AB_50B_2027_2036_PROGRAM"
+  ],
+  "currency": "CAD",
+  "priceYear": 2026,
+  "aiCapexCad": 50000000000,
+  "componentBudgetsCad": {
+    "site_development": 1500000000.0,
+    "building_and_civil": 7000000000.000001,
+    "electrical_and_mechanical": 10500000000.0,
+    "grid_and_generation": 4000000000.0,
+    "computing_and_networking": 23000000000.0,
+    "professional_and_other": 4000000000.0
+  },
+  "assets": [
+    {
+      "id": "AB_50B_TRANSMISSION",
+      "aiPhaseIds": [
+        "AB_50B_2027_2036_PROGRAM"
+      ],
+      "assetClass": "transmission",
+      "scope": "Potential enabling transmission scope; project-specific incremental requirement has not been established.",
+      "incrementality": "unknown",
+      "funding": "unknown",
+      "costCad": null,
+      "costBasis": "unknown",
+      "timing": {
+        "startYear": null,
+        "endYear": null
+      },
+      "evidence": {
+        "status": "scenario",
+        "sourceIds": [],
+        "note": "Dependency diligence placeholder, not an observed asset, cost, commitment, payer or approval."
+      },
+      "payerShares": {
+        "unknown": 1
+      },
+      "aiCapexMembership": "unknown",
+      "capexComponent": null
+    },
+    {
+      "id": "AB_50B_SUBSTATION",
+      "aiPhaseIds": [
+        "AB_50B_2027_2036_PROGRAM"
+      ],
+      "assetClass": "substation",
+      "scope": "Potential enabling substation scope; project-specific incremental requirement has not been established.",
+      "incrementality": "unknown",
+      "funding": "unknown",
+      "costCad": null,
+      "costBasis": "unknown",
+      "timing": {
+        "startYear": null,
+        "endYear": null
+      },
+      "evidence": {
+        "status": "scenario",
+        "sourceIds": [],
+        "note": "Dependency diligence placeholder, not an observed asset, cost, commitment, payer or approval."
+      },
+      "payerShares": {
+        "unknown": 1
+      },
+      "aiCapexMembership": "unknown",
+      "capexComponent": null
+    },
+    {
+      "id": "AB_50B_ROADS",
+      "aiPhaseIds": [
+        "AB_50B_2027_2036_PROGRAM"
+      ],
+      "assetClass": "roads",
+      "scope": "Potential enabling roads scope; project-specific incremental requirement has not been established.",
+      "incrementality": "unknown",
+      "funding": "unknown",
+      "costCad": null,
+      "costBasis": "unknown",
+      "timing": {
+        "startYear": null,
+        "endYear": null
+      },
+      "evidence": {
+        "status": "scenario",
+        "sourceIds": [],
+        "note": "Dependency diligence placeholder, not an observed asset, cost, commitment, payer or approval."
+      },
+      "payerShares": {
+        "unknown": 1
+      },
+      "aiCapexMembership": "unknown",
+      "capexComponent": null
+    },
+    {
+      "id": "AB_50B_WATER",
+      "aiPhaseIds": [
+        "AB_50B_2027_2036_PROGRAM"
+      ],
+      "assetClass": "water",
+      "scope": "Potential enabling water scope; project-specific incremental requirement has not been established.",
+      "incrementality": "unknown",
+      "funding": "unknown",
+      "costCad": null,
+      "costBasis": "unknown",
+      "timing": {
+        "startYear": null,
+        "endYear": null
+      },
+      "evidence": {
+        "status": "scenario",
+        "sourceIds": [],
+        "note": "Dependency diligence placeholder, not an observed asset, cost, commitment, payer or approval."
+      },
+      "payerShares": {
+        "unknown": 1
+      },
+      "aiCapexMembership": "unknown",
+      "capexComponent": null
+    }
+  ]
+}

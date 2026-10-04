@@ -1,0 +1,22 @@
+{
+  "extraction_id": "MANUAL_AESO_DC_UPDATE_2025_09_PAGE1_0_1",
+  "source_id": "AESO_DATA_CENTRE_UPDATE_2025_09",
+  "source_content_hash": "sha256:d997820b3ed234324f1f7bbca5b8b75fdc1bf5f64859816f4dc6cc084b229428",
+  "source_locator": "page 1, Data Centre Cumulative Requested Load bar chart",
+  "extraction_method": "manual transcription from explicitly labelled bars; visual render inspected",
+  "extracted_by": "AIIO Canada research build",
+  "review_status": "independently_reviewed",
+  "reviewed_by": "Grok CLI source-level re-extraction",
+  "reviewer_type": "independent_machine_review",
+  "reviewed_at": "2026-08-31",
+  "review_record": "docs/reviews/2026-08-31-grok-evidence-screen-gate.md",
+  "requested_load_series": [
+    {"application_period": "2024-Q2", "requested_load_mw": 5000.0},
+    {"application_period": "2024-Q3", "requested_load_mw": 6400.0},
+    {"application_period": "2024-Q4", "requested_load_mw": 10900.0},
+    {"application_period": "2025-Q1", "requested_load_mw": 14600.0},
+    {"application_period": "2025-Q2", "requested_load_mw": 19800.0},
+    {"application_period": "2025-Q3", "requested_load_mw": 20700.0}
+  ],
+  "notes": "The adjacent requested-energization line chart is not transcribed because most points are not explicitly labelled. Requested load is not committed or realized load."
+}

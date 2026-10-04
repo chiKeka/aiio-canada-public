@@ -1,122 +1,67 @@
 # AI Infrastructure Impact Observatory Canada
 
-AIIO Canada is a public research program for tracing how AI infrastructure capital expenditure changes the cost, capacity, and delivery of Canadian public infrastructure. Alberta is the first implementation; the data model is designed to expand province by province.
+Explore how AI infrastructure investment could compete with Canadian public projects for labour, materials and power. AIIO Canada connects public evidence, transparent assumptions and interactive scenarios; Alberta is the first implementation.
 
-The product has four linked components:
+**[Try the live demo](https://aiio-canada.vercel.app/) · [Assess a project](https://aiio-canada.vercel.app/project-scenario?view=assessment) · [Explore the Alberta pilot](https://aiio-canada.vercel.app/construction/pilot)**
 
-1. a reproducible public-data evidence pipeline;
-2. a typed graph propagation model adapted from the PSPE/S3 graph method;
-3. an explicit scenario layer for counterfactual investment diagnostics plus a separate MW-based power overlay; and
-4. public outputs: an interactive website, weekly digest, downloadable datasets and an auditable Excel workbook.
+The live demo is maintained separately from this public source snapshot and may evolve independently.
 
-## Research question
+## Try it in two minutes
 
-> How, when, and where does AI infrastructure capital expenditure reshape cost, capacity, and delivery across Canada?
+1. Open the [owner assessment](https://aiio-canada.vercel.app/project-scenario?view=assessment).
+2. Select **Load hypothetical $50M school example**. This supplies a school project with a CAD $50 million budget and CAD $8 million of remaining electrical package exposure, plus explicit example assumptions.
+3. Inspect the **conditional** result, package inputs and evidence status. The loaded assumptions support a calculation; they do not establish a measured AI effect on a real school.
+4. Open **1. Packages**, then **Electrical package**. Change **Electrical commitment** to fixed. Price escalation for that package becomes zero, while assumed resource-related delay can remain. Contract price protection and delivery capacity answer different questions.
+5. Use **Export current assessment JSON** to inspect the inputs alongside the result. Start from your own evidence before applying any example to a real project.
 
-The Alberta pilot asks what happens if $50 billion of AI infrastructure investment lands in the province over 2027–2036: which trades tighten first, how much additional electricity and transmission capacity may be implicated, and which public projects are most exposed to competing demand.
+See the [walkthrough](docs/project-assessment-walkthrough.md) for interpretation and screenshot details.
 
-## Non-negotiable publication rule
+### Desktop
 
-Every published value must be marked as **observed**, **corroborated**, **inferred**, **assumed**, or **scenario-only**. Scenario outputs are not forecasts. The v0.2 pressure scores are uncalibrated structural diagnostics—not empirical findings, probabilities, percentages or project-level delay estimates.
+![Owner assessment with the hypothetical school example on desktop](docs/images/project-assessment-desktop.png)
 
-## Local development
+### Mobile
+
+<img src="docs/images/project-assessment-mobile.png" alt="Owner assessment with the same hypothetical school example on mobile" width="390">
+
+## What you can explore
+
+- **Project assessment:** compare package exposure, commitment and shared-resource assumptions; export an inspectable assessment record.
+- **Alberta pilot:** explore a hypothetical CAD $50 billion investment scenario over 2027–2036, with construction and power evidence.
+- **Research evidence:** inspect source provenance, observed data, model contracts and readiness gates rather than treating every output as an established finding.
+
+## Run locally
+
+Use Node.js **22.13 or newer**, npm and Python **3.12 or newer**. No deployment credentials or source downloads are needed for the initial app walkthrough.
 
 ```bash
-npm install
+git clone https://github.com/chiKeka/aiio-canada-public.git
+cd aiio-canada-public
+npm ci
 npm run dev
 ```
 
-`npm run dev`, `npm run build`, and `npm run start` use the native Next.js
-runtime and are the canonical GitHub/Vercel path. The existing Sites-compatible
-target remains available through `npm run dev:sites`, `npm run build:sites`, and
-`npm run start:sites`.
+Open <http://localhost:3000/project-scenario?view=assessment>. If Next.js selects another port, use the URL printed in the terminal.
 
-The reproducible analytical gates are:
+For a production build:
 
 ```bash
-npm run research:validate
-npm run labour:normalize
-npm run labour:normalize:canada
-npm run investment:normalize:canada
-npm run macro:controls
-npm run procurement:normalize
-npm run outcomes:audit:normalize
-npm run outcomes:quebec:normalize
-npm run outcomes:quebec:vintages:fetch
-npm run outcomes:quebec:vintages:normalize
-npm run outcomes:quebec:review
-npm run outcomes:quebec:archive:fetch
-npm run outcomes:quebec:archive:normalize
-npm run bcpi:normalize:provinces
-npm run materials:screen
-npm run materials:screen:provinces
-npm run projects:exposure
-npm run projects:normalize:provinces
-npm run power:evidence
-npm run power:planning:provinces
-npm run digest:build
-npm run digest:audit
-npm run research-surface:build
-npm run pspe:lineage
-npm run program:audit
-npm run attribution:readiness
-npm run attribution:preflight
-npm run attribution:panel
-npm run attribution:estimate
-npm run attribution:proxy-treatment
-npm run attribution:proxy-association
-npm run outcomes:pspc
-npm run treatment:capex-screen
-npm run treatment:announcement-ledger
-npm run bcpi:normalize:reference-cmas
-npm run cost:baseline:cmas
-npm run cost:backcast:provinces
-npm run cost:review:province-bridge
-npm run cost:historical-envelope
-npm run cost:historical-analogs
-npm run cost:review-package
-npm run model:run
-npm run model:variants
-npm run power:run
-npm run research:test
-npm run release:build
-npm run release:verify
+npm run build
+npm run start
 ```
 
-Research architecture and protocols live in `docs/`. The public application lives in `app/` and `components/`, with its evidence-led product language and visual rules in [`DESIGN.md`](DESIGN.md). Data, model, workbook and digest packages are added as the build advances.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for checks, repository orientation and starter work. Native Next.js commands are the canonical local path; optional Sites-compatible commands are listed in `package.json`.
 
-The digest protocol is documented in
-[`docs/methodology/weekly-evidence-digest.md`](docs/methodology/weekly-evidence-digest.md).
-Edition dates use UTC, every source reference must match the source registry,
-and the cadence audit fails when the latest intake is more than eight days old.
+## Research boundaries
 
-Program completeness is reported separately from publication readiness in
-[`docs/release/program-readiness-audit.md`](docs/release/program-readiness-audit.md).
-`npm run program:audit` permits documented pending or blocked research gates but
-fails on structural defects. `npm run program:audit:release` fails unless every
-decision-grade, independent-review and publication gate passes.
+Every published value must be marked **observed**, **corroborated**, **inferred**, **assumed**, or **scenario-only**. Scenario outputs are **not forecasts**. The v0.2 pressure scores are uncalibrated structural diagnostics, not empirical findings, probabilities, percentages or measured project delays. Conditional project outputs depend on entered assumptions and evidence; changing an input does not establish causation.
 
-The committed labour extracts contain graph-relevant NOC vacancy and
-offered-wage observations from Statistics Canada table 14-10-0444-01. One file
-supports the Alberta pilot; the Canada-ready file preserves all 13 provincial
-and territorial estimates without substituting a national average. Suppressed
-values remain blank with their quality flags; they are never converted to zero.
+Program completeness and publication readiness are separate. Independent review and decision-grade validation remain explicit gates. Read the [program readiness audit](docs/release/program-readiness-audit.md), [calibration protocol](docs/methodology/calibration-protocol.md) and [attribution identification method](docs/methodology/ai-attribution-identification.md).
 
-Research integrity and AI assistance are documented in `docs/governance/dissertation-alignment.md` and `docs/governance/ai-assistance-log.md`.
+## Public source boundary and licence
 
-Deployment and release provenance are documented in
-`docs/release/vercel-deployment.md`.
+This repository starts from a reviewed public snapshot with fresh Git history. Some original source archives are deliberately withheld for redistribution rights or privacy reasons. Retained observations and scenarios are not newly validated by that transformation. Historical release receipts do not describe this transformed snapshot.
 
-GitHub runs the same lint, evidence-registry, model-test, and dual-build quality
-gate on every change to `main` and on pull requests.
+Read [PUBLIC_SNAPSHOT.md](PUBLIC_SNAPSHOT.md), [THIRD_PARTY_DATA.md](THIRD_PARTY_DATA.md) and the [source licence matrix](publication/source-license-matrix.json) before acquiring or redistributing source material. Source-dependent commands are gated; the complete original analytical suite requires unavailable archives.
 
-## Licence
-
-AIIO Canada's original software and documentation are available under the
-[Apache License 2.0](LICENSE). Third-party datasets and source documents retain
-their original terms; see [THIRD_PARTY_DATA.md](THIRD_PARTY_DATA.md) and the
-source registry before redistributing data.
-
-## Review snapshot
-
-This export is prepared for review only. Read [PUBLIC_SNAPSHOT.md](PUBLIC_SNAPSHOT.md) for the exact source omissions, public-mode checks, optional local acquisition boundaries and disabled deployment/refresh templates. Historical release receipts do not describe this transformed snapshot.
+Original software and documentation use [Apache License 2.0](LICENSE). Third-party data and vendored software retain their own terms and notices.

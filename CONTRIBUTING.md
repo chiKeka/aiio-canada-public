@@ -50,3 +50,7 @@ Keep observed values, assumptions and scenario outputs distinct. Preserve proven
 Do not commit credentials, session cookies, private deployment bindings, personal contacts, private project documents or copied publisher pages. Source availability is not redistribution permission. Follow [PUBLIC_SNAPSHOT.md](PUBLIC_SNAPSHOT.md) before any optional acquisition and keep excluded raw material out of public commits. Deployment/refresh templates are documentation; activating them is a separate operational decision.
 
 Respect the [Apache licence](LICENSE) for original contributions and retain third-party licence notices. Public issues and pull requests should contain only information you are comfortable publishing.
+
+## External pull requests
+
+Use a fork and focused PR; working on an issue does not require collaborator access or credentials. Maintainers review the exact diff before approving workflows or running contributor code. Read the [external contribution review policy](docs/security/external-contributions.md), including the offline path-triage helper and the limits of passing checks.
